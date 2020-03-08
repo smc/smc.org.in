@@ -3,10 +3,13 @@
     "menu-home": "പൂമുഖം",
     "menu-fonts": "ഫോണ്ടുകൾ",
     "menu-about": "ഞങ്ങളെപ്പറ്റി",
-    "menu-blog":"ബ്ലോഗ്",
+    "menu-blog": "ബ്ലോഗ്",
     "menu-research": "ഗവേഷണം",
     "menu-projects": "സംരംഭങ്ങൾ",
     "menu-community": "സമൂഹം",
     "menu-code-of-conduct": "പെരുമാറ്റച്ചട്ടം",
-    "code-of-conduct": "സംഘടനാഗംങ്ങൾക്കുള്ള പെരുമാറ്റച്ചട്ടം"
+    "code-of-conduct": "സംഘടനാഗംങ്ങൾക്കുള്ള പെരുമാറ്റച്ചട്ടം",
+    "source-code": "സോഴ്സ് കോഡ്",
+    "wiki": "വിക്കി",
+    "telegram": "ടെലഗ്രാം"
 }

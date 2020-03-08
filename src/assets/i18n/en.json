@@ -3,10 +3,13 @@
     "menu-home": "Home",
     "menu-fonts": "Fonts",
     "menu-about": "About",
-    "menu-blog":"Blog",
+    "menu-blog": "Blog",
     "menu-community": "Community",
     "menu-projects": "Projects",
     "menu-research": "Research",
     "menu-code-of-conduct": "Code of conduct",
-    "code-of-conduct": "Contributor Code of conduct"
+    "code-of-conduct": "Contributor Code of conduct",
+    "source-code": "Source code",
+    "wiki": "Wiki",
+    "telegram": "Telegram"
 }
