@@ -189,6 +189,7 @@ export default {
           },
           {
             title: "Code of conduct",
+            msg: "menu-code-of-conduct",
             path: "/code-of-conduct"
           }
         ]

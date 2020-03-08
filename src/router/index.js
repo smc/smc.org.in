@@ -10,6 +10,7 @@ const routerOptions = [
   { path: "/fonts", name: "fonts", view: "Fonts" },
   { path: "/projects", name: "projects", view: "Projects", params: true },
   { path: "/people", name: "people", view: "People", params: true },
+  { path: "/code-of-conduct", name: "coc", view: "COC", params: true },
   { path: "/fonts/:font", name: "fonts-font", view: "Fonts", params: true },
   { path: "*", name: "404", view: "404", params: true }
 ];

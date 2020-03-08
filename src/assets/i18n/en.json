@@ -5,5 +5,7 @@
     "menu-about": "About",
     "menu-community": "Community",
     "menu-projects": "Projects",
-    "menu-research": "Research"
+    "menu-research": "Research",
+    "menu-code-of-conduct": "Code of conduct",
+    "code-of-conduct": "Contributor Code of conduct"
 }
