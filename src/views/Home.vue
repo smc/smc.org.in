@@ -46,6 +46,9 @@
           ></v-btn>
         </v-col>
       </v-row>
+      <v-row class="text-center" justify="center">
+        <v-col lg="8" sm="12"> <p v-text="$i18n('smc-desc')"></p> </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
