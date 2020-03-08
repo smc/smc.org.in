@@ -5,7 +5,6 @@
         <v-list-group
           v-for="item in menuItems"
           :key="item.title"
-          :to="item.path"
           v-model="item.active"
           :prepend-icon="item.action"
           no-action
@@ -14,6 +13,8 @@
             <v-list-item-content>
               <v-list-item-title
                 v-text="$i18n(item.msg || item.title)"
+                :to="item.path"
+                :href="item.href"
               ></v-list-item-title>
             </v-list-item-content>
           </template>
@@ -27,6 +28,7 @@
               <v-list-item-title
                 v-text="$i18n(subItem.msg || subItem.title)"
                 :to="item.path"
+                :href="item.href"
               ></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -58,6 +60,7 @@
             <v-btn
               class="hidden-xs-only"
               :to="item.path"
+              :href="item.href"
               text
               v-on="on"
               v-text="$i18n(item.msg || item.title)"
@@ -105,6 +108,11 @@ export default {
         title: "Home",
         msg: "menu-home",
         path: "/"
+      },
+      {
+        title: "Blog",
+        msg: "menu-blog",
+        href: "https://blog.smc.org.in"
       },
       {
         title: "About",
