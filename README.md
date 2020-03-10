@@ -3,7 +3,7 @@
 SMC website
 
 
-#  How to use
+# How to use
 
 Instal dependencies
 
@@ -22,3 +22,11 @@ Build the application for production:
 ```
 npm run build
 ```
+
+# How to develop pages?
+
+1. Refer existing pages in src/views
+2. For URLs refer router/index.js and App.vue. Use [Vue Router](router.vuejs.org/) documentation as well.
+3. For layouting and UI widgets refer [vuetify documentation](https://vuetifyjs.com)
+4. Committing and pushing the code will automatically update the website.
+5.
