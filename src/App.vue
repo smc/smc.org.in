@@ -1,5 +1,5 @@
 <template>
-  <v-app id="smc.org.in">
+  <v-app id="smcorgin">
     <v-navigation-drawer v-model="sidebar" right fixed>
       <v-list>
         <v-list-group
@@ -208,13 +208,14 @@ export default {
 </script>
 
 <style lang="less">
-#smc.org.in {
+@import url("https://smc.org.in/fonts/css/fonts.css");
+@import url("https://rsms.me/inter/inter.css");
+
+#smcorgin {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Manjari", "Gayathri",
-    sans-serif;
+  font-family: "Inter", "Manjari", "Gayathri", sans-serif;
   text-align: left;
   font-size: 1em;
 }

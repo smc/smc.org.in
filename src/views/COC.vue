@@ -127,3 +127,10 @@ export default {
   components: {}
 };
 </script>
+
+<style lang="less" scoped>
+.v-application .display-2,
+.v-application .title {
+  font-family: "Inter", "Manjari", sans-serif !important;
+}
+</style>
