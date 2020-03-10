@@ -215,8 +215,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: "Inter", "Manjari", "Gayathri", sans-serif;
+  font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
   text-align: left;
   font-size: 1em;
+  .display-2,
+  title {
+    font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
+  }
 }
 </style>
