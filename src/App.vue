@@ -161,8 +161,8 @@ export default {
             path: "/fonts/gayathri"
           },
           {
-            title: "Karumpi",
-            path: "/fonts/karumpi"
+            title: "Karumbi",
+            path: "/fonts/karumbi"
           },
           {
             title: "Keraleeyam",
@@ -183,6 +183,10 @@ export default {
           {
             title: "Uroob",
             path: "/fonts/uroob"
+          },
+          {
+            title: "RaghuMalayalam",
+            path: "/fonts/raghumalayalam"
           }
         ]
       },
@@ -208,9 +212,7 @@ export default {
 </script>
 
 <style lang="less">
-@import url("https://smc.org.in/fonts/css/fonts.css");
-@import url("https://rsms.me/inter/inter.css");
-
+@import "./assets/fonts.less";
 #smcorgin {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -219,7 +221,8 @@ export default {
   text-align: left;
   font-size: 1em;
   .display-2,
-  title {
+  .headline,
+  .title {
     font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
   }
 }
