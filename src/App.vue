@@ -46,7 +46,7 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-text="$i18n('smc')"></v-toolbar-title>
+      <v-toolbar-title v-text="$i18n('smc')" class="px-1"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-menu
@@ -90,7 +90,9 @@
     </v-app-bar>
 
     <v-content>
-      <router-view />
+      <transition name="slide">
+        <router-view />
+      </transition>
     </v-content>
   </v-app>
 </template>
