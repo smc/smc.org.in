@@ -117,24 +117,14 @@ export default {
         href: "https://blog.smc.org.in"
       },
       {
-        title: "About",
-        path: "/about",
-        msg: "menu-about",
-        items: [
-          {
-            title: "Contact",
-            path: "/contact"
-          },
-          {
-            title: "History",
-            path: "/history"
-          }
-        ]
-      },
-      {
         title: "Projects",
         path: "/projects",
         msg: "menu-projects"
+      },
+      {
+        title: "Documentation",
+        path: "/doc",
+        msg: "menu-doc"
       },
       {
         title: "Research",
@@ -197,6 +187,19 @@ export default {
         path: "/community",
         msg: "menu-community",
         items: [
+          {
+            title: "About",
+            path: "/about",
+            msg: "menu-about"
+          },
+          {
+            title: "Contact",
+            path: "/contact"
+          },
+          {
+            title: "History",
+            path: "/history"
+          },
           {
             title: "People",
             path: "/people"

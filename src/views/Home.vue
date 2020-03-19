@@ -49,6 +49,66 @@
       <v-row class="text-center" justify="center">
         <v-col lg="8" sm="12"> <p v-text="$i18n('smc-desc')"></p> </v-col>
       </v-row>
+      <v-row>
+        <v-col lg="6" sm="12">
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              src="@/assets/images/manjari-card.png"
+              height="200px"
+            ></v-img>
+
+            <v-card-title>
+              Manjari font
+            </v-card-title>
+
+            <v-card-subtitle>
+              Popular Malayalam typeface
+            </v-card-subtitle>
+
+            <v-card-actions>
+              <v-btn to="/fonts/manjari" text>Read more...</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col lg="6" sm="12">
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              src="@/assets/images/gayathri-card.png"
+              height="200px"
+            ></v-img>
+
+            <v-card-title>
+              Gayathri font
+            </v-card-title>
+
+            <v-card-subtitle>
+              Popular Malayalam typeface
+            </v-card-subtitle>
+
+            <v-card-actions>
+              <v-btn to="/fonts/gayathri" text>Read more...</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col lg="6" sm="12">
+          <v-card class="mx-auto" max-width="400" color="#385F73" dark>
+            <v-card-title>
+              Malayalam morphology analyser
+            </v-card-title>
+
+            <v-card-subtitle>
+              Morphology analyser and generator is a foundational library for
+              Malayalam language processing. This is one of the active project
+              of SMC and already proved its potential. Developed by Santhosh
+              Thottingal.
+            </v-card-subtitle>
+
+            <v-card-actions>
+              <v-btn href="https://morph.smc.org.in" text>Read more...</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
