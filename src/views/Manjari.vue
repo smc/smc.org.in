@@ -1,57 +1,38 @@
 <template>
   <v-container class="manjari col-lg-10 col-sm-12">
     <main>
-      <h1 class="display" v-text="$i18n('manjari')"></h1>
-      <p class="title-2">
-        Designer: <a href="thottingal.in">Santhosh Thottingal</a>
-      </p>
-      <section id="intro" class="row">
-        <p>
-          Malayalam typeface featured with smooth curves and terminals.
-          Available in three weights.
+      <h1 class="display-3" v-text="$i18n('manjari')"></h1>
+      <div id="intro" class="row">
+        <p class="title-2 col-lg-6">
+          Designer: <a href="thottingal.in">Santhosh Thottingal</a>
         </p>
-      </section>
+        <v-btn
+          to="https://smc.org.in/downloads/fonts/manjari/manjari.zip"
+          rounded
+          large
+          color="success"
+          class="col col-lg-3 ma-1"
+        >
+          <v-icon>{{ mdiDownload }}</v-icon
+          >{{ $i18n("download") }}</v-btn
+        >
+      </div>
       <section id="header" class="row">
-        <v-sheet class="col-12" color="grey">
-          <tt>illustrations goes here</tt>
-        </v-sheet>
-      </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
-        <v-sheet class="col-lg-8 col-md-12" color="transparent">
-          <v-btn
-            to="https://smc.org.in/downloads/fonts/manjari/manjari.zip"
-            rounded
-            large
-            block
-            color="success"
-            class="col col-lg-4 col-sm-8 ma-1"
-            v-text="$i18n('download-zip')"
-          ></v-btn>
-          <v-btn
-            to="https://smc.org.in/downloads/fonts/manjari/Manjari-Regular.otf"
-            rounded
-            large
-            color="primary"
-            class="col col-lg-4 ma-1"
-            v-text="$i18n('regular')"
-          ></v-btn>
-          <v-btn
-            to="https://smc.org.in/downloads/fonts/manjari/Manjari-Bold.otf"
-            rounded
-            large
-            color="primary"
-            class="col col-lg-4 ma-1"
-            v-text="$i18n('bold')"
-          ></v-btn>
-          <v-btn
-            to="https://smc.org.in/downloads/fonts/manjari/Manjari-Thin.otf"
-            rounded
-            large
-            color="primary"
-            class="col col-lg-3 ma-1"
-            v-text="$i18n('thin')"
-          ></v-btn>
+        <v-sheet class="col-12">
+          <v-carousel
+            cycle
+            height="400"
+            hide-delimiter-background
+            show-arrows-on-hover
+          >
+            <v-carousel-item v-for="(slide, i) in slides" :key="i">
+              <v-sheet :color="colors[i]" height="100%">
+                <v-row class="fill-height" align="center" justify="center">
+                  <div class="display-3">{{ slide }} Slide</div>
+                </v-row>
+              </v-sheet>
+            </v-carousel-item>
+          </v-carousel>
         </v-sheet>
       </section>
       <section id="design" class="row">
@@ -101,12 +82,10 @@
             To use Manjari in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <pre>
-            @import url('https://smc.org.in/fonts/manjari.css');
-            html {
-              font-family: 'Manjari', sans-serif;
-            }
-          </pre>
+          <code>
+            @import url('https://smc.org.in/fonts/manjari.css'); html {
+            font-family: 'Manjari', sans-serif; }
+          </code>
           <h3 class="webfonts" v-text="$i18n('google-fonts-webfonts')"></h3>
           <p>
             Manjari is also available in Google fonts. Using Manjari from Google
@@ -182,8 +161,20 @@
 </template>
 
 <script>
+import { mdiDownload } from "@mdi/js";
+
 export default {
-  data: () => ({}),
+  data: () => ({
+    mdiDownload,
+    colors: [
+      "indigo",
+      "warning",
+      "pink darken-2",
+      "red lighten-1",
+      "deep-purple accent-4"
+    ],
+    slides: ["First", "Second", "Third", "Fourth", "Fifth"]
+  }),
   methods: {}
 };
 </script>
