@@ -23,14 +23,44 @@
             cycle
             height="400"
             hide-delimiter-background
-            show-arrows-on-hover
+            :show-arrows="false"
           >
-            <v-carousel-item v-for="(slide, i) in slides" :key="i">
-              <v-sheet :color="colors[i]" height="100%">
-                <v-row class="fill-height" align="center" justify="center">
-                  <div class="display-3">{{ slide }} Slide</div>
-                </v-row>
-              </v-sheet>
+            <v-carousel-item>
+              <v-card
+                class="manjari-slide-0 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <h1 class="display-3 font-weight-thin py-2 my-4">മഞ്ജരി</h1>
+                <h2 class="display-5 font-weight-thin py-2 my-4">
+                  യുണിക്കോഡ് അക്ഷരരൂപം
+                </h2>
+                <p>Available in bold, regular, thin style variants.</p>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="manjari-slide-1 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <p class="pa-4 ma-4">
+                  മഞ്ജ­രി എന്നാൽ മു­ത്തു് എന്നർത്ഥം. മല­യാ­ള­ത്തി­ലെ ഒരു
+                  വൃ­ത്ത­ത്തി­ന്റെ പേ­രു­മാ­ണ­തു്. ചി­ലങ്ക കൈ­യെ­ഴു­ത്തു­ശൈ­ലി
+                  ഫോ­ണ്ടി­നു ശേഷം സന്തോ­ഷ് തോ­ട്ടി­ങ്ങൽ രൂ­പ­ക­ല്പന ചെയ്ത
+                  മഞ്ജ­രി ഫോ­ണ്ട് ഒരു വി­വി­ധോ­ദ്ദേ­ശ്യ ഫോ­ണ്ടാ­ണു്. സാ­ധാ­രണ
+                  കട്ടി­യി­ലും, കൂ­ടി­യ­തും കു­റ­ഞ്ഞ­തു­മായ കട്ടി­ക­ളി­ലും
+                  മു­ന്ന് തര­ത്തിൽ ഈ ഫോ­ണ്ട് ലഭ്യ­മാ­ണു്. അക്ഷ­ര­ങ്ങ­ളു­ടെ
+                  വടി­വി­നു് സ്പൈരൽ ശൈലി ഉപ­യോ­ഗി­ക്കു­ന്നു എന്ന­താ­ണു് ഈ
+                  ഫോ­ണ്ടി­ന്റെ പ്ര­ത്യേ­കത. വര­ക­ളു­ടെ അറ്റ­ങ്ങൾ ഉരു­ണ്ട, ഒരേ
+                  കട്ടി­യി­ലു­ള്ള വര­ക­ളാ­ണു് ഉപ­യോ­ഗി­ച്ചി­രി­ക്കു­ന്ന­തു്.
+                  കൂ­ട്ട­ക്ഷ­ര­ങ്ങൾ പര­മാ­വ­ധി ഉൾപ്പെ­ടു­ത്തി­ക്കൊ­ണ്ടു­ള്ള ഒരു
+                  ലി­പി­സ­ഞ്ച­യ­മാ­ണു് ഈ ഫോ­ണ്ടി­ലു­ള്ള­തു്. മല­യാ­ള­ത്തി­നു
+                  പു­റേ­മേ ഇം­ഗ്ലീ­ഷ്/ലാ­റ്റിൻ അക്ഷ­ര­ങ്ങ­ളും ഈ ഫോ­ണ്ടി­ലു­ണ്ട്.
+                </p>
+              </v-card>
             </v-carousel-item>
           </v-carousel>
         </v-sheet>
@@ -178,8 +208,25 @@ export default {
   methods: {}
 };
 </script>
-<style lang="less" scoped>
+<style lang="less">
 .manjari section {
   margin: 3em 0;
+
+  .v-card {
+    padding: 2em;
+  }
+}
+.manjari-slide-0 {
+  .display-3,
+  .display-5 {
+    font-family: "Manjari" !important;
+  }
+  background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+}
+.manjari-slide-1 {
+  background: linear-gradient(to left, #ffeeee, #ddefbb);
+  p {
+    color: #252425;
+  }
 }
 </style>
