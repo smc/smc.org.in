@@ -122,9 +122,9 @@ export default {
         msg: "menu-projects"
       },
       {
-        title: "Documentation",
-        path: "/doc",
-        msg: "menu-doc"
+        title: "Articles",
+        path: "/articles",
+        msg: "menu-articles"
       },
       {
         title: "Research",
