@@ -144,6 +144,12 @@
       </section>
       <section id="glyphs" class="row">
         <h2 v-text="$i18n('Available glyphs')" class="col-lg-4 col-md-12"></h2>
+        <glyphs
+          font="Manjari"
+          class="col-lg-8 col-md-12"
+          :glyphs="manjariGlyphs"
+          :ligatures="manjariLigatures"
+        />
       </section>
       <section id="languages" class="row">
         <h2
@@ -192,10 +198,14 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-
+import manjariGlyphs from "../components/manjari/glyphs.json";
+import manjariLigatures from "../components/manjari/ligatures.json";
+import Glyphs from "../components/Glyphs";
 export default {
   data: () => ({
     mdiDownload,
+    manjariGlyphs: manjariGlyphs.glyphs,
+    manjariLigatures,
     colors: [
       "indigo",
       "warning",
@@ -205,6 +215,7 @@ export default {
     ],
     slides: ["First", "Second", "Third", "Fourth", "Fifth"]
   }),
+  components: { Glyphs },
   methods: {}
 };
 </script>
