@@ -23,6 +23,7 @@ const routerOptions = [
     view: "Manjari",
     params: true
   },
+  { path: "/articles/:title", view: "Article" },
   { path: "*", name: "404", view: "404", params: true }
 ];
 

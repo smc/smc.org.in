@@ -20,7 +20,7 @@ W
 Build the application for production:
 
 ```
-npm run buildW
+npm run build
 ```
 
 # How to develop pages?
@@ -30,3 +30,13 @@ npm run buildW
 3. For layouting and UI widgets refer [vuetify documentation](https://vuetifyjs.com)
 4. Committing and pushing the code will automatically update the website.
 5.
+
+# Writing articles
+
+Create a file in markdown fromat in public/articles folder. Prepare the content by referring existing samples in that folder. Run
+
+```
+nodejs generateManifest.js
+```
+
+Commit the code and push to the repo.
