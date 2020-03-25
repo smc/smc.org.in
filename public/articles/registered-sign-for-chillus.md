@@ -2,7 +2,7 @@
 title: "ചില്ലുകൾക്ക് പകരം രെജിസ്റ്റേഡ് ചിഹ്നം"
 description: "വട്ടത്തിൽ r എന്നെഴുതിയത് വരുന്നു"
 url: /articles/registered-sign-for-chillus
-author: Santhosh Thottignal
+author: Santhosh Thottingal
 ---
 
 2010 ന് മുമ്പ് പുറത്തിറങ്ങിയ രചന, മീര തുടങ്ങിയ ഫോണ്ടുകളിൽ [അറ്റോമിക് ചില്ലുകൾ][1]ക്ക് പകരം വട്ടത്തിനകത്തെ R എന്ന രൂപമാണ് കാണുക. അറ്റോമിക് ചില്ലുകൾ വരുന്നതിനു
