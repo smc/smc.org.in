@@ -23,6 +23,12 @@ const routerOptions = [
     view: "Gayathri",
     params: true
   },
+  {
+    path: "/fonts/chilanka",
+    name: "font-chilanka",
+    view: "Chilanka",
+    params: true
+  },
   { path: "/articles/:title", view: "Article" },
   { path: "/articles", view: "Article" },
   { path: "*", name: "404", view: "404", params: true }
