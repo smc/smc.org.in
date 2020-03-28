@@ -1,13 +1,13 @@
 <template>
-  <v-container class="manjari col-lg-10 col-sm-12">
+  <v-container class="gayathri col-lg-10 col-sm-12">
     <main>
-      <h1 class="display-3" v-text="$i18n('manjari')"></h1>
+      <h1 class="display-3" v-text="$i18n('gayathri')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
-          Designer: <a href="https://thottingal.in">Santhosh Thottingal</a>
+          Designer: <a href="https://thottingal.in">Binoy Dominic</a>
         </p>
         <v-btn
-          to="https://smc.org.in/downloads/fonts/manjari/manjari.zip"
+          to="https://smc.org.in/downloads/fonts/gayathri/gayathri.zip"
           rounded
           large
           color="success"
@@ -27,12 +27,12 @@
           >
             <v-carousel-item>
               <v-card
-                class="manjari-slide-0 py-auto"
+                class="gayathri-slide-0 py-auto"
                 height="100%"
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">മഞ്ജരി</h1>
+                <h1 class="display-3 font-weight-thin py-2 my-4">ഗായത്രി</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -41,7 +41,7 @@
             </v-carousel-item>
             <v-carousel-item>
               <v-card
-                class="manjari-slide-1 py-auto fill-height"
+                class="gayathri-slide-1 py-auto fill-height"
                 height="100%"
                 align="center"
                 color="tranparent"
@@ -69,39 +69,7 @@
         <h2 v-text="$i18n('design')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
           <p>
-            Manjari means pearl. It is also the name of a poetic metre in
-            Malayalam. This is the second font after Chilanka handwriting font
-            by Santhosh Thottingal. This is a multipurpose font suitable for
-            body and titles. This font is available in regular, bold, thin style
-            variants.
-          </p>
-          <p>
-            Malayalam script is known for its curly characters with beautiful
-            loops. Encoded in unicode around 2001, it is relatively new to the
-            digital age. The script has been evolving from rectangle shaped to
-            oval shaped types of varying proportions. The popular culture is
-            more of oval/ellipse shaped curves, mainly because writing methods
-            using stensils or pens demanded less sharp corners. The character or
-            ligature shapes has also been changing gradually towards the shapes
-            that are easy with pens. The Manjari font takes that to another
-            level by smoothening all curves to its maximum.
-          </p>
-          <p>
-            The curves are constructed along the spiral segments. The resulting
-            shapes are extra smooth. The curve perfection resulted in
-            whitespaces that aquired beautiful leaf and drop shapes between the
-            bowls and loops of the script. The spiral smoothness of curves were
-            complemented by rounded terminals which gives very soft feeling for
-            the eyes. The design of the curves in Manjari are theoretically
-            based on the PHD thesis by Raph Levien - "From Spiral to Spline:
-            Optimal Techniques in Interactive Curve Design" . The Inconsolata
-            monospace humanist latin font known for its clean lines and elegant
-            design by Levien himself is based on this theory.
-          </p>
-          <p>
-            The curve strokes in Manjari were drawn in Inkscape using the spiral
-            library written by Raph Levien himself and opentype feature
-            compilation was done using FontForge.
+            Gayathri
           </p>
         </div>
       </section>
@@ -109,19 +77,19 @@
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
           <p>
-            To use Manjari in web pages, webfonts can be used. You may copy the
+            To use Gayathri in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
           <code>
-            @import url('https://smc.org.in/fonts/manjari.css'); html {
-            font-family: 'Manjari', sans-serif; }
+            @import url('https://smc.org.in/fonts/gayathri.css'); html {
+            font-family: 'Gayathri', sans-serif; }
           </code>
           <h3 class="webfonts" v-text="$i18n('google-fonts-webfonts')"></h3>
           <p>
-            Manjari is also available in Google fonts. Using Manjari from Google
-            webfonts may be faster than the above approach. Please refer
-            <a href="https://fonts.google.com/specimen/Manjari"
-              >google fonts documentation for Manjari</a
+            Gayathri is also available in Google fonts. Using Gayathri from
+            Google webfonts may be faster than the above approach. Please refer
+            <a href="https://fonts.google.com/specimen/Gayathri"
+              >google fonts documentation for Gayathri</a
             >:
           </p>
         </div>
@@ -129,7 +97,7 @@
       <section id="license" class="row">
         <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
         <p class="col-lg-8 col-md-12">
-          Manjari is licensed under the
+          Gayathri is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
@@ -137,19 +105,10 @@
       <section id="sourcecode" class="row">
         <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
         <p class="col-lg-8 col-md-12">
-          Manjari typefaces's source code, including svg drawings, build scripts
-          are available at
-          <a href="https://gitlab.com/smc/fonts/manjari">gitlab repository</a>
+          Gayathri typefaces's source code, including svg drawings, build
+          scripts are available at
+          <a href="https://gitlab.com/smc/fonts/gayathri">gitlab repository</a>
         </p>
-      </section>
-      <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-4 col-md-12"></h2>
-        <glyphs
-          font="Manjari"
-          class="col-lg-8 col-md-12"
-          :glyphs="manjariGlyphs"
-          :ligatures="manjariLigatures"
-        />
       </section>
       <section id="languages" class="row">
         <h2
@@ -180,9 +139,9 @@
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Manjari?</h4>
+          <h4 id="contribute">Can I help with improving Gayathri?</h4>
           <p>
-            Yes you can! Manjari is an open-source project, meaning the source
+            Yes you can! Gayathri is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
             files are freely available to improve upon. Font making requires a
             fair bit of technical work and depending on what you'd like to do,
@@ -198,46 +157,19 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import manjariGlyphs from "../components/manjari/glyphs.json";
-import manjariLigatures from "../components/manjari/ligatures.json";
-import Glyphs from "../components/Glyphs";
 export default {
   data: () => ({
-    mdiDownload,
-    manjariGlyphs: manjariGlyphs.glyphs,
-    manjariLigatures,
-    colors: [
-      "indigo",
-      "warning",
-      "pink darken-2",
-      "red lighten-1",
-      "deep-purple accent-4"
-    ],
-    slides: ["First", "Second", "Third", "Fourth", "Fifth"]
+    mdiDownload
   }),
-  components: { Glyphs },
   methods: {}
 };
 </script>
 <style lang="less">
-.manjari section {
+.gayathri section {
   margin: 3em 0;
 
   .v-card {
     padding: 2em;
-  }
-}
-.manjari-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Manjari" !important;
-  }
-  background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-}
-.manjari-slide-1 {
-  background: linear-gradient(to left, #ffeeee, #ddefbb);
-  p {
-    color: #252425;
   }
 }
 </style>

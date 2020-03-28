@@ -18,9 +18,9 @@ const routerOptions = [
     params: true
   },
   {
-    path: "/fonts/#manjari",
-    name: "font-manjari",
-    view: "Manjari",
+    path: "/fonts/gayathri",
+    name: "font-gayathri",
+    view: "Gayathri",
     params: true
   },
   { path: "/articles/:title", view: "Article" },
