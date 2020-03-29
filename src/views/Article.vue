@@ -28,6 +28,7 @@
 </template>
 <script>
 import MarkdownIt from "markdown-it";
+import MarkDownItVideo from "markdown-it-video";
 import axios from "axios";
 import fm from "front-matter";
 import articles from "../manifest.json";
@@ -66,6 +67,7 @@ export default {
         return;
       }
       const md = new MarkdownIt();
+      md.use(MarkDownItVideo);
       axios.get(`/${file}`).then(({ data }) => {
         const article = fm(data);
         vm.title = article.attributes.title;
