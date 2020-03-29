@@ -1,5 +1,5 @@
 <template>
-  <v-container class="manjari col-lg-10 col-sm-12">
+  <v-container class="manjari col-lg-8 col-sm-12">
     <main>
       <h1 class="display-3" v-text="$i18n('manjari')"></h1>
       <div id="intro" class="row">
@@ -143,10 +143,10 @@
         </p>
       </section>
       <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-4 col-md-12"></h2>
+        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
         <glyphs
           font="Manjari"
-          class="col-lg-8 col-md-12"
+          class="col-lg-12"
           :glyphs="manjariGlyphs"
           :ligatures="manjariLigatures"
         />
