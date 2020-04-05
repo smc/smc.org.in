@@ -1,0 +1,12 @@
+
+/* Suruma */
+
+@font-face {
+	font-family: 'Suruma';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(/downloads/fonts/suruma/Suruma.woff2?v=@VERSION@) format('woff2'), url(/downloads/fonts/suruma/Suruma.woff?v=@VERSION@) format('woff'), url(/downloads/fonts/suruma/Suruma.ttf?v=@VERSION@) format('truetype');
+	unicode-range: U+0D01-0D7F, U+200C-U+200D, U+25CC;
+}
+
