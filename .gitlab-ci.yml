@@ -4,7 +4,7 @@ pages: # the job must be named pages
   stage: deploy
   before_script:
     - apt-get update -y
-    - apt-get install -y make python3-pip
+    - apt-get install -y make python3-pip curl jq zip wget unzip
   script:
     - npm ci
     - npm run build
