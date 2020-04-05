@@ -105,5 +105,5 @@ fontdata["summary"] = summary()
 glyphs_and_ligatures()
 fontdata["glyphs"] = glyphs_and_ligatures()
 
-with open(fontdata["name"] + ".json", "w") as json_file:
+with open(fontdata["name"] + ".json", "w", encoding="utf-8") as json_file:
     json.dump(fontdata, json_file, indent=4, ensure_ascii=False, sort_keys=False),
