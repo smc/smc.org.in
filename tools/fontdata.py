@@ -40,7 +40,10 @@ def summary():
         "component_glyphs": count[4],
     }
 
+
 glyph_value_map = {}
+
+
 def glyphs_and_ligatures():
     data = []
     uni = {}
@@ -65,15 +68,17 @@ def glyphs_and_ligatures():
         }
         if glyph.name in uni:
             try:
-                glyphdata["code"] = uni.get(glyph.name)
+                glyphdata["code"] = "U+%04X" % uni.get(glyph.name)
                 glyphdata["value"] = chr(uni.get(glyph.name))
-                glyphdata["uniname"] = unicodedata.name(chr(uni.get(glyph.name)))
+                glyphdata["uniname"] = unicodedata.name(
+                    chr(uni.get(glyph.name)))
             except ValueError:
                 pass
         else:
             sequence = gsubsmap.get(glyph.name)
             if not sequence:
-                print("Warning: %s missing in gsub" % glyph.name, file=sys.stderr)
+                print("Warning: %s missing in gsub" %
+                      glyph.name, file=sys.stderr)
                 continue
             glyphdata["sequence"] = sequence
             components = sequence.get("src").split(" + ")
@@ -84,13 +89,16 @@ def glyphs_and_ligatures():
                 if com_code:
                     mlsequence.append(chr(com_code))
                 else:
-                    mlsequence.append(glyph_value_map.get(component_glyph_name, "?"))
-            if sequence.get("features") == "pres" and mlsequence[0] == "ര്":
+                    mlsequence.append(glyph_value_map.get(
+                        component_glyph_name, "?"))
+            if sequence.get("features") == "pres" and (mlsequence[0] == "ര്" or mlsequence[0] == "്ര"):
                 del mlsequence[0]
                 mlsequence.append("്ര")
             mlsequence_str = "".join(mlsequence)
             glyph_value_map[glyph.name.split(".")[0]] = mlsequence_str
-            glyphdata["mlsequence"] = " + ".join(mlsequence) + " → " + mlsequence_str
+            glyphdata["value"] = mlsequence_str
+            glyphdata["mlsequence"] = " + ".join(mlsequence) + \
+                " → " + mlsequence_str
 
         data.append(glyphdata)
     return data
@@ -106,4 +114,5 @@ glyphs_and_ligatures()
 fontdata["glyphs"] = glyphs_and_ligatures()
 
 with open(fontdata["name"] + ".json", "w", encoding="utf-8") as json_file:
-    json.dump(fontdata, json_file, indent=4, ensure_ascii=False, sort_keys=False),
+    json.dump(fontdata, json_file, indent=4,
+              ensure_ascii=False, sort_keys=False),

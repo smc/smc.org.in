@@ -4,18 +4,20 @@
       <h1 class="display-3" v-text="$i18n('manjari')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
-          Designer: <a href="https://thottingal.in">Santhosh Thottingal</a>
+          Designer:
+          <a href="https://thottingal.in">Santhosh Thottingal</a> |
+          {{ fontdata.version }}
         </p>
         <v-btn
-          to="https://smc.org.in/downloads/fonts/manjari/manjari.zip"
+          to="/downloads/fonts/manjari/manjari.zip"
           rounded
           large
           color="success"
           class="col col-lg-3 ma-1"
         >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
+          <v-icon>{{ mdiDownload }}</v-icon>
+          {{ $i18n("download") }}
+        </v-btn>
       </div>
       <section id="header" class="row">
         <v-sheet class="col-12">
@@ -144,12 +146,10 @@
       </section>
       <section id="glyphs" class="row">
         <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
-        <glyphs
-          font="Manjari"
-          class="col-lg-12"
-          :glyphs="manjariGlyphs"
-          :ligatures="manjariLigatures"
-        />
+        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
+          {{ fontdata.summary.glyphs }} Glyphs
+        </h4>
+        <glyphs font="Manjari" class="col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
       <section id="languages" class="row">
         <h2
@@ -198,17 +198,20 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import manjariGlyphs from "../components/manjari/glyphs.json";
-import manjariLigatures from "../components/manjari/ligatures.json";
 import Glyphs from "../components/Glyphs";
 export default {
   data: () => ({
     mdiDownload,
-    manjariGlyphs: manjariGlyphs.glyphs,
-    manjariLigatures
+    fontdata: {}
   }),
   components: { Glyphs },
-  methods: {}
+  created() {
+    return fetch("/downloads/fonts/manjari/Manjari.json")
+      .then(response => response.json())
+      .then(data => {
+        this.fontdata = data;
+      });
+  }
 };
 </script>
 <style lang="less">

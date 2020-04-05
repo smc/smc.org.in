@@ -5,9 +5,10 @@
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
           Designer: <a href="https://thottingal.in">Binoy Dominic</a>
+          {{ fontdata.version }}
         </p>
         <v-btn
-          to="https://smc.org.in/downloads/fonts/gayathri/gayathri.zip"
+          to="/downloads/fonts/gayathri/gayathri.zip"
           rounded
           large
           color="success"
@@ -47,18 +48,9 @@
                 color="tranparent"
               >
                 <p class="pa-4 ma-4">
-                  മഞ്ജ­രി എന്നാൽ മു­ത്തു് എന്നർത്ഥം. മല­യാ­ള­ത്തി­ലെ ഒരു
-                  വൃ­ത്ത­ത്തി­ന്റെ പേ­രു­മാ­ണ­തു്. ചി­ലങ്ക കൈ­യെ­ഴു­ത്തു­ശൈ­ലി
-                  ഫോ­ണ്ടി­നു ശേഷം സന്തോ­ഷ് തോ­ട്ടി­ങ്ങൽ രൂ­പ­ക­ല്പന ചെയ്ത
-                  മഞ്ജ­രി ഫോ­ണ്ട് ഒരു വി­വി­ധോ­ദ്ദേ­ശ്യ ഫോ­ണ്ടാ­ണു്. സാ­ധാ­രണ
-                  കട്ടി­യി­ലും, കൂ­ടി­യ­തും കു­റ­ഞ്ഞ­തു­മായ കട്ടി­ക­ളി­ലും
-                  മു­ന്ന് തര­ത്തിൽ ഈ ഫോ­ണ്ട് ലഭ്യ­മാ­ണു്. അക്ഷ­ര­ങ്ങ­ളു­ടെ
-                  വടി­വി­നു് സ്പൈരൽ ശൈലി ഉപ­യോ­ഗി­ക്കു­ന്നു എന്ന­താ­ണു് ഈ
-                  ഫോ­ണ്ടി­ന്റെ പ്ര­ത്യേ­കത. വര­ക­ളു­ടെ അറ്റ­ങ്ങൾ ഉരു­ണ്ട, ഒരേ
-                  കട്ടി­യി­ലു­ള്ള വര­ക­ളാ­ണു് ഉപ­യോ­ഗി­ച്ചി­രി­ക്കു­ന്ന­തു്.
-                  കൂ­ട്ട­ക്ഷ­ര­ങ്ങൾ പര­മാ­വ­ധി ഉൾപ്പെ­ടു­ത്തി­ക്കൊ­ണ്ടു­ള്ള ഒരു
-                  ലി­പി­സ­ഞ്ച­യ­മാ­ണു് ഈ ഫോ­ണ്ടി­ലു­ള്ള­തു്. മല­യാ­ള­ത്തി­നു
-                  പു­റേ­മേ ഇം­ഗ്ലീ­ഷ്/ലാ­റ്റിൻ അക്ഷ­ര­ങ്ങ­ളും ഈ ഫോ­ണ്ടി­ലു­ണ്ട്.
+                  A gentle and modern Malayalam display typeface. Available in
+                  three weights, Gayathri is best suited for headlines, posters,
+                  titles and captions. Unicode compliant and libre licensed.
                 </p>
               </v-card>
             </v-carousel-item>
@@ -110,6 +102,13 @@
           <a href="https://gitlab.com/smc/fonts/gayathri">gitlab repository</a>
         </p>
       </section>
+      <section id="glyphs" class="row">
+        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
+        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
+          {{ fontdata.summary.glyphs }} Glyphs
+        </h4>
+        <glyphs font="Gayathri" class="col-lg-12" :glyphs="fontdata.glyphs" />
+      </section>
       <section id="languages" class="row">
         <h2
           v-text="$i18n('Supported languages')"
@@ -157,11 +156,21 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
+import Glyphs from "../components/Glyphs";
+
 export default {
   data: () => ({
-    mdiDownload
+    mdiDownload,
+    fontdata: {}
   }),
-  methods: {}
+  components: { Glyphs },
+  created() {
+    return fetch("/downloads/fonts/gayathri/Gayathri.json")
+      .then(response => response.json())
+      .then(data => {
+        this.fontdata = data;
+      });
+  }
 };
 </script>
 <style lang="less">

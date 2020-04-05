@@ -29,6 +29,60 @@ const routerOptions = [
     view: "Chilanka",
     params: true
   },
+  {
+    path: "/fonts/dyuthi",
+    name: "font-dyuthi",
+    view: "Dyuthi",
+    params: true
+  },
+  {
+    path: "/fonts/anjali",
+    name: "font-anjali",
+    view: "Anjali",
+    params: true
+  },
+  {
+    path: "/fonts/keraleeyam",
+    name: "font-keraleeyam",
+    view: "Keraleeyam",
+    params: true
+  },
+  {
+    path: "/fonts/uroob",
+    name: "font-uroob",
+    view: "Uroob",
+    params: true
+  },
+  {
+    path: "/fonts/suruma",
+    name: "font-suruma",
+    view: "Suruma",
+    params: true
+  },
+  {
+    path: "/fonts/karumbi",
+    name: "font-karumbi",
+    view: "Karumbi",
+    params: true
+  },
+  {
+    path: "/fonts/meera",
+    name: "font-meera",
+    view: "Meera",
+    params: true
+  },
+  {
+    path: "/fonts/rachana",
+    name: "font-rachana",
+    view: "Rachana",
+    params: true
+  },
+  {
+    path: "/fonts/raghumalayalam",
+    name: "font-raghumalayalam",
+    view: "RaghuMalayalam",
+    params: true
+  },
   { path: "/articles/:title", view: "Article" },
   { path: "/articles", view: "Article" },
   { path: "*", name: "404", view: "404", params: true }
