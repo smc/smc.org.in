@@ -50,7 +50,9 @@
         <v-col lg="8" sm="12"> <p v-text="$i18n('smc-desc')"></p> </v-col>
       </v-row>
       <v-row>
-        <v-col lg="8" sm="12"> <p v-text="$i18n('menu-projects')"></p> </v-col>
+        <v-col lg="8" sm="12">
+          <h2 v-text="$i18n('menu-projects')"></h2>
+        </v-col>
       </v-row>
       <v-row>
         <v-col md="6" lg="3" sm="12">
@@ -95,6 +97,7 @@
         </v-col>
         <v-col md="6" lg="3" sm="12">
           <v-card class="mx-auto" max-width="400" color="#385F73" dark>
+            <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
             <v-card-title>
               Malayalam morphology analyser
             </v-card-title>
@@ -113,12 +116,24 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col lg="8" sm="12"> <p v-text="$i18n('menu-blog')"></p> </v-col>
+        <v-col lg="8" sm="12">
+          <h2 v-text="$i18n('menu-blog')"></h2>
+        </v-col>
       </v-row>
       <v-row class="text-center" justify="center">
-        <v-col md="6" lg="3" sm="12" :key="post.id" v-for="post in blogposts">
-          <v-card class="mx-auto" max-width="400" color="#fff">
-            <v-img :src="post.feature_image" height="200px"></v-img>
+        <v-col
+          md="6"
+          lg="3"
+          sm="12"
+          class="my-6"
+          :key="post.id"
+          v-for="post in blogposts"
+        >
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              :src="post.feature_image || require('@/assets/logo.svg')"
+              height="200px"
+            ></v-img>
 
             <v-card-title class="smc-blog-post-content-title">
               {{ post.title }}
