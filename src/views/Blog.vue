@@ -5,7 +5,8 @@
       <h5 v-if="post.authors">
         <span :key="author.id" class="pr-4" v-for="author in post.authors">{{
           author.name
-        }}</span>
+        }}</span
+        ><span class="pr-4">{{ post.published_at }}</span>
       </h5>
       <v-divider />
       <main class="post-body py-4" v-html="post.html" />
@@ -31,28 +32,6 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
-    <!-- <v-card v-else>
-      <v-card-title>
-        Articles
-        <v-spacer></v-spacer>
-        <v-text-field
-          v-model="search"
-          append-icon="mdi-magnify"
-          label="Search"
-          single-line
-          hide-details
-        ></v-text-field>
-      </v-card-title>
-      <v-data-table
-        items-per-page="50"
-        :headers="headers"
-        :items="blogposts"
-        :search="search"
-        ><template v-slot:item.title="{ item }">
-          <v-btn text :to="`/blog/${item.slug}`">{{ item.title }}</v-btn>
-        </template></v-data-table
-      >
-    </v-card> -->
   </v-container>
 </template>
 <script>
@@ -79,7 +58,7 @@ export default {
   }),
   created() {
     return fetch(
-      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&include=tags,authors"
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&include=tags,authors&limit=50"
     )
       .then(response => response.json())
       .then(data => {

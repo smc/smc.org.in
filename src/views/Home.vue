@@ -146,7 +146,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn :href="post.url" text>Read more...</v-btn>
+              <v-btn :to="`/blog/${post.slug}`" text>Read more...</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -164,12 +164,11 @@ export default {
   components: {},
   created() {
     return fetch(
-      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb"
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&limit=8"
     )
       .then(response => response.json())
       .then(data => {
-        const posts = data.posts;
-        this.blogposts = posts.slice(0, 8);
+        this.blogposts = data.posts;
       });
   }
 };
