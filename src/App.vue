@@ -39,7 +39,7 @@
       <div class="d-flex align-center">
         <v-img
           alt="SMC Logo"
-          class="shrink mr-2"
+          class="shrink pr-1"
           contain
           src="@/assets/logo.svg"
           transition="scale-transition"

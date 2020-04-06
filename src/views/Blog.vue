@@ -1,6 +1,6 @@
 <template>
-  <v-container class="col-lg-10 col-sm-12">
-    <article v-if="post">
+  <v-container class="col-lg-6 col-md-8 col-sm-12">
+    <article v-if="post" class="blogpost">
       <h1 class="display-3 py-2">{{ post.title }}</h1>
       <h5 v-if="post.authors">
         <span :key="author.id" class="pr-4" v-for="author in post.authors">{{
@@ -8,9 +8,30 @@
         }}</span>
       </h5>
       <v-divider />
-      <main class="py-4" v-html="post.html" />
+      <main class="post-body py-4" v-html="post.html" />
     </article>
-    <v-card v-else>
+    <v-list v-else>
+      <v-list-item
+        :to="`/blog/${post.slug}`"
+        :key="post.id"
+        v-for="post in blogposts"
+      >
+        <v-list-item-content>
+          <v-list-item-title class="title">{{ post.title }}</v-list-item-title>
+          <v-list-item-subtitle>
+            <span
+              :key="author.id"
+              class="pr-4"
+              v-for="author in post.authors"
+              >{{ author.name }}</span
+            ><span class="pr-4">{{
+              post.published_at
+            }}</span></v-list-item-subtitle
+          >
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+    <!-- <v-card v-else>
       <v-card-title>
         Articles
         <v-spacer></v-spacer>
@@ -31,7 +52,7 @@
           <v-btn text :to="`/blog/${item.slug}`">{{ item.title }}</v-btn>
         </template></v-data-table
       >
-    </v-card>
+    </v-card> -->
   </v-container>
 </template>
 <script>
@@ -102,3 +123,16 @@ export default {
   }
 };
 </script>
+<style lang="less">
+.post-body {
+  font-family: "Inter", "Manjari", sans;
+  line-height: 1.6;
+  font-size: 1em;
+  p {
+    margin: 2em 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+</style>
