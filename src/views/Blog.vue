@@ -1,10 +1,14 @@
 <template>
   <v-container class="col-lg-10 col-sm-12">
-    <article v-if="title">
-      <h1 class="display-3 py-2">{{ title }}</h1>
-      <h5 v-if="author">{{ author }}</h5>
+    <article v-if="post">
+      <h1 class="display-3 py-2">{{ post.title }}</h1>
+      <h5 v-if="post.authors">
+        <span :key="author.id" class="pr-4" v-for="author in post.authors">{{
+          author.name
+        }}</span>
+      </h5>
       <v-divider />
-      <main class="py-4" v-html="content" />
+      <main class="py-4" v-html="post.html" />
     </article>
     <v-card v-else>
       <v-card-title>
@@ -18,29 +22,30 @@
           hide-details
         ></v-text-field>
       </v-card-title>
-      <v-data-table :headers="headers" :items="toc" :search="search"
+      <v-data-table
+        items-per-page="50"
+        :headers="headers"
+        :items="blogposts"
+        :search="search"
         ><template v-slot:item.title="{ item }">
-          <v-btn text :to="item.url">{{ item.title }}</v-btn>
+          <v-btn text :to="`/blog/${item.slug}`">{{ item.title }}</v-btn>
         </template></v-data-table
       >
     </v-card>
   </v-container>
 </template>
 <script>
-import MarkdownIt from "markdown-it";
-import MarkDownItVideo from "markdown-it-video";
-import axios from "axios";
-import fm from "front-matter";
-import articles from "../manifest.json";
-
 export default {
   data: () => ({
     content: null,
     author: null,
     title: null,
+    slug: null,
+    post: null,
     path: null,
     search: "",
     articles: [],
+    blogposts: [],
     headers: [
       {
         text: "Title",
@@ -48,35 +53,24 @@ export default {
         sortable: false,
         value: "title"
       },
-      { text: "Author", value: "author" }
+      { text: "Date", value: "published_at" }
     ]
   }),
-  computed: {
-    toc() {
-      return articles.map(article => ({
-        title: article.title,
-        url: article.url,
-        author: article.author
-      }));
-    }
+  created() {
+    return fetch(
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&include=tags,authors"
+    )
+      .then(response => response.json())
+      .then(data => {
+        this.blogposts = data.posts;
+      });
   },
   watch: {
-    path: function() {
-      const article = articles.find(article => article.url === this.path);
-      const file = article?.file;
-      if (file) {
-        const md = new MarkdownIt();
-        md.use(MarkDownItVideo);
-        axios.get(`/${file}`).then(({ data }) => {
-          const article = fm(data);
-          this.title = article.attributes.title;
-          this.author = article.attributes.author;
-          this.content = md.render(article.body);
-          window.document.title = this.title;
-        });
-      } else {
-        this.title = null;
-      }
+    slug: function() {
+      this.post = this.blogposts.find(post => post.slug === this.slug);
+    },
+    blogposts: function() {
+      this.post = this.blogposts.find(post => post.slug === this.slug);
     }
   },
   beforeRouteEnter(to, from, next) {
@@ -84,7 +78,7 @@ export default {
     // does NOT have access to `this` component instance,
     // because it has not been created yet when this guard is called!
     next(vm => {
-      vm.path = to.path;
+      vm.slug = to.params.title;
     });
   },
   beforeRouteUpdate(to, from, next) {
@@ -95,7 +89,7 @@ export default {
     // will be reused, and this hook will be called when that happens.
     // has access to `this` component instance.
     next(vm => {
-      vm.path = to.path;
+      vm.slug = to.params.title;
     });
   },
   beforeRouteLeave(to, from, next) {
@@ -103,7 +97,7 @@ export default {
     // be navigated away from.
     // has access to `this` component instance.
     next(vm => {
-      vm.path = to.path;
+      vm.slug = to.params.title;
     });
   }
 };

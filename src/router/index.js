@@ -83,6 +83,8 @@ const routerOptions = [
     view: "RaghuMalayalam",
     params: true
   },
+  { path: "/blog/:title", view: "Blog" },
+  { path: "/blog", view: "Blog" },
   { path: "/articles/:title", view: "Article" },
   { path: "/articles", view: "Article" },
   { path: "*", name: "404", view: "404", params: true }

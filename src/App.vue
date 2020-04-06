@@ -114,7 +114,7 @@ export default {
       {
         title: "Blog",
         msg: "menu-blog",
-        href: "https://blog.smc.org.in"
+        path: "/blog"
       },
       {
         title: "Projects",

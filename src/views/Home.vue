@@ -170,7 +170,6 @@ export default {
       .then(data => {
         const posts = data.posts;
         this.blogposts = posts.slice(0, 8);
-        console.log(this.blogposts);
       });
   }
 };
