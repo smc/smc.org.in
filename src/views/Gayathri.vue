@@ -9,9 +9,7 @@
         </p>
         <v-btn
           to="/downloads/fonts/gayathri/gayathri.zip"
-          rounded
-          large
-          color="success"
+          color="primary"
           class="col col-lg-3 ma-1"
         >
           <v-icon>{{ mdiDownload }}</v-icon
@@ -22,7 +20,7 @@
         <v-sheet class="col-12">
           <v-carousel
             cycle
-            height="400"
+            height="50vh"
             hide-delimiter-background
             :show-arrows="false"
           >
@@ -33,10 +31,22 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">ഗായത്രി</h1>
+                <h1 class="display-4 font-weight-thin py-2 my-4">ഗായത്രി</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="gayathri-slide-1 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <h1 class="display-3 font-weight-thin py-1 my-2">ഗായത്രി</h1>
+                <h1 class="display-3 font-weight-regular py-1 my-2">ഗായത്രി</h1>
+                <h1 class="display-3 font-weight-bold py-1 my-2">ഗായത്രി</h1>
                 <p>Available in bold, regular, thin style variants.</p>
               </v-card>
             </v-carousel-item>
@@ -56,6 +66,103 @@
             </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold ">
+              OTF Format, recommended for all modern operating systems:
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Regular.otf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("regular") }}
+              </v-btn>
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Thin.otf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("thin") }} </v-btn
+              ><v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Bold.otf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("bold") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold ">
+              TTF Format, for old versions of operating systems:
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Regular.ttf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("regular") }}
+              </v-btn>
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Thin.ttf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("thin") }} </v-btn
+              ><v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Bold.ttf"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("bold") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold ">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Regular.woff2"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("regular") }}
+              </v-btn>
+              <v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Thin.woff2"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("thin") }} </v-btn
+              ><v-btn
+                href="/downloads/fonts/gayathri/Gayathri-Bold.woff2"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("bold") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold ">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/gayathri/gayathri.zip"
+                color="primary"
+                text
+              >
+                <v-icon>{{ mdiDownload }}</v-icon>
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="design" class="row">
         <h2 v-text="$i18n('design')" class="col-lg-4 col-md-12"></h2>
@@ -180,5 +287,16 @@ export default {
   .v-card {
     padding: 2em;
   }
+}
+
+.gayathri-slide-1,
+.gayathri-slide-0 {
+  .display-4,
+  .display-3,
+  .display-5 {
+    font-family: "Gayathri" !important;
+  }
+  background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  align-content: center;
 }
 </style>
