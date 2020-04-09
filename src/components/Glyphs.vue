@@ -3,13 +3,12 @@
     <v-tooltip bottom :key="glyph.code" v-for="glyph in glyphs">
       <template v-slot:activator="{ on }">
         <v-btn
-          class="glyph ma-4"
+          class="glyph title"
           v-on="on"
-          large
           tile
+          text
           color="primary"
           :style="`font-family:${font} !important;`"
-          outlined
           v-text="glyph.value"
         >
         </v-btn>
