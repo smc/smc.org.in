@@ -225,12 +225,14 @@
           <ul>
             <li>Malayalam</li>
             <li>
-              Latin. The following languages are covered: aa, ay, bi, br, ch,
-              da, de, en, es, et, eu, fi, fj, fo, fur, fy, gd, gl, gv, ho, ia,
-              id, ie, io, is, it, ki, lb, mg, nb, nds, nl, nn, no, nr, nso, ny,
-              oc, om, pt, rm, sma, smj, so, sq, ss, st, sv, sw, tk, tl, tn, ts,
-              uz, vo, vot, wa, xh, yap, zu, an, fil, ht, jv, kj, ku-tr, kwm, li,
-              ms, na, ng, pap-an, pap-aw, rn, rw, sc, sg, sn, su, and za(s)
+              Latin. The following languages are covered:
+              <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
+                {{
+                  Intl.DisplayNames
+                    ? new Intl.DisplayNames("en").of(lang)
+                    : lang
+                }}
+              </span>
             </li>
           </ul>
         </div>
@@ -268,7 +270,88 @@ import Glyphs from "../components/Glyphs";
 export default {
   data: () => ({
     mdiDownload,
-    fontdata: {}
+    fontdata: {},
+    supportedLanguages: [
+      "aa",
+      "ay",
+      "bi",
+      "br",
+      "ch",
+      "da",
+      "de",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fi",
+      "fj",
+      "fo",
+      "fur",
+      "fy",
+      "gd",
+      "gl",
+      "gv",
+      "ho",
+      "ia",
+      "id",
+      "ie",
+      "io",
+      "is",
+      "it",
+      "ki",
+      "lb",
+      "mg",
+      "nb",
+      "nds",
+      "nl",
+      "nn",
+      "no",
+      "nr",
+      "nso",
+      "ny",
+      "oc",
+      "om",
+      "pt",
+      "rm",
+      "sma",
+      "smj",
+      "so",
+      "sq",
+      "ss",
+      "st",
+      "sv",
+      "sw",
+      "tk",
+      "tl",
+      "tn",
+      "ts",
+      "uz",
+      "vo",
+      "vot",
+      "wa",
+      "xh",
+      "yap",
+      "zu",
+      "an",
+      "fil",
+      "ht",
+      "jv",
+      "kj",
+      "ku-tr",
+      "kwm",
+      "li",
+      "ms",
+      "na",
+      "ng",
+      "pap-an",
+      "pap-aw",
+      "rn",
+      "rw",
+      "sc",
+      "sg",
+      "sn",
+      "su"
+    ]
   }),
   components: { Glyphs },
   created() {

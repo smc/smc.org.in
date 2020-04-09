@@ -32,5 +32,10 @@
     "license":"License",
     "sourcecode":"Source code",
     "history": "History",
-    "faq": "Frequently asked questions"
+    "faq": "Frequently asked questions",
+    "credits": "Credits",
+    "regular": "Regular",
+    "bold": "Bold",
+    "thin": "Thin",
+    "zip": "zip"
 }

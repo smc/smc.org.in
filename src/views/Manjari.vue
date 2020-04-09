@@ -5,7 +5,8 @@
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
           Designer:
-          <a href="https://thottingal.in">Santhosh Thottingal</a> |
+          <a href="https://thottingal.in">Santhosh Thottingal</a>
+          |
           {{ fontdata.version }}
         </p>
         <v-btn
@@ -81,7 +82,7 @@
         <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
           <ul>
-            <li class="my-4 font-weight-bold ">
+            <li class="my-4 font-weight-bold">
               OTF Format, recommended for all modern operating systems:
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Regular.otf"
@@ -97,8 +98,9 @@
                 text
               >
                 <v-icon>{{ mdiDownload }}</v-icon>
-                {{ $i18n("thin") }} </v-btn
-              ><v-btn
+                {{ $i18n("thin") }}
+              </v-btn>
+              <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.otf"
                 color="primary"
                 text
@@ -107,7 +109,7 @@
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
-            <li class="my-4 font-weight-bold ">
+            <li class="my-4 font-weight-bold">
               TTF Format, for old versions of operating systems:
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Regular.ttf"
@@ -123,8 +125,9 @@
                 text
               >
                 <v-icon>{{ mdiDownload }}</v-icon>
-                {{ $i18n("thin") }} </v-btn
-              ><v-btn
+                {{ $i18n("thin") }}
+              </v-btn>
+              <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.ttf"
                 color="primary"
                 text
@@ -133,7 +136,7 @@
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
-            <li class="my-4 font-weight-bold ">
+            <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
@@ -150,8 +153,9 @@
                 text
               >
                 <v-icon>{{ mdiDownload }}</v-icon>
-                {{ $i18n("thin") }} </v-btn
-              ><v-btn
+                {{ $i18n("thin") }}
+              </v-btn>
+              <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.woff2"
                 color="primary"
                 text
@@ -160,7 +164,7 @@
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
-            <li class="my-4 font-weight-bold ">
+            <li class="my-4 font-weight-bold">
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/manjari/manjari.zip"
@@ -203,10 +207,10 @@
             complemented by rounded terminals which gives very soft feeling for
             the eyes. The design of the curves in Manjari are theoretically
             based on the PHD thesis by Raph Levien -
-            <a href="http://levien.com/phd/thesis.pdf"
-              >"From Spiral to Spline: Optimal Techniques in Interactive Curve
-              Design"</a
-            >
+            <a href="http://levien.com/phd/thesis.pdf">
+              "From Spiral to Spline: Optimal Techniques in Interactive Curve
+              Design"
+            </a>
             . The Inconsolata monospace humanist latin font known for its clean
             lines and elegant design by Levien himself is based on this theory.
           </p>
@@ -218,10 +222,12 @@
           </p>
           <p>
             The design principles of Manjari can be read from this paper:
-            <a href="https://thottingal.in/documents/Spiral-Splines-Manjari.pdf"
-              >"Spiral splines in typeface design: A case study of Manjari
-              Malayalam typeface"</a
+            <a
+              href="https://thottingal.in/documents/Spiral-Splines-Manjari.pdf"
             >
+              "Spiral splines in typeface design: A case study of Manjari
+              Malayalam typeface"
+            </a>
             by Santhosh Thottingal and Kavya Manohar
           </p>
         </div>
@@ -282,12 +288,14 @@
           <ul>
             <li>Malayalam</li>
             <li>
-              Latin. The following languages are covered: aa, ay, bi, br, ch,
-              da, de, en, es, et, eu, fi, fj, fo, fur, fy, gd, gl, gv, ho, ia,
-              id, ie, io, is, it, ki, lb, mg, nb, nds, nl, nn, no, nr, nso, ny,
-              oc, om, pt, rm, sma, smj, so, sq, ss, st, sv, sw, tk, tl, tn, ts,
-              uz, vo, vot, wa, xh, yap, zu, an, fil, ht, jv, kj, ku-tr, kwm, li,
-              ms, na, ng, pap-an, pap-aw, rn, rw, sc, sg, sn, su, and za(s)
+              Latin. The following languages are covered:
+              <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
+                {{
+                  Intl.DisplayNames
+                    ? new Intl.DisplayNames("en").of(lang)
+                    : lang
+                }}
+              </span>
             </li>
           </ul>
         </div>
@@ -295,9 +303,44 @@
       <section id="style-variants" class="row">
         <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
       </section>
-      <section id="history" class="row">
-        <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on July 23, 2016.</p>
+      <section id="credits" class="row">
+        <h2 v-text="$i18n('credits')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <p>
+            Manjari belongs to the typefaces released by Swathanthra Malayalam
+            Computing, a volunteer driven organization for developing and
+            promoting free and opensource software for Malayalam computing. It
+            shares the experience and expertise by the organization in its more
+            than a decade effort in standardizing and improving opentype
+            Malayalam typeface technology. Manjari was released on July 23,
+            2016.
+          </p>
+
+          <p>
+            Designer: Santhosh Thottingal, Opentype Engineering: Santhosh
+            Thottingal and Kavya Manohar
+          </p>
+
+          <p>
+            Manjari inherits the traditional orthography style opentype font
+            development practices pioneered by Rachana by K H Hussain and
+            Rachana Aksharavedi. This includes glyph naming conventions, the
+            supported ligature collection, a significant parts of opentype
+            rules.
+          </p>
+          <p>
+            Acknowledgements(in alphabetical order)
+          </p>
+          <ul>
+            <li>K H Hussain, Designer of Rachana font.</li>
+            <li>Raph Levien, Author of Spiro library.</li>
+            <li>Rajeesh K V, Opentype engineering.</li>
+            <li>
+              Swathanthra Malayalam computing and its volunteers for all help
+              and support.
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
@@ -331,7 +374,88 @@ import Glyphs from "../components/Glyphs";
 export default {
   data: () => ({
     mdiDownload,
-    fontdata: {}
+    fontdata: {},
+    supportedLanguages: [
+      "aa",
+      "ay",
+      "bi",
+      "br",
+      "ch",
+      "da",
+      "de",
+      "en",
+      "es",
+      "et",
+      "eu",
+      "fi",
+      "fj",
+      "fo",
+      "fur",
+      "fy",
+      "gd",
+      "gl",
+      "gv",
+      "ho",
+      "ia",
+      "id",
+      "ie",
+      "io",
+      "is",
+      "it",
+      "ki",
+      "lb",
+      "mg",
+      "nb",
+      "nds",
+      "nl",
+      "nn",
+      "no",
+      "nr",
+      "nso",
+      "ny",
+      "oc",
+      "om",
+      "pt",
+      "rm",
+      "sma",
+      "smj",
+      "so",
+      "sq",
+      "ss",
+      "st",
+      "sv",
+      "sw",
+      "tk",
+      "tl",
+      "tn",
+      "ts",
+      "uz",
+      "vo",
+      "vot",
+      "wa",
+      "xh",
+      "yap",
+      "zu",
+      "an",
+      "fil",
+      "ht",
+      "jv",
+      "kj",
+      "ku-tr",
+      "kwm",
+      "li",
+      "ms",
+      "na",
+      "ng",
+      "pap-an",
+      "pap-aw",
+      "rn",
+      "rw",
+      "sc",
+      "sg",
+      "sn",
+      "su"
+    ]
   }),
   components: { Glyphs },
   created() {
