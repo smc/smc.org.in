@@ -23,12 +23,6 @@
           <v-btn
             class="ma-2"
             outlined
-            href="https://blog.smc.org.in"
-            v-text="$i18n('menu-blog')"
-          ></v-btn>
-          <v-btn
-            class="ma-2"
-            outlined
             href="https://gitlab.com/smc"
             v-text="$i18n('source-code')"
           ></v-btn>
