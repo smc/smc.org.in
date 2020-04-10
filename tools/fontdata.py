@@ -92,8 +92,9 @@ def glyphs_and_ligatures():
                     mlsequence.append(glyph_value_map.get(
                         component_glyph_name, "?"))
             if sequence.get("features") == "pres" and (mlsequence[0] == "ര്" or mlsequence[0] == "്ര"):
-                del mlsequence[0]
-                mlsequence.append("്ര")
+                # Reverse the array
+                mlsequence=mlsequence[::-1]
+                mlsequence[-1] = '്ര'
             mlsequence_str = "".join(mlsequence)
             glyph_value_map[glyph.name.split(".")[0]] = mlsequence_str
             glyphdata["value"] = mlsequence_str
