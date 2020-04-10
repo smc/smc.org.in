@@ -302,6 +302,110 @@
       </section>
       <section id="style-variants" class="row">
         <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <p>
+            Manjari comes with many OpenType features that can be used to tailor
+            functionality and aesthetics to your specific needs. Some of these
+            features can be combined to form a great number of alternative
+            variations.
+          </p>
+          <v-card class="ma-2">
+            <v-card-title>Glyph alternatives</v-card-title>
+            <v-card-text>
+              <v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
+              <v-row
+                ><v-col
+                  class="title font-manjari"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ച്ച</v-col
+                ><v-col
+                  class="title font-manjari"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ച്ച</v-col
+                ></v-row
+              >
+              <v-row
+                ><v-col
+                  class="title font-manjari"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ള്ള</v-col
+                ><v-col
+                  class="title font-manjari"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ള്ള</v-col
+                ></v-row
+              >
+              <p>
+                To enable this alternatives use 'salt 2` variant. In CSS this
+                can be done by adding style
+                <code>font-feature-settings: "salt" 2;</code>. To disable, use
+                <code>font-feature-settings: "salt" 1;</code>. Depending on the
+                text editor application you are using, picking one of these
+                variants is usually allowed. Please read
+                <a
+                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-manjari-chilanka/"
+                  >this article</a
+                >
+                to see how to use this with Inkscape, Browsers, Libreoffice and
+                TeX.
+              </p>
+            </v-card-text>
+          </v-card>
+          <v-card class="ma-2">
+            <v-card-title>Tabular numbers</v-card-title>
+            <v-card-text>
+              <p>
+                Fixed-width numbers are useful for tabular data, where comparing
+                columns across rows is desired.
+              </p>
+              <v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
+              <v-row
+                ><v-col class="font-manjari"
+                  ><ul>
+                    <li>345678</li>
+                    <li>111111</li>
+                    <li>1234567890</li>
+                    <li>0040900</li>
+                  </ul></v-col
+                >
+                <v-col
+                  class="font-manjari"
+                  style="font-feature-settings: 'tnum';"
+                  ><ul>
+                    <li>345678</li>
+                    <li>111111</li>
+                    <li>1234567890</li>
+                    <li>0040900</li>
+                  </ul></v-col
+                ></v-row
+              >
+              <p>
+                To enable this alternatives use 'tnum` variant. In CSS this can
+                be done by adding style
+                <code>font-feature-settings: "tnum";</code>.
+              </p>
+            </v-card-text>
+          </v-card>
+          <v-card class="ma-2">
+            <v-card-title>Slashed zero</v-card-title>
+            <v-card-text
+              ><v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
+              <v-row
+                ><v-col class="font-manjari">4500</v-col>
+                <v-col
+                  class="font-manjari"
+                  style="font-feature-settings: 'zero';"
+                  >4500</v-col
+                ></v-row
+              >
+              <p>
+                To enable this alternatives use 'zero` variant. In CSS this can
+                be done by adding style
+                <code>font-feature-settings: "zero";</code>.
+              </p>
+            </v-card-text>
+          </v-card>
+        </div>
       </section>
       <section id="credits" class="row">
         <h2 v-text="$i18n('credits')" class="col-lg-4 col-md-12"></h2>
