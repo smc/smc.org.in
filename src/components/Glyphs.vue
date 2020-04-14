@@ -1,6 +1,11 @@
 <template>
   <section class="glyphs">
-    <v-bottom-sheet inset :key="glyph.code" v-for="glyph in glyphs">
+    <v-bottom-sheet
+      inset
+      hide-overlay
+      :key="glyph.code"
+      v-for="glyph in glyphs"
+    >
       <template v-slot:activator="{ on }">
         <v-btn
           class="glyph title"
@@ -19,6 +24,7 @@
           :style="`font-family:${font} !important;`"
           v-text="`${glyph.value}`"
         ></div>
+        <v-btn v-if="canCopy" @click="copy(glyph.value)">Copy</v-btn>
         <div class="title" v-text="`Glyph name: ${glyph.name}`"></div>
         <div
           class="title"
@@ -46,10 +52,22 @@
 </template>
 <script>
 export default {
+  name: "Glyphs",
+  data: () => ({
+    canCopy: false
+  }),
   props: {
     font: String,
     glyphs: Array,
     ligatures: Array
+  },
+  created() {
+    this.canCopy = !!navigator.clipboard;
+  },
+  methods: {
+    async copy(s) {
+      await navigator.clipboard.writeText(s);
+    }
   }
 };
 </script>
