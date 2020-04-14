@@ -21,11 +21,11 @@ const getAllFiles = function(dirPath, arrayOfFiles) {
 
 async function generateManifest(dir) {
   const files = getAllFiles(dir);
-  console.log(files);
   for (let i = 0; i < files.length; i++) {
     let file = files[i];
     const data = await readFile(`${file}`, "utf8");
     const fmd = fm(data);
+    if (!fmd || !fmd.attributes.title) continue;
     manifest.push({
       url: fmd.attributes.url,
       file: file.replace("public/", ""),
@@ -35,9 +35,14 @@ async function generateManifest(dir) {
       description: fmd.attributes.description
     });
   }
-  writeFile("src/manifest.json", JSON.stringify(manifest), "utf8", () => {
-    console.log("done");
-  });
+  writeFile(
+    "src/manifest.json",
+    JSON.stringify(manifest, "", 4),
+    "utf8",
+    () => {
+      console.log("done");
+    }
+  );
 }
 
 generateManifest("public/articles");
