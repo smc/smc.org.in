@@ -43,14 +43,17 @@
       <v-row class="text-center" justify="center">
         <v-col lg="8" sm="12"> <p v-text="$i18n('smc-desc')"></p> </v-col>
       </v-row>
+
       <v-row>
         <v-col lg="8" sm="12">
           <h2 v-text="$i18n('menu-projects')"></h2>
         </v-col>
       </v-row>
+      <v-divider />
+
       <v-row>
         <v-col md="6" lg="3" sm="12">
-          <v-card class="mx-auto" max-width="400">
+          <v-card to="/fonts/manjari" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/manjari-card.png"
               height="200px"
@@ -63,14 +66,10 @@
             <v-card-subtitle>
               Popular Malayalam typeface
             </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn to="/fonts/manjari" text>Read more...</v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
-          <v-card class="mx-auto" max-width="400">
+          <v-card to="/fonts/gayathri" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/gayathri-card.png"
               height="200px"
@@ -83,14 +82,16 @@
             <v-card-subtitle>
               Popular Malayalam typeface
             </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn to="/fonts/gayathri" text>Read more...</v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
-          <v-card class="mx-auto" max-width="400" color="#385F73" dark>
+          <v-card
+            href="https://morph.smc.org.in"
+            class="mx-auto"
+            max-width="400"
+            color="#385F73"
+            dark
+          >
             <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
             <v-card-title>
               Malayalam morphology analyser
@@ -102,10 +103,6 @@
               of SMC and already proved its potential. Developed by Santhosh
               Thottingal.
             </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn href="https://morph.smc.org.in" text>Read more...</v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
@@ -114,7 +111,8 @@
           <h2 v-text="$i18n('menu-blog')"></h2>
         </v-col>
       </v-row>
-      <v-row class="text-center" justify="center">
+      <v-divider />
+      <v-row justify="center">
         <v-col
           md="6"
           lg="3"
@@ -123,7 +121,7 @@
           :key="post.id"
           v-for="post in blogposts"
         >
-          <v-card class="mx-auto" max-width="400">
+          <v-card class="mx-auto" max-width="400" :to="`/blog/${post.slug}`">
             <v-img
               :src="post.feature_image || require('@/assets/logo.svg')"
               height="200px"
@@ -138,10 +136,6 @@
               v-text="post.excerpt"
             >
             </v-card-text>
-
-            <v-card-actions>
-              <v-btn :to="`/blog/${post.slug}`" text>Read more...</v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
