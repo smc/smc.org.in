@@ -94,15 +94,16 @@
         <router-view />
       </transition>
     </v-content>
+    <smc-footer></smc-footer>
   </v-app>
 </template>
 
 <script>
+import smcFooter from "./components/Footer";
+
 export default {
   name: "App",
-
-  components: {},
-
+  components: { smcFooter },
   data: () => ({
     sidebar: false,
     menuItems: [
