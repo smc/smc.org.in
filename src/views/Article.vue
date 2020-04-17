@@ -12,17 +12,21 @@
         <v-spacer></v-spacer>
         <v-text-field
           v-model="search"
-          append-icon="mdi-magnify"
+          :append-icon="mdiMagnify"
           label="Search"
           single-line
           hide-details
         ></v-text-field>
       </v-card-title>
-      <v-data-table :headers="headers" :items="toc" :search="search"
-        ><template v-slot:item.title="{ item }">
-          <v-btn text :to="item.url">{{ item.title }}</v-btn>
-        </template></v-data-table
-      >
+      <v-data-table :headers="headers" :items="toc" :search="search">
+        <template v-slot:item.title="{ item }">
+          <router-link class="article-link" :to="item.url">
+            {{
+            item.title
+            }}
+          </router-link>
+        </template>
+      </v-data-table>
     </v-card>
   </v-container>
 </template>
@@ -31,6 +35,8 @@ import MarkdownIt from "markdown-it";
 import MarkDownItVideo from "markdown-it-video";
 import axios from "axios";
 import fm from "front-matter";
+import { mdiMagnify } from "@mdi/js";
+
 import articles from "../manifest.json";
 
 export default {
@@ -40,6 +46,7 @@ export default {
     title: null,
     path: null,
     search: "",
+    mdiMagnify,
     articles: [],
     headers: [
       {
@@ -108,3 +115,8 @@ export default {
   }
 };
 </script>
+<style lang="less">
+.article-link {
+  text-decoration: none;
+}
+</style>

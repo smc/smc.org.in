@@ -139,47 +139,58 @@ export default {
         items: [
           {
             title: "Anjali",
-            path: "/fonts/anjali"
+            path: "/fonts/anjali",
+            msg: "anjalioldlipi"
           },
           {
             title: "Chilanka",
-            path: "/fonts/chilanka"
+            path: "/fonts/chilanka",
+            msg: "chilanka"
           },
           {
             title: "Dyuthi",
-            path: "/fonts/dyuthi"
+            path: "/fonts/dyuthi",
+            msg: "dyuthi"
           },
           {
             title: "Gayathri",
-            path: "/fonts/gayathri"
+            path: "/fonts/gayathri",
+            msg: "gayathri"
           },
           {
             title: "Karumbi",
-            path: "/fonts/karumbi"
+            path: "/fonts/karumbi",
+            msg: "karumbi"
           },
           {
             title: "Keraleeyam",
-            path: "/fonts/keraleeyam"
+            path: "/fonts/keraleeyam",
+            msg: "keraleeyam"
           },
           {
             title: "Manjari",
-            path: "/fonts/manjari"
+            path: "/fonts/manjari",
+            msg: "manjari"
           },
           {
             title: "Meera",
-            path: "/fonts/meera"
+            path: "/fonts/meera",
+            msg: "meera"
           },
           {
             title: "Rachana",
-            path: "/fonts/rachana"
+            path: "/fonts/rachana",
+            msg: "rachana"
           },
           {
             title: "Uroob",
-            path: "/fonts/uroob"
+            path: "/fonts/uroob",
+            msg: "uroob"
           },
           {
             title: "RaghuMalayalam",
-            path: "/fonts/raghumalayalam"
+            path: "/fonts/raghumalayalam",
+            msg: "raghumalayalamsans"
           }
         ]
       },
@@ -195,15 +206,18 @@ export default {
           },
           {
             title: "Contact",
-            path: "/contact"
+            path: "/contact",
+            msg: "menu-contact"
           },
           {
             title: "History",
-            path: "/history"
+            path: "/history",
+            msg: "menu-history"
           },
           {
             title: "People",
-            path: "/people"
+            path: "/people",
+            msg: "menu-people"
           },
           {
             title: "Code of conduct",

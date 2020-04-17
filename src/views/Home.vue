@@ -13,28 +13,28 @@
 
         <v-col class="mb-4">
           <h1
-            class="display-2 font-weight-bold mb-3"
+            class="display-2 font-weight-thin mb-3"
             v-text="$i18n('smc')"
           ></h1>
+          <h2 class="title mb-3">
+            എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ
+          </h2>
         </v-col>
       </v-row>
       <v-row class="text-center">
         <v-col cols="12">
           <v-btn
             class="ma-2"
-            outlined
             href="https://gitlab.com/smc"
             v-text="$i18n('source-code')"
           ></v-btn>
           <v-btn
             class="ma-2"
-            outlined
             v-text="$i18n('wiki')"
             href="https://wiki.smc.org.in"
           ></v-btn>
           <v-btn
             class="ma-2"
-            outlined
             href="https://t.me/smc_project"
             v-text="$i18n('telegram')"
           ></v-btn>
@@ -94,14 +94,11 @@
           >
             <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
             <v-card-title>
-              Malayalam morphology analyser
+              Mlmorph
             </v-card-title>
 
             <v-card-subtitle>
-              Morphology analyser and generator is a foundational library for
-              Malayalam language processing. This is one of the active project
-              of SMC and already proved its potential. Developed by Santhosh
-              Thottingal.
+              Malayalam morphology analyser
             </v-card-subtitle>
           </v-card>
         </v-col>
