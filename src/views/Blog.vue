@@ -1,37 +1,62 @@
 <template>
-  <v-container class="col-lg-6 col-md-8 col-sm-12">
-    <article v-if="post" class="blogpost">
-      <h1 class="display-3 py-2">{{ post.title }}</h1>
-      <h5 v-if="post.authors">
-        <span :key="author.id" class="pr-4" v-for="author in post.authors">{{
-          author.name
-        }}</span
-        ><span class="pr-4">{{ post.published_at }}</span>
-      </h5>
-      <v-divider />
-      <main class="post-body py-4" v-html="post.html" />
-    </article>
-    <v-list v-else>
-      <v-list-item
-        :to="`/blog/${post.slug}`"
-        :key="post.id"
-        v-for="post in blogposts"
-      >
-        <v-list-item-content>
-          <v-list-item-title class="title">{{ post.title }}</v-list-item-title>
-          <v-list-item-subtitle>
+  <v-container>
+    <v-row v-if="post" align="center" justify="center">
+      <v-col lg="6" md="12" xs="12">
+        <article class="blogpost">
+          <h1 class="display-3 py-2">{{ post.title }}</h1>
+          <h5 v-if="post.authors">
             <span
               :key="author.id"
               class="pr-4"
               v-for="author in post.authors"
               >{{ author.name }}</span
             ><span class="pr-4">{{
-              post.published_at
-            }}</span></v-list-item-subtitle
-          >
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
+              new Date(post.published_at).toDateString()
+            }}</span>
+          </h5>
+          <v-divider />
+          <main class="post-body py-4" v-html="post.html" />
+        </article>
+      </v-col>
+    </v-row>
+    <v-row v-else justify="center" class="col-12">
+      <v-col
+        lg="6"
+        md="12"
+        xs="12"
+        class="my-6"
+        :key="post.id"
+        v-for="post in blogposts"
+      >
+        <v-card class="mx-auto" :to="`/blog/${post.slug}`">
+          <v-row>
+            <v-col cols="4" justify="center" align="center">
+              <v-img
+                cover
+                :src="post.feature_image || require('@/assets/logo.svg')"
+                :lazy-src="require('@/assets/logo.svg')"
+                height="200px"
+              ></v-img>
+            </v-col>
+            <v-col cols="8" justify="start" align="start">
+              <v-card-title class="smc-blog-post-content-title pa-0">
+                {{ post.title }}
+              </v-card-title>
+              <v-card-text
+                class="smc-blog-post-content-date pa-0"
+                v-text="new Date(post.published_at).toDateString()"
+              >
+              </v-card-text>
+              <v-card-text
+                class="smc-blog-post-content-excerpt pa-0"
+                v-text="post.excerpt"
+              >
+              </v-card-text>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 <script>
@@ -113,5 +138,16 @@ export default {
   img {
     max-width: 100%;
   }
+}
+.smc-blog-post-content-title {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.smc-blog-post-content-excerpt {
+  max-height: 8em;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
