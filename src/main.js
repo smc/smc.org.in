@@ -24,6 +24,7 @@ Vue.use(i18n, {
 });
 
 new Vue({
+  el: "#app",
   router,
   vuetify,
   render: h => h(App),
@@ -34,4 +35,4 @@ new Vue({
       this.$router.push(redirect);
     }
   }
-}).$mount("#app");
+});

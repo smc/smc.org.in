@@ -36,13 +36,14 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll>
-      <div class="d-flex align-center">
+      <div class="d-flex align-center" style="cursor:pointer;">
         <v-img
           alt="SMC Logo"
           class="shrink pr-1"
           contain
           src="@/assets/logo.svg"
           transition="scale-transition"
+          @click.stop="$router.push('/')"
           width="48"
         />
       </div>
@@ -58,7 +59,7 @@
         >
           <template v-slot:activator="{ on }">
             <v-btn
-              class="hidden-xs-only"
+              class="hidden-sm-and-down"
               :to="item.path"
               :href="item.href"
               text
@@ -85,7 +86,7 @@
       </v-toolbar-items>
       <v-app-bar-nav-icon
         @click.stop="sidebar = !sidebar"
-        class="hidden-sm-and-up"
+        class="hidden-md-and-up"
       ></v-app-bar-nav-icon>
     </v-app-bar>
 
@@ -107,11 +108,6 @@ export default {
   data: () => ({
     sidebar: false,
     menuItems: [
-      {
-        title: "Home",
-        msg: "menu-home",
-        path: "/"
-      },
       {
         title: "Blog",
         msg: "menu-blog",
