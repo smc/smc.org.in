@@ -60,7 +60,7 @@
             To use Rachana in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code>
+          <code style="word-break: break-all;">
             @import url('https://smc.org.in/fonts/rachana.css'); html {
             font-family: 'Rachana', sans-serif; }
           </code>

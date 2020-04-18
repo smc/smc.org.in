@@ -72,7 +72,7 @@
             To use Keraleeyam in web pages, webfonts can be used. You may copy
             the following css and add to your website:
           </p>
-          <code>
+          <code style="word-break: break-all;">
             @import url('https://smc.org.in/fonts/keraleeyam.css'); html {
             font-family: 'Keraleeyam', sans-serif; }
           </code>

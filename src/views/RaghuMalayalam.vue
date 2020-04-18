@@ -86,7 +86,7 @@
             To use RaghuMalayalamSans in web pages, webfonts can be used. You
             may copy the following css and add to your website:
           </p>
-          <code>
+          <code style="sword-break: break-all;">
             @import url('https://smc.org.in/fonts/raghumalayalamsans.css'); html
             { font-family: 'RaghuMalayalamSans', sans-serif; }
           </code>

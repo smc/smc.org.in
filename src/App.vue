@@ -250,6 +250,7 @@ export default {
   font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
   text-align: left;
   font-size: 1em;
+  overflow-x: hidden;
   .display-2,
   .headline,
   .title {

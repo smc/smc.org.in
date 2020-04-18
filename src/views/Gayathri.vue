@@ -179,7 +179,7 @@
             To use Gayathri in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code>
+          <code style="word-break: break-all;">
             @import url('https://smc.org.in/fonts/gayathri.css'); html {
             font-family: 'Gayathri', sans-serif; }
           </code>
