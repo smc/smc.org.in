@@ -89,7 +89,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -97,7 +96,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }}
               </v-btn>
               <v-btn
@@ -105,7 +103,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -116,7 +113,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -124,7 +120,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }}
               </v-btn>
               <v-btn
@@ -132,7 +127,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -144,7 +138,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -152,7 +145,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }}
               </v-btn>
               <v-btn
@@ -160,7 +152,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -171,7 +162,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("zip") }}
               </v-btn>
             </li>

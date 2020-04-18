@@ -78,7 +78,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -86,14 +85,12 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }} </v-btn
               ><v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.otf"
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -104,7 +101,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -112,14 +108,12 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }} </v-btn
               ><v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.ttf"
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -131,7 +125,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
@@ -139,14 +132,12 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("thin") }} </v-btn
               ><v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.woff2"
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
@@ -157,7 +148,6 @@
                 color="primary"
                 text
               >
-                <v-icon>{{ mdiDownload }}</v-icon>
                 {{ $i18n("zip") }}
               </v-btn>
             </li>
@@ -242,7 +232,7 @@
       </section>
       <section id="history" class="row">
         <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on Feb 21, 2019.</p>
+        <p class="col-lg-8 col-md-12">Released on Feb 21, 2019zzzzzzzzs.</p>
       </section>
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
