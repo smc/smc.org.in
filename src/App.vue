@@ -2,37 +2,51 @@
   <v-app id="smcorgin">
     <v-navigation-drawer v-model="sidebar" right fixed>
       <v-list>
-        <v-list-group
-          v-for="item in menuItems"
-          :key="item.title"
-          v-model="item.active"
-          :prepend-icon="item.action"
-          no-action
-        >
-          <template v-slot:activator>
-            <v-list-item-content>
-              <v-list-item-title
-                v-text="$i18n(item.msg || item.title)"
-                :to="item.path"
-                :href="item.href"
-              ></v-list-item-title>
-            </v-list-item-content>
-          </template>
+        <template v-for="item in menuItems">
+          <v-list-group
+            v-if="item.items && item.items.length"
+            :key="item.title"
+            v-model="item.active"
+            :prepend-icon="item.action"
+            no-action
+          >
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title
+                  v-text="$i18n(item.msg || item.title)"
+                  :to="item.path"
+                  :href="item.href"
+                ></v-list-item-title>
+              </v-list-item-content>
+            </template>
 
+            <v-list-item
+              v-for="subItem in item.items"
+              :key="subItem.title"
+              :to="subItem.path"
+            >
+              <v-list-item-content>
+                <v-list-item-title
+                  v-text="$i18n(subItem.msg || subItem.title)"
+                  :to="item.path"
+                  :href="item.href"
+                ></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
           <v-list-item
-            v-for="subItem in item.items"
-            :key="subItem.title"
-            :to="subItem.path"
+            :to="item.path"
+            :href="item.href"
+            v-else
+            :key="item.title"
           >
             <v-list-item-content>
               <v-list-item-title
-                v-text="$i18n(subItem.msg || subItem.title)"
-                :to="item.path"
-                :href="item.href"
+                v-text="$i18n(item.msg || item.title)"
               ></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list-group>
+        </template>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll>
