@@ -30,7 +30,7 @@
       >
         <v-card class="mx-auto" :to="`/blog/${post.slug}`">
           <v-row>
-            <v-col cols="4" justify="center" align="center">
+            <v-col md="4" xs="12" justify="center" align="center">
               <v-img
                 cover
                 :src="post.feature_image || require('@/assets/logo.svg')"
@@ -38,7 +38,7 @@
                 height="200px"
               ></v-img>
             </v-col>
-            <v-col cols="8" justify="start" align="start">
+            <v-col md="8" xs="12" justify="start" align="start">
               <v-card-title class="smc-blog-post-content-title pa-0">
                 {{ post.title }}
               </v-card-title>
