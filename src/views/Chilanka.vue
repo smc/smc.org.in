@@ -140,7 +140,13 @@
       </section>
       <section id="history" class="row">
         <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on July 23, 2016.</p>
+        <p class="col-lg-8 col-md-12">
+          Released on October 27, 2014.
+          <router-link
+            to="/blog/new-handwriting-style-font-for-malayalam-chilanka"
+            >Announcement</router-link
+          >
+        </p>
       </section>
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>

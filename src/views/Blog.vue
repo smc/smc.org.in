@@ -91,11 +91,25 @@ export default {
       });
   },
   watch: {
-    slug: function() {
-      this.post = this.blogposts.find(post => post.slug === this.slug);
+    slug: async function() {
+      this.post = await this.getPost(this.slug);
     },
-    blogposts: function() {
-      this.post = this.blogposts.find(post => post.slug === this.slug);
+    blogposts: async function() {
+      this.post = await this.getPost(this.slug);
+    }
+  },
+  methods: {
+    async getPost(slug) {
+      if (!slug) return null;
+      let post = this.blogposts.find(post => post.slug === slug);
+      if (!post) {
+        return fetch(
+          `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=663893999124de2b7156b52cfb&include=tags,authors`
+        )
+          .then(response => response.json())
+          .then(data => data.posts.find(post => post.slug === slug));
+      }
+      return post;
     }
   },
   beforeRouteEnter(to, from, next) {

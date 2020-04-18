@@ -21,9 +21,7 @@
       <v-data-table :headers="headers" :items="toc" :search="search">
         <template v-slot:item.title="{ item }">
           <router-link class="article-link" :to="item.url">
-            {{
-            item.title
-            }}
+            {{ item.title }}
           </router-link>
         </template>
       </v-data-table>

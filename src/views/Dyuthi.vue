@@ -117,10 +117,6 @@
       <section id="style-variants" class="row">
         <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
       </section>
-      <section id="history" class="row">
-        <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on July 23, 2016.</p>
-      </section>
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
