@@ -10,7 +10,7 @@
           rel="noopener noreferrer"
           icon
         >
-      <v-icon>{{ link.icon }}</v-icon>
+          <v-icon :title="link.title">{{ link.icon }}</v-icon>
         </v-btn>
       </v-row>
     </v-card>
@@ -48,13 +48,13 @@ export default {
         name: "gitlab",
         title: "GitLab",
         url: "https://gitlab.com/smc",
-        icon: mdiGithubCircle
+        icon: mdiGitlab
       },
       {
         name: "github",
         title: "Github",
         url: "https://github.com/smc",
-        icon: mdiGitlab
+        icon: mdiGithubCircle
       },
       {
         name: "telegram",
