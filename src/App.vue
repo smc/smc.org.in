@@ -256,5 +256,8 @@ export default {
   .title {
     font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
   }
+  .v-btn {
+    text-transform: none !important;
+  }
 }
 </style>
