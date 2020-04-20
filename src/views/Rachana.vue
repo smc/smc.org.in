@@ -50,8 +50,105 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="rachana rachana-slide-2 py-auto"
+                height="100%"
+                color="tranparent"
+              >
+                <article>
+                  <h2>
+                    നാടൊന്നാകെ നാടകത്തെ ഏറ്റെടുക്കുമ്പോള്‍
+                  </h2>
+                  <p>
+                    ഖസാക്കിന്റെ ഇതിഹാസം നാടകം മലയാള­നാടക­ചരിത്രത്തിലെ ഒരു
+                    സംഭവ­മാണ്–ഒരു ഗ്രാമം ഒത്തുചേര്‍ന്ന് നാടകം സൃഷ്ടിക്കുക.
+                    കുഞ്ഞുങ്ങള്‍­മുതല്‍ വൃദ്ധര്‍വരെ അഭിനേതാ­ക്കളാകുക,
+                    നാടക­ത്തിനായി ഗ്രാമ­ത്തിലെ എല്ലാ കുടുംബ­ങ്ങളും മാസ­ങ്ങളോളം
+                    പണി­യെടുക്കുക. അടുത്ത­കാലത്തൊന്നും ഇത്തര­ത്തിലൊരു
+                    സംഘാടന­മുണ്ടായിട്ടില്ല. അവ­തരണ­ത്തിലും നാടകം
+                    ശ്രദ്ധയാ­കര്‍ഷിച്ചു. ഇന്ത്യയുടെ വിവിധ­ഭാഗങ്ങളില്‍നിന്ന്
+                    നാടകാ­സ്വാദകര്‍ ഖസാക്ക് കാണാന്‍ തൃക്കരിപ്പൂരി­ലെത്തി.
+                    അന്തര്‍­ദേശീയ­പ്രശസ്തരായ നാടക­പ്രവര്‍ത്ത­കരുടെ പിന്തുണ­യോടെ
+                    തൃക്കരിപ്പൂര്‍ കെഎംകെ കലാ­സമിതി അവതരി­പ്പിക്കുന്ന നാടകം
+                    കൊടുങ്ങല്ലൂരില്‍ അരങ്ങേ­റുകയാണ് ഏപ്രില്‍ 1, 2, 3
+                    തീയതികളില്‍.
+                  </p>
+                  <p>
+                    നാടകം രൂപപ്പെടുത്താന്‍ ഒരു­ദേശം മുഴുവന്‍ ഒരുമിച്ചതു­പോലെ
+                    അതിന് അരങ്ങൊരുക്കാന്‍ കേരളത്തി­ലെമ്പാടും ജനകീയ­കൂട്ടായ്മകള്‍
+                    രൂപപ്പെടു­കയാണ്. കൊടു­ങ്ങല്ലൂര്‍ ബോയ്സ് ഹൈസ്കൂള്‍
+                    ഗ്രൌ­ണ്ടില്‍ വേദിയൊ­രുക്കാന്‍ തീരു­മാനിക്കു­മ്പോള്‍
+                    സംഘാട­കരായ കൊടു­ങ്ങല്ലൂര്‍ ഫിലിം സൊസൈറ്റിക്ക് വലിയ
+                    ലക്ഷ്യ­ങ്ങളൊന്നു­മുണ്ടായിരുന്നില്ല. എന്‍ മാധ­വന്‍കുട്ടി­യും
+                    കമലും നജ്മല്‍­ബാബുവും ഉള്‍പ്പെ­ടുന്ന വലിയ നിര
+                    സംഘാടന­ത്തിന്റെ മുന്‍നിര­യിലേക്ക് വരു­ന്നതോടെ ചിത്രം മാറി.
+                    ബഹദൂര്‍ സ്മാരക ട്രസ്റ്റ് കൂടി സംഘാട­നത്തില്‍ ഭാഗമായി. കൊച്ചി
+                    ബിനാലെ സംഘാ­ടകര്‍ സഹായ­വുമാ­യെത്തി. ജനാധിപത്യ
+                    മതേതര­കൂട്ടായ്മ­യായി സംഘാടക­സമിതി മാറി. സംഘാടകരറി­യാതെ­തന്നെ
+                    പ്രചാരണ­ത്തിന്റെ തലം മാറി. ചുമ­രുകളില്‍ ചിത്രം­വരയും
+                    ഇന്‍സ്റ്റലേഷനും ചെറു നാടകാവ­തരണങ്ങളും ഗസല്‍ സായാ­ഹ്നവും
+                    കവിയരങ്ങും സെമിനാ­റുകളും പ്രചാ­രണ­ത്തിന്റെ ഭാഗമായി
+                    നട­ക്കുന്നു. ചിത്ര­കാരന്മാര്‍, സിനിമാ­പ്രവര്‍ത്ത­കര്‍,
+                    കവികള്‍, നാടക­പ്രവര്‍ത്ത­കര്‍ എല്ലാം പ്രചാരണ­ത്തിനെത്തുന്നു.
+                  </p>
+                </article>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/rachana/Rachana-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+              <v-btn
+                href="/downloads/fonts/rachana/Rachana-Bold.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("bold") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/rachana/Rachana-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+              <v-btn
+                href="/downloads/fonts/rachana/Rachana-Bold.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("bold") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/rachana/rachana.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -60,11 +157,10 @@
             To use Rachana in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code style="word-break: break-all;">
+          <code>
             @import url('https://smc.org.in/fonts/rachana.css'); html {
             font-family: 'Rachana', sans-serif; }
           </code>
-          <h3 class="webfonts" v-text="$i18n('google-fonts-webfonts')"></h3>
         </div>
       </section>
       <section id="license" class="row">
@@ -169,6 +265,44 @@ export default {
   background: linear-gradient(to left, #ffeeee, #ddefbb);
   p {
     color: #252425;
+  }
+}
+.rachana-slide-2 {
+  font-family: "Rachana" !important;
+  background: linear-gradient(45deg, #ddefbb, #d35aa5);
+  p {
+    color: #1a143b;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 1em;
+    color: #2980b9;
+    text-align: center;
+    padding-bottom: 0.3em;
+  }
+  article {
+    width: 100%;
+    columns: 3;
+    column-gap: 1rem;
+    margin: auto;
+    p {
+      font-size: 1em;
+      line-height: 1.1em;
+      color: #252425;
+      text-align: left;
+    }
+  }
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+@media (max-width: 48em) {
+  .rachana article {
+    column-count: 1;
   }
 }
 </style>
