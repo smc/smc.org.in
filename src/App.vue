@@ -246,8 +246,7 @@ export default {
   }),
   methods: {
     onChangeLocale: function(locale) {
-      this.i18n.locale = locale;
-      localStorage.setItem("smc.org.in.locale", this.i18n.locale);
+      localStorage.setItem("smc.org.in.locale", locale);
       location.reload();
     }
   }
