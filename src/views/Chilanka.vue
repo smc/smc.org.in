@@ -258,6 +258,7 @@ export default {
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .chilanka-slide-1 {
+  font-family: "Chilanka" !important;
   background: linear-gradient(to left, #ffeeee, #ddefbb);
   p {
     color: #252425;
