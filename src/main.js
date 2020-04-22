@@ -14,10 +14,9 @@ const finalFallback = "en";
 const messages = {};
 
 try {
-  messages[finalFallback] = require(`@/assets/i18n/${finalFallback}.json`);
   messages[locale] = require(`@/assets/i18n/${locale}.json`);
 } catch {
-  // Not localized at all.
+  messages[finalFallback] = require(`@/assets/i18n/${finalFallback}.json`);
 }
 
 Vue.use(i18n, {
