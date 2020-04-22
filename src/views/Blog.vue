@@ -1,10 +1,19 @@
 <template>
   <v-container>
     <v-row v-if="post" align="center" justify="center">
-      <v-col lg="6" md="12" xs="12">
+      <v-col lg="8" xs="12">
         <article class="blogpost">
-          <h1 class="display-3 py-2">{{ post.title }}</h1>
-          <h5 v-if="post.authors">
+          <v-img
+            cover
+            :src="post.feature_image"
+            v-if="post.feature_image"
+            height="30vh"
+          ></v-img>
+          <h1 class="display-3 py-2 font-gayathri" lang="ml">
+            {{ post.title }}
+          </h1>
+          <v-divider />
+          <h5 v-if="post.authors" class="subtitle-1">
             <span
               :key="author.id"
               class="pr-4"
@@ -14,7 +23,6 @@
               new Date(post.published_at).toDateString()
             }}</span>
           </h5>
-          <v-divider />
           <main class="post-body py-4" v-html="post.html" />
         </article>
       </v-col>
@@ -39,7 +47,7 @@
               ></v-img>
             </v-col>
             <v-col md="8" xs="12" justify="start" align="start">
-              <v-card-title class="smc-blog-post-content-title pa-0">
+              <v-card-title class="smc-blog-post-content-title pa-0" lang="ml">
                 {{ post.title }}
               </v-card-title>
               <v-card-text
@@ -145,7 +153,7 @@ export default {
 .post-body {
   font-family: "Inter", "Manjari", sans;
   line-height: 1.6;
-  font-size: 1em;
+  font-size: 1.2em;
   p {
     margin: 2em 0;
   }
