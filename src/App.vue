@@ -259,5 +259,14 @@ export default {
   .v-btn {
     text-transform: none !important;
   }
+  &.v-application .display-5 {
+    font-size: clamp(1rem, 3vw, 2rem) !important;
+  }
+  &.v-application .display-4 {
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+  }
+  &.v-application .display-3 {
+    font-size: clamp(3rem, 5vw, 4rem) !important;
+  }
 }
 </style>
