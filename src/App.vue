@@ -1,5 +1,5 @@
 <template>
-  <v-app id="smcorgin">
+  <v-app id="smcorgin" :lang="i18n.locale">
     <v-navigation-drawer v-model="sidebar" right fixed>
       <v-list>
         <template v-for="item in menuItems">
@@ -13,7 +13,7 @@
             <template v-slot:activator>
               <v-list-item-content>
                 <v-list-item-title
-                  v-text="$i18n(item.msg || item.title)"
+                  v-i18n="item.msg || item.title"
                   :to="item.path"
                   :href="item.href"
                 ></v-list-item-title>
@@ -61,7 +61,7 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-text="$i18n('smc')" class="px-1"></v-toolbar-title>
+      <v-toolbar-title v-i18n="'smc'" class="px-1"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-menu
@@ -78,7 +78,7 @@
               :href="item.href"
               text
               v-on="on"
-              v-text="$i18n(item.msg || item.title)"
+              v-i18n="item.msg || item.title"
             >
             </v-btn>
           </template>
@@ -90,7 +90,7 @@
             >
               <v-list-item-content>
                 <v-list-item-title
-                  v-text="$i18n(subItem.msg || subItem.title)"
+                  v-i18n="subItem.msg || subItem.title"
                   :to="item.path"
                 ></v-list-item-title>
               </v-list-item-content>
@@ -105,8 +105,14 @@
     </v-app-bar>
 
     <v-content>
+      <v-row align="center" justify="end" class="ma-0 pa-0">
+        <v-col class="text-right ma-0 pa-0"
+          ><v-btn small text @click="onChangeLocale('en')">English</v-btn>
+          <v-btn small text @click="onChangeLocale('ml')">മലയാളം</v-btn></v-col
+        >
+      </v-row>
       <transition name="slide">
-        <router-view />
+        <router-view :locale="i18n.locale" />
       </transition>
     </v-content>
     <smc-footer></smc-footer>
@@ -237,7 +243,14 @@ export default {
         ]
       }
     ]
-  })
+  }),
+  methods: {
+    onChangeLocale: function(locale) {
+      this.i18n.locale = locale;
+      localStorage.setItem("smc.org.in.locale", this.i18n.locale);
+      location.reload();
+    }
+  }
 };
 </script>
 

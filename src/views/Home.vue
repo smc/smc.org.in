@@ -12,10 +12,7 @@
         </v-col>
 
         <v-col class="mb-4">
-          <h1
-            class="display-3 font-weight-regular mb-3"
-            v-text="$i18n('smc')"
-          ></h1>
+          <h1 class="display-3 font-weight-regular mb-3" v-i18n="'smc'"></h1>
           <h2 class="title mb-3">
             എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ
           </h2>
