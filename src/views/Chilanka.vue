@@ -4,7 +4,8 @@
       <h1 class="display-3" v-text="$i18n('chilanka')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
-          Designer: <a href="https://thottingal.in">Santhosh Thottingal</a>
+          Designer:
+          <a href="https://thottingal.in">Santhosh Thottingal</a>
         </p>
         <v-btn
           to="/downloads/fonts/chilanka/chilanka.zip"
@@ -13,9 +14,9 @@
           color="success"
           class="col col-lg-3 ma-1"
         >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
+          <v-icon>{{ mdiDownload }}</v-icon>
+          {{ $i18n("download") }}
+        </v-btn>
       </div>
       <section id="header" class="row">
         <v-sheet class="col-12">
@@ -137,6 +138,61 @@
       </section>
       <section id="style-variants" class="row">
         <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <p>
+            Chilanka comes with many OpenType features that can be used to
+            tailor functionality and aesthetics to your specific needs. Some of
+            these features can be combined to form a great number of alternative
+            variations.
+          </p>
+          <v-card class="ma-2">
+            <v-card-title>Glyph alternatives</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col>Disabled</v-col>
+                <v-col>Enabled</v-col>
+              </v-row>
+              <v-row>
+                <v-col
+                  class="font-chilanka"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ച്ച</v-col
+                >
+                <v-col
+                  class="font-chilanka"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ച്ച</v-col
+                >
+              </v-row>
+              <v-row>
+                <v-col
+                  class="font-chilanka"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ള്ള</v-col
+                >
+                <v-col
+                  class="font-chilanka"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ള്ള</v-col
+                >
+              </v-row>
+              <p>
+                To enable this alternatives use 'salt 2` variant. In CSS this
+                can be done by adding style
+                <code>font-feature-settings: "salt" 2;</code>. To disable, use
+                <code>font-feature-settings: "salt" 1;</code>. Depending on the
+                text editor application you are using, picking one of these
+                variants is usually allowed. Please read
+                <a
+                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-chilanka-chilanka/"
+                  >this article</a
+                >
+                to see how to use this with Inkscape, Browsers, Libreoffice and
+                TeX.
+              </p>
+            </v-card-text>
+          </v-card>
+        </div>
       </section>
       <section id="history" class="row">
         <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
