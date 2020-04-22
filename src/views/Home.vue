@@ -13,7 +13,7 @@
 
         <v-col class="mb-4">
           <h1
-            class="display-2 font-weight-thin mb-3"
+            class="display-3 font-weight-regular mb-3"
             v-text="$i18n('smc')"
           ></h1>
           <h2 class="title mb-3">
@@ -89,8 +89,6 @@
             href="https://morph.smc.org.in"
             class="mx-auto"
             max-width="400"
-            color="#385F73"
-            dark
           >
             <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
             <v-card-title>
