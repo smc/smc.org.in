@@ -6,10 +6,10 @@ import i18n from "vue-banana-i18n";
 
 Vue.config.productionTip = false;
 
-const locale = localStorage.getItem(
-  "smc.org.in.locale",
-  navigator.language.split("-")[0] || "en"
-);
+const locale =
+  localStorage.getItem("smc.org.in.locale") ||
+  navigator.language.split("-")[0] ||
+  "en";
 const finalFallback = "en";
 const messages = {};
 
