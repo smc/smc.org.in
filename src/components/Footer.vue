@@ -1,20 +1,21 @@
 <template>
-  <v-footer style="padding: 4em 0 1em 0; background: white;">
-    <v-card flat tile width="100%" class="text-center">
-      <v-row justify="center" no-gutters>
-        <v-btn
-          v-for="link in links"
-          :key="link.name"
-          :href="link.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          icon
-        >
-          <v-icon :title="link.title">{{ link.icon }}</v-icon>
-        </v-btn>
-      </v-row>
-    </v-card>
-    <v-card flat tile width="100%" class="text-center">
+  <v-footer padless>
+    <v-card flat tile width="100%" class="text-center pt-12 pb-4">
+      <v-card-text>
+        <v-row justify="center" no-gutters>
+          <v-btn
+            v-for="link in links"
+            :key="link.name"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            icon
+          >
+            <v-icon :title="link.title">{{ link.icon }}</v-icon>
+          </v-btn>
+        </v-row>
+      </v-card-text>
+
       <v-card-text>
         {{ new Date().getFullYear() }} —
         <strong> {{ $i18n("smc") }}.</strong>
@@ -27,8 +28,8 @@
           style="color: rgba(0, 0, 0, 0.6);"
           >Creative Commons Attribution-ShareAlike License</a
         >.
-      </v-card-text> </v-card
-    >.
+      </v-card-text>
+    </v-card>
   </v-footer>
 </template>
 <script>
