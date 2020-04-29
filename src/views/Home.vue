@@ -19,22 +19,44 @@
         </v-col>
       </v-row>
       <v-row class="text-center">
-        <v-col cols="12">
+        <v-col cols="4">
           <v-btn
             class="ma-2"
+            block
+            large
             href="https://gitlab.com/smc"
-            v-text="$i18n('source-code')"
-          ></v-btn>
+          >
+            <v-icon dark>mdi-git</v-icon>
+            <span class="ml-2">
+              {{ $i18n('source-code') }}
+            </span>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
           <v-btn
             class="ma-2"
-            v-text="$i18n('wiki')"
+            block
+            large
             href="https://wiki.smc.org.in"
-          ></v-btn>
+          >
+            <v-icon dark>mdi-book-open-page-variant</v-icon>
+            <span class="ml-2">
+              {{ $i18n('wiki') }}
+            </span>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
           <v-btn
             class="ma-2"
+            block
+            large
             href="https://t.me/smc_project"
-            v-text="$i18n('telegram')"
-          ></v-btn>
+          >
+            <v-icon dark>mdi-telegram</v-icon>
+            <span class="ml-2">
+              {{ $i18n('telegram') }}
+            </span>
+          </v-btn>
         </v-col>
       </v-row>
       <v-row class="text-center" justify="center">
