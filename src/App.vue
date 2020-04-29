@@ -49,7 +49,7 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app elevate-on-scroll color="primary">
+    <v-app-bar app elevate-on-scroll color="primary" dark>
       <div class="d-flex align-center" style="cursor:pointer;">
         <v-img
           alt="SMC Logo"
@@ -61,7 +61,7 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-i18n="'smc'" class="ml-2 white--text"
+      <v-toolbar-title v-i18n="'smc'" class="ml-2"
         style="cursor: pointer;"
         @click.stop="$router.push('/')">
       </v-toolbar-title>
@@ -77,7 +77,6 @@
           <template v-slot:activator="{ on }">
             <v-btn
               class="hidden-sm-and-down"
-              color="white"
               :to="item.path"
               :href="item.href"
               text
