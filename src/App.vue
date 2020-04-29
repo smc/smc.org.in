@@ -61,7 +61,7 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-i18n="'smc'" class="website-name ml-2 white--text"
+      <v-toolbar-title v-i18n="'smc'" class="ml-2 white--text"
         style="cursor: pointer;"
         @click.stop="$router.push('/')">
       </v-toolbar-title>
