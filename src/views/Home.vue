@@ -19,22 +19,44 @@
         </v-col>
       </v-row>
       <v-row class="text-center">
-        <v-col cols="12">
+        <v-col cols="4">
           <v-btn
             class="ma-2"
+            block
+            large
             href="https://gitlab.com/smc"
-            v-text="$i18n('source-code')"
-          ></v-btn>
+          >
+            <v-icon dark>{{ mdiGit }}</v-icon>
+            <span class="ml-2 hidden-xs-only">
+              {{ $i18n('source-code') }}
+            </span>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
           <v-btn
             class="ma-2"
-            v-text="$i18n('wiki')"
+            block
+            large
             href="https://wiki.smc.org.in"
-          ></v-btn>
+          >
+            <v-icon dark>{{ mdiBookOpenPageVariant }}</v-icon>
+            <span class="ml-2 hidden-xs-only">
+              {{ $i18n('wiki') }}
+            </span>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
           <v-btn
             class="ma-2"
+            block
+            large
             href="https://t.me/smc_project"
-            v-text="$i18n('telegram')"
-          ></v-btn>
+          >
+            <v-icon dark>{{ mdiTelegram }}</v-icon>
+            <span class="ml-2 hidden-xs-only">
+              {{ $i18n('telegram') }}
+            </span>
+          </v-btn>
         </v-col>
       </v-row>
       <v-row class="text-center" justify="center">
@@ -136,10 +158,15 @@
 </template>
 
 <script>
+import { mdiGit, mdiTelegram, mdiBookOpenPageVariant } from '@mdi/js'
+
 export default {
   name: "Home",
   data: () => ({
-    blogposts: []
+    blogposts: [],
+    mdiGit,
+    mdiTelegram,
+    mdiBookOpenPageVariant
   }),
   components: {},
   created() {
