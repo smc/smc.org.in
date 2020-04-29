@@ -19,10 +19,9 @@
       <v-card-text>
         {{ new Date().getFullYear() }} —
         <strong> {{ $i18n("smc") }}.</strong>
-        <br/>
-        Unless otherwise stated, content
-        is available under the
-        <br/>
+        <br />
+        Unless otherwise stated, content is available under the
+        <br />
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0/"
           class="grey--text text--darken-1"

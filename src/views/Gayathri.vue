@@ -19,7 +19,12 @@
       </div>
       <section id="header" class="row">
         <v-sheet class="col-12">
-          <v-carousel cycle height="50vh" hide-delimiter-background :show-arrows="false">
+          <v-carousel
+            cycle
+            height="50vh"
+            hide-delimiter-background
+            :show-arrows="false"
+          >
             <v-carousel-item>
               <v-card
                 class="gayathri-slide-0 py-auto"
@@ -28,7 +33,9 @@
                 color="tranparent"
               >
                 <h1 class="display-4 font-weight-thin py-2 my-4">ഗായത്രി</h1>
-                <h2 class="display-5 font-weight-thin py-2 my-4">യുണിക്കോഡ് അക്ഷരരൂപം</h2>
+                <h2 class="display-5 font-weight-thin py-2 my-4">
+                  യുണിക്കോഡ് അക്ഷരരൂപം
+                </h2>
               </v-card>
             </v-carousel-item>
             <v-carousel-item>
@@ -71,17 +78,20 @@
                 href="/downloads/fonts/gayathri/Gayathri-Regular.otf"
                 color="primary"
                 text
-              >{{ $i18n("regular") }}</v-btn>
+                >{{ $i18n("regular") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.otf"
                 color="primary"
                 text
-              >{{ $i18n("thin") }}</v-btn>
+                >{{ $i18n("thin") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.otf"
                 color="primary"
                 text
-              >{{ $i18n("bold") }}</v-btn>
+                >{{ $i18n("bold") }}</v-btn
+              >
             </li>
             <li class="my-4 font-weight-bold">
               TTF Format, for old versions of operating systems:
@@ -89,38 +99,42 @@
                 href="/downloads/fonts/gayathri/Gayathri-Regular.ttf"
                 color="primary"
                 text
-              >{{ $i18n("regular") }}</v-btn>
+                >{{ $i18n("regular") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.ttf"
                 color="primary"
                 text
-              >{{ $i18n("thin") }}</v-btn>
+                >{{ $i18n("thin") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.ttf"
                 color="primary"
                 text
-              >{{ $i18n("bold") }}</v-btn>
+                >{{ $i18n("bold") }}</v-btn
+              >
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
-              <a
-                href="#webfonts"
-              >how to use in webpages</a>:
+              <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Regular.woff2"
                 color="primary"
                 text
-              >{{ $i18n("regular") }}</v-btn>
+                >{{ $i18n("regular") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.woff2"
                 color="primary"
                 text
-              >{{ $i18n("thin") }}</v-btn>
+                >{{ $i18n("thin") }}</v-btn
+              >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.woff2"
                 color="primary"
                 text
-              >{{ $i18n("bold") }}</v-btn>
+                >{{ $i18n("bold") }}</v-btn
+              >
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
@@ -128,7 +142,8 @@
                 href="/downloads/fonts/gayathri/gayathri.zip"
                 color="primary"
                 text
-              >{{ $i18n("zip") }}</v-btn>
+                >{{ $i18n("zip") }}</v-btn
+              >
             </li>
           </ul>
         </div>
@@ -154,9 +169,9 @@
           <p>
             Gayathri is also available in Google fonts. Using Gayathri from
             Google webfonts may be faster than the above approach. Please refer
-            <a
-              href="https://fonts.google.com/specimen/Gayathri"
-            >google fonts documentation for Gayathri</a>:
+            <a href="https://fonts.google.com/specimen/Gayathri"
+              >google fonts documentation for Gayathri</a
+            >:
           </p>
         </div>
       </section>
@@ -173,35 +188,31 @@
         <p class="col-lg-8 col-md-12">
           Gayathri typefaces's source code, including svg drawings, build
           scripts are available at
-          <a
-            href="https://gitlab.com/smc/fonts/gayathri"
-          >gitlab repository</a>
+          <a href="https://gitlab.com/smc/fonts/gayathri">gitlab repository</a>
         </p>
       </section>
       <section id="glyphs" class="row">
         <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
-        <h4
-          v-if="fontdata && fontdata.summary"
-          class="col-lg-12"
-        >{{ fontdata.summary.glyphs }} Glyphs</h4>
+        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
+          {{ fontdata.summary.glyphs }} Glyphs
+        </h4>
         <glyphs font="Gayathri" class="col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
       <section id="languages" class="row">
-        <h2 v-text="$i18n('Supported languages')" class="col-lg-4 col-md-12"></h2>
+        <h2
+          v-text="$i18n('Supported languages')"
+          class="col-lg-4 col-md-12"
+        ></h2>
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
               Latin. The following languages are covered:
-              <span
-                class="mr-2"
-                :key="lang"
-                v-for="lang in supportedLanguages"
-              >
+              <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
                 {{
-                Intl.DisplayNames
-                ? new Intl.DisplayNames("en").of(lang)
-                : lang
+                  Intl.DisplayNames
+                    ? new Intl.DisplayNames("en").of(lang)
+                    : lang
                 }}
               </span>
             </li>
@@ -225,12 +236,28 @@
                 <v-col>Enabled</v-col>
               </v-row>
               <v-row>
-                <v-col class="font-gayathri" style="font-feature-settings: 'salt' 1;">ച്ച</v-col>
-                <v-col class="font-gayathri" style="font-feature-settings: 'salt' 2;">ച്ച</v-col>
+                <v-col
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ച്ച</v-col
+                >
+                <v-col
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ച്ച</v-col
+                >
               </v-row>
               <v-row>
-                <v-col class="font-gayathri" style="font-feature-settings: 'salt' 1;">ള്ള</v-col>
-                <v-col class="font-gayathri" style="font-feature-settings: 'salt' 2;">ള്ള</v-col>
+                <v-col
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 1;"
+                  >ള്ള</v-col
+                >
+                <v-col
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 2;"
+                  >ള്ള</v-col
+                >
               </v-row>
               <p>
                 To enable this alternatives use 'salt 2` variant. In CSS this
@@ -241,7 +268,8 @@
                 variants is usually allowed. Please read
                 <a
                   href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-gayathri-chilanka/"
-                >this article</a>
+                  >this article</a
+                >
                 to see how to use this with Inkscape, Browsers, Libreoffice and
                 TeX.
               </p>

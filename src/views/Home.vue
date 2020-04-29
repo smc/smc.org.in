@@ -13,54 +13,33 @@
 
         <v-col class="mb-4">
           <h1 class="display-3 font-weight-regular mb-3" v-i18n="'smc'"></h1>
-          <h2 class="title mb-3">
-            എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ
-          </h2>
+          <h2 class="title mb-3">എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ</h2>
         </v-col>
       </v-row>
       <v-row class="text-center">
         <v-col cols="4">
-          <v-btn
-            class="ma-2"
-            block
-            large
-            href="https://gitlab.com/smc"
-          >
+          <v-btn class="ma-2" block large href="https://gitlab.com/smc">
             <v-icon dark>{{ mdiGit }}</v-icon>
-            <span class="ml-2 hidden-xs-only">
-              {{ $i18n('source-code') }}
-            </span>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("source-code") }}</span>
           </v-btn>
         </v-col>
         <v-col cols="4">
-          <v-btn
-            class="ma-2"
-            block
-            large
-            href="https://wiki.smc.org.in"
-          >
+          <v-btn class="ma-2" block large href="https://wiki.smc.org.in">
             <v-icon dark>{{ mdiBookOpenPageVariant }}</v-icon>
-            <span class="ml-2 hidden-xs-only">
-              {{ $i18n('wiki') }}
-            </span>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("wiki") }}</span>
           </v-btn>
         </v-col>
         <v-col cols="4">
-          <v-btn
-            class="ma-2"
-            block
-            large
-            href="https://t.me/smc_project"
-          >
+          <v-btn class="ma-2" block large href="https://t.me/smc_project">
             <v-icon dark>{{ mdiTelegram }}</v-icon>
-            <span class="ml-2 hidden-xs-only">
-              {{ $i18n('telegram') }}
-            </span>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
           </v-btn>
         </v-col>
       </v-row>
       <v-row class="text-center" justify="center">
-        <v-col lg="8" sm="12"> <p v-text="$i18n('smc-desc')"></p> </v-col>
+        <v-col lg="8" sm="12">
+          <p v-text="$i18n('smc-desc')"></p>
+        </v-col>
       </v-row>
 
       <v-row>
@@ -78,13 +57,9 @@
               height="200px"
             ></v-img>
 
-            <v-card-title>
-              Manjari font
-            </v-card-title>
+            <v-card-title>Manjari font</v-card-title>
 
-            <v-card-subtitle>
-              Popular Malayalam typeface
-            </v-card-subtitle>
+            <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
@@ -94,13 +69,9 @@
               height="200px"
             ></v-img>
 
-            <v-card-title>
-              Gayathri font
-            </v-card-title>
+            <v-card-title>Gayathri font</v-card-title>
 
-            <v-card-subtitle>
-              Popular Malayalam typeface
-            </v-card-subtitle>
+            <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
@@ -110,13 +81,9 @@
             max-width="400"
           >
             <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
-            <v-card-title>
-              Mlmorph
-            </v-card-title>
+            <v-card-title>Mlmorph</v-card-title>
 
-            <v-card-subtitle>
-              Malayalam morphology analyser
-            </v-card-subtitle>
+            <v-card-subtitle>Malayalam morphology analyser</v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
@@ -141,15 +108,14 @@
               height="200px"
             ></v-img>
 
-            <v-card-title class="smc-blog-post-content-title">
-              {{ post.title }}
-            </v-card-title>
+            <v-card-title class="smc-blog-post-content-title">{{
+              post.title
+            }}</v-card-title>
 
             <v-card-text
               class="smc-blog-post-content-excerpt"
               v-text="post.excerpt"
-            >
-            </v-card-text>
+            ></v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -158,7 +124,7 @@
 </template>
 
 <script>
-import { mdiGit, mdiTelegram, mdiBookOpenPageVariant } from '@mdi/js'
+import { mdiGit, mdiTelegram, mdiBookOpenPageVariant } from "@mdi/js";
 
 export default {
   name: "Home",
