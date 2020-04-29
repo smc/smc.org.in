@@ -61,7 +61,8 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-i18n="'smc'" class="website-name" style="cursor: pointer;"
+      <v-toolbar-title v-i18n="'smc'" class="website-name ml-2 white--text"
+        style="cursor: pointer;"
         @click.stop="$router.push('/')">
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -76,6 +77,7 @@
           <template v-slot:activator="{ on }">
             <v-btn
               class="hidden-sm-and-down"
+              color="white"
               :to="item.path"
               :href="item.href"
               text
@@ -285,19 +287,6 @@ export default {
   }
   &.v-application .display-3 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
-  }
-  .topbar {
-    background: #00A7D0;
-    padding: 0 2em;
-
-    .website-name {
-      color: white;
-      margin-left: 0.5em;
-    }
-
-    .v-btn {
-      color: white;
-    }
   }
 }
 </style>
