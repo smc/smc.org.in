@@ -61,7 +61,9 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-i18n="'smc'" class="px-1"></v-toolbar-title>
+      <v-toolbar-title v-i18n="'smc'" class="px-1" style="cursor: pointer;"
+        @click.stop="$router.push('/')">
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
         <v-menu
