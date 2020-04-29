@@ -1,5 +1,5 @@
 <template>
-  <v-footer :padless="true">
+  <v-footer style="padding: 4em 0 1em 0; background: white;">
     <v-card flat tile width="100%" class="text-center">
       <v-row justify="center" no-gutters>
         <v-btn
@@ -17,10 +17,14 @@
     <v-card flat tile width="100%" class="text-center">
       <v-card-text>
         {{ new Date().getFullYear() }} —
-        <strong> {{ $i18n("smc") }}.</strong> Unless otherwise stated, content
+        <strong> {{ $i18n("smc") }}.</strong>
+        <br/>
+        Unless otherwise stated, content
         is available under the
+        <br/>
         <a
-          href="available under the Creative Commons Attribution-ShareAlike License; "
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          style="color: rgba(0, 0, 0, 0.6);"
           >Creative Commons Attribution-ShareAlike License</a
         >.
       </v-card-text> </v-card
