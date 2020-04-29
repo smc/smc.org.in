@@ -27,7 +27,7 @@
             href="https://gitlab.com/smc"
           >
             <v-icon dark>mdi-git</v-icon>
-            <span class="ml-2">
+            <span class="ml-2 hidden-xs-only">
               {{ $i18n('source-code') }}
             </span>
           </v-btn>
@@ -40,7 +40,7 @@
             href="https://wiki.smc.org.in"
           >
             <v-icon dark>mdi-book-open-page-variant</v-icon>
-            <span class="ml-2">
+            <span class="ml-2 hidden-xs-only">
               {{ $i18n('wiki') }}
             </span>
           </v-btn>
@@ -53,7 +53,7 @@
             href="https://t.me/smc_project"
           >
             <v-icon dark>mdi-telegram</v-icon>
-            <span class="ml-2">
+            <span class="ml-2 hidden-xs-only">
               {{ $i18n('telegram') }}
             </span>
           </v-btn>
