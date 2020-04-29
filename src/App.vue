@@ -49,7 +49,7 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app elevate-on-scroll>
+    <v-app-bar app elevate-on-scroll class="topbar">
       <div class="d-flex align-center" style="cursor:pointer;">
         <v-img
           alt="SMC Logo"
@@ -285,6 +285,14 @@ export default {
   }
   &.v-application .display-3 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
+  }
+  .topbar {
+    background: #00A7D0;
+    padding: 0 2em;
+
+    .px-1, .v-btn {
+      color: white;
+    }
   }
 }
 </style>
