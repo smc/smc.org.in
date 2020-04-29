@@ -61,7 +61,7 @@
           width="48"
         />
       </div>
-      <v-toolbar-title v-i18n="'smc'" class="px-1" style="cursor: pointer;"
+      <v-toolbar-title v-i18n="'smc'" class="website-name" style="cursor: pointer;"
         @click.stop="$router.push('/')">
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -290,7 +290,12 @@ export default {
     background: #00A7D0;
     padding: 0 2em;
 
-    .px-1, .v-btn {
+    .website-name {
+      color: white;
+      margin-left: 0.5em;
+    }
+
+    .v-btn {
       color: white;
     }
   }
