@@ -25,7 +25,7 @@
         <br/>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0/"
-          style="color: rgba(0, 0, 0, 0.6);"
+          class="grey--text text--darken-1"
           >Creative Commons Attribution-ShareAlike License</a
         >.
       </v-card-text>
