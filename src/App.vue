@@ -49,7 +49,7 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app elevate-on-scroll class="topbar">
+    <v-app-bar app elevate-on-scroll color="primary">
       <div class="d-flex align-center" style="cursor:pointer;">
         <v-img
           alt="SMC Logo"
