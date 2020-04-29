@@ -26,7 +26,7 @@
             large
             href="https://gitlab.com/smc"
           >
-            <v-icon dark>mdi-git</v-icon>
+            <v-icon dark>{{ mdiGit }}</v-icon>
             <span class="ml-2 hidden-xs-only">
               {{ $i18n('source-code') }}
             </span>
@@ -39,7 +39,7 @@
             large
             href="https://wiki.smc.org.in"
           >
-            <v-icon dark>mdi-book-open-page-variant</v-icon>
+            <v-icon dark>{{ mdiBookOpenPageVariant }}</v-icon>
             <span class="ml-2 hidden-xs-only">
               {{ $i18n('wiki') }}
             </span>
@@ -52,7 +52,7 @@
             large
             href="https://t.me/smc_project"
           >
-            <v-icon dark>mdi-telegram</v-icon>
+            <v-icon dark>{{ mdiTelegram }}</v-icon>
             <span class="ml-2 hidden-xs-only">
               {{ $i18n('telegram') }}
             </span>
@@ -158,10 +158,15 @@
 </template>
 
 <script>
+import { mdiGit, mdiTelegram, mdiBookOpenPageVariant } from '@mdi/js'
+
 export default {
   name: "Home",
   data: () => ({
-    blogposts: []
+    blogposts: [],
+    mdiGit,
+    mdiTelegram,
+    mdiBookOpenPageVariant
   }),
   components: {},
   created() {
