@@ -55,8 +55,117 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="karumbi-slide-1 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article class="">
+                  <p>
+                    തോറ്റകുട്ടി പുറത്തേക്കിറങ്ങി <br />
+                    തോട്ടുവെള്ളത്തില്‍ പുസ്തകം വിട്ടു <br />
+                    കാറ്റിലേക്കു കുടയും കൊടുത്തു. <br />
+                    തുണ്ടുപെന്‍സിലെറിഞ്ഞു കളഞ്ഞു <br />
+                    കണ്ട കാട്ടു വഴിയില്‍ നടന്നു... <br />
+                    തൊട്ടു മെല്ലെ വിളിച്ചപോല്‍ തോന്നി <br />
+                    തൊട്ടടുത്തു പിറകില്‍ വന്നാരോ <br />
+                    തിത്തിരിപ്പക്ഷി മൂളിയതാകാം <br />
+                    കൊച്ചുതുമ്പയോ മൈനയോ ആവാം <br />
+                    കാട്ടുവള്ളിയില്‍ തൂങ്ങിക്കുതിച്ച് <br />
+                    കാട്ടിലേക്കവന്‍ ചെന്നുപോല്‍ പിന്നെ <br />
+                    പൂത്തമുല്ലതന്‍ സൗരഭം നീന്തും <br />
+                    കാറ്റവനൊരു പാട്ടുപോല്‍ തോന്നി <br />
+                    പൂക്കളൊക്കെയും വാക്കുകള്‍, പായും <br />
+                    കാട്ടരുവി കളകള ഗാനം <br />
+                    രാത്രി നക്ഷത്ര വിസ്തൃതാകാശം <br />
+                    നീര്‍ത്തിവച്ചൊരു പുസ്തകമായി <br />
+                    തോറ്റകുട്ടിയെ തോളത്തുവച്ചു. <br />
+                    പൂത്തുനിന്നു മരതകക്കുന്ന് <br />
+                    തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br />
+                    കാത്തു നില്‍ക്കുന്നൊരമ്പിളിത്തെല്ല്...!
+                  </p>
+                  <p style="float:right">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
+                </article>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="karumbi-slide-2 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article class="">
+                  <p>
+                    My sweet love, I shall wait patiently till tomorrow before I
+                    see you, and in the mean time, if there is any need of such
+                    a thing, assure you by your Beauty, that whenever I have at
+                    any time written on a certain unpleasant subject, it has
+                    been with your welfare impress’d upon my mind. How hurt I
+                    should have been had you ever acceded to what is,
+                    notwithstanding, very reasonable! How much the more do I
+                    love you from the general result! In my present state of
+                    Health I feel too much separated from you and could almost
+                    speak to you in the words of Lorenzo’s Ghost to Isabella
+                  </p>
+                  <p>
+                    ‘Your Beauty grows upon me and I feel
+                    <br />
+                    A greater love through all my essence steal.’
+                  </p>
+                  <p>
+                    My greatest torment since I have known you has been the fear
+                    of you being a little inclined to the Cressid; but that
+                    suspicion I dismiss utterly and remain happy in the surety
+                    of your Love, which I assure you is as much a wonder to me
+                    as a delight.
+                  </p>
+                  <p>Send me the words ‘Good night’ to put under my pillow.</p>
+                </article>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/karumbi/Karumbi-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/karumbi/Karumbi-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/karumbi/karumbi.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -162,17 +271,51 @@ export default {
     padding: 2em;
   }
 }
+.karumbi-slide-0,
+.karumbi-slide-1,
+.karumbi-slide-2 {
+  font-family: "Karumbi" !important;
+}
 .karumbi-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Karumbi" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
-.karumbi-slide-1 {
-  background: linear-gradient(to left, #ffeeee, #ddefbb);
-  p {
-    color: #252425;
+
+.karumbi-slide-1,
+.karumbi-slide-2 {
+  background: -moz-radial-gradient(50% 50%, farthest-side, #ff9d46, #f5efc6);
+  background: -webkit-gradient(
+    radial,
+    50% 50%,
+    0,
+    50% 50%,
+    350,
+    from(#ff9d46),
+    to(#f5efc6)
+  );
+  width: 100%;
+  article {
+    width: 80%;
+    margin: auto;
+    columns: 2;
+    p {
+      text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6);
+      font-size: 1.5em;
+      line-height: 1em;
+      color: #252425;
+      text-align: center;
+    }
   }
+  @media (max-width: 48em) {
+    article {
+      column-count: 1;
+      overflow: auto;
+    }
+  }
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>

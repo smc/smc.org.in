@@ -254,11 +254,12 @@ export default {
     padding: 2em;
   }
 }
+.rachana-slide-0,
+.rachana-slide-1,
+.rachana-slide-2 {
+  font-family: "Rachana" !important;
+}
 .rachana-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Rachana" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .rachana-slide-1 {

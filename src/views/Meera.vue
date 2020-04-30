@@ -50,8 +50,103 @@
                 </p>
               </v-card>
             </v-carousel-item>
+
+            <v-carousel-item>
+              <v-card
+                class="meera-slide-2 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article>
+                  <h2 class="section-heading">കുഞ്ഞേടത്തി</h2>
+                  <h3 class="section-heading">ഒ.എന്‍.വി. കുറുപ്പ്</h3>
+                  <p>
+                    കുഞ്ഞേടത്തിയെ തന്നെയല്ലോ
+                    <br />
+                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br />
+                    പൊന്നേ പോലത്തെ നെറ്റിയിലുണ്ടല്ലോ <br />
+                    മഞ്ഞൾ വരക്കുറി ചാന്ദുപൊട്ടും <br />
+                    ഈറൻമുടിയിലെള്ളണ്ണ മണം <br />
+                    ചിലനേരമാ തുമ്പത്തൊരു പൂവും <br />
+                    കയ്യിലൊരറ്റ കുപ്പിവള <br />
+                    മുഖം കണ്ടാൽ കാവിലെ ദേവി തന്നെ <br />
+                    മടിയിലുരുത്തീട്ട് മാറോട് ചേത്തിട്ടു <br />
+                    മണി മണി പോലെ കഥപറയും <br />
+                    ആനേടെ, മയിലിന്റെ, ഒട്ടകത്തിന്റെയും <br />
+                    ആരും കേൾക്കാത്ത കഥപറയും
+                    <br />
+                  </p>
+                  <p>
+                    കുഞ്ഞേടത്തിയെ തന്നെയല്ലോ
+                    <br />
+                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br />
+                    ഉണ്ണിയ്ക്കെന്തിനുമേതിന്നും <br />
+                    കുഞ്ഞേടത്തിയെ കൂട്ടുള്ളൂ <br />
+                    കണ്ണിൽ കണ്ടതും കത്തിരിക്കായുമി- <br />
+                    തെന്താണെന്നുണ്ണീ ചോദിയ്ക്കും <br />
+                    കുഞ്ഞേടത്തി പറഞ്ഞു കൊടുക്കുമ്പോൾ <br />
+                    ഉണ്ണിയ്ക്കത്ഭുതമാഹ്ലാദം..!
+                    <br />
+                  </p>
+                </article>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="meera-slide-3 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <p>
+                  ഇലഞ്ഞിപ്പൂമണമൊഴുകിവരുന്നു<br />
+                  ഇന്ദ്രിയങ്ങളിലതു പടരുന്നു<br />
+                  പകല്‍ക്കിനാവിന്‍ പനിനീര്‍മഴയില്‍<br />
+                  പണ്ടുനിന്മുഖം പകര്‍ന്നകന്നു
+                </p>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/meera/Meera-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/meera/Meera-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/meera/meera.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -161,11 +256,13 @@ export default {
     padding: 2em;
   }
 }
+.meera-slide-0,
+.meera-slide-1,
+.meera-slide-2,
+.meera-slide-3 {
+  font-family: "Meera" !important;
+}
 .meera-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Meera" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .meera-slide-1 {
@@ -173,5 +270,72 @@ export default {
   p {
     color: #252425;
   }
+}
+
+.meera-slide-2 {
+  background: #74cbd6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #9abeee, #74cbd6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #9abeee, #74cbd6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  h2 {
+    font-size: 3em;
+    color: #cfa7a2;
+    font-weight: normal;
+  }
+  width: 100%;
+  text-align: left;
+  article {
+    width: 95%;
+    // margin: 10% auto;
+    -webkit-columns: 2 200px;
+    -moz-columns: 2 200px;
+    columns: 2 200px;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    p {
+      font-size: 1em;
+      line-height: 1.1em;
+      color: #3b302e;
+      text-align: justify;
+    }
+  }
+  @media (max-width: 48em) {
+    article {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+    p {
+      font-size: 3em;
+    }
+  }
+}
+
+.meera-slide-3 {
+  background: #9fe4b0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #da9a5f, #b8f14e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fd7f09, #afff1c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+  p {
+    color: #ffffff;
+    text-shadow: 0 2px 3px #555;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>

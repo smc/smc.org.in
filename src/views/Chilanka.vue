@@ -70,8 +70,118 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="chilanka-slide-2 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article>
+                  <p>
+                    തോറ്റകുട്ടി പുറത്തേക്കിറങ്ങി <br />
+                    തോട്ടുവെള്ളത്തില്‍ പുസ്തകം വിട്ടു <br />
+                    കാറ്റിലേക്കു കുടയും കൊടുത്തു. <br />
+                    തുണ്ടുപെന്‍സിലെറിഞ്ഞു കളഞ്ഞു <br />
+                    കണ്ട കാട്ടു വഴിയില്‍ നടന്നു... <br />
+                    തൊട്ടു മെല്ലെ വിളിച്ചപോല്‍ തോന്നി <br />
+                    തൊട്ടടുത്തു പിറകില്‍ വന്നാരോ <br />
+                    തിത്തിരിപ്പക്ഷി മൂളിയതാകാം <br />
+                    കൊച്ചുതുമ്പയോ മൈനയോ ആവാം <br />
+                    കാട്ടുവള്ളിയില്‍ തൂങ്ങിക്കുതിച്ച് <br />
+                    കാട്ടിലേക്കവന്‍ ചെന്നുപോല്‍ പിന്നെ <br />
+                    പൂത്തമുല്ലതന്‍ സൗരഭം നീന്തും <br />
+                    കാറ്റവനൊരു പാട്ടുപോല്‍ തോന്നി <br />
+                    പൂക്കളൊക്കെയും വാക്കുകള്‍, പായും <br />
+                    കാട്ടരുവി കളകള ഗാനം <br />
+                    രാത്രി നക്ഷത്ര വിസ്തൃതാകാശം <br />
+                    നീര്‍ത്തിവച്ചൊരു പുസ്തകമായി <br />
+                    തോറ്റകുട്ടിയെ തോളത്തുവച്ചു. <br />
+                    പൂത്തുനിന്നു മരതകക്കുന്ന് chil<br />
+                    തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br />
+                    കാത്തു നില്‍ക്കുന്നൊരമ്പിളിത്തെല്ല്...!
+                    <br />
+                    <br />
+                    തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)
+                  </p>
+                </article>
+              </v-card>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="chilanka-slide-3 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article>
+                  <p>
+                    Mary had a little lamb, <br />
+                    His fleece was white as snow, <br />
+                    And everywhere that Mary went, <br />
+                    The lamb was sure to go.
+                    <br />
+                    <br />
+                    He followed her to school one day, <br />
+                    Which was against the rule, <br />
+                    It made the children laugh and play <br />
+                    To see a lamb at school.
+                    <br />
+                    <br />
+                    And so the teacher turned it out, <br />
+                    But still it lingered near, <br />
+                    And waited patiently about, <br />
+                    Till Mary did appear.
+                    <br />
+                    <br />
+                    "Why does the lamb love Mary so?" <br />
+                    The eager children cry. <br />
+                    "Why, Mary loves the lamb, you know," <br />
+                    The teacher did reply.
+                  </p>
+                </article>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/chilanka/Chilanka-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/chilanka/Chilanka-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/chilanka/chilanka.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -245,23 +355,55 @@ export default {
 <style lang="less">
 .chilanka section {
   margin: 3em 0;
-
   .v-card {
     padding: 2em;
   }
 }
+.chilanka-slide-0,
+.chilanka-slide-1,
+.chilanka-slide-2,
+.chilanka-slide-3 {
+  font-family: "Chilanka" !important;
+}
 .chilanka-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Chilanka" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .chilanka-slide-1 {
-  font-family: "Chilanka" !important;
   background: linear-gradient(to left, #ffeeee, #ddefbb);
   p {
     color: #252425;
   }
+}
+.chilanka-slide-2,
+.chilanka-slide-3 {
+  background: linear-gradient(30deg, #9ef8f4 35%, #2dff62ec);
+  width: 100%;
+  align-items: center;
+  article {
+    columns: 2;
+    width: 80%;
+    margin: auto;
+    background-size: 100% 40px;
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #252425;
+      text-align: justify;
+    }
+  }
+  @media (max-width: 48em) {
+    article {
+      columns: 1;
+    }
+  }
+}
+.chilanka-slide-3 {
+  background: linear-gradient(30deg, #61eee7 35%, #23a2ecec);
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>

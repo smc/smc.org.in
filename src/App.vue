@@ -213,6 +213,11 @@ export default {
             title: "RaghuMalayalam",
             path: "/fonts/raghumalayalam",
             msg: "raghumalayalamsans"
+          },
+          {
+            title: "Suruma",
+            path: "/fonts/suruma",
+            msg: "suruma"
           }
         ]
       },

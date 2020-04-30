@@ -56,8 +56,59 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="dyuthi-slide-2 py-auto fill-height"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <h1>വലിയൊരു ലോകം മുഴുവന്‍ നന്നാവാന്‍</h1>
+                <h1>ചെറിയൊരു സൂത്രം ചെവിയിലോതാം ഞാന്‍</h1>
+                <h1>സ്വയം നന്നാവുക..!</h1>
+                <p>കുഞ്ഞുണ്ണി മാഷ്</p>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/dyuthi/Dyuthi-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/dyuthi/Dyuthi-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/dyuthi/dyuthi.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -158,16 +209,16 @@ export default {
 <style lang="less">
 .dyuthi section {
   margin: 3em 0;
-
   .v-card {
     padding: 2em;
   }
 }
+.dyuthi-slide-0,
+.dyuthi-slide-1,
+.dyuthi-slide-2 {
+  font-family: "Dyuthi" !important;
+}
 .dyuthi-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Dyuthi" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .dyuthi-slide-1 {
@@ -175,5 +226,20 @@ export default {
   p {
     color: #252425;
   }
+}
+.dyuthi-slide-2 {
+  background: linear-gradient(45deg, #19c5b1 30%, #7890dd);
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+  }
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>
