@@ -62,8 +62,69 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="keraleeyam-slide-2 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <h1>എത്ര­മേല­കലാം ഇനിയടുക്കാ­നിടമില്ലെന്നതു­വരെ</h1>
+                <h1>എത്ര­മേല­ടുക്കാം ഇനിയകലാനിടമി­ല്ലെന്നതു­വരെ‍</h1>
+                <h2>കുഞ്ഞുണ്ണി മാഷ്</h2>
+              </v-card></v-carousel-item
+            >
+            <v-carousel-item>
+              <v-card
+                class="keraleeyam-slide-3 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <h1>They tried to bury us.</h1>
+                <h1>They didn’t know we were seeds.</h1>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/keraleeyam/keraleeyam.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -175,11 +236,47 @@ export default {
     padding: 2em;
   }
 }
-.keraleeyam-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Keraleeyam" !important;
+.keraleeyam-slide-0,
+.keraleeyam-slide-1,
+.keraleeyam-slide-2,
+.keraleeyam-slide-3 {
+  font-family: "Keraleeyam" !important;
+}
+.keraleeyam-slide-2,
+.keraleeyam-slide-3 {
+  padding: 3em;
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
   }
+  h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+  }
+  @media (max-width: 48em) {
+    h1,
+    h2,
+    h3 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    h1 {
+      font-size: 1em;
+    }
+    h2,
+    h3 {
+      font-size: 0.8em;
+    }
+  }
+}
+.keraleeyam-slide-0 {
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .keraleeyam-slide-1 {
@@ -187,5 +284,36 @@ export default {
   p {
     color: #252425;
   }
+}
+.keraleeyam-slide-2 {
+  background: #134e5e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #134e5e, #71b280);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #134e5e, #71b280);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+}
+
+.keraleeyam-slide-3 {
+  background: #134e5e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgb(56, 196, 235),
+    rgb(140, 231, 161)
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgb(56, 196, 235), rgb(140, 231, 161));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+}
+
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>

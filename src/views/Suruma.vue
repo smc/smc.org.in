@@ -32,7 +32,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">കറുമ്പി</h1>
+                <h1 class="display-3 font-weight-thin py-2 my-4">സുറുമ</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -55,8 +55,75 @@
                 </p>
               </v-card>
             </v-carousel-item>
+            <v-carousel-item>
+              <v-card
+                class="suruma-slide-2 py-auto"
+                height="100%"
+                align="center"
+                color="tranparent"
+              >
+                <article>
+                  <p>
+                    സുറുമയെഴുതിയ മിഴികളേ <br />
+                    പ്രണയമധുരത്തേന്‍ തുളുമ്പും <br />
+                    സൂര്യകാന്തിപ്പൂക്കളേ
+                    <br />
+                    <br />
+                    ജാലകത്തിരശ്ശീല നീക്കി <br />
+                    ജാലമെറിയുവതെന്തിനോ <br />
+                    തേന്‍പുരട്ടിയ മുള്ളുകള്‍ നീ <br />
+                    കരളിലെറിയുവതെന്തിനോ
+                    <br />
+                    <br />
+                    ഒരു കിനാവിന്‍ ചിറകിലേറി <br />
+                    ഓമലാളേ നീ വരു <br />
+                    നീലമിഴിയിലെ രാഗലഹരി <br />
+                    നീ പകര്‍ന്നു തരൂ തരൂ
+                  </p>
+                  <p>യൂസഫലി കേച്ചേരി</p>
+                </article>
+              </v-card>
+            </v-carousel-item>
           </v-carousel>
         </v-sheet>
+      </section>
+      <section id="download" class="row">
+        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-8 col-md-12">
+          <ul>
+            <li class="my-4 font-weight-bold">
+              TTF Format:
+              <v-btn
+                href="/downloads/fonts/suruma/Suruma.ttf"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              Webfonts in woff2 format for embedding in webpages. Also see
+              <a href="#webfonts">how to use in webpages</a>:
+              <v-btn
+                href="/downloads/fonts/suruma/Suruma.woff2"
+                color="primary"
+                text
+              >
+                {{ $i18n("regular") }}
+              </v-btn>
+            </li>
+            <li class="my-4 font-weight-bold">
+              All files in compressed zip file:
+              <v-btn
+                href="/downloads/fonts/suruma/Suruma.zip"
+                color="primary"
+                text
+              >
+                {{ $i18n("zip") }}
+              </v-btn>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="webfonts" class="row">
         <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
@@ -161,16 +228,16 @@ export default {
 <style lang="less">
 .suruma section {
   margin: 3em 0;
-
   .v-card {
     padding: 2em;
   }
 }
+.suruma-slide-0,
+.suruma-slide-1,
+.suruma-slide-2 {
+  font-family: "Suruma" !important;
+}
 .suruma-slide-0 {
-  .display-3,
-  .display-5 {
-    font-family: "Suruma" !important;
-  }
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 }
 .suruma-slide-1 {
@@ -178,5 +245,23 @@ export default {
   p {
     color: #252425;
   }
+}
+.suruma-slide-2 {
+  article {
+    p {
+      padding-top: 2em;
+      color: #ffffff;
+      margin: auto;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1em;
+    }
+  }
+}
+code {
+  padding: 1em;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>
