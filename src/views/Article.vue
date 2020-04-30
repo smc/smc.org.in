@@ -1,5 +1,5 @@
 <template>
-  <v-container class="col-lg-10 col-sm-12">
+  <v-container class="col-xl-8 col-lg-10 col-sm-12">
     <article v-if="title">
       <h1 class="display-3 py-2">{{ title }}</h1>
       <h5 v-if="author">{{ author }}</h5>
