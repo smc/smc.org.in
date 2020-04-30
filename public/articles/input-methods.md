@@ -5,6 +5,10 @@ url: /articles/input-methods
 author: Ashik Salahudeen
 ---
 
+```
+This article is draft and incomplete
+```
+
 # Table of Contents
 
 1.  [Enabling Malayalam on your computer - A comprehensive guide.](#orgbcf2810)
