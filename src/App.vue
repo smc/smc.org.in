@@ -27,7 +27,7 @@
             >
               <v-list-item-content>
                 <v-list-item-title
-                  v-text="$i18n(subItem.msg || subItem.title)"
+                  v-i18n="subItem.msg || subItem.title"
                   :to="item.path"
                   :href="item.href"
                 ></v-list-item-title>
@@ -42,7 +42,7 @@
           >
             <v-list-item-content>
               <v-list-item-title
-                v-text="$i18n(item.msg || item.title)"
+                v-i18n="item.msg || item.title"
               ></v-list-item-title>
             </v-list-item-content>
           </v-list-item>

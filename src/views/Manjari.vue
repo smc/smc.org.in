@@ -1,7 +1,7 @@
 <template>
   <v-container class="manjari col-lg-8 col-sm-12">
     <main>
-      <h1 class="display-3" v-text="$i18n('manjari')"></h1>
+      <h1 class="display-3" v-i18n="'manjari'"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
           Designer:
@@ -79,7 +79,7 @@
         </v-sheet>
       </section>
       <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+        <h2 v-i18n="'download'" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
@@ -88,22 +88,22 @@
                 href="/downloads/fonts/manjari/Manjari-Regular.otf"
                 color="primary"
                 text
+                v-i18n="'regular'"
               >
-                {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.otf"
                 color="primary"
                 text
+                v-i18n="'thin'"
               >
-                {{ $i18n("thin") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.otf"
                 color="primary"
                 text
+                v-i18n="'bold'"
               >
-                {{ $i18n("bold") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
@@ -112,22 +112,22 @@
                 href="/downloads/fonts/manjari/Manjari-Regular.ttf"
                 color="primary"
                 text
+                v-i18n="'regular'"
               >
-                {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.ttf"
                 color="primary"
                 text
+                v-i18n="'thin'"
               >
-                {{ $i18n("thin") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.ttf"
                 color="primary"
                 text
+                v-i18n="'bold'"
               >
-                {{ $i18n("bold") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
@@ -137,22 +137,22 @@
                 href="/downloads/fonts/manjari/Manjari-Regular.woff2"
                 color="primary"
                 text
+                v-i18n="'regular'"
               >
-                {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.woff2"
                 color="primary"
                 text
+                v-i18n="'thin'"
               >
-                {{ $i18n("thin") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.woff2"
                 color="primary"
                 text
+                v-i18n="'bold'"
               >
-                {{ $i18n("bold") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
@@ -161,8 +161,8 @@
                 href="/downloads/fonts/manjari/manjari.zip"
                 color="primary"
                 text
+                v-i18n="'zip'"
               >
-                {{ $i18n("zip") }}
               </v-btn>
             </li>
           </ul>

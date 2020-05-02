@@ -113,8 +113,8 @@
                 href="/downloads/fonts/anjalioldlipi/AnjaliOldLipi-Regular.woff2"
                 color="primary"
                 text
+                v-i18n="'regular'"
               >
-                {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
@@ -123,15 +123,15 @@
                 href="/downloads/fonts/anjalioldlipi/anjalioldlipi.zip"
                 color="primary"
                 text
+                v-i18n="'zip'"
               >
-                {{ $i18n("zip") }}
               </v-btn>
             </li>
           </ul>
         </div>
       </section>
       <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+        <h2 v-i18n="'webfonts'" class="webfonts col-lg-4 col-md-12"></h2>
         <div class="col-lg-8 col-md-12">
           <p>
             To use AnjaliOldLipi in web pages, webfonts can be used. You may
@@ -144,7 +144,7 @@
         </div>
       </section>
       <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+        <h2 v-i18n="'license'" class="col-lg-4 col-md-12"></h2>
         <p class="col-lg-8 col-md-12">
           AnjaliOldLipi is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
@@ -152,7 +152,7 @@
         </p>
       </section>
       <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+        <h2 v-i18n="'sourcecode'" class="col-lg-4 col-md-12"></h2>
         <p class="col-lg-8 col-md-12">
           AnjaliOldLipi typefaces's source code, including svg drawings, build
           scripts are available at
@@ -162,7 +162,7 @@
         </p>
       </section>
       <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
+        <h2 v-i18n="'Available glyphs'" class="col-lg-12"></h2>
         <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
           {{ fontdata.summary.glyphs }} Glyphs
         </h4>

@@ -15,7 +15,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-video": "^0.6.3",
     "vue": "^2.6.11",
-    "vue-banana-i18n": "^1.0.5",
+    "vue-banana-i18n": "^1.0.6",
     "vue-router": "^3.1.5",
     "vuetify": "^2.2.22"
   },
