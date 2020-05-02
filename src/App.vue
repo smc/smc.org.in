@@ -63,7 +63,7 @@
       </div>
       <v-toolbar-title
         v-i18n="'smc'"
-        class="ml-2"
+        class="pa-2"
         style="cursor: pointer;"
         @click.stop="$router.push('/')"
       >
@@ -275,6 +275,7 @@ export default {
   font-size: 1em;
   overflow-x: hidden;
   .display-2,
+  .display-3,
   .headline,
   .subtitle-1,
   .title {
@@ -294,6 +295,9 @@ export default {
   }
   &.v-application .display-3 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
+  }
+  &.v-application .v-card__title {
+    word-break: break-word;
   }
 }
 </style>
