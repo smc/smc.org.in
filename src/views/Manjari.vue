@@ -1,5 +1,5 @@
 <template>
-  <v-container class="manjari col-lg-8 col-sm-12">
+  <v-container class="manjari col-xl-8 col-sm-10 col-xs-12">
     <main>
       <h1 class="display-3" v-i18n="'manjari'"></h1>
       <div id="intro" class="row">

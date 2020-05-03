@@ -1,5 +1,5 @@
 <template>
-  <v-container class="gayathri col-lg-8 col-sm-12">
+  <v-container class="gayathri col-xl-8 col-sm-10 col-xs-12">
     <main>
       <h1 class="display-3" v-text="$i18n('gayathri')"></h1>
       <div id="intro" class="row">

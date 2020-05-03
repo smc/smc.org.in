@@ -1,5 +1,5 @@
 <template>
-  <v-container class="uroob col-lg-8 col-sm-12">
+  <v-container class="uroob col-xl-8 col-sm-10 col-xs-12">
     <main>
       <h1 class="display-3" v-text="$i18n('uroob')"></h1>
       <div id="intro" class="row">

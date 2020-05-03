@@ -1,5 +1,5 @@
 <template>
-  <v-container class="rachana col-lg-8 col-sm-12">
+  <v-container class="rachana col-xl-8 col-sm-10 col-xs-12">
     <main>
       <h1 class="display-3" v-text="$i18n('rachana')"></h1>
       <div id="intro" class="row">
