@@ -5,7 +5,7 @@
 
       <section class="row">
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-img
               height="200px"
               contain
@@ -29,7 +29,7 @@
         </v-col>
 
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-card-title>Varnam</v-card-title>
 
             <v-card-text class="text--primary flex-grow-1">
@@ -47,7 +47,7 @@
         </v-col>
 
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-card-title>Libindic</v-card-title>
 
             <v-card-text class="text--primary flex-grow-1">
@@ -67,7 +67,7 @@
         </v-col>
 
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-card-title>Dhvani</v-card-title>
 
             <v-card-text class="text--primary flex-grow-1">
@@ -88,7 +88,7 @@
         </v-col>
 
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-card-title>ibus-sharada-braille</v-card-title>
 
             <v-card-text class="text--primary flex-grow-1">
@@ -106,7 +106,7 @@
         </v-col>
 
         <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined height="400px" class="d-flex flex-column">
+          <v-card outlined height="400px" class="d-flex flex-column" hover>
             <v-card-title>Grandham</v-card-title>
 
             <v-card-text class="text--primary flex-grow-1">
