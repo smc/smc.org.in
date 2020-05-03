@@ -36,6 +36,7 @@
         v-for="post in blogposts"
       >
         <v-card
+          outlined
           class="card-blogpost"
           :to="`/blog/${post.slug}`"
         >

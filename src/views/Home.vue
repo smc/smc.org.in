@@ -51,7 +51,7 @@
 
       <v-row>
         <v-col md="6" lg="3" sm="12">
-          <v-card to="/fonts/manjari" class="mx-auto" max-width="400">
+          <v-card outlined to="/fonts/manjari" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/manjari-card.png"
               height="200px"
@@ -63,7 +63,7 @@
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
-          <v-card to="/fonts/gayathri" class="mx-auto" max-width="400">
+          <v-card outlined to="/fonts/gayathri" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/gayathri-card.png"
               height="200px"
@@ -76,6 +76,7 @@
         </v-col>
         <v-col md="6" lg="3" sm="12">
           <v-card
+            outlined
             href="https://morph.smc.org.in"
             class="mx-auto"
             max-width="400"
@@ -102,7 +103,12 @@
           :key="post.id"
           v-for="post in blogposts"
         >
-          <v-card class="mx-auto" max-width="400" :to="`/blog/${post.slug}`">
+          <v-card
+            outlined
+            class="mx-auto"
+            max-width="400"
+            :to="`/blog/${post.slug}`"
+          >
             <v-img
               :src="post.feature_image || require('@/assets/logo.svg')"
               height="200px"
