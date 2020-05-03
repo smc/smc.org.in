@@ -118,7 +118,7 @@ export default {
       return post;
     },
     // Replace links under [] tag
-    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]\s?/g, "")
+    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, "")
   },
   beforeRouteEnter(to, from, next) {
     // called before the route that renders this component is confirmed.
