@@ -1,26 +1,16 @@
 <template>
   <v-container class="raghumalayalamsans col-xl-8 col-sm-10 col-xs-12">
     <main>
-      <h1 class="display-3" v-text="$i18n('raghumalayalamsans')"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Prof. R. K. Joshi (TypeFont Design Director, Visiting Design
+      <font-title
+        :name="$i18n('raghumalayalamsans')"
+        :version="fontdata.version"
+        author="Prof. R. K. Joshi (TypeFont Design Director, Visiting Design
           Specialist at C-DAC Mumbai) in association with Mr. Rajith Kumar K. M.
           (TypeFont Designer), assisted by Mr. Nirmal Biswas, Ms. Jui Mhatre and
-          Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST). |
-          {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/raghumalayalamsans/raghumalayalamsans.zip"
-          rounded
-          large
-          color="success"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
-      </div>
+          Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST)."
+        link="/downloads/fonts/raghumalayalamsans/raghumalayalamsans.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -251,13 +241,14 @@
 <script>
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
+import FontTitle from "../components/FontTitle";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans.json")
       .then(response => response.json())
