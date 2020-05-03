@@ -5,7 +5,7 @@
       <main class="my-10" v-html="content" />
     </article>
     <div v-else>
-      <h1 class="display-3 my-10">Articles</h1>
+      <h1 class="display-3 my-10" v-i18n="'menu-articles'"></h1>
       <v-text-field
         v-model="search"
         :append-icon="mdiMagnify"
