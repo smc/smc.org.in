@@ -9,6 +9,7 @@ const routerOptions = [
   { path: "/contact", name: "contact", view: "Contact", params: true },
   { path: "/fonts", name: "fonts", view: "Fonts" },
   { path: "/projects", name: "projects", view: "Projects", params: true },
+  { path: "/research", name: "research", view: "Research", params: true },
   { path: "/people", name: "people", view: "People", params: true },
   { path: "/code-of-conduct", name: "coc", view: "COC", params: true },
   {
