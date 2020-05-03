@@ -13,6 +13,7 @@
         lg="3"
       >
         <v-card
+          hover
           :class="`mx-auto font-${font.title.toLowerCase()}`"
           tile
           :key="font.title"

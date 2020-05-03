@@ -51,7 +51,7 @@
 
       <v-row>
         <v-col md="6" lg="3" sm="12">
-          <v-card outlined to="/fonts/manjari" class="mx-auto" max-width="400">
+          <v-card outlined hover to="/fonts/manjari" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/manjari-card.png"
               height="200px"
@@ -63,7 +63,7 @@
           </v-card>
         </v-col>
         <v-col md="6" lg="3" sm="12">
-          <v-card outlined to="/fonts/gayathri" class="mx-auto" max-width="400">
+          <v-card outlined hover to="/fonts/gayathri" class="mx-auto" max-width="400">
             <v-img
               src="@/assets/images/gayathri-card.png"
               height="200px"
@@ -77,6 +77,7 @@
         <v-col md="6" lg="3" sm="12">
           <v-card
             outlined
+            hover
             href="https://morph.smc.org.in"
             class="mx-auto"
             max-width="400"
@@ -105,6 +106,7 @@
         >
           <v-card
             outlined
+            hover
             class="mx-auto"
             max-width="400"
             height="400px"
