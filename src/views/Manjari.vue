@@ -1,6 +1,6 @@
 <template>
   <v-container class="manjari col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="manjari">
       <font-title
         :name="$i18n('manjari')"
         :version="fontdata.version"
@@ -554,6 +554,17 @@ export default {
 };
 </script>
 <style lang="less">
+#manjari {
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .display-5,
+  .title,
+  .headline {
+    font-family: "Manjari" !important;
+  }
+}
 .manjari section {
   margin: 3em 0;
 

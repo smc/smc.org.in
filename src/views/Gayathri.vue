@@ -1,6 +1,6 @@
 <template>
   <v-container class="gayathri col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="gayathri">
       <font-title
         :name="$i18n('gayathri')"
         :version="fontdata.version"
@@ -348,7 +348,7 @@
                 text editor application you are using, picking one of these
                 variants is usually allowed. Please read
                 <a
-                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-gayathri-chilanka/"
+                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-gayathri-gayathri/"
                   >this article</a
                 >
                 to see how to use this with Inkscape, Browsers, Libreoffice and
@@ -483,6 +483,16 @@ export default {
 };
 </script>
 <style lang="less">
+#gayathri .display-1,
+#gayathri .display-2,
+#gayathri .display-3,
+#gayathri .display-4,
+#gayathri .display-5,
+#gayathri .title,
+#gayathri .headline {
+  font-family: "Gayathri" !important;
+}
+
 .gayathri section {
   margin: 3em 0;
 

@@ -1,6 +1,6 @@
 <template>
   <v-container class="keraleeyam col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="keraleeyam">
       <font-title
         :name="$i18n('keraleeyam')"
         :version="fontdata.version"
@@ -221,6 +221,16 @@ export default {
 };
 </script>
 <style lang="less">
+#keraleeyam .display-1,
+#keraleeyam .display-2,
+#keraleeyam .display-3,
+#keraleeyam .display-4,
+#keraleeyam .display-5,
+#keraleeyam .title,
+#keraleeyam .headline {
+  font-family: "Keraleeyam" !important;
+}
+
 .keraleeyam section {
   margin: 3em 0;
 

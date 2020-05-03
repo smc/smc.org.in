@@ -1,6 +1,6 @@
 <template>
   <v-container class="meera col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="meera">
       <font-title
         :name="$i18n('meera')"
         :version="fontdata.version"
@@ -241,6 +241,16 @@ export default {
 };
 </script>
 <style lang="less">
+#meera .display-1,
+#meera .display-2,
+#meera .display-3,
+#meera .display-4,
+#meera .display-5,
+#meera .title,
+#meera .headline {
+  font-family: "Meera" !important;
+}
+
 .meera section {
   margin: 3em 0;
 

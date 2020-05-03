@@ -1,6 +1,6 @@
 <template>
   <v-container class="suruma col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="suruma">
       <font-title
         :name="$i18n('suruma')"
         :version="fontdata.version"
@@ -218,6 +218,16 @@ export default {
 };
 </script>
 <style lang="less">
+#suruma .display-1,
+#suruma .display-2,
+#suruma .display-3,
+#suruma .display-4,
+#suruma .display-5,
+#suruma .title,
+#suruma .headline {
+  font-family: "Suruma" !important;
+}
+
 .suruma section {
   margin: 3em 0;
   .v-card {

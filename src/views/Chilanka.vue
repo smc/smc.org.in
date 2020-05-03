@@ -1,6 +1,6 @@
 <template>
   <v-container class="chilanka col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="chilanka">
       <font-title
         :name="$i18n('chilanka')"
         :version="fontdata.version"
@@ -344,6 +344,15 @@ export default {
 };
 </script>
 <style lang="less">
+#chilanka .display-1,
+#chilanka .display-3,
+#chilanka .display-5,
+#chilanka .display-2,
+#chilanka .title,
+#chilanka .headline {
+  font-family: "Chilanka" !important;
+}
+
 .chilanka section {
   margin: 3em 0;
   .v-card {

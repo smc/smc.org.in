@@ -1,6 +1,6 @@
 <template>
   <v-container class="dyuthi col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="dyuthi">
       <font-title
         :name="$i18n('dyuthi')"
         :version="fontdata.version"
@@ -199,6 +199,16 @@ export default {
 };
 </script>
 <style lang="less">
+#dyuthi .display-1,
+#dyuthi .display-2,
+#dyuthi .display-3,
+#dyuthi .display-4,
+#dyuthi .display-5,
+#dyuthi .title,
+#dyuthi .headline {
+  font-family: "Dyuthi" !important;
+}
+
 .dyuthi section {
   margin: 3em 0;
   .v-card {

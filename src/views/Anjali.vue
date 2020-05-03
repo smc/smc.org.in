@@ -1,6 +1,6 @@
 <template>
   <v-container class="anjalioldlipi col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="anjali">
       <font-title
         :name="$i18n('anjalioldlipi')"
         :version="fontdata.version"
@@ -225,6 +225,16 @@ export default {
 };
 </script>
 <style lang="less">
+#anjali .display-1,
+#anjali .display-2,
+#anjali .display-3,
+#anjali .display-4,
+#anjali .display-5,
+#anjali .title,
+#anjali .headline {
+  font-family: "AnjaliOldLipi" !important;
+}
+
 .anjalioldlipi section {
   margin: 3em 0;
   .v-card {

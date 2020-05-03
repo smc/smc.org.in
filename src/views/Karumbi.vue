@@ -1,6 +1,6 @@
 <template>
   <v-container class="karumbi col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="karumbi">
       <font-title
         :name="$i18n('karumbi')"
         :version="fontdata.version"
@@ -256,6 +256,16 @@ export default {
 };
 </script>
 <style lang="less">
+#karumbi .display-1,
+#karumbi .display-2,
+#karumbi .display-3,
+#karumbi .display-4,
+#karumbi .display-5,
+#karumbi .title,
+#karumbi .headline {
+  font-family: "Karumbi" !important;
+}
+
 .karumbi section {
   margin: 3em 0;
 

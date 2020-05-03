@@ -1,6 +1,6 @@
 <template>
   <v-container class="uroob col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="uroob">
       <font-title
         :name="$i18n('uroob')"
         :version="fontdata.version"
@@ -164,6 +164,16 @@ export default {
 };
 </script>
 <style lang="less">
+#uroob .display-1,
+#uroob .display-2,
+#uroob .display-3,
+#uroob .display-4,
+#uroob .display-5,
+#uroob .title,
+#uroob .headline {
+  font-family: "Uroob" !important;
+}
+
 .uroob section {
   margin: 3em 0;
 

@@ -1,6 +1,6 @@
 <template>
   <v-container class="rachana col-xl-8 col-sm-10 col-xs-12">
-    <main>
+    <main id="rachana">
       <font-title
         :name="$i18n('rachana')"
         :version="fontdata.version"
@@ -239,6 +239,16 @@ export default {
 };
 </script>
 <style lang="less">
+#rachana .display-1,
+#rachana .display-2,
+#rachana .display-3,
+#rachana .display-4,
+#rachana .display-5,
+#rachana .title,
+#rachana .headline {
+  font-family: "Rachana" !important;
+}
+
 .rachana section {
   margin: 3em 0;
 
