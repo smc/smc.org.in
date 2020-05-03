@@ -3,24 +3,12 @@
     <v-row v-if="post" align="center" justify="center">
       <v-col xs="12">
         <article class="blogpost">
-          <v-img
-            cover
-            :src="post.feature_image"
-            v-if="post.feature_image"
-            height="30vh"
-          ></v-img>
-          <h1 class="display-3 mt-10 font-gayathri" lang="ml">
-            {{ post.title }}
-          </h1>
-          <h5 v-if="post.authors" class="subtitle-1 py-3">
-            <span :key="author.id" v-for="author in post.authors">
-              {{ author.name }},
-            </span>
-            <span>
-              {{ new Date(post.published_at).toDateString() }}
-            </span>
-          </h5>
-          <v-divider />
+          <post-title
+            :image="post.feature_image"
+            :title="post.title"
+            :authors="post.authors"
+            :date="post.published_at"
+            />
           <main class="post-body my-10" v-html="post.html" />
         </article>
       </v-col>
@@ -70,7 +58,10 @@
   </v-container>
 </template>
 <script>
+import PostTitle from "../components/PostTitle";
+
 export default {
+  components: { PostTitle },
   data: () => ({
     content: null,
     author: null,
