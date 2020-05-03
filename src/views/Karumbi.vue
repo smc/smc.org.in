@@ -1,22 +1,13 @@
 <template>
-  <v-container class="karumbi col-lg-8 col-sm-12">
+  <v-container class="karumbi col-xl-8 col-sm-10 col-xs-12">
     <main id="karumbi">
-      <h1 class="display-3" v-text="$i18n('karumbi')"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Designer: Kevin Siji | {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/karumbi/karumbi.zip"
-          rounded
-          large
-          color="success"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
-      </div>
+      <font-title
+        :name="$i18n('karumbi')"
+        :version="fontdata.version"
+        author="Designer: Kevin Siji"
+        link="/downloads/fonts/karumbi/karumbi.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -247,13 +238,14 @@
 <script>
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
+import FontTitle from "../components/FontTitle";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/karumbi/Karumbi.json")
       .then(response => response.json())

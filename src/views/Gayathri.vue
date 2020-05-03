@@ -1,22 +1,13 @@
 <template>
-  <v-container class="gayathri col-lg-8 col-sm-12">
+  <v-container class="gayathri col-xl-8 col-sm-10 col-xs-12">
     <main id="gayathri">
-      <h1 class="display-3" v-text="$i18n('gayathri')"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Designer:
-          <a href="https://thottingal.in">Binoy Dominic</a>
-          {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/gayathri/gayathri.zip"
-          color="primary"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon>
-          {{ $i18n("download") }}
-        </v-btn>
-      </div>
+      <font-title
+        :name="$i18n('gayathri')"
+        :version="fontdata.version"
+        author="Designer: Binoy Dominic"
+        link="/downloads/fonts/gayathri/gayathri.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -393,6 +384,7 @@
 <script>
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
+import FontTitle from "../components/FontTitle";
 
 export default {
   data: () => ({
@@ -480,7 +472,7 @@ export default {
       "su"
     ]
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/gayathri/Gayathri.json")
       .then(response => response.json())

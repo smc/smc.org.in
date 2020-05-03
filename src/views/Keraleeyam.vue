@@ -1,22 +1,13 @@
 <template>
-  <v-container class="keraleeyam col-lg-8 col-sm-12">
+  <v-container class="keraleeyam col-xl-8 col-sm-10 col-xs-12">
     <main id="keraleeyam">
-      <h1 class="display-3" v-text="$i18n('keraleeyam')"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Designer: Hussain K H | {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/keraleeyam/keraleeyam.zip"
-          rounded
-          large
-          color="success"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
-      </div>
+      <font-title
+        :name="$i18n('keraleeyam')"
+        :version="fontdata.version"
+        author="Designer: Hussain K H"
+        link="/downloads/fonts/keraleeyam/keraleeyam.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -212,13 +203,14 @@
 <script>
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
+import FontTitle from "../components/FontTitle";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/keraleeyam/Keraleeyam.json")
       .then(response => response.json())

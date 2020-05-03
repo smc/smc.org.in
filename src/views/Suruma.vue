@@ -1,22 +1,13 @@
 <template>
-  <v-container class="suruma col-lg-8 col-sm-12">
+  <v-container class="suruma col-xl-8 col-sm-10 col-xs-12">
     <main id="suruma">
-      <h1 class="display-3" v-text="$i18n('suruma')"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Designer: Suresh P | {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/suruma/suruma.zip"
-          rounded
-          large
-          color="success"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon
-          >{{ $i18n("download") }}</v-btn
-        >
-      </div>
+      <font-title
+        :name="$i18n('suruma')"
+        :version="fontdata.version"
+        author="Designer: Suresh P"
+        link="/downloads/fonts/suruma/suruma.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -208,6 +199,7 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
+import FontTitle from "../components/FontTitle";
 import Glyphs from "../components/Glyphs";
 
 export default {
@@ -215,7 +207,7 @@ export default {
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/suruma/Suruma.json")
       .then(response => response.json())

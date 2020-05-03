@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fonts">
+  <v-container class="fonts col-xl-8 col-sm-10 col-xs-12">
     <v-row class="text-center">
       <h1 class="title" v-text="$i18n('menu-fonts')"></h1>
     </v-row>

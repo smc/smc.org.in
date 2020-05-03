@@ -1,6 +1,6 @@
 <template>
   <v-row class="mb-6" justify="center">
-    <v-col lg="6" md="8" xs="11">
+    <v-col xl="8" sm="10" xs="10">
       <section class="pa-2">
         <h1
           class="display-2 font-weight-bold mb-3"

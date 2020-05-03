@@ -1,23 +1,13 @@
 <template>
-  <v-container class="manjari col-lg-8 col-sm-12">
+  <v-container class="manjari col-xl-8 col-sm-10 col-xs-12">
     <main id="manjari">
-      <h1 class="display-3" v-i18n="'manjari'"></h1>
-      <div id="intro" class="row">
-        <p class="title-2 col-lg-6">
-          Designer:
-          <a href="https://thottingal.in">Santhosh Thottingal</a>
-          |
-          {{ fontdata.version }}
-        </p>
-        <v-btn
-          to="/downloads/fonts/manjari/manjari.zip"
-          color="primary"
-          class="col col-lg-3 ma-1"
-        >
-          <v-icon>{{ mdiDownload }}</v-icon>
-          {{ $i18n("download") }}
-        </v-btn>
-      </div>
+      <font-title
+        :name="$i18n('manjari')"
+        :version="fontdata.version"
+        author="Designer: Santhosh Thottingal"
+        link="/downloads/fonts/manjari/manjari.zip"
+      />
+
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -465,6 +455,8 @@
 <script>
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
+import FontTitle from "../components/FontTitle";
+
 export default {
   data: () => ({
     mdiDownload,
@@ -551,7 +543,7 @@ export default {
       "su"
     ]
   }),
-  components: { Glyphs },
+  components: { Glyphs, FontTitle },
   created() {
     return fetch("/downloads/fonts/manjari/Manjari.json")
       .then(response => response.json())

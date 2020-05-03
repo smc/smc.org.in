@@ -1,5 +1,5 @@
 <template>
-  <v-container class="contact col-lg-6 col-md-8 col-sm-12">
+  <v-container class="contact col-xl-8 col-sm-10 col-xs-12">
     <h1>Contact</h1>
     <v-row class="text-left">
       <ul id="links">
