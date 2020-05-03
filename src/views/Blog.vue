@@ -13,9 +13,7 @@
             {{ post.title }}
           </h1>
           <h5 v-if="post.authors" class="subtitle-1 py-3">
-            <span
-              :key="author.id"
-              v-for="author in post.authors">
+            <span :key="author.id" v-for="author in post.authors">
               {{ author.name }},
             </span>
             <span>
@@ -156,7 +154,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '~vuetify/src/styles/settings/_variables';
+@import "~vuetify/src/styles/settings/_variables";
 
 .post-body {
   font-family: "Inter", "Manjari", sans;
