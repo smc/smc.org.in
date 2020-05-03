@@ -1,6 +1,7 @@
 <template>
   <v-container class="contact col-xl-8 col-sm-10 col-xs-12">
-    <h1>Contact</h1>
+    <h1 class="display-3 my-10" v-i18n="'menu-contact'"></h1>
+
     <v-row class="text-left">
       <ul id="links">
         <li>
