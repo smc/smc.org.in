@@ -8,9 +8,7 @@
 
     <h5 v-if="authors || author" class="subtitle-1 py-3">
       <span> {{ getAuthorString(authors || author) }} </span>
-      <span v-if="date">
-        - {{ new Date(date).toDateString() }}
-      </span>
+      <span v-if="date"> - {{ new Date(date).toDateString() }} </span>
     </h5>
 
     <v-divider />

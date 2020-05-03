@@ -21,11 +21,7 @@
         :key="post.id"
         v-for="post in blogposts"
       >
-        <v-card
-          outlined
-          class="card-blogpost"
-          :to="`/blog/${post.slug}`"
-        >
+        <v-card outlined class="card-blogpost" :to="`/blog/${post.slug}`">
           <v-row justify="space-between">
             <v-col xs="12" md="4" class="pa-0">
               <v-img
