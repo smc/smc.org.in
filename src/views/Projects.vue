@@ -21,7 +21,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn color="primary" text href="https://indic.app">
                 Details
               </v-btn>
             </v-card-actions>
@@ -39,7 +39,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn color="primary" text href="https://www.varnamproject.com/">
                 Details
               </v-btn>
             </v-card-actions>
@@ -59,7 +59,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn color="primary" text href="https://libindic.org/">
                 Details
               </v-btn>
             </v-card-actions>
@@ -80,7 +80,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn color="primary" text href="http://dhvani.sourceforge.net/">
                 Details
               </v-btn>
             </v-card-actions>
@@ -98,7 +98,11 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn
+                color="primary"
+                text
+                href="https://github.com/Nalin-x-Linux/ibus-sharada-braille"
+              >
                 Details
               </v-btn>
             </v-card-actions>
@@ -118,7 +122,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="primary" text>
+              <v-btn color="primary" text href="https://grandham.in/">
                 Details
               </v-btn>
             </v-card-actions>
