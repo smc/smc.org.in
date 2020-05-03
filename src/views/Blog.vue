@@ -154,7 +154,9 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="scss">
+@import '~vuetify/src/styles/settings/_variables';
+
 .post-body {
   font-family: "Inter", "Manjari", sans;
   line-height: 1.6;
@@ -180,6 +182,8 @@ export default {
 
 .card-blogpost {
   overflow: hidden;
-  height: 250px;
+  @media #{map-get($display-breakpoints, 'md-and-up')} {
+    height: 250px;
+  }
 }
 </style>
