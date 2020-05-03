@@ -1,5 +1,6 @@
 {
     "smc": "Swathanthra Malayalam Computing",
+    "smc-short": "SMC",
     "smc-desc": "Swathanthra Malayalam Computing (SMC) is a free software collective engaged in development, localization, standardization and popularization of various Free and Open Source Softwares in Malayalam language.",
     "smc-about-heading": "About Swathanthra Malayalam Computing (SMC)",
     "smc-about-text-para-1": "We has been active since October 2002 and has been working to provide Malayalam language tools that work on all layers of computing including and not limited to rendering fixes, fonts, input mechanisms, translations (localization), text-to-speech engines, dictionaries, spell checkers and Indic script based language computing specific tools across operating systems. We are the upstream for Malayalam fonts and tools for popular GNU/Linux based operating systems such as Fedora and Debian. We also maintain localizations for popular Free Software Desktops (GNOME/KDE), popular applications such as Firefox and Libre Office.",
@@ -17,7 +18,7 @@
     "menu-people": "People ",
     "menu-history": "History",
     "menu-code-of-conduct": "Code of conduct",
-    "code-of-conduct": "Contributor Code of conduct",
+    "code-of-conduct": "Contributor Code of Conduct",
     "source-code": "Source code",
     "wiki": "Wiki",
     "telegram": "Telegram",

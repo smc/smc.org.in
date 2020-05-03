@@ -62,11 +62,12 @@
         />
       </div>
       <v-toolbar-title
-        v-i18n="'smc'"
         class="pa-2"
         style="cursor: pointer;"
         @click.stop="$router.push('/')"
       >
+        <span class="hidden-xs-only">{{ $i18n("smc") }}</span>
+        <span class="hidden-sm-and-up">{{ $i18n("smc-short") }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">

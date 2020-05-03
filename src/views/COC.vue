@@ -2,10 +2,7 @@
   <v-row class="mb-6" justify="center">
     <v-col xl="8" sm="10" xs="10">
       <section class="pa-2">
-        <h1
-          class="display-2 font-weight-bold mb-3"
-          v-text="$i18n('code-of-conduct')"
-        ></h1>
+        <h1 class="display-3 my-10" v-i18n="'code-of-conduct'"></h1>
         <h2 class="title mb-2" id="our-pledge">Our Pledge</h2>
 
         <p>

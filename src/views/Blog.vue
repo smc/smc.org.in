@@ -1,5 +1,7 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
+    <h1 class="display-3 my-10" v-i18n="'menu-blog'" v-if="!post"></h1>
+
     <!-- Start Placeholders -->
     <v-row v-if="loading_slug">
       <v-col xs="12">
@@ -58,7 +60,12 @@
           :key="post.id"
           v-for="post in blogposts"
         >
-          <v-card outlined class="card-blogpost" :to="`/blog/${post.slug}`">
+          <v-card
+            outlined
+            hover
+            class="card-blogpost"
+            :to="`/blog/${post.slug}`"
+          >
             <v-row justify="space-between">
               <v-col xs="12" md="4" class="pa-0">
                 <v-img

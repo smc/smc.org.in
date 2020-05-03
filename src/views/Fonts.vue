@@ -1,8 +1,7 @@
 <template>
   <v-container class="fonts col-xl-8 col-sm-10 col-xs-12">
-    <v-row class="text-center">
-      <h1 class="title" v-text="$i18n('menu-fonts')"></h1>
-    </v-row>
+    <h1 class="display-3 my-10" v-i18n="'menu-fonts'"></h1>
+
     <v-row>
       <v-col
         v-for="font in fonts"
@@ -13,6 +12,7 @@
         lg="3"
       >
         <v-card
+          hover
           :class="`mx-auto font-${font.title.toLowerCase()}`"
           tile
           :key="font.title"
