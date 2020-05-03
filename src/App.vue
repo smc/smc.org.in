@@ -279,14 +279,11 @@ export default {
   .headline,
   .subtitle-1,
   .title {
-    font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
     &[lang="ml"] {
       font-family: "Manjari", "Gayathri", sans-serif !important;
     }
   }
-  .v-btn {
-    text-transform: none !important;
-  }
+
   &.v-application .display-5 {
     font-size: clamp(1rem, 3vw, 2rem) !important;
   }

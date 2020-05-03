@@ -1,6 +1,6 @@
 <template>
   <v-container class="karumbi col-lg-8 col-sm-12">
-    <main>
+    <main id="karumbi">
       <h1 class="display-3" v-text="$i18n('karumbi')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -264,6 +264,16 @@ export default {
 };
 </script>
 <style lang="less">
+#karumbi .display-1,
+#karumbi .display-2,
+#karumbi .display-3,
+#karumbi .display-4,
+#karumbi .display-5,
+#karumbi .title,
+#karumbi .headline {
+  font-family: "Karumbi" !important;
+}
+
 .karumbi section {
   margin: 3em 0;
 

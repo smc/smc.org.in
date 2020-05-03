@@ -1,6 +1,6 @@
 <template>
   <v-container class="uroob col-lg-8 col-sm-12">
-    <main>
+    <main id="uroob">
       <h1 class="display-3" v-text="$i18n('uroob')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -172,6 +172,16 @@ export default {
 };
 </script>
 <style lang="less">
+#uroob .display-1,
+#uroob .display-2,
+#uroob .display-3,
+#uroob .display-4,
+#uroob .display-5,
+#uroob .title,
+#uroob .headline {
+  font-family: "Uroob" !important;
+}
+
 .uroob section {
   margin: 3em 0;
 

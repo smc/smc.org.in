@@ -1,6 +1,6 @@
 <template>
   <v-container class="manjari col-lg-8 col-sm-12">
-    <main>
+    <main id="manjari">
       <h1 class="display-3" v-i18n="'manjari'"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -562,6 +562,17 @@ export default {
 };
 </script>
 <style lang="less">
+#manjari {
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .display-5,
+  .title,
+  .headline {
+    font-family: "Manjari" !important;
+  }
+}
 .manjari section {
   margin: 3em 0;
 

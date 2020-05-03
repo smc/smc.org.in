@@ -1,6 +1,6 @@
 <template>
   <v-container class="chilanka col-lg-8 col-sm-12">
-    <main>
+    <main id="chilanka">
       <h1 class="display-3" v-text="$i18n('chilanka')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -353,6 +353,15 @@ export default {
 };
 </script>
 <style lang="less">
+#chilanka .display-1,
+#chilanka .display-3,
+#chilanka .display-5,
+#chilanka .display-2,
+#chilanka .title,
+#chilanka .headline {
+  font-family: "Chilanka" !important;
+}
+
 .chilanka section {
   margin: 3em 0;
   .v-card {

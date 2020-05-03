@@ -1,6 +1,6 @@
 <template>
   <v-container class="rachana col-lg-8 col-sm-12">
-    <main>
+    <main id="rachana">
       <h1 class="display-3" v-text="$i18n('rachana')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -247,6 +247,16 @@ export default {
 };
 </script>
 <style lang="less">
+#rachana .display-1,
+#rachana .display-2,
+#rachana .display-3,
+#rachana .display-4,
+#rachana .display-5,
+#rachana .title,
+#rachana .headline {
+  font-family: "Rachana" !important;
+}
+
 .rachana section {
   margin: 3em 0;
 

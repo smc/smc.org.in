@@ -1,6 +1,6 @@
 <template>
   <v-container class="keraleeyam col-lg-8 col-sm-12">
-    <main>
+    <main id="keraleeyam">
       <h1 class="display-3" v-text="$i18n('keraleeyam')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -229,6 +229,16 @@ export default {
 };
 </script>
 <style lang="less">
+#keraleeyam .display-1,
+#keraleeyam .display-2,
+#keraleeyam .display-3,
+#keraleeyam .display-4,
+#keraleeyam .display-5,
+#keraleeyam .title,
+#keraleeyam .headline {
+  font-family: "Keraleeyam" !important;
+}
+
 .keraleeyam section {
   margin: 3em 0;
 

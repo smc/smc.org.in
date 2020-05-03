@@ -1,6 +1,6 @@
 <template>
   <v-container class="anjalioldlipi col-lg-8 col-sm-12">
-    <main>
+    <main id="anjali">
       <h1 class="display-3" v-text="$i18n('anjalioldlipi')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -233,6 +233,16 @@ export default {
 };
 </script>
 <style lang="less">
+#anjali .display-1,
+#anjali .display-2,
+#anjali .display-3,
+#anjali .display-4,
+#anjali .display-5,
+#anjali .title,
+#anjali .headline {
+  font-family: "AnjaliOldLipi" !important;
+}
+
 .anjalioldlipi section {
   margin: 3em 0;
   .v-card {

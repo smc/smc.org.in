@@ -1,6 +1,6 @@
 <template>
   <v-container class="meera col-lg-8 col-sm-12">
-    <main>
+    <main id="meera">
       <h1 class="display-3" v-text="$i18n('meera')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -249,6 +249,16 @@ export default {
 };
 </script>
 <style lang="less">
+#meera .display-1,
+#meera .display-2,
+#meera .display-3,
+#meera .display-4,
+#meera .display-5,
+#meera .title,
+#meera .headline {
+  font-family: "Meera" !important;
+}
+
 .meera section {
   margin: 3em 0;
 

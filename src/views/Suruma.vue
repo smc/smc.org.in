@@ -1,6 +1,6 @@
 <template>
   <v-container class="suruma col-lg-8 col-sm-12">
-    <main>
+    <main id="suruma">
       <h1 class="display-3" v-text="$i18n('suruma')"></h1>
       <div id="intro" class="row">
         <p class="title-2 col-lg-6">
@@ -226,6 +226,16 @@ export default {
 };
 </script>
 <style lang="less">
+#suruma .display-1,
+#suruma .display-2,
+#suruma .display-3,
+#suruma .display-4,
+#suruma .display-5,
+#suruma .title,
+#suruma .headline {
+  font-family: "Suruma" !important;
+}
+
 .suruma section {
   margin: 3em 0;
   .v-card {
