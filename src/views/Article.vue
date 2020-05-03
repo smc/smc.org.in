@@ -4,28 +4,31 @@
       <post-title :title="title" :author="author" />
       <main class="my-10" v-html="content" />
     </article>
-    <v-card v-else>
-      <v-card-title>
-        Articles
-        <v-spacer></v-spacer>
-        <v-text-field
-          v-model="search"
-          :append-icon="mdiMagnify"
-          label="Search"
-          single-line
-          hide-details
-        ></v-text-field>
-      </v-card-title>
-      <v-data-table :headers="headers" :items="toc" :search="search">
-        <template v-slot:item.title="{ item }">
-          <router-link class="article-link" :to="item.url">
-            {{ item.title }}
-          </router-link>
-        </template>
-      </v-data-table>
-    </v-card>
+    <div v-else>
+      <h1 class="display-3 my-10">Articles</h1>
+      <v-text-field
+        v-model="search"
+        :append-icon="mdiMagnify"
+        label="Search"
+        class="my-10"
+        solo
+        single-line
+        hide-details
+      />
+
+      <v-card outlined>
+        <v-data-table :headers="headers" :items="toc" :search="search">
+          <template v-slot:item.title="{ item }">
+            <router-link class="article-link" :to="item.url">
+              {{ item.title }}
+            </router-link>
+          </template>
+        </v-data-table>
+      </v-card>
+    </div>
   </v-container>
 </template>
+
 <script>
 import MarkdownIt from "markdown-it";
 import MarkDownItVideo from "markdown-it-video";
