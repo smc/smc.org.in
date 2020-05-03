@@ -9,21 +9,21 @@
             v-if="post.feature_image"
             height="30vh"
           ></v-img>
-          <h1 class="display-3 py-2 font-gayathri" lang="ml">
+          <h1 class="display-3 mt-10 font-gayathri" lang="ml">
             {{ post.title }}
           </h1>
-          <v-divider />
-          <h5 v-if="post.authors" class="subtitle-1">
+          <h5 v-if="post.authors" class="subtitle-1 py-3">
             <span
               :key="author.id"
-              class="pr-4"
-              v-for="author in post.authors"
-              >{{ author.name }}</span
-            ><span class="pr-4">{{
-              new Date(post.published_at).toDateString()
-            }}</span>
+              v-for="author in post.authors">
+              {{ author.name }},
+            </span>
+            <span>
+              {{ new Date(post.published_at).toDateString() }}
+            </span>
           </h5>
-          <main class="post-body py-4" v-html="post.html" />
+          <v-divider />
+          <main class="post-body my-10" v-html="post.html" />
         </article>
       </v-col>
     </v-row>
