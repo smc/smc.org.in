@@ -107,6 +107,8 @@
             outlined
             class="mx-auto"
             max-width="400"
+            height="400px"
+            style="overflow: hidden;"
             :to="`/blog/${post.slug}`"
           >
             <v-img
@@ -118,10 +120,9 @@
               post.title
             }}</v-card-title>
 
-            <v-card-text
-              class="smc-blog-post-content-excerpt"
-              v-text="post.excerpt"
-            ></v-card-text>
+            <v-card-text class="smc-blog-post-content-excerpt">
+              {{ stripMd(post.excerpt) }}
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -141,6 +142,9 @@ export default {
     mdiBookOpenPageVariant
   }),
   components: {},
+  methods: {
+    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, "")
+  },
   created() {
     return fetch(
       "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&limit=8"
