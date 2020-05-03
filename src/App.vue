@@ -270,7 +270,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: "Inter", "Manjari", "Gayathri", sans-serif !important;
   text-align: left;
   font-size: 1em;
   overflow-x: hidden;
@@ -292,9 +291,6 @@ export default {
   }
   &.v-application .display-3 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
-  }
-  &.v-application .v-card__title {
-    word-break: break-word;
   }
 }
 </style>
