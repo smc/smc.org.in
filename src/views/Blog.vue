@@ -55,10 +55,8 @@
                 v-text="new Date(post.published_at).toDateString()"
               >
               </v-card-text>
-              <v-card-text
-                class="smc-blog-post-content-excerpt pa-0"
-                v-text="post.excerpt"
-              >
+              <v-card-text class="smc-blog-post-content-excerpt pa-0">
+                {{ stripMd(post.excerpt) }}
               </v-card-text>
             </v-col>
           </v-row>
@@ -118,7 +116,9 @@ export default {
           .then(data => data.posts.find(post => post.slug === slug));
       }
       return post;
-    }
+    },
+    // Replace links under [] tag
+    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, "")
   },
   beforeRouteEnter(to, from, next) {
     // called before the route that renders this component is confirmed.
