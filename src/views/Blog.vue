@@ -8,7 +8,7 @@
             :title="post.title"
             :authors="post.authors"
             :date="post.published_at"
-            />
+          />
           <main class="post-body my-10" v-html="post.html" />
         </article>
       </v-col>
