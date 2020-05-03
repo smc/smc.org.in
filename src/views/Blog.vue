@@ -35,26 +35,32 @@
         :key="post.id"
         v-for="post in blogposts"
       >
-        <v-card class="mx-auto" :to="`/blog/${post.slug}`">
-          <v-row>
-            <v-col md="4" xs="12" justify="center" align="center">
+        <v-card
+          class="card-blogpost"
+          :to="`/blog/${post.slug}`"
+        >
+          <v-row justify="space-between">
+            <v-col xs="12" md="4" class="pa-0">
               <v-img
                 cover
                 :src="post.feature_image || require('@/assets/logo.svg')"
                 :lazy-src="require('@/assets/logo.svg')"
-                height="200px"
+                height="250px"
               ></v-img>
             </v-col>
-            <v-col md="8" xs="12" justify="start" align="start">
-              <v-card-title class="smc-blog-post-content-title pa-0" lang="ml">
+
+            <v-col xs="12" md="8">
+              <v-card-title class="smc-blog-post-content-title" lang="ml">
                 {{ post.title }}
               </v-card-title>
-              <v-card-text
-                class="smc-blog-post-content-date pa-0"
+
+              <v-card-subtitle
+                class="smc-blog-post-content-date"
                 v-text="new Date(post.published_at).toDateString()"
               >
-              </v-card-text>
-              <v-card-text class="smc-blog-post-content-excerpt pa-0">
+              </v-card-subtitle>
+
+              <v-card-text class="smc-blog-post-content-excerpt">
                 {{ stripMd(post.excerpt) }}
               </v-card-text>
             </v-col>
@@ -170,5 +176,10 @@ export default {
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card-blogpost {
+  overflow: hidden;
+  height: 250px;
 }
 </style>
