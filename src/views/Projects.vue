@@ -1,7 +1,7 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
     <div class="projects">
-      <h1>Projects</h1>
+      <h1 class="display-3 my-10">Projects</h1>
 
       <section class="row">
         <v-col lg="3" md="6" xs="12" class="my-2">
