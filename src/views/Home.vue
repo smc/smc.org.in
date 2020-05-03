@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-container>
+    <v-container class="col-xl-8 col-lg-10 col-sm-12">
       <v-row class="text-center">
         <v-col cols="12">
           <v-img
