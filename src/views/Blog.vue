@@ -1,7 +1,7 @@
 <template>
-  <v-container class="col-xl-8 col-lg-10 col-sm-12">
+  <v-container class="col-xl-8 col-sm-10 col-xs-12">
     <v-row v-if="post" align="center" justify="center">
-      <v-col xl="6" lg="8" xs="12">
+      <v-col xs="12">
         <article class="blogpost">
           <v-img
             cover
@@ -30,7 +30,6 @@
     <v-row v-else justify="center">
       <v-col
         lg="6"
-        md="12"
         xs="12"
         class="my-6"
         :key="post.id"
