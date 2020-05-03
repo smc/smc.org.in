@@ -1,6 +1,41 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <v-row v-if="post" align="center" justify="center">
+    <!-- Start Placeholders -->
+    <v-row v-if="loading_slug">
+      <v-col xs="12">
+        <article class="blogpost">
+          <post-title :loading="loading_slug" />
+
+          <main class="post-body my-10">
+            <v-skeleton-loader type="paragraph" />
+          </main>
+        </article>
+      </v-col>
+    </v-row>
+    <v-row v-else-if="loading_all">
+      <v-col lg="6" xs="12" class="my-6" :key="n" v-for="n in 6">
+        <v-sheet class="px-3 pt-3 pb-3">
+          <v-row justify="space-between">
+            <v-col xs="12" md="4" class="pa-0">
+              <v-skeleton-loader type="image" />
+            </v-col>
+
+            <v-col xs="12" md="8">
+              <v-card-subtitle>
+                <v-skeleton-loader type="text" />
+              </v-card-subtitle>
+
+              <v-card-text class="smc-blog-post-content-excerpt">
+                <v-skeleton-loader type="paragraph" />
+              </v-card-text>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
+    </v-row>
+    <!-- End Placeholders -->
+
+    <v-row v-else-if="post" align="center" justify="center">
       <v-col xs="12">
         <article class="blogpost">
           <post-title
@@ -13,44 +48,47 @@
         </article>
       </v-col>
     </v-row>
-    <v-row v-else justify="center">
-      <v-col
-        lg="6"
-        xs="12"
-        class="my-6"
-        :key="post.id"
-        v-for="post in blogposts"
-      >
-        <v-card outlined class="card-blogpost" :to="`/blog/${post.slug}`">
-          <v-row justify="space-between">
-            <v-col xs="12" md="4" class="pa-0">
-              <v-img
-                cover
-                :src="post.feature_image || require('@/assets/logo.svg')"
-                :lazy-src="require('@/assets/logo.svg')"
-                height="250px"
-              ></v-img>
-            </v-col>
 
-            <v-col xs="12" md="8">
-              <v-card-title class="smc-blog-post-content-title" lang="ml">
-                {{ post.title }}
-              </v-card-title>
+    <div v-else>
+      <v-row>
+        <v-col
+          lg="6"
+          xs="12"
+          class="my-6"
+          :key="post.id"
+          v-for="post in blogposts"
+        >
+          <v-card outlined class="card-blogpost" :to="`/blog/${post.slug}`">
+            <v-row justify="space-between">
+              <v-col xs="12" md="4" class="pa-0">
+                <v-img
+                  cover
+                  :src="post.feature_image || require('@/assets/logo.svg')"
+                  :lazy-src="require('@/assets/logo.svg')"
+                  height="250px"
+                ></v-img>
+              </v-col>
 
-              <v-card-subtitle
-                class="smc-blog-post-content-date"
-                v-text="new Date(post.published_at).toDateString()"
-              >
-              </v-card-subtitle>
+              <v-col xs="12" md="8">
+                <v-card-title class="smc-blog-post-content-title" lang="ml">
+                  {{ post.title }}
+                </v-card-title>
 
-              <v-card-text class="smc-blog-post-content-excerpt">
-                {{ stripMd(post.excerpt) }}
-              </v-card-text>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-col>
-    </v-row>
+                <v-card-subtitle
+                  class="smc-blog-post-content-date"
+                  v-text="new Date(post.published_at).toDateString()"
+                >
+                </v-card-subtitle>
+
+                <v-card-text class="smc-blog-post-content-excerpt">
+                  {{ stripMd(post.excerpt) }}
+                </v-card-text>
+              </v-col>
+            </v-row>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
   </v-container>
 </template>
 <script>
@@ -59,6 +97,8 @@ import PostTitle from "../components/PostTitle";
 export default {
   components: { PostTitle },
   data: () => ({
+    loading_all: false,
+    loading_slug: false,
     content: null,
     author: null,
     title: null,
@@ -79,11 +119,13 @@ export default {
     ]
   }),
   created() {
+    this.loading_all = true;
     return fetch(
       "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&include=tags,authors&limit=50"
     )
       .then(response => response.json())
       .then(data => {
+        this.loading_all = false;
         this.blogposts = data.posts;
       });
   },
@@ -100,11 +142,15 @@ export default {
       if (!slug) return null;
       let post = this.blogposts.find(post => post.slug === slug);
       if (!post) {
+        this.loading_slug = true;
         return fetch(
           `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=663893999124de2b7156b52cfb&include=tags,authors`
         )
           .then(response => response.json())
-          .then(data => data.posts.find(post => post.slug === slug));
+          .then(data => {
+            this.loading_slug = false;
+            return data.posts.find(post => post.slug === slug);
+          });
       }
       return post;
     },

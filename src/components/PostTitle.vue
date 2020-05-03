@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div v-if="loading">
+      <v-skeleton-loader type="image" height="30vh" />
+      <v-skeleton-loader type="heading" />
+      <v-skeleton-loader type="text@2" class="py-3" />
+    </div>
+
     <v-img cover :src="image" v-if="image" height="30vh" />
 
     <h1 class="display-3 mt-10" lang="ml">
@@ -32,7 +38,8 @@ export default {
     title: String,
     authors: Array,
     author: String,
-    date: String
+    date: String,
+    loading: Boolean
   }
 };
 </script>
