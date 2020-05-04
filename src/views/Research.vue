@@ -5,7 +5,7 @@
     <article>
       <section
         :id="section.id"
-        class="my-4"
+        class="mb-10"
         v-for="section in research"
         :key="section.id"
       >

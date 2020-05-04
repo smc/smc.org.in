@@ -3,7 +3,7 @@
     <article class="projects">
       <h1 class="display-3 my-10" v-i18n="'menu-projects'"></h1>
 
-      <section v-for="section in projects" :key="section.heading">
+      <section v-for="section in projects" :key="section.heading" class="mb-10">
         <h2>{{ section.heading }}</h2>
 
         <section class="row">
