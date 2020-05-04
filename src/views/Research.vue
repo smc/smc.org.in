@@ -10,7 +10,7 @@
         :key="section.id"
       >
         <h2>{{ section.heading }}</h2>
-        <section class="row">
+        <section class="row my-2">
           <v-col
             cols="12"
             lg="6"

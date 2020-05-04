@@ -6,13 +6,12 @@
       <section v-for="section in projects" :key="section.heading" class="mb-10">
         <h2>{{ section.heading }}</h2>
 
-        <section class="row">
+        <section class="row my-2">
           <v-col
             cols="12"
             xl="3"
             lg="4"
             md="6"
-            class="my-2"
             v-for="project in section.list"
             :key="project.title"
           >
