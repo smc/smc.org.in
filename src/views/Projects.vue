@@ -98,6 +98,28 @@ export default {
               }
             ]
           },
+        ]
+      },
+      {
+        heading: "Accessibility",
+        list: [
+          {
+            title: "Dhvani",
+            description: `
+              Dhvani is a text to speech system designed for Indian Languages.
+              It is helpful for the visually challenged users as a screenreader
+              in their mother tongue. Currently dhvani is capable of generating
+              intelligible speech for Bengali, Gujarati, Hindi, Kannada,
+              Malayalam, Marathi, Oriya, Panjabi, Tamil, Telugu,
+              Pashto(experimental)
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "http://dhvani.sourceforge.net/"
+              }
+            ]
+          },
           {
             title: "ibus-sharada-braille",
             description: `
@@ -109,30 +131,6 @@ export default {
               {
                 text: "Details",
                 url: "https://github.com/Nalin-x-Linux/ibus-sharada-braille"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        heading: "Web Extensions",
-        list: [
-          {
-            title: "Malayalam Fonts",
-            description: `
-              This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
-              without installing anything on your phone or computer.
-            `,
-            links: [
-              {
-                text: "Firefox",
-                url:
-                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/"
-              },
-              {
-                text: "Chrome",
-                url:
-                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
               }
             ]
           }
@@ -172,29 +170,33 @@ export default {
                 url: "https://grandham.in/"
               }
             ]
-          }
+          },
         ]
       },
       {
-        heading: "Speech",
+        heading: "Web Extensions",
         list: [
           {
-            title: "Dhvani",
+            title: "Malayalam Fonts",
+            logo: 'https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png',
+            logo_style_cover: true,
             description: `
-              Dhvani is a text to speech system designed for Indian Languages.
-              It is helpful for the visually challenged users as a screenreader
-              in their mother tongue. Currently dhvani is capable of generating
-              intelligible speech for Bengali, Gujarati, Hindi, Kannada,
-              Malayalam, Marathi, Oriya, Panjabi, Tamil, Telugu,
-              Pashto(experimental)
+              This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
+              without installing anything on your phone or computer.
             `,
             links: [
               {
-                text: "Details",
-                url: "http://dhvani.sourceforge.net/"
+                text: "Firefox",
+                url:
+                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/"
+              },
+              {
+                text: "Chrome",
+                url:
+                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
               }
             ]
-          }
+          },
         ]
       },
       {
@@ -243,7 +245,7 @@ export default {
                 url: "https://gitlab.com/jishnu7/Akshara-Mazha"
               }
             ]
-          }
+          },
         ]
       }
     ]
