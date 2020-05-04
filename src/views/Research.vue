@@ -45,7 +45,7 @@ export default {
     research: [
       {
         id: "papers",
-        heading: "Published papers",
+        heading: "Published Papers",
         list: [
           {
             title: `
