@@ -19,7 +19,6 @@
             <v-card outlined class="d-flex flex-column">
               <v-img
                 v-if="project.logo"
-                height="200px"
                 :contain="!project.logo_style_cover"
                 :cover="project.logo_style_cover"
                 :src="project.logo"
@@ -59,6 +58,11 @@
     @media #{map-get($display-breakpoints, 'md-and-up')} {
       height: 400px;
     }
+  }
+
+  .v-image {
+    height: 200px;
+    max-height: 200px;
   }
 }
 </style>
