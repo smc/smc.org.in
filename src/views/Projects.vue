@@ -55,7 +55,7 @@
     height: 100%;
 
     @media #{map-get($display-breakpoints, 'md-and-up')} {
-      height: 400px;
+      min-height: 400px;
     }
   }
 
