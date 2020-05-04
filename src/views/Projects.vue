@@ -101,7 +101,7 @@ export default {
                 url: "https://www.varnamproject.com/"
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -174,7 +174,7 @@ export default {
                 url: "https://grandham.in/"
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -182,7 +182,8 @@ export default {
         list: [
           {
             title: "Malayalam Fonts",
-            logo: 'https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png',
+            logo:
+              "https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png",
             logo_style_cover: true,
             description: `
               This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
@@ -200,7 +201,7 @@ export default {
                   "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
               }
             ]
-          },
+          }
         ]
       },
       {
@@ -249,7 +250,7 @@ export default {
                 url: "https://gitlab.com/jishnu7/Akshara-Mazha"
               }
             ]
-          },
+          }
         ]
       }
     ]
