@@ -3,9 +3,7 @@
     <article class="projects">
       <h1 class="display-3 my-10" v-i18n="'menu-projects'"></h1>
 
-      <section
-        v-for="section in projects"
-        :key="section.heading">
+      <section v-for="section in projects" :key="section.heading">
         <h2>{{ section.heading }}</h2>
 
         <section class="row">
@@ -22,7 +20,8 @@
               <v-img
                 v-if="project.logo"
                 height="200px"
-                contain
+                :contain="!project.logo_style_cover"
+                :cover="project.logo_style_cover"
                 :src="project.logo"
               />
               <v-card-title>{{ project.title }}</v-card-title>
@@ -100,6 +99,49 @@ export default {
             ]
           },
           {
+            title: "ibus-sharada-braille",
+            description: `
+              ibus-sharada-braille(ISB) is an ibus input engine based on six key
+              approach of braille. It currently supports seven languages
+              English, Malayalam, Hindi, Kannada, Tamil, French, and Spanish.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://github.com/Nalin-x-Linux/ibus-sharada-braille"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Web Extensions",
+        list: [
+          {
+            title: "Malayalam Fonts",
+            description: `
+              This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
+              without installing anything on your phone or computer.
+            `,
+            links: [
+              {
+                text: "Firefox",
+                url:
+                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/"
+              },
+              {
+                text: "Chrome",
+                url:
+                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Web",
+        list: [
+          {
             title: "Libindic",
             description: `
               Libindic is a web platform to host Free Software language
@@ -112,37 +154,6 @@ export default {
               {
                 text: "Details",
                 url: "https://libindic.org/"
-              }
-            ]
-          },
-          {
-            title: "Dhvani",
-            description: `
-              Dhvani is a text to speech system designed for Indian Languages.
-              It is helpful for the visually challenged users as a screenreader
-              in their mother tongue. Currently dhvani is capable of generating
-              intelligible speech for Bengali, Gujarati, Hindi, Kannada,
-              Malayalam, Marathi, Oriya, Panjabi, Tamil, Telugu,
-              Pashto(experimental)
-            `,
-            links: [
-              {
-                text: "Details",
-                url: "http://dhvani.sourceforge.net/"
-              }
-            ]
-          },
-          {
-            title: "ibus-sharada-braille",
-            description: `
-              ibus-sharada-braille(ISB) is an ibus input engine based on six key
-              approach of braille. It currently supports seven languages
-              English, Malayalam, Hindi, Kannada, Tamil, French, and Spanish.
-            `,
-            links: [
-              {
-                text: "Details",
-                url: "https://github.com/Nalin-x-Linux/ibus-sharada-braille"
               }
             ]
           },
@@ -165,22 +176,71 @@ export default {
         ]
       },
       {
-        heading: "Web Extensions",
+        heading: "Speech",
         list: [
           {
-            title: "Malayalam Fonts",
+            title: "Dhvani",
             description: `
-              This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
-              without installing anything on your phone or computer.
+              Dhvani is a text to speech system designed for Indian Languages.
+              It is helpful for the visually challenged users as a screenreader
+              in their mother tongue. Currently dhvani is capable of generating
+              intelligible speech for Bengali, Gujarati, Hindi, Kannada,
+              Malayalam, Marathi, Oriya, Panjabi, Tamil, Telugu,
+              Pashto(experimental)
             `,
             links: [
               {
-                text: "Firefox",
-                url: "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/"
+                text: "Details",
+                url: "http://dhvani.sourceforge.net/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Mobile",
+        list: [
+          {
+            title: "Magisk Malayalam Fonts",
+            logo:
+              "https://blog.smc.org.in/content/images/2019/03/magisk-app1.jpg",
+            logo_style_cover: true,
+            description: `
+              Set the default Malayalam font for rooted Android devices.
+            `,
+            links: [
+              {
+                text: "Download",
+                url: "https://j15h.nu/downloads/magisk-malayalam-fonts-v2.0.zip"
               },
               {
-                text: "Chrome",
-                url: "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
+                text: "Source",
+                url: "https://gitlab.com/smc/magisk-malayalam-fonts"
+              },
+              {
+                text: "How-To",
+                url:
+                  "https://blog.smc.org.in/installing-smc-fonts-on-android-devices/"
+              }
+            ]
+          },
+          {
+            title: "Akshara Mazha",
+            logo:
+              "https://lh3.googleusercontent.com/wakTTNJjIbcs8j-en4pEkvoiRas7eiF1nEgSgIrHtQuAuMjqjgT2wH3bqFP-aMwvlZ0=w1440-h620",
+            logo_style_cover: true,
+            description: `
+              Open source live wallpaper with Malayalam letters streaming down the screen like you have seen in the popular movie Matrix.
+            `,
+            links: [
+              {
+                text: "Download",
+                url:
+                  "https://play.google.com/store/apps/details?id=in.androidtweak.rain"
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/jishnu7/Akshara-Mazha"
               }
             ]
           }
