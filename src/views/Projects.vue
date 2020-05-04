@@ -55,7 +55,7 @@
     height: 100%;
 
     @media #{map-get($display-breakpoints, 'md-and-up')} {
-      height: 400px;
+      min-height: 400px;
     }
   }
 
@@ -217,7 +217,7 @@ export default {
             links: [
               {
                 text: "Download",
-                url: "https://j15h.nu/downloads/magisk-malayalam-fonts-v2.0.zip"
+                url: "https://gitlab.com/smc/magisk-malayalam-fonts/-/releases"
               },
               {
                 text: "Source",
