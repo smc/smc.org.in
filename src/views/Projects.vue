@@ -4,9 +4,22 @@
       <h1 class="display-3 my-10" v-i18n="'menu-projects'"></h1>
 
       <section class="row">
-        <v-col cols="12" lg="3" md="6" class="my-2" v-for="project in projects" :key="project.title">
+        <v-col
+          cols="12"
+          xl="3"
+          lg="4"
+          md="6"
+          class="my-2"
+          v-for="project in projects"
+          :key="project.title"
+        >
           <v-card outlined class="d-flex flex-column" hover>
-            <v-img v-if="project.logo" height="200px" contain :src="project.logo" />
+            <v-img
+              v-if="project.logo"
+              height="200px"
+              contain
+              :src="project.logo"
+            />
             <v-card-title>{{ project.title }}</v-card-title>
             <v-card-text class="text--primary flex-grow-1">
               {{ project.description }}
@@ -30,8 +43,7 @@
           <v-card outlined class="d-flex flex-column" hover>
             <v-card-title>Grandham</v-card-title>
 
-            <v-card-text class="text--primary flex-grow-1">
-            </v-card-text>
+            <v-card-text class="text--primary flex-grow-1"> </v-card-text>
 
             <v-card-actions>
               <v-btn color="primary" text href="https://grandham.in/">
