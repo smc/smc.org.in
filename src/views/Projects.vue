@@ -13,7 +13,7 @@
           v-for="project in projects"
           :key="project.title"
         >
-          <v-card outlined class="d-flex flex-column" hover>
+          <v-card outlined class="d-flex flex-column">
             <v-img
               v-if="project.logo"
               height="200px"
@@ -34,20 +34,6 @@
                 :href="link.url"
               >
                 {{ link.text }}
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3" md="6" xs="12" class="my-2">
-          <v-card outlined class="d-flex flex-column" hover>
-            <v-card-title>Grandham</v-card-title>
-
-            <v-card-text class="text--primary flex-grow-1"> </v-card-text>
-
-            <v-card-actions>
-              <v-btn color="primary" text href="https://grandham.in/">
-                Details
               </v-btn>
             </v-card-actions>
           </v-card>
