@@ -4,7 +4,7 @@
 
     <!-- Start Placeholders -->
     <v-row v-if="loading_slug">
-      <v-col xs="12">
+      <v-col cols="12">
         <article class="blogpost">
           <post-title :loading="loading_slug" />
 
@@ -15,14 +15,14 @@
       </v-col>
     </v-row>
     <v-row v-else-if="loading_all">
-      <v-col lg="6" xs="12" class="my-6" :key="n" v-for="n in 6">
+      <v-col cols="12" lg="6" class="my-6" :key="n" v-for="n in 6">
         <v-sheet class="px-3 pt-3 pb-3">
           <v-row justify="space-between">
-            <v-col xs="12" md="4" class="pa-0">
+            <v-col cols="12" md="4" class="pa-0">
               <v-skeleton-loader type="image" />
             </v-col>
 
-            <v-col xs="12" md="8">
+            <v-col cols="12" md="8">
               <v-card-subtitle>
                 <v-skeleton-loader type="text" />
               </v-card-subtitle>
@@ -38,7 +38,7 @@
     <!-- End Placeholders -->
 
     <v-row v-else-if="post" align="center" justify="center">
-      <v-col xs="12">
+      <v-col cols="12">
         <article class="blogpost">
           <post-title
             :image="post.feature_image"
@@ -54,8 +54,8 @@
     <div v-else>
       <v-row>
         <v-col
+          cols="12"
           lg="6"
-          xs="12"
           class="my-6"
           :key="post.id"
           v-for="post in blogposts"
@@ -67,7 +67,7 @@
             :to="`/blog/${post.slug}`"
           >
             <v-row justify="space-between">
-              <v-col xs="12" md="4" class="pa-0">
+              <v-col cols="12" md="4" class="pa-0">
                 <v-img
                   cover
                   :src="post.feature_image || require('@/assets/logo.svg')"
@@ -76,7 +76,7 @@
                 ></v-img>
               </v-col>
 
-              <v-col xs="12" md="8">
+              <v-col cols="12" md="8">
                 <v-card-title class="smc-blog-post-content-title" lang="ml">
                   {{ post.title }}
                 </v-card-title>
