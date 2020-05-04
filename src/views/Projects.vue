@@ -217,7 +217,7 @@ export default {
             links: [
               {
                 text: "Download",
-                url: "https://j15h.nu/downloads/magisk-malayalam-fonts-v2.0.zip"
+                url: "https://gitlab.com/smc/magisk-malayalam-fonts/-/releases"
               },
               {
                 text: "Source",
