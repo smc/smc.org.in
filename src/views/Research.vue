@@ -3,138 +3,33 @@
     <h1 class="display-3 my-10" v-i18n="'menu-research'"></h1>
 
     <article>
-      <section id="papers" class="my-4">
-        <h2>Published papers</h2>
+      <section
+        :id="section.id"
+        class="my-4"
+        v-for="section in research"
+        :key="section.id"
+      >
+        <h2>{{ section.heading }}</h2>
         <section class="row">
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title>
-                Finite State Transducer based Morphology analysis for Malayalam
-                Language
-              </v-card-title>
-              <v-card-subtitle>Santhosh Thottingal</v-card-subtitle>
-              <v-card-text>
-                Proceedings of the 2nd Workshop on Technologies for MT of Low
-                Resource Languages, European Association for Machine
-                Translation, August 20, Dublin, Ireland.
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn text href="https://www.aclweb.org/anthology/W19-6801/"
-                  >Read the paper</v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title>
-                Malayalam Orthographic Reforms:Impact on Language and Popular
-                Culture
-              </v-card-title>
-              <v-card-subtitle
-                >Santhosh Thottingal, Kavya Manohar</v-card-subtitle
-              >
-              <v-card-text>
-                Proceedings of
-                <a href="http://conferences.telecom-bretagne.eu/grafematik/"
-                  >grafematik</a
-                >: Graphemics in the 21st century—From graphemes to knowledge,
-                Pôle numérique Brest Iroise at Brest, France, on June 14-15,
-                2018.
-              </v-card-text>
+          <v-col
+            cols="12"
+            lg="6"
+            v-for="entry in section.list"
+            :key="entry.title"
+          >
+            <v-card outlined>
+              <v-card-title v-text="entry.title" />
+              <v-card-subtitle v-text="entry.author" />
+              <v-card-text v-html="entry.description" />
               <v-card-actions class="justify-end">
                 <v-btn
                   text
-                  href="https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf"
-                  >Read the paper</v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title>
-                Spiral splines in typeface design: A case study of Manjari
-                Malayalam typeface
-              </v-card-title>
-              <v-card-subtitle
-                >Santhosh Thottingal, Kavya Manohar</v-card-subtitle
-              >
-              <v-card-text>
-                Proceedings of
-                <a href="http://www.typoday.in/">Typoday 2018</a>, University of
-                Mumbai. March 2018.
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn
-                  text
-                  href="https://thottingal.in/documents/Spiral-Splines-Manjari.pdf"
-                  >Read the paper</v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </section>
-      </section>
-      <section id="studies" class="my-4">
-        <h2>Malayalam computational linguistics</h2>
-        <section class="row">
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title>
-                Phonetic description of Malayalam consonants</v-card-title
-              >
-              <v-card-subtitle>Kavya Manohar</v-card-subtitle>
-              <v-card-text>
-                A study of phonetic description of Malayalam consonants based on
-                existing methods and IPA. Published on January 18, 2020
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn
-                  text
-                  href="https://kavyamanohar.com/post/malayalam-ipa-consonants/"
-                  >Read the study</v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title> Information, Entropy and Malayalam</v-card-title>
-              <v-card-subtitle>Kavya Manohar</v-card-subtitle>
-              <v-card-text>
-                What is the information Entropy of Malayalam language? How to
-                calculate it? Published on July 18, 2019
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn
-                  text
-                  href="https://kavyamanohar.com/post/malayalam-ipa-consonants/"
-                  >Read</v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col cols="12" lg="6">
-            <v-card outlined hover>
-              <v-card-title
-                >A finite state Transducer based approach for Malayalam
-                phonetics analysis</v-card-title
-              >
-              <v-card-subtitle>Kavya Manohar</v-card-subtitle>
-              <v-card-text>
-                A system to analyse the phonology of Malayalam. Published on
-                October 2, 2018
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn
-                  text
-                  href="https://kavyamanohar.com/post/malayalam-phonetic-analyser/"
-                  >Read</v-btn
-                >
-                <v-btn text href="https://phon.smc.org.in"
-                  >Malayalam Phonetic Analyser</v-btn
-                >
+                  color="primary"
+                  v-for="link in entry.links"
+                  :href="link.url"
+                  v-text="link.text"
+                  :key="link.text"
+                />
               </v-card-actions>
             </v-card>
           </v-col>
@@ -143,3 +38,130 @@
     </article>
   </v-container>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    research: [
+      {
+        id: "papers",
+        heading: "Published papers",
+        list: [
+          {
+            title: `
+              Finite State Transducer based Morphology analysis for Malayalam
+              Language
+            `,
+            author: "Santhosh Thottingal",
+            description: `
+              Proceedings of the 2nd Workshop on Technologies for MT of Low
+              Resource Languages, European Association for Machine
+              Translation, August 20, Dublin, Ireland.
+            `,
+            links: [
+              {
+                text: "Read the paper",
+                url: "https://www.aclweb.org/anthology/W19-6801/"
+              }
+            ]
+          },
+          {
+            title: `
+              Malayalam Orthographic Reforms: Impact on Language and Popular
+              Culture
+            `,
+            author: "Santhosh Thottingal, Kavya Manohar",
+            description: `
+              Proceedings of
+              <a href="http://conferences.telecom-bretagne.eu/grafematik/">grafematik</a>
+              : Graphemics in the 21st century—From graphemes to knowledge,
+              Pôle numérique Brest Iroise at Brest, France, on June 14-15,
+              2018.
+            `,
+            links: [
+              {
+                text: "Read the paper",
+                url:
+                  "https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf"
+              }
+            ]
+          },
+          {
+            title: `
+                Spiral splines in typeface design: A case study of Manjari
+                Malayalam typeface
+            `,
+            author: "Santhosh Thottingal, Kavya Manohar",
+            description: `
+              Proceedings of
+              <a href="http://www.typoday.in/">Typoday 2018</a>,
+              University of Mumbai. March 2018.
+            `,
+            links: [
+              {
+                text: "Read the paper",
+                url:
+                  "https://thottingal.in/documents/Spiral-Splines-Manjari.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: "studies",
+        heading: "Malayalam Computational Linguistics",
+        list: [
+          {
+            title: "Phonetic description of Malayalam consonants",
+            author: "Kavya Manohar",
+            description: `
+              A study of phonetic description of Malayalam consonants based on
+              existing methods and IPA. Published on January 18, 2020
+            `,
+            links: [
+              {
+                text: "Read the study",
+                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/"
+              }
+            ]
+          },
+          {
+            title: "Information, Entropy and Malayalam",
+            author: "Kavya Manohar",
+            description: `
+              What is the information Entropy of Malayalam language? How to
+              calculate it? Published on July 18, 2019
+            `,
+            links: [
+              {
+                text: "Read",
+                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/"
+              }
+            ]
+          },
+          {
+            title:
+              "A finite state Transducer based approach for Malayalam phonetics analysis",
+            author: "Kavya Manohar",
+            description: `
+                A system to analyse the phonology of Malayalam. Published on
+                October 2, 2018
+            `,
+            links: [
+              {
+                text: "Read",
+                url:
+                  "https://kavyamanohar.com/post/malayalam-phonetic-analyser/"
+              },
+              {
+                text: "Malayalam Phonetic Analyser",
+                url: "https://phon.smc.org.in"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  })
+};
+</script>
