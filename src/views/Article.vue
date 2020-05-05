@@ -1,6 +1,6 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <article v-if="title">
+    <article v-if="title" class="article">
       <post-title :title="title" :author="author" />
       <main class="my-10" v-html="content" />
     </article>
@@ -119,5 +119,10 @@ export default {
 <style lang="less">
 .article-link {
   text-decoration: none;
+}
+.article {
+  img {
+    max-width: 100%;
+  }
 }
 </style>
