@@ -13,7 +13,8 @@
       </p>
     </div>
     <v-btn
-      :to="link"
+      :href="link"
+      target="_blank"
       rounded
       large
       color="success"
