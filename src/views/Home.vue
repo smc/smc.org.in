@@ -57,6 +57,7 @@
             to="/fonts/manjari"
             class="mx-auto"
             max-width="400"
+            height="100%"
           >
             <v-img
               src="@/assets/images/manjari-card.png"
@@ -75,6 +76,7 @@
             to="/fonts/gayathri"
             class="mx-auto"
             max-width="400"
+            height="100%"
           >
             <v-img
               src="@/assets/images/gayathri-card.png"
@@ -93,6 +95,7 @@
             href="https://morph.smc.org.in"
             class="mx-auto"
             max-width="400"
+            height="100%"
           >
             <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
             <v-card-title>Mlmorph</v-card-title>

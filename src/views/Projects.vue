@@ -23,6 +23,9 @@
                 :src="project.logo"
               />
               <v-card-title>{{ project.title }}</v-card-title>
+              <v-card-subtitle v-if="project.subtitle">
+                {{ project.subtitle }}
+              </v-card-subtitle>
               <v-card-text class="text--primary flex-grow-1">
                 {{ project.description }}
               </v-card-text>
@@ -77,8 +80,7 @@ export default {
             logo: require("@/assets/images/indickeyboard.png"),
             title: "Indic Keyboard",
             description: `
-              Award-winning Indian Language keyboard application for Android
-              phones that supports 23 languages.
+              Indic Keyboard is a MOSS Award winning, privacy aware versatile keyboard for Android users who wish to use Indic and Indian languages to type messages, compose emails and generally prefer to use them in addition to English on their phone. You can use this application to type anywhere in your phone that you would normally type in English. It currently supports 23 languages and 57 layouts.
             `,
             links: [
               {
@@ -250,6 +252,286 @@ export default {
               }
             ]
           }
+        ]
+      },
+      {
+        heading: "Programming Libraries",
+        list: [
+          {
+            title: "indic-trans",
+            subtitle: "cross transliterations among all Indian languages",
+            description: `
+              The project aims on adding a state-of-the-art transliteration module for cross transliterations among all Indian languages including English and Urdu.
+              The module currently supports the following languages:
+              Hindi, Bengali, Gujarati, Punjabi, Malayalam, Kannada, Tamil, Telugu, Oriya, Marathi, Assamese, Konkani, Bodo, Nepali, Urdu and English
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indic-trans"
+              },
+              {
+                text: "Documentation",
+                url: "https://indic-trans.readthedocs.io/en/latest/"
+              },
+              {
+                text: "Details",
+                url: "https://irshadbhat.github.io/gsoc/"
+              }
+            ]
+          },
+          {
+            title: "Inexact Search",
+            subtitle: "Approximate String Search",
+            description: `
+              By mixing both written like(edit distance) and sounds like(soundex), we achieve an efficient aproximate string searching.
+              This application is capable of cross language string search too.
+              That means, you can search Hindi words in Malayalam text.
+              If there is any Malayalam word, which is approximate transliteration of hindi word, or sounds alike the hindi words, it will be returned as an approximate match.
+              The "written like" algorithm used here is a bigram average algorithm.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/inexactsearch"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/ApproxSearch"
+              }
+            ]
+          },
+          {
+            title: "Shingling",
+            subtitle: "Indic W-shingling Library",
+            description: `
+               A w-shingling is a set of unique "shingles"—contiguous subsequences of tokens in a document—that can be used to gauge the similarity of two documents. The w denotes the number of tokens in each shingle in the set.
+            This library supports English, Hindi, Malayalam, Kannada and Bengali.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/shingling"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Shingling"
+              }
+            ]
+          },
+          {
+            title: "Text Similarity",
+            description: `
+               This module will compare two texts for their similarity. Based on the similarity it will give a number between 0 and 1. 1 means both text are similary. 0 means texts are completely different. A value in between 0 and 1 indicates how much they are similar.
+
+                The algorithm uses an n-grams model and cosine similarity.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/text-similarity"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Similar%20Texts"
+              }
+            ]
+          },
+          {
+            title: "Hyphenation",
+            subtitle: "Hyphenate Text",
+            description: `
+             Hyphenation is the process inserting hyphens in between the syllables of a word so that when the text is justified, maximum space is utilized.
+              Supported Languages: English, Hindi, Malayalam, Tamil, Telugu, Kannada, Oriya, Bengali, Gujarati, Panjabi, Marathi, Sanskrit, Assamese, Kashmeeri, Afrikaans, German, French, Croatian, Hungarian, Italian, Zulu
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/hyphenation"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Hyphenate"
+              }
+            ]
+          },
+          {
+            title: "ucasort",
+            subtitle: "Module to sort words basded on linguistics",
+            description: `
+             Unicode Collation Algorithm(UCA) based sorting for all languages defined in Unicode. The collation weights used in this application is a modified version of Default Unicode Collation Element Table (DUCET). It use the default weights defined by Unicode. Malayalam and Tamil sorting is compatible with GNU C library collation definition.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/ucasort"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/UCA%20Sort"
+              }
+            ]
+          },
+          {
+            title: "indicfortune",
+            subtitle: "Fortune Cookies",
+            description: `
+              random quotes from chanakya, thirukkural and malayalam proverbs
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indicfortune"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Fortune"
+              }
+            ]
+          },
+          {
+            title: "Spellchecker",
+            description: `
+             LibIndic's spellchecker module may be used to detect spelling mistakes in a word. If a spelling mistake is found, it generates valid root words as suggestions that have a higher probability being the word user actually intended to use.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/spellchecker"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/SpellCheck"
+              }
+            ]
+          },
+          {
+            title: "Syllabifier",
+            description: `
+             LibIndic's syllabifier module may be used to split words into their constituent syllables. It currently works for Malayalam, Kannada, Bengali, Tamil, Hindi and English.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/syllabalizer"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Syllabalizer"
+              }
+            ]
+          },
+          {
+            title: "indicstemmer",
+            subtitle: "experimental malayalam stemmer",
+            description: `
+             LibIndic's stemmer module may be used to extract stems of the words in a sentence. It is implemented in a rule-based model and follows iterative suffix stripping to handle multiple levels of inflection. Right now, it supports Malayalam language only.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indicstemmer"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Stemmer"
+              }
+            ]
+          },
+          {
+            title: "Payyans",
+            subtitle: "ASCII - Unicode converter",
+            description: `
+             LibIndic's Payyans module may be used to convert texts encoded in ASCII format to Unicode and vice-versa. More fonts can be added by placing their maps easily.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/payyans"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Payyans"
+              }
+            ]
+          },
+          {
+            title: "chardetails",
+            description: `
+             LibIndic's chardetails module may be used to get the details of a given unicode character.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/chardetails"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Chardetails"
+              }
+            ]
+          },
+          {
+            title: "Katapayadi",
+            subtitle: "Katapayadi writing method",
+            description: `
+             Katapayadi sankhya is a simplification of Aryabhata's Sanskrit numerals, due probably to Haridatta from Kerala. In Malayalam it is also known as 'Paralperu'. For eg: ചണ്ഡാംശുചന്ദ്രാധമകുംഭിപാല represents 31415926536 which is π*1000000000000000. More examples in Malayalam are given in this page
+
+             LibIndic's katapayadi module may be used to find out katapayadi number of a given string, as well as to get Swarasthanas of a Melakartha number.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/katapayadi"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Katapayadi%20Numbers"
+              }
+            ]
+          },
+          {
+            title: "Soundex",
+            subtitle: "Soundex Phonetic Code Algorithm Demo for Indian Languages.",
+            description: `
+             Soundex is phonetic algorithm for indexing names by sound as pronounced in English. LibIndic's soundex module implements Soundex algorithm for Engish as well as a modified version of soundex algorithm for Indian languages.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/soundex"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Soundex"
+              },
+              {
+                text: "Details",
+                url: "https://thottingal.in/blog/2009/07/26/indicsoundex/"
+              }
+            ]
+          },
+          {
+            title: "indicngram",
+            subtitle: "n-gram genereator for indic languages",
+            description: `
+             An n-gram model is a type of probabilistic model for predicting the next item in a sequence. n-grams are used in various areas of statistical natural language processing and genetic sequence analysis.
+
+             An n-gram is a subsequence of n items from a given sequence. The items in question can be phonemes, syllables, letters, words or base pairs according to the application.
+
+             An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" (or, less commonly, a "digram"); size 3 is a "trigram"; and size 4 or more is simply called an "n-gram".
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indicngram"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/N-gram"
+              }
+            ]
+          },
         ]
       }
     ]
