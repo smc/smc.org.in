@@ -23,6 +23,9 @@
                 :src="project.logo"
               />
               <v-card-title>{{ project.title }}</v-card-title>
+              <v-card-subtitle v-if="project.subtitle">
+                {{ project.subtitle }}
+              </v-card-subtitle>
               <v-card-text class="text--primary flex-grow-1">
                 {{ project.description }}
               </v-card-text>
