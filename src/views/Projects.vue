@@ -258,7 +258,8 @@ export default {
         heading: "Programming Libraries",
         list: [
           {
-            title: "Indic Trans",
+            title: "indic-trans",
+            subtitle: "cross transliterations among all Indian languages",
             description: `
               The project aims on adding a state-of-the-art transliteration module for cross transliterations among all Indian languages including English and Urdu.
               The module currently supports the following languages:
@@ -272,6 +273,10 @@ export default {
               {
                 text: "Documentation",
                 url: "https://indic-trans.readthedocs.io/en/latest/"
+              },
+              {
+                text: "Details",
+                url: "https://irshadbhat.github.io/gsoc/"
               }
             ]
           },
@@ -368,7 +373,7 @@ export default {
             ]
           },
           {
-            title: "Fortune",
+            title: "indicfortune",
             subtitle: "Fortune Cookies",
             description: `
               random quotes from chanakya, thirukkural and malayalam proverbs
@@ -417,35 +422,116 @@ export default {
             ]
           },
           {
-            title: "",
+            title: "indicstemmer",
+            subtitle: "experimental malayalam stemmer",
             description: `
+             LibIndic's stemmer module may be used to extract stems of the words in a sentence. It is implemented in a rule-based model and follows iterative suffix stripping to handle multiple levels of inflection. Right now, it supports Malayalam language only.
             `,
             links: [
               {
                 text: "Source",
-                url: ""
+                url: "https://github.com/libindic/indicstemmer"
               },
               {
                 text: "Web",
-                url: ""
+                url: "https://libindic.org/Stemmer"
               }
             ]
           },
           {
-            title: "",
+            title: "Payyans",
+            subtitle: "ASCII - Unicode converter",
             description: `
+             LibIndic's Payyans module may be used to convert texts encoded in ASCII format to Unicode and vice-versa. More fonts can be added by placing their maps easily.
             `,
             links: [
               {
                 text: "Source",
-                url: ""
+                url: "https://github.com/libindic/payyans"
               },
               {
                 text: "Web",
-                url: ""
+                url: "https://libindic.org/Payyans"
               }
             ]
-          }
+          },
+          {
+            title: "chardetails",
+            description: `
+             LibIndic's chardetails module may be used to get the details of a given unicode character.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/chardetails"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Chardetails"
+              }
+            ]
+          },
+          {
+            title: "Katapayadi",
+            subtitle: "Katapayadi writing method",
+            description: `
+             Katapayadi sankhya is a simplification of Aryabhata's Sanskrit numerals, due probably to Haridatta from Kerala. In Malayalam it is also known as 'Paralperu'. For eg: ചണ്ഡാംശുചന്ദ്രാധമകുംഭിപാല represents 31415926536 which is π*1000000000000000. More examples in Malayalam are given in this page
+
+             LibIndic's katapayadi module may be used to find out katapayadi number of a given string, as well as to get Swarasthanas of a Melakartha number.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/katapayadi"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Katapayadi%20Numbers"
+              }
+            ]
+          },
+          {
+            title: "Soundex",
+            subtitle: "Soundex Phonetic Code Algorithm Demo for Indian Languages.",
+            description: `
+             Soundex is phonetic algorithm for indexing names by sound as pronounced in English. LibIndic's soundex module implements Soundex algorithm for Engish as well as a modified version of soundex algorithm for Indian languages.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/soundex"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Soundex"
+              },
+              {
+                text: "Details",
+                url: "https://thottingal.in/blog/2009/07/26/indicsoundex/"
+              }
+            ]
+          },
+          {
+            title: "indicngram",
+            subtitle: "n-gram genereator for indic languages",
+            description: `
+             An n-gram model is a type of probabilistic model for predicting the next item in a sequence. n-grams are used in various areas of statistical natural language processing and genetic sequence analysis.
+
+             An n-gram is a subsequence of n items from a given sequence. The items in question can be phonemes, syllables, letters, words or base pairs according to the application.
+
+             An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" (or, less commonly, a "digram"); size 3 is a "trigram"; and size 4 or more is simply called an "n-gram".
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indicngram"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/N-gram"
+              }
+            ]
+          },
         ]
       }
     ]
