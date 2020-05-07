@@ -80,8 +80,7 @@ export default {
             logo: require("@/assets/images/indickeyboard.png"),
             title: "Indic Keyboard",
             description: `
-              Award-winning Indian Language keyboard application for Android
-              phones that supports 23 languages.
+              Indic Keyboard is a MOSS Award winning, privacy aware versatile keyboard for Android users who wish to use Indic and Indian languages to type messages, compose emails and generally prefer to use them in addition to English on their phone. You can use this application to type anywhere in your phone that you would normally type in English. It currently supports 23 languages and 57 layouts.
             `,
             links: [
               {
@@ -250,6 +249,200 @@ export default {
               {
                 text: "Source",
                 url: "https://gitlab.com/jishnu7/Akshara-Mazha"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Programming Libraries",
+        list: [
+          {
+            title: "Indic Trans",
+            description: `
+              The project aims on adding a state-of-the-art transliteration module for cross transliterations among all Indian languages including English and Urdu.
+              The module currently supports the following languages:
+              Hindi, Bengali, Gujarati, Punjabi, Malayalam, Kannada, Tamil, Telugu, Oriya, Marathi, Assamese, Konkani, Bodo, Nepali, Urdu and English
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indic-trans"
+              },
+              {
+                text: "Documentation",
+                url: "https://indic-trans.readthedocs.io/en/latest/"
+              }
+            ]
+          },
+          {
+            title: "Inexact Search",
+            subtitle: "Approximate String Search",
+            description: `
+              By mixing both written like(edit distance) and sounds like(soundex), we achieve an efficient aproximate string searching.
+              This application is capable of cross language string search too.
+              That means, you can search Hindi words in Malayalam text.
+              If there is any Malayalam word, which is approximate transliteration of hindi word, or sounds alike the hindi words, it will be returned as an approximate match.
+              The "written like" algorithm used here is a bigram average algorithm.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/inexactsearch"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/ApproxSearch"
+              }
+            ]
+          },
+          {
+            title: "Shingling",
+            subtitle: "Indic W-shingling Library",
+            description: `
+               A w-shingling is a set of unique "shingles"—contiguous subsequences of tokens in a document—that can be used to gauge the similarity of two documents. The w denotes the number of tokens in each shingle in the set.
+            This library supports English, Hindi, Malayalam, Kannada and Bengali.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/shingling"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Shingling"
+              }
+            ]
+          },
+          {
+            title: "Text Similarity",
+            description: `
+               This module will compare two texts for their similarity. Based on the similarity it will give a number between 0 and 1. 1 means both text are similary. 0 means texts are completely different. A value in between 0 and 1 indicates how much they are similar.
+
+                The algorithm uses an n-grams model and cosine similarity.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/text-similarity"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Similar%20Texts"
+              }
+            ]
+          },
+          {
+            title: "Hyphenation",
+            subtitle: "Hyphenate Text",
+            description: `
+             Hyphenation is the process inserting hyphens in between the syllables of a word so that when the text is justified, maximum space is utilized.
+              Supported Languages: English, Hindi, Malayalam, Tamil, Telugu, Kannada, Oriya, Bengali, Gujarati, Panjabi, Marathi, Sanskrit, Assamese, Kashmeeri, Afrikaans, German, French, Croatian, Hungarian, Italian, Zulu
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/hyphenation"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Hyphenate"
+              }
+            ]
+          },
+          {
+            title: "ucasort",
+            subtitle: "Module to sort words basded on linguistics",
+            description: `
+             Unicode Collation Algorithm(UCA) based sorting for all languages defined in Unicode. The collation weights used in this application is a modified version of Default Unicode Collation Element Table (DUCET). It use the default weights defined by Unicode. Malayalam and Tamil sorting is compatible with GNU C library collation definition.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/ucasort"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/UCA%20Sort"
+              }
+            ]
+          },
+          {
+            title: "Fortune",
+            subtitle: "Fortune Cookies",
+            description: `
+              random quotes from chanakya, thirukkural and malayalam proverbs
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/indicfortune"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Fortune"
+              }
+            ]
+          },
+          {
+            title: "Spellchecker",
+            description: `
+             LibIndic's spellchecker module may be used to detect spelling mistakes in a word. If a spelling mistake is found, it generates valid root words as suggestions that have a higher probability being the word user actually intended to use.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/spellchecker"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/SpellCheck"
+              }
+            ]
+          },
+          {
+            title: "Syllabifier",
+            description: `
+             LibIndic's syllabifier module may be used to split words into their constituent syllables. It currently works for Malayalam, Kannada, Bengali, Tamil, Hindi and English.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "https://github.com/libindic/syllabalizer"
+              },
+              {
+                text: "Web",
+                url: "https://libindic.org/Syllabalizer"
+              }
+            ]
+          },
+          {
+            title: "",
+            description: `
+            `,
+            links: [
+              {
+                text: "Source",
+                url: ""
+              },
+              {
+                text: "Web",
+                url: ""
+              }
+            ]
+          },
+          {
+            title: "",
+            description: `
+            `,
+            links: [
+              {
+                text: "Source",
+                url: ""
+              },
+              {
+                text: "Web",
+                url: ""
               }
             ]
           }
