@@ -90,7 +90,21 @@ export default {
             ]
           },
           {
+            title: "Swanalekha",
+            logo: require("@/assets/images/ml-swanalekha.png"),
+            description: `
+              Swanalekha is a famous transliteration based input tool available in all operating systems in desktops and mobile phones. It is very easy to learn using familiar Manglish based key mappings."
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://swanalekha.smc.org.in/"
+              }
+            ]
+          },
+          {
             title: "Varnam",
+            logo: require("@/assets/images/varnam.gif"),
             description: `
               Varnam is a cross platform predictive transliterator for Indic
               languages. Varnam aims at providing consistent input experience
@@ -492,7 +506,8 @@ export default {
           },
           {
             title: "Soundex",
-            subtitle: "Soundex Phonetic Code Algorithm Demo for Indian Languages.",
+            subtitle:
+              "Soundex Phonetic Code Algorithm Demo for Indian Languages.",
             description: `
              Soundex is phonetic algorithm for indexing names by sound as pronounced in English. LibIndic's soundex module implements Soundex algorithm for Engish as well as a modified version of soundex algorithm for Indian languages.
             `,
@@ -531,7 +546,7 @@ export default {
                 url: "https://libindic.org/N-gram"
               }
             ]
-          },
+          }
         ]
       }
     ]
