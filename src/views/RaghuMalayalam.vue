@@ -277,7 +277,7 @@ export default {
 .raghumalayalamsans-slide-1,
 .raghumalayalamsans-slide-2,
 .raghumalayalamsans-slide-3 {
-  font-family: "RaghuMalayalam" !important;
+  font-family: "RaghuMalayalamSans" !important;
 }
 .raghumalayalamsans-slide-0 {
   background: linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
