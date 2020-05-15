@@ -177,6 +177,12 @@
         </h4>
         <glyphs font="Rachana" class="col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
+      <section id="playground" class="row">
+        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-12">
+          <font-playground name="Rachana" />
+        </div>
+      </section>
       <section id="languages" class="row">
         <h2
           v-text="$i18n('Supported languages')"
@@ -222,13 +228,14 @@
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
+import FontPlayground from "../components/FontPlayground";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs, FontTitle },
+  components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/rachana/Rachana.json")
       .then(response => response.json())

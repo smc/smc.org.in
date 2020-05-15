@@ -145,6 +145,12 @@
           <a href="https://gitlab.com/smc/fonts/suruma">gitlab repository</a>
         </p>
       </section>
+      <section id="playground" class="row">
+        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-12">
+          <font-playground name="Suruma" />
+        </div>
+      </section>
       <section id="glyphs" class="row">
         <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
         <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
@@ -201,13 +207,14 @@
 import { mdiDownload } from "@mdi/js";
 import FontTitle from "../components/FontTitle";
 import Glyphs from "../components/Glyphs";
+import FontPlayground from "../components/FontPlayground";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs, FontTitle },
+  components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/suruma/Suruma.json")
       .then(response => response.json())

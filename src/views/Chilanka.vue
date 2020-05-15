@@ -294,6 +294,12 @@
           </v-card>
         </div>
       </section>
+      <section id="playground" class="row">
+        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+        <div class="col-lg-12">
+          <font-playground name="Chilanka" />
+        </div>
+      </section>
       <section id="history" class="row">
         <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
         <p class="col-lg-8 col-md-12">
@@ -327,13 +333,14 @@
 import { mdiDownload } from "@mdi/js";
 import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
+import FontPlayground from "../components/FontPlayground";
 
 export default {
   data: () => ({
     mdiDownload,
     fontdata: {}
   }),
-  components: { Glyphs, FontTitle },
+  components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/chilanka/Chilanka.json")
       .then(response => response.json())
