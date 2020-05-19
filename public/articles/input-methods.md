@@ -6,67 +6,33 @@ author: Ashik Salahudeen
 ---
 
 ```
-This article is draft and incomplete
+
+This article is a work in progress. It currently tells you how to enable Malayalam in Ubuntu and Fedora.
+
 ```
 
-# Table of Contents
+[[toc]]
 
-1.  [Enabling Malayalam on your computer - A comprehensive guide.](#orgbcf2810)
-    1.  [Terminology](#orgea2f79f)
-        1.  [Fonts](#orga871f94)
-        2.  [Input methods](#orgb9b6cac)
-        3.  [Localisation](#orgc29d820)
-    2.  [How to : Using Malayalam on GNU/Linux](#org83aa0e3)
-        1.  [Installing fonts](#orgc58f42c)
-        2.  [User interface localisation](#orgc04dc80)
-        3.  [Input methods](#org92d977b)
-    3.  [How to : Using Malayalam on Illustrator/Photoshop](#orgec36ee8)
-    4.  [How to : Using Malayalam on Windows](#org9059ba3)
-        1.  [Installing fonts](#orgec21fb2)
-        2.  [Input methods](#org1f56f69)
-        3.  [User interface localisation](#org3473e2c)
-    5.  [How to : Using Malayalam on MacOS](#orgdf42866)
-        1.  [Installing fonts](#orgf22a0e2)
-        2.  [Input methods](#org5a423c4)
-        3.  [User interface localisation](#org5f8000a)
-    6.  [How to : Using malayalam On Android](#orga0e21d6)
-        1.  [Input](#org49e209f)
-        2.  [User Interface](#orgad5cf31)
-    7.  [iOS : Using malayalam](#org42d1910)
-
-
-<a id="orgbcf2810"></a>
-
-# Enabling Malayalam on your computer - A detailed guide.
-
-
-<a id="orgea2f79f"></a>
 
 ## Terminology
 
-Before we go into details, it would be good to explain some terminology. You can skip it entirely if you are not interested in details.
+Before we go into details, it would be good to explain some terminology. You can skip it entirely if you are not interested in details.  
+  
+In general, getting a language to work in an operating system requires that we take care of the following aspects.
 
-In general though getting a language to work in an operating system requires that we take care of the following aspects.
-
-1.  Fonts (Displaying the language)
-2.  Input (Getting the computers to accept keystrokes in the chosen language)
-3.  Localisation (Displaying the operating systems interface in the language)
-
-
-<a id="orga871f94"></a>
+1.  Fonts (Displaying the language).
+2.  Input (Getting the computers to accept keystrokes in the chosen language).
+3.  Localisation (Displaying the operating systems' interface in the language).
 
 ### Fonts
 
-Fonts in a computer are files that contain graphic data about one or more sets of related characters (English, Malayalam etc).
+Fonts in a computer are files that contain graphic data about one or more sets of related characters (English, Malayalam etc). 
 
-The graphical data in the file determines how the computers draws a letter (or combinations of letters) on the screen.
+The graphical data in the file determines how the computers draws a letter (or combinations of letters) on the screen. 
 
-A font file can contain many languages, or only one.
+A font file can contain many languages, or only one. 
 
 If you ask the computer's operating system to use a particular font and its file does not contain a certain language, the computer will fall back to pre-set defaults.
-
-
-<a id="orgb9b6cac"></a>
 
 ### Input methods
 
@@ -76,7 +42,7 @@ The following image roughly explains what an input method does.
 
 ![img](./images/Input_Methods.png)
 
-Almost all operating systems have an input method application for typing characters other than English.
+Almost all operating systems have an input method application for typing characters other than English. 
 
 Windows has a built-in input method, but there are Free and Open Source alternatives that provide better facilities such as Keyman.
 
@@ -86,151 +52,206 @@ GNU/Linux systems have many to choose from. The most commonly used ones are "ibu
 
 Android also has many input methods to choose from. We support SMC's Indic Keyboard.
 
-1.  Keyboard layouts
+### Keyboard layouts
 
-    Keyboard layouts are software schemes that tell input methods how to interpret individual keystrokes or combinations.
+Keyboard layouts are software schemes that tell input methods how to interpret individual keystrokes or combinations.
 
-    For example, if you want the result of typing "a" in a keyboard to be translated to "അ" then that "mapping" is stored in a keyboard layout.
+For example, if you want the result of typing "a" in a keyboard to be translated to "അ" then that "mapping" is stored in a keyboard layout file that the input method software can understand.
 
-    The Input method sits between a program and the keyboard, takes the keystrokes, then looks at the character and its target mapping on the keyboard layout.
-    It then gives the resulting characters to the program that receives the input, like a text editor.
+The Input method sits between a program and the keyboard, takes the keystrokes, then looks at the character and its target mapping on the keyboard layout. It then gives the resulting characters to the program that receives the input, like a text editor. 
 
-    There are several keyboard layouts for Malayalam available with popular input methods on GNU/Linux machines.
+There are several keyboard layouts for Malayalam available on most operating systems.
 
-    Swanalekha
-    Inscript
-    Lalitha
-    Mozhi
-    Remington (Typewriter)
+-   Swanalekha (Transliteration)
+-   Inscript (India government's standard layout)
+-   Lalitha (Transliteration)
+-   Mozhi (Transliteration)
+-   Remington (Typewriter scheme)
 
-
-<a id="orgc29d820"></a>
 
 ### Localisation
 
-Localisation is the process of translating the UI presented by the computer into the user's language.
+Localisation (often shortened to L10n) is the process of translating the UI presented by the computer into the user's language. Even though people interact with computers in English, some would prefer their mother tongue.
 
-Even though people maybe comfortable with English, some would prefer their mother tongue.
+The setting that we choose to set the language of the operationg system is called "Locale" or "Language". Most applications and operating systems support more than one "locale" or language. Large populations in other countries do have entire operationg systems and interfaces available in their locale. E.g: German, Arabic etc. 
 
-Note that all programs may not be localised. For example, even if your operating system is set to use Malayalam, Firefox maynot show Malayalam interface simply because it hasn't been translated yet.
+As far as we know, 
 
-Windows has a Malayalam UI (unverified).
-GNU/Linux has KDE and GNOME Desktops.
-Mac OS has no Malayalam user interface support (unverified).
-Android has Malayalam user interface.
+-   Windows has a Malayalam locale and language pack.
+-   GNU/Linux distributions have KDE and GNOME Desktops that support Malayalam locales.
+-   Debian distribution has an installer in Malayalam.
+-   Mac OS has no Malayalam user interface support (unverified).
+-   Android phones have Malayalam user interfaces.
+-   Firefox on Androids have Malayalam user interfaces.
 
+Even if your operating system is set to use say, Malayalam, not all programs you install would have user interfaces translated to Malayalam and will fall back to English.
 
-<a id="org83aa0e3"></a>
+These days, we use web applications a lot, for example, Google search or GMail, and they can detect the operating systems' locale and show an appropriately translated interface. 
+
+The rest of the document is split up into sections, each describing one operating system or application.
 
 ## How to : Using Malayalam on GNU/Linux
 
+Most major distributions come with language/localistation support these days. Usually installing them is enough, but for Malayalam's transliteration schemes and fonts, some additional configuration is needed.
 
-<a id="orgc58f42c"></a>
+The following is mostly screenshots of current editions of Fedora, Ubuntu and Debian. Make sure you have updated versions of your OS before you start. 
 
-### Installing fonts
+### Fedora
 
-1.  OS Methods
+The following instructions are made from a Fedora 31 default installation.
 
-    TODO : elaborate.
+1.  Enabling Malayalam fonts.
 
-    Fonts are in the repositories for
+    It is highly likely that Malayalam fonts are already installed. If not, they are available from Software centre. Launch it by clicking on its icon and just search for "smc-"
+    
+    You can install it from there.
+    
+    ![img](./images/fedora.31/font_installation.png)
 
-    -   Fedora
-    -   Ubuntu
-    -   Debian
-    -   Arch via AUR
+2.  Enabling Malayalam input.
 
-2.  Generic Method
+    Click "Setting > Region and Language > Languages". 
+    
+    ![img](./images/fedora.31/region_and_language_screen.png)
+    
+    Click the "+" sign under "Input Sources"
+    
+    ![img](./images/fedora.31/input_sources_menu_1.png)
+    
+    Now click on the "more" button, it looks like three vertical dots.
+    
+    Search for "Malayalam"
+    
+    ![img](./images/fedora.31/input_sources_menu_2.png)
+    
+    Click on "Malayalam" menu item to reveal additional options.
+    
+    ![img](./images/fedora.31/input_sources_menu_3.png)
+    
+    Click on the layout you want and click Add. The following screenshot shows selecting "Swanalekha", a transliteration (Manglish) layout. 
+    
+    ![img](./images/fedora.31/input_sources_menu_4.png)
+    
+    Once you add it, it should be visible under "Input Sources" in  "Setting > Region and Language > Languages".
+    
+    ![img](./images/fedora.31/input_sources_menu_5.png)
+    
+    To test, launch a text editor, and click on the input switcher as shown in screenshot. Select the layout you want. You can see Swanalekha in the list in the screenshot.
+    
+    ![img](./images/fedora.31/input_method_switching_1.png)
+    
+    Now type in the editor. Be sure to choose a font to your liking. The screenshot shows text in Meera font.
+    
+    ![img](./images/fedora.31/input_method_switching_2.png)
 
-    -   Download and install by copying to .fonts
-    -   Investigate if GNOME and KDE does this without any intervention through command line foolery.
+3.  Enabling Malayalam language UI.
 
+    Click "Setting > Region and Language > Languages". 
+    
+    ![img](./images/fedora.31/region_and_language_screen.png)
+    
+    From the menu that pops up, scroll down to the end and find the "more" button. It looks like three vertical dots.
+    
+    ![img](./images/fedora.31/language_selection_screen_1.png)
+    
+    Search for "Malayalam". You should see the following screen. Click on the "Malayalam" menu item as shown.
+    
+    ![img](./images/fedora.31/language_selection_screen_2.png)
+    
+    This will enable the Malayalam UI. You'd need to restart your session (not the computer itself). Clicking on the restart button will log you out. 
+    
+    ![img](./images/fedora.31/language_selection_screen_3.png)
+    
+    You should be able to use Malayalam user interface when you log back in.
 
-<a id="orgc04dc80"></a>
+### Ubuntu
 
-### User interface localisation
+1.  Enabling Malayalam fonts.
 
+    It is highly likely that Malayalam fonts are already installed. If not, they are available from Software centre. Launch it by clicking on its icon and just search for "fonts-smc". 
+    
+    ![img](./images/ubuntu.20.04/software_centre_fonts.png)
+    
+    Due to a bug in packaging, some fonts such as Manjari are not shown this way, even though they are installed. To verify, run the following command from a Terminal.
+    
+    \`\`\`
+    apt search fonts-smc-
+    \`\`\`
+    
+    ![img](./images/ubuntu.20.04/smc_fonts_listing_cli.png)
 
-<a id="org92d977b"></a>
+2.  Enabling Malayalam input.
 
-### Input methods
+    Ubuntu does not have all malayalam inputs by default. To fix this, run the following command in a Terminal.
+    
+    \`\`\`
+    sudo apt install ibus-m17n m17n-db
+    \`\`\`
+    
+    ![img](./images/ubuntu.20.04/install_m17n_ibus.png)
+    
+    Now logout and log back in.
+    
+    Click "Setting > Region and Language > Languages". 
+    
+    ![img](./images/ubuntu.20.04/region_and_language_screen.png)
+    
+    Click the "+" sign under "Input Sources".
+    
+    ![img](./images/ubuntu.20.04/input_sources_menu_1.png)
+    
+    Click on the "more" button, which looks like three vertical dots.
+    
+    ![img](./images/ubuntu.20.04/input_sources_menu_2.png)
+    
+    Now search for "Malayalam" and the list should only show "Others". 
+    
+    ![img](./images/ubuntu.20.04/input_sources_menu_3.png)
+    
+    Clicking on "Others" will reveal all the Malayalam input. Select whatever you want and click "Add". Here "Swanalekha", a transliteration input is chosen.
+    
+    ![img](./images/ubuntu.20.04/input_sources_menu_4.png)
+    
+    Your screen should now look like below.
+    
+    ![img](./images/ubuntu.20.04/input_sources_menu_5.png)
+    
+    To test, launch a text editor and  select "Swanalekha" (or whatever you chose earlier) from the input switcher.
+    
+    ![img](./images/ubuntu.20.04/input_method_switching_1.png)
+    
+    Now try typing in something
+    
+    ![img](./images/ubuntu.20.04/input_method_switching_2.png)
 
-1.  Ibus
+3.  Enabling Malayalam language UI.
 
-    GNOME
-    KDE
-
-2.  Fcitx
-
-    GNOME
-    KDE
-
-
-<a id="orgec36ee8"></a>
-
-## How to : Using Malayalam on Illustrator/Photoshop
-
-
-<a id="org9059ba3"></a>
-
-## How to : Using Malayalam on Windows
-
-
-<a id="orgec21fb2"></a>
-
-### Installing fonts
-
-
-<a id="org1f56f69"></a>
-
-### Input methods
-
-
-<a id="org3473e2c"></a>
-
-### User interface localisation
-
-
-<a id="orgdf42866"></a>
-
-## How to : Using Malayalam on MacOS
-
-
-<a id="orgf22a0e2"></a>
-
-### Installing fonts
-
-
-<a id="org5a423c4"></a>
-
-### Input methods
-
-
-<a id="org5f8000a"></a>
-
-### User interface localisation
-
-
-<a id="orga0e21d6"></a>
-
-## How to : Using malayalam On Android
-
-
-<a id="org49e209f"></a>
-
-### Input
-
-
-<a id="orgad5cf31"></a>
-
-### User Interface
-
-
-<a id="org42d1910"></a>
-
-## iOS : Using malayalam
-
-1.  Input
-
-2.  User Interface
-
+    Click "Setting > Region and Language > Manage installed languages ". 
+    
+    ![img](./images/ubuntu.20.04/language_support_1.png)
+    
+    You can click "Remind me later". Otherwise you can install the additional recommendations and return to this screen.
+    
+    ![img](./images/ubuntu.20.04/language_support_2.png)
+    
+    Now click on "Install/Remove languages" and scroll till you find Malayalam.
+    
+    ![img](./images/ubuntu.20.04/language_support_3.png)
+    
+    Make sure the "Malayalam" is selected. Now click "Apply". It will ask your password for permission to install language support.
+    
+    Once it finishes, make sure മലയാളം is visible in the list as per below.
+    
+    ![img](./images/ubuntu.20.04/language_support_4.png)
+    
+    Now click close, and you should be back at Region and Language screen. Close this screen, and launch "Settings" again, and click on "Region and Languages > Languages".
+    
+    ![img](./images/ubuntu.20.04/language_support_5.png)
+    
+    Select "മലയാളം" in the screen and click on the "Select" button.
+    
+    This will enable the Malayalam UI. You'd need to restart your session (not the computer itself). Clicking on the restart button will log you out. 
+    
+    ![img](./images/ubuntu.20.04/language_support_6.png)
+    
+    When you log back in, you should see Malayalam user interface.
