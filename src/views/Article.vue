@@ -35,12 +35,8 @@
 </template>
 
 <script>
-
 import MarkdownIt from "markdown-it";
 import MarkDownItVideo from "markdown-it-video";
-import MarkDownItAnchor from "markdown-it-anchor";
-import MarkDownItToc from "markdown-it-table-of-contents";
-
 import axios from "axios";
 import fm from "front-matter";
 import { mdiMagnify } from "@mdi/js";
@@ -84,8 +80,6 @@ export default {
       if (file) {
         const md = new MarkdownIt();
         md.use(MarkDownItVideo);
-	md.use(MarkDownItAnchor);
-	md.use(MarkDownItToc,  { includeLevel : [ 1, 2, 3] }) ;
         axios.get(`/${file}`).then(({ data }) => {
           const article = fm(data);
           this.title = article.attributes.title;
@@ -134,6 +128,38 @@ export default {
 .article {
   img {
     max-width: 100%;
+    margin: 8px 2em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin: 1em 0;
+    padding: 4px 1em;
+  }
+
+  h2,
+  h3 {
+    border-left: 6px solid #00a7d0;
+  }
+
+  blockquote {
+    padding: 1em;
+    margin: 8px 0;
+    line-height: 1.5;
+    border: 1px solid orangered;
+    border-left: 6px solid orangered;
+    background-color: whitesmoke;
+    color: #333;
+  }
+  p,
+  ul,
+  ol,
+  li {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 4px;
+    margin-left: 1em;
   }
 }
 </style>
