@@ -15,13 +15,13 @@ author: Ashik Salahudeen
   - [Localisation](#localisation)
 - [How to : Using Malayalam on GNU/Linux](#how-to--using-malayalam-on-gnulinux)
   - [Fedora](#fedora)
-    - [Enabling Malayalam fonts.](#enabling-malayalam-fonts)
+    - [Enabling Malayalam fonts](#enabling-malayalam-fonts)
     - [Enabling Malayalam input](#enabling-malayalam-input)
     - [Enabling Malayalam language UI](#enabling-malayalam-language-ui)
   - [Ubuntu](#ubuntu)
-    - [Enabling Malayalam fonts](#enabling-malayalam-fonts-1)
-    - [Enabling Malayalam input](#enabling-malayalam-input-1)
-    - [Enabling Malayalam language UI](#enabling-malayalam-language-ui-1)
+    - [Enabling Malayalam fonts in Ubuntu](#enabling-malayalam-fonts-in-ubuntu)
+    - [Enabling Malayalam input in Ubuntu](#enabling-malayalam-input-in-ubuntu)
+    - [Enabling Malayalam language UI in Ubuntu](#enabling-malayalam-language-ui-in-ubuntu)
 
 ## Terminology
 
@@ -108,7 +108,7 @@ The following is mostly screenshots of current editions of Fedora, Ubuntu and De
 
 The following instructions are made from a Fedora 31 default installation.
 
-#### Enabling Malayalam fonts.
+#### Enabling Malayalam fonts
 
 It is highly likely that Malayalam fonts are already installed. If not, they are available from Software centre. Launch it by clicking on its icon and just search for "smc-"
 
@@ -174,7 +174,7 @@ You should be able to use Malayalam user interface when you log back in.
 
 ### Ubuntu
 
-#### Enabling Malayalam fonts
+#### Enabling Malayalam fonts in Ubuntu
 
 It is highly likely that Malayalam fonts are already installed. If not, they are available from Software centre. Launch it by clicking on its icon and just search for "fonts-smc".
 
@@ -188,7 +188,7 @@ apt search fonts-smc-
 
 ![img](./images/ubuntu.20.04/smc_fonts_listing_cli.png)
 
-#### Enabling Malayalam input
+#### Enabling Malayalam input in Ubuntu
 
 Ubuntu does not have all malayalam inputs by default. To fix this, run the following command in a Terminal.
 
@@ -232,7 +232,7 @@ Now try typing in something
 
 ![img](./images/ubuntu.20.04/input_method_switching_2.png)
 
-#### Enabling Malayalam language UI
+#### Enabling Malayalam language UI in Ubuntu
 
 Click "Setting > Region and Language > Manage installed languages ".
 

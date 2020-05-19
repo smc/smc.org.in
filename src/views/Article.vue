@@ -37,6 +37,7 @@
 <script>
 import MarkdownIt from "markdown-it";
 import MarkDownItVideo from "markdown-it-video";
+import MarkDownItAnchor from "markdown-it-anchor";
 import axios from "axios";
 import fm from "front-matter";
 import { mdiMagnify } from "@mdi/js";
@@ -80,6 +81,7 @@ export default {
       if (file) {
         const md = new MarkdownIt();
         md.use(MarkDownItVideo);
+        md.use(MarkDownItAnchor);
         axios.get(`/${file}`).then(({ data }) => {
           const article = fm(data);
           this.title = article.attributes.title;
