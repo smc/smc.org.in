@@ -354,7 +354,7 @@
                 text editor application you are using, picking one of these
                 variants is usually allowed. Please read
                 <a
-                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-gayathri-gayathri/"
+                  href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-manjari-chilanka/"
                   >this article</a
                 >
                 to see how to use this with Inkscape, Browsers, Libreoffice and
