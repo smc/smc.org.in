@@ -189,6 +189,23 @@ export default {
                 url: "https://grandham.in/"
               }
             ]
+          },
+          {
+            title: "ml2en",
+            description: `
+              A simple online tool to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Tool",
+                url: "https://nadh.in/code/ml2en/"
+              },
+              {
+                text: "Source",
+                url:
+                  "https://github.com/knadh/ml2en/"
+              }
+            ]
           }
         ]
       },
