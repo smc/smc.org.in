@@ -216,6 +216,32 @@ export default {
                   "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
               }
             ]
+          },
+          {
+            title: "Indic-En",
+            logo:
+              "https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png",
+            logo_style_cover: true,
+            description: `
+              This addon will convert Malayalam, Hindi & Kannada webpages to Manglish, Hinglish & Kanglish respectively. For people who understands the language, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Firefox",
+                url:
+                  "https://addons.mozilla.org/en-US/firefox/addon/indicen/"
+              },
+              {
+                text: "Chrome",
+                url:
+                  "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon"
+              },
+              {
+                text: "Details",
+                url:
+                  "https://subinsb.com/indicen/"
+              }
+            ]
           }
         ]
       },
