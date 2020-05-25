@@ -291,6 +291,31 @@ export default {
                 url: "https://gitlab.com/jishnu7/Akshara-Mazha"
               }
             ]
+          },
+          {
+            title: "Manglish",
+            logo:
+              "",
+            logo_style_cover: true,
+            description: `
+              A simple app to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Play Store",
+                url:
+                  "https://play.google.com/store/apps/details?id=subins2000.manglish"
+              },
+              {
+                text: "F-Droid",
+                url:
+                  "https://f-droid.org/packages/subins2000.manglish/"
+              },
+              {
+                text: "Doc",
+                url: "https://subinsb.com/manglish/"
+              }
+            ]
           }
         ]
       },
