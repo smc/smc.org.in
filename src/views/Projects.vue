@@ -189,6 +189,23 @@ export default {
                 url: "https://grandham.in/"
               }
             ]
+          },
+          {
+            title: "ml2en",
+            description: `
+              A simple online tool to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Tool",
+                url: "https://nadh.in/code/ml2en/"
+              },
+              {
+                text: "Source",
+                url:
+                  "https://github.com/knadh/ml2en/"
+              }
+            ]
           }
         ]
       },
@@ -214,6 +231,32 @@ export default {
                 text: "Chrome",
                 url:
                   "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
+              }
+            ]
+          },
+          {
+            title: "Indic-En",
+            logo:
+              "https://raw.githubusercontent.com/subins2000/indicen/master/assets/favicon.png",
+            logo_style_cover: true,
+            description: `
+              This addon will convert Malayalam, Hindi & Kannada webpages to Manglish, Hinglish & Kanglish respectively. For people who understands the language, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Firefox",
+                url:
+                  "https://addons.mozilla.org/en-US/firefox/addon/indicen/"
+              },
+              {
+                text: "Chrome",
+                url:
+                  "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon"
+              },
+              {
+                text: "Details",
+                url:
+                  "https://subinsb.com/indicen/"
               }
             ]
           }
@@ -263,6 +306,31 @@ export default {
               {
                 text: "Source",
                 url: "https://gitlab.com/jishnu7/Akshara-Mazha"
+              }
+            ]
+          },
+          {
+            title: "Manglish",
+            logo:
+              "https://raw.githubusercontent.com/subins2000/manglish/master/artwork/logo.svg",
+            logo_style_cover: true,
+            description: `
+              A simple app to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
+            `,
+            links: [
+              {
+                text: "Play Store",
+                url:
+                  "https://play.google.com/store/apps/details?id=subins2000.manglish"
+              },
+              {
+                text: "F-Droid",
+                url:
+                  "https://f-droid.org/packages/subins2000.manglish/"
+              },
+              {
+                text: "Details",
+                url: "https://subinsb.com/manglish/"
               }
             ]
           }
