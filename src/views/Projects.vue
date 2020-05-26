@@ -237,7 +237,7 @@ export default {
           {
             title: "Indic-En",
             logo:
-              "https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png",
+              "https://raw.githubusercontent.com/subins2000/indicen/master/assets/favicon.png",
             logo_style_cover: true,
             description: `
               This addon will convert Malayalam, Hindi & Kannada webpages to Manglish, Hinglish & Kanglish respectively. For people who understands the language, but can't read the script.
@@ -312,7 +312,7 @@ export default {
           {
             title: "Manglish",
             logo:
-              "",
+              "https://raw.githubusercontent.com/subins2000/manglish/master/artwork/logo.svg",
             logo_style_cover: true,
             description: `
               A simple app to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
@@ -329,7 +329,7 @@ export default {
                   "https://f-droid.org/packages/subins2000.manglish/"
               },
               {
-                text: "Doc",
+                text: "Details",
                 url: "https://subinsb.com/manglish/"
               }
             ]
