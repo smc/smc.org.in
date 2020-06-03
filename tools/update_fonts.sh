@@ -4,8 +4,8 @@ FONTS_URL=${FONTS_URL:-"smc/fonts"}
 # Convert slash to %2F
 FONTS_SLUG=${FONTS_URL/\//%2F}
 
-mkdir -p dist/downloads/fonts
-cd dist/downloads/fonts || exit
+mkdir -p public/downloads/fonts
+cd public/downloads/fonts
 python3 -m venv .env
 source .env/bin/activate
 pip3 install -r ./../../../tools/requirements.txt
@@ -20,7 +20,7 @@ for font in "${fonts[@]}"; do
         fi
 
         mkdir -p "$font"
-        cd "$font" || exit
+        cd "$font"
 
         wget -q "https://gitlab.com/${FONTS_URL}/${font}/-/jobs/artifacts/${version}/download?job=build-tag" -O artifacts.zip
         unzip -q artifacts.zip
@@ -30,7 +30,7 @@ for font in "${fonts[@]}"; do
 
         python3 ../../../../tools/fontdata.py *-Regular.ttf
         zip -qr "${font}.zip" . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j
-        cd ../ || exit
+        cd ../
         sed -i "s/@VERSION@/$version/g" ../../fonts/${font}.css
 done
 

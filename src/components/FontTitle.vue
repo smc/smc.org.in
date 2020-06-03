@@ -14,7 +14,6 @@
     </div>
     <v-btn
       :href="link"
-      target="_blank"
       rounded
       large
       color="success"
