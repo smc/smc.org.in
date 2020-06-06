@@ -202,8 +202,7 @@ export default {
               },
               {
                 text: "Source",
-                url:
-                  "https://github.com/knadh/ml2en/"
+                url: "https://github.com/knadh/ml2en/"
               }
             ]
           }
@@ -245,8 +244,7 @@ export default {
             links: [
               {
                 text: "Firefox",
-                url:
-                  "https://addons.mozilla.org/en-US/firefox/addon/indicen/"
+                url: "https://addons.mozilla.org/en-US/firefox/addon/indicen/"
               },
               {
                 text: "Chrome",
@@ -255,8 +253,7 @@ export default {
               },
               {
                 text: "Details",
-                url:
-                  "https://subinsb.com/indicen/"
+                url: "https://subinsb.com/indicen/"
               }
             ]
           }
@@ -325,8 +322,7 @@ export default {
               },
               {
                 text: "F-Droid",
-                url:
-                  "https://f-droid.org/packages/subins2000.manglish/"
+                url: "https://f-droid.org/packages/subins2000.manglish/"
               },
               {
                 text: "Details",

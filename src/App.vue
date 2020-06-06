@@ -20,7 +20,11 @@
               </v-list-item-content>
             </template>
 
-            <v-list-item v-for="subItem in item.items" :key="subItem.title" :to="subItem.path">
+            <v-list-item
+              v-for="subItem in item.items"
+              :key="subItem.title"
+              :to="subItem.path"
+            >
               <v-list-item-content>
                 <v-list-item-title
                   v-i18n="subItem.msg || subItem.title"
@@ -30,9 +34,16 @@
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
-          <v-list-item :to="item.path" :href="item.href" v-else :key="item.title">
+          <v-list-item
+            :to="item.path"
+            :href="item.href"
+            v-else
+            :key="item.title"
+          >
             <v-list-item-content>
-              <v-list-item-title v-i18n="item.msg || item.title"></v-list-item-title>
+              <v-list-item-title
+                v-i18n="item.msg || item.title"
+              ></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </template>
@@ -50,13 +61,23 @@
           width="48"
         />
       </div>
-      <v-toolbar-title class="pa-2" style="cursor: pointer;" @click.stop="$router.push('/')">
+      <v-toolbar-title
+        class="pa-2"
+        style="cursor: pointer;"
+        @click.stop="$router.push('/')"
+      >
         <span class="hidden-xs-only">{{ $i18n("smc") }}</span>
         <span class="hidden-sm-and-up">{{ $i18n("smc-short") }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
-        <v-menu :fixed="true" offset-y v-for="item in menuItems" :key="item.title" open-on-hover>
+        <v-menu
+          :fixed="true"
+          offset-y
+          v-for="item in menuItems"
+          :key="item.title"
+          open-on-hover
+        >
           <template v-slot:activator="{ on }">
             <v-btn
               class="hidden-sm-and-down"
@@ -68,15 +89,25 @@
             ></v-btn>
           </template>
           <v-list v-if="item.items">
-            <v-list-item v-for="subItem in item.items" :key="subItem.title" :to="subItem.path">
+            <v-list-item
+              v-for="subItem in item.items"
+              :key="subItem.title"
+              :to="subItem.path"
+            >
               <v-list-item-content>
-                <v-list-item-title v-i18n="subItem.msg || subItem.title" :to="item.path"></v-list-item-title>
+                <v-list-item-title
+                  v-i18n="subItem.msg || subItem.title"
+                  :to="item.path"
+                ></v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-menu>
       </v-toolbar-items>
-      <v-app-bar-nav-icon @click.stop="sidebar = !sidebar" class="hidden-md-and-up"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        @click.stop="sidebar = !sidebar"
+        class="hidden-md-and-up"
+      ></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-content>
