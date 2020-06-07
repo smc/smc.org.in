@@ -128,7 +128,7 @@ export default {
   created() {
     this.loading_all = true;
     return fetch(
-      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&include=tags,authors&limit=50"
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors&limit=50"
     )
       .then(response => response.json())
       .then(data => {
@@ -151,7 +151,7 @@ export default {
       if (!post) {
         this.loading_slug = true;
         return fetch(
-          `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=663893999124de2b7156b52cfb&include=tags,authors`
+          `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors`
         )
           .then(response => response.json())
           .then(data => {

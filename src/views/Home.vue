@@ -164,7 +164,7 @@ export default {
   },
   created() {
     return fetch(
-      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=663893999124de2b7156b52cfb&limit=8"
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&limit=8"
     )
       .then(response => response.json())
       .then(data => {
