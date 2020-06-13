@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">സുറുമ</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">സുറുമ</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -225,13 +225,13 @@ export default {
 };
 </script>
 <style lang="less">
-#suruma .display-1,
-#suruma .display-2,
-#suruma .display-3,
-#suruma .display-4,
+#suruma .text-h4,
+#suruma .text-h3,
+#suruma .text-h2,
+#suruma .text-h1,
 #suruma .display-5,
 #suruma .title,
-#suruma .headline {
+#suruma .text-h5 {
   font-family: "Suruma" !important;
 }
 

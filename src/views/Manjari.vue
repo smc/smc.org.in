@@ -37,9 +37,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-1 my-2">മഞ്ജരി</h1>
-                <h1 class="display-3 font-weight-regular py-1 my-2">മഞ്ജരി</h1>
-                <h1 class="display-3 font-weight-bold py-1 my-2">മഞ്ജരി</h1>
+                <h1 class="text-h2 font-weight-thin py-1 my-2">മഞ്ജരി</h1>
+                <h1 class="text-h2 font-weight-regular py-1 my-2">മഞ്ജരി</h1>
+                <h1 class="text-h2 font-weight-bold py-1 my-2">മഞ്ജരി</h1>
                 <p>Available in bold, regular, thin style variants.</p>
               </v-card>
             </v-carousel-item>
@@ -562,13 +562,13 @@ export default {
 </script>
 <style lang="less">
 #manjari {
-  .display-1,
-  .display-2,
-  .display-3,
-  .display-4,
+  .text-h4,
+  .text-h3,
+  .text-h2,
+  .text-h1,
   .display-5,
   .title,
-  .headline {
+  .text-h5 {
     font-family: "Manjari" !important;
   }
 }
@@ -582,8 +582,8 @@ export default {
 
 .manjari-slide-1,
 .manjari-slide-0 {
-  .display-4,
-  .display-3,
+  .text-h1,
+  .text-h2,
   .display-5 {
     font-family: "Manjari" !important;
   }

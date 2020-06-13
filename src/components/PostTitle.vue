@@ -8,11 +8,11 @@
 
     <v-img cover :src="image" v-if="image" height="30vh" />
 
-    <h1 class="display-3 mt-10" lang="ml">
+    <h1 class="text-h2 mt-10" lang="ml">
       {{ title }}
     </h1>
 
-    <h5 v-if="authors || author" class="subtitle-1 py-3">
+    <h5 v-if="authors || author" class="text-subtitle-1 py-3">
       <span> {{ getAuthorString(authors || author) }} </span>
       <span v-if="date"> - {{ new Date(date).toDateString() }} </span>
     </h5>

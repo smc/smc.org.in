@@ -1,6 +1,6 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <h1 class="display-3 my-10" v-i18n="'menu-research'"></h1>
+    <h1 class="text-h2 my-10" v-i18n="'menu-research'"></h1>
 
     <article>
       <section

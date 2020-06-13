@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">ദ്യുതി</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">ദ്യുതി</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -41,7 +41,7 @@
                   and Malayalam. The glyph patterns are based on popular 'bulged
                   ended' type designs which used to be popular in Malayalam
                   designs. The font comes in one size and is thicker than usual
-                  Malayalam fonts, hence is suited for titling and headlines.
+                  Malayalam fonts, hence is suited for titling and text-h5s.
                   Dyuthi can accompany Meera or Rachana as title font, when they
                   are used as body text.
                 </p>
@@ -206,13 +206,13 @@ export default {
 };
 </script>
 <style lang="less">
-#dyuthi .display-1,
-#dyuthi .display-2,
-#dyuthi .display-3,
-#dyuthi .display-4,
+#dyuthi .text-h4,
+#dyuthi .text-h3,
+#dyuthi .text-h2,
+#dyuthi .text-h1,
 #dyuthi .display-5,
 #dyuthi .title,
-#dyuthi .headline {
+#dyuthi .text-h5 {
   font-family: "Dyuthi" !important;
 }
 

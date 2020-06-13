@@ -1,7 +1,7 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
     <article class="projects">
-      <h1 class="display-3 my-10" v-i18n="'menu-projects'"></h1>
+      <h1 class="text-h2 my-10" v-i18n="'menu-projects'"></h1>
 
       <section v-for="section in projects" :key="section.heading" class="mb-10">
         <h2>{{ section.heading }}</h2>

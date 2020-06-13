@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">ഉറൂബ്</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">ഉറൂബ്</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -171,13 +171,13 @@ export default {
 };
 </script>
 <style lang="less">
-#uroob .display-1,
-#uroob .display-2,
-#uroob .display-3,
-#uroob .display-4,
+#uroob .text-h4,
+#uroob .text-h3,
+#uroob .text-h2,
+#uroob .text-h1,
 #uroob .display-5,
 #uroob .title,
-#uroob .headline {
+#uroob .text-h5 {
   font-family: "Uroob" !important;
 }
 
@@ -189,7 +189,7 @@ export default {
   }
 }
 .uroob-slide-0 {
-  .display-3,
+  .text-h2,
   .display-5 {
     font-family: "Uroob" !important;
   }

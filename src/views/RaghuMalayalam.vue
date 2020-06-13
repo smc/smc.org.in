@@ -26,7 +26,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">രഘു മലയാളം</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">രഘു മലയാളം</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>

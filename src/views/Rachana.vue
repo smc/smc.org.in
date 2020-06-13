@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">രചന</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">രചന</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -246,13 +246,13 @@ export default {
 };
 </script>
 <style lang="less">
-#rachana .display-1,
-#rachana .display-2,
-#rachana .display-3,
-#rachana .display-4,
+#rachana .text-h4,
+#rachana .text-h3,
+#rachana .text-h2,
+#rachana .text-h1,
 #rachana .display-5,
 #rachana .title,
-#rachana .headline {
+#rachana .text-h5 {
   font-family: "Rachana" !important;
 }
 

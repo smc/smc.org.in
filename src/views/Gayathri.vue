@@ -36,9 +36,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-1 my-2">ഗായത്രി</h1>
-                <h1 class="display-3 font-weight-regular py-1 my-2">ഗായത്രി</h1>
-                <h1 class="display-3 font-weight-bold py-1 my-2">ഗായത്രി</h1>
+                <h1 class="text-h2 font-weight-thin py-1 my-2">ഗായത്രി</h1>
+                <h1 class="text-h2 font-weight-regular py-1 my-2">ഗായത്രി</h1>
+                <h1 class="text-h2 font-weight-bold py-1 my-2">ഗായത്രി</h1>
                 <p>Available in bold, regular, thin style variants.</p>
               </v-card>
             </v-carousel-item>
@@ -51,7 +51,7 @@
               >
                 <p class="pa-4 ma-4">
                   A gentle and modern Malayalam display typeface. Available in
-                  three weights, Gayathri is best suited for headlines, posters,
+                  three weights, Gayathri is best suited for text-h5s, posters,
                   titles and captions. Unicode compliant and libre licensed.
                 </p>
               </v-card>
@@ -490,13 +490,13 @@ export default {
 };
 </script>
 <style lang="less">
-#gayathri .display-1,
-#gayathri .display-2,
-#gayathri .display-3,
-#gayathri .display-4,
+#gayathri .text-h4,
+#gayathri .text-h3,
+#gayathri .text-h2,
+#gayathri .text-h1,
 #gayathri .display-5,
 #gayathri .title,
-#gayathri .headline {
+#gayathri .text-h5 {
   font-family: "Gayathri" !important;
 }
 

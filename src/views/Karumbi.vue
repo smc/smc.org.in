@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">കറുമ്പി</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">കറുമ്പി</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -263,13 +263,13 @@ export default {
 };
 </script>
 <style lang="less">
-#karumbi .display-1,
-#karumbi .display-2,
-#karumbi .display-3,
-#karumbi .display-4,
+#karumbi .text-h4,
+#karumbi .text-h3,
+#karumbi .text-h2,
+#karumbi .text-h1,
 #karumbi .display-5,
 #karumbi .title,
-#karumbi .headline {
+#karumbi .text-h5 {
   font-family: "Karumbi" !important;
 }
 

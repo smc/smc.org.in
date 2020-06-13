@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">കേരളീയം</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">കേരളീയം</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -228,13 +228,13 @@ export default {
 };
 </script>
 <style lang="less">
-#keraleeyam .display-1,
-#keraleeyam .display-2,
-#keraleeyam .display-3,
-#keraleeyam .display-4,
+#keraleeyam .text-h4,
+#keraleeyam .text-h3,
+#keraleeyam .text-h2,
+#keraleeyam .text-h1,
 #keraleeyam .display-5,
 #keraleeyam .title,
-#keraleeyam .headline {
+#keraleeyam .text-h5 {
   font-family: "Keraleeyam" !important;
 }
 

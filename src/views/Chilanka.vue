@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">ചിലങ്ക</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">ചിലങ്ക</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -351,12 +351,12 @@ export default {
 };
 </script>
 <style lang="less">
-#chilanka .display-1,
-#chilanka .display-3,
+#chilanka .text-h4,
+#chilanka .text-h2,
 #chilanka .display-5,
-#chilanka .display-2,
+#chilanka .text-h3,
 #chilanka .title,
-#chilanka .headline {
+#chilanka .text-h5 {
   font-family: "Chilanka" !important;
 }
 

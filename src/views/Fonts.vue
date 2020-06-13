@@ -1,6 +1,6 @@
 <template>
   <v-container class="fonts col-xl-8 col-sm-10 col-xs-12">
-    <h1 class="display-3 my-10" v-i18n="'menu-fonts'"></h1>
+    <h1 class="text-h2 my-10" v-i18n="'menu-fonts'"></h1>
 
     <v-row>
       <v-col

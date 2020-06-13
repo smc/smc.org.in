@@ -1,7 +1,7 @@
 <template>
   <section id="intro" class="row">
     <div class="col-12">
-      <h1 class="display-3" v-text="name"></h1>
+      <h1 class="text-h2" v-text="name"></h1>
     </div>
 
     <div class="col-xs-12 col-lg-8">

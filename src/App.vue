@@ -273,10 +273,10 @@ export default {
   text-align: left;
   font-size: 1em;
   overflow-x: hidden;
-  .display-2,
-  .display-3,
-  .headline,
-  .subtitle-1,
+  .text-h3,
+  .text-h2,
+  .text-h5,
+  .text-subtitle-1,
   .title {
     &[lang="ml"] {
       font-family: "Manjari", "Gayathri", sans-serif !important;
@@ -286,10 +286,10 @@ export default {
   &.v-application .display-5 {
     font-size: clamp(1rem, 3vw, 2rem) !important;
   }
-  &.v-application .display-4 {
+  &.v-application .text-h1 {
     font-size: clamp(2rem, 4vw, 3rem) !important;
   }
-  &.v-application .display-3 {
+  &.v-application .text-h2 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
   }
 }

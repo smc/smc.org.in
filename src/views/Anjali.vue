@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">അഞ്ജലി</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">അഞ്ജലി</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -232,13 +232,13 @@ export default {
 };
 </script>
 <style lang="less">
-#anjali .display-1,
-#anjali .display-2,
-#anjali .display-3,
-#anjali .display-4,
+#anjali .text-h4,
+#anjali .text-h3,
+#anjali .text-h2,
+#anjali .text-h1,
 #anjali .display-5,
 #anjali .title,
-#anjali .headline {
+#anjali .text-h5 {
   font-family: "AnjaliOldLipi" !important;
 }
 

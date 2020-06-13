@@ -23,7 +23,7 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-3 font-weight-thin py-2 my-4">മീര</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">മീര</h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -249,13 +249,13 @@ export default {
 };
 </script>
 <style lang="less">
-#meera .display-1,
-#meera .display-2,
-#meera .display-3,
-#meera .display-4,
+#meera .text-h4,
+#meera .text-h3,
+#meera .text-h2,
+#meera .text-h1,
 #meera .display-5,
 #meera .title,
-#meera .headline {
+#meera .text-h5 {
   font-family: "Meera" !important;
 }
 
