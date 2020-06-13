@@ -110,7 +110,7 @@
       ></v-app-bar-nav-icon>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <v-row align="center" justify="end" class="ma-0 pa-0">
         <v-col class="text-right ma-0 pa-0">
           <v-btn small text @click="onChangeLocale('en')">English</v-btn>
@@ -120,7 +120,7 @@
       <transition name="slide">
         <router-view :locale="i18n.locale" />
       </transition>
-    </v-content>
+    </v-main>
     <smc-footer></smc-footer>
   </v-app>
 </template>
