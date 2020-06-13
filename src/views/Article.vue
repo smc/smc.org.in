@@ -18,7 +18,7 @@
 
       <v-card flat>
         <v-list>
-          <v-list-item-group v-model="item" color="primary">
+          <v-list-item-group color="primary">
             <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url">
               <v-list-item-icon>
                 <v-icon>{{ mdiFileDocument }}</v-icon>
