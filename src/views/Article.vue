@@ -16,19 +16,22 @@
         hide-details
       />
 
-      <v-card outlined>
-        <v-data-table
-          :headers="headers"
-          :items="toc"
-          :search="search"
-          :options="{ itemsPerPage: 25 }"
-        >
-          <template v-slot:item.title="{ item }">
-            <router-link class="article-link" :to="item.url">
-              {{ item.title }}
-            </router-link>
-          </template>
-        </v-data-table>
+      <v-card flat>
+        <v-list>
+          <v-list-item-group v-model="item" color="primary">
+            <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url">
+              <v-list-item-icon>
+                <v-icon>{{ mdiFileDocument }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title v-text="item.title"></v-list-item-title>
+                <v-list-item-subtitle
+                  v-text="item.author"
+                ></v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
       </v-card>
     </div>
   </v-container>
@@ -40,7 +43,7 @@ import MarkDownItVideo from "markdown-it-video";
 import MarkDownItAnchor from "markdown-it-anchor";
 import axios from "axios";
 import fm from "front-matter";
-import { mdiMagnify } from "@mdi/js";
+import { mdiMagnify, mdiFileDocument } from "@mdi/js";
 
 import PostTitle from "../components/PostTitle";
 import articles from "../manifest.json";
@@ -54,6 +57,7 @@ export default {
     path: null,
     search: "",
     mdiMagnify,
+    mdiFileDocument,
     articles: [],
     headers: [
       {
@@ -67,11 +71,17 @@ export default {
   }),
   computed: {
     toc() {
-      return articles.map(article => ({
+      const allItems = articles.map(article => ({
         title: article.title,
         url: article.url,
         author: article.author
       }));
+      return allItems.filter(item => {
+        return (
+          ~(item.title + "").toLowerCase().indexOf(this.search.toLowerCase()) ||
+          ~(item.author + "").toLowerCase().indexOf(this.search.toLowerCase())
+        );
+      });
     }
   },
   watch: {
