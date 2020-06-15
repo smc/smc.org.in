@@ -9,5 +9,5 @@ author: Santhosh Thottingal
 
 [ഫോണ്ടുകൾ എങ്ങനെ പുതുക്കാം?][2]
 
-[1]: /article/atomic-chillus
-[2]: /article/install-and-upgrade-fonts
+[1]: /articles/atomic-chillus
+[2]: /articles/install-and-upgrade-fonts
