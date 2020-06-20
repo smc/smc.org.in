@@ -106,7 +106,7 @@
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
               <v-btn
-                href="/downloads/fonts/suruma/Suruma.zip"
+                href="/downloads/fonts/suruma/suruma.zip"
                 color="primary"
                 text
               >

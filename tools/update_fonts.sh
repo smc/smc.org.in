@@ -28,7 +28,11 @@ for font in "${fonts[@]}"; do
 
         rm -rf build artifacts.zip
 
-        python3 ../../../../tools/fontdata.py *-Regular.ttf
+        if $(ls *-Regular.ttf 1> /dev/null 2>&1); then
+          python3 ../../../../tools/fontdata.py *-Regular.ttf
+        else
+          python3 ../../../../tools/fontdata.py *.ttf
+        fi
         zip -qr "${font}.zip" . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j
         cd ../
         sed -i "s/@VERSION@/$version/g" ../../fonts/${font}.css
