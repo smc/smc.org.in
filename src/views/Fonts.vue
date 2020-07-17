@@ -113,7 +113,7 @@ export default {
       },
       {
         title: "RaghuMalayalam",
-        path: "/fonts/raghumalayalam"
+        path: "/fonts/raghumalayalamsans"
       },
       {
         title: "Suruma",
