@@ -120,6 +120,67 @@ export default {
         ]
       },
       {
+        heading: "Fonts",
+        list: [
+          {
+            title: "SMC Fonts",
+            description: `
+              SMC released and maintains some of the popular fonts of Malayalam language, Including Manjari, Gayathri, Chilanka, Rachana, AnjaliOldLipi, Keraleeyam, Uroob, Suruma, Meera and so on.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "/fonts",
+                source: "https://gitlab.com/smc/fonts"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Malayalam Linguistics",
+        list: [
+          {
+            title: "Morphology analyser and generator",
+            description: `
+              Morphology analyser and generator, a foundational component for Malayalam computational linguistics.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://morph.smc.org.in",
+                source: "https://gitlab.com/smc/mlmorph"
+              }
+            ]
+          },
+          {
+            title: "Malayalam phonetic analyser and generator",
+            description: `
+              Malayalam Phonetic analyser and generator, IPA convertor.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://phon.smc.org.in",
+                source: "https://gitlab.com/smc/mlphon"
+              }
+            ]
+          },
+          {
+            title: "Malayalam text prediction system",
+            description: `
+              Markov chain based Malayalam text prediction system.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://predict.smc.org.in"
+              }
+            ]
+          }
+        ]
+      },
+      {
         heading: "Accessibility",
         list: [
           {

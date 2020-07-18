@@ -97,7 +97,10 @@
             max-width="400"
             height="100%"
           >
-            <v-img :src="require('@/assets/logo.svg')" height="200px"></v-img>
+            <v-img
+              :src="require('@/assets/images/mlmorph-logo.svg')"
+              height="200px"
+            ></v-img>
             <v-card-title>Mlmorph</v-card-title>
 
             <v-card-subtitle>Malayalam morphology analyser</v-card-subtitle>
