@@ -41,7 +41,7 @@ import {
   mdiChat,
   mdiAsterisk,
   mdiChatAlert,
-  mdiGithubCircle,
+  mdiGithub,
   mdiGitlab
 } from "@mdi/js";
 
@@ -58,7 +58,7 @@ export default {
         name: "github",
         title: "Github",
         url: "https://github.com/smc",
-        icon: mdiGithubCircle
+        icon: mdiGithub
       },
       {
         name: "telegram",
