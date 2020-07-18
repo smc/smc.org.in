@@ -130,8 +130,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "/fonts",
-                source: "https://gitlab.com/smc/fonts"
+                url: "/fonts"
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/fonts"
               }
             ]
           }
@@ -148,8 +151,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://morph.smc.org.in",
-                source: "https://gitlab.com/smc/mlmorph"
+                url: "https://morph.smc.org.in"
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/mlmorph"
               }
             ]
           },
@@ -161,8 +167,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://phon.smc.org.in",
-                source: "https://gitlab.com/smc/mlphon"
+                url: "https://phon.smc.org.in"
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/mlphon"
               }
             ]
           },
@@ -175,6 +184,39 @@ export default {
               {
                 text: "Details",
                 url: "https://predict.smc.org.in"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        heading: "Corpus and data collections",
+        list: [
+          {
+            title: "SMC Text corpus",
+            description: `
+             A collection of Malayalam text content for various research purpose, curated and released in Creative commons license.
+            `,
+            links: [
+              {
+                text: "Source",
+                url: "http://gitlab.com/smc/corpus"
+              }
+            ]
+          },
+          {
+            title: "Speech corpus",
+            description: `
+              A collection of Malayalam speech samples for various research purpose, curated and released in Creative commons license.
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "http://msc.smc.org.in"
+              },
+              {
+                text: "Source",
+                url: "http://gitlab.com/smc/msc"
               }
             ]
           }
