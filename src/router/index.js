@@ -16,85 +16,97 @@ const routerOptions = [
     path: "/fonts/manjari",
     name: "font-manjari",
     view: "Manjari",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/gayathri",
     name: "font-gayathri",
     view: "Gayathri",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/chilanka",
     name: "font-chilanka",
     view: "Chilanka",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/dyuthi",
     name: "font-dyuthi",
     view: "Dyuthi",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/anjali",
     name: "font-anjali",
     view: "Anjali",
-    params: true
+    params: true,
+  },
+  {
+    path: "/fonts/anjalioldlipi",
+    name: "font-anjalioldlipi",
+    view: "Anjali",
+    params: true,
   },
   {
     path: "/fonts/keraleeyam",
     name: "font-keraleeyam",
     view: "Keraleeyam",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/uroob",
     name: "font-uroob",
     view: "Uroob",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/suruma",
     name: "font-suruma",
     view: "Suruma",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/karumbi",
     name: "font-karumbi",
     view: "Karumbi",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/meera",
     name: "font-meera",
     view: "Meera",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/rachana",
     name: "font-rachana",
     view: "Rachana",
-    params: true
+    params: true,
   },
   {
     path: "/fonts/raghumalayalam",
     name: "font-raghumalayalam",
     view: "RaghuMalayalam",
-    params: true
+    params: true,
+  },
+  {
+    path: "/fonts/raghumalayalamsans",
+    name: "font-raghumalayalamsans",
+    view: "RaghuMalayalam",
+    params: true,
   },
   { path: "/blog/:title", view: "Blog" },
   { path: "/blog", view: "Blog" },
   { path: "/articles/:title", view: "Article" },
   { path: "/articles", view: "Article" },
-  { path: "*", name: "404", view: "404", params: true }
+  { path: "*", name: "404", view: "404", params: true },
 ];
 
-const routes = routerOptions.map(route => {
+const routes = routerOptions.map((route) => {
   return {
     ...route,
-    component: () => import(`@/views/${route.view}.vue`)
+    component: () => import(`@/views/${route.view}.vue`),
   };
 });
 
@@ -107,7 +119,7 @@ const router = new VueRouter({
     }
     return { x: 0, y: 0 };
   },
-  routes
+  routes,
 });
 
 export default router;
