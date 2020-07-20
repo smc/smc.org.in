@@ -51,6 +51,12 @@
         "description": "ഉയരമുള്ള ചില്ലുകൾ"
     },
     {
+        "url": "/articles/malayalam-linux-console",
+        "file": "articles/malayalam-linux-console.md",
+        "author": "Santhosh Thottingal",
+        "title": "Broken rendering in Linux console"
+    },
+    {
         "url": "/articles/ms-word-kerning",
         "file": "articles/ms-word-kerning.md",
         "author": "Santhosh Thottingal",
