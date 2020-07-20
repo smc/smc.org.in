@@ -64,32 +64,32 @@ export default {
         text: "Title",
         align: "start",
         sortable: false,
-        value: "title"
+        value: "title",
       },
-      { text: "Author", value: "author" }
-    ]
+      { text: "Author", value: "author" },
+    ],
   }),
   computed: {
     toc() {
-      const allItems = articles.map(article => ({
+      const allItems = articles.map((article) => ({
         title: article.title,
         url: article.url,
-        author: article.author
+        author: article.author,
       }));
-      return allItems.filter(item => {
+      return allItems.filter((item) => {
         return (
           ~(item.title + "").toLowerCase().indexOf(this.search.toLowerCase()) ||
           ~(item.author + "").toLowerCase().indexOf(this.search.toLowerCase())
         );
       });
-    }
+    },
   },
   watch: {
-    path: function() {
-      const article = articles.find(article => article.url === this.path);
+    path: function () {
+      const article = articles.find((article) => article.url === this.path);
       const file = article?.file;
       if (file) {
-        const md = new MarkdownIt();
+        const md = new MarkdownIt({ html: true, linkify: true });
         md.use(MarkDownItVideo);
         md.use(MarkDownItAnchor);
         axios.get(`/${file}`).then(({ data }) => {
@@ -102,13 +102,13 @@ export default {
       } else {
         this.title = null;
       }
-    }
+    },
   },
   beforeRouteEnter(to, from, next) {
     // called before the route that renders this component is confirmed.
     // does NOT have access to `this` component instance,
     // because it has not been created yet when this guard is called!
-    next(vm => {
+    next((vm) => {
       vm.path = to.path;
     });
   },
@@ -119,7 +119,7 @@ export default {
     // navigate between `/foo/1` and `/foo/2`, the same `Foo` component instance
     // will be reused, and this hook will be called when that happens.
     // has access to `this` component instance.
-    next(vm => {
+    next((vm) => {
       vm.path = to.path;
     });
   },
@@ -127,10 +127,10 @@ export default {
     // called when the route that renders this component is about to
     // be navigated away from.
     // has access to `this` component instance.
-    next(vm => {
+    next((vm) => {
       vm.path = to.path;
     });
-  }
+  },
 };
 </script>
 <style lang="less">
