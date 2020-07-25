@@ -1,0 +1,120 @@
+#!/usr/bin/python3
+
+
+from dateutil import parser
+from datetime import datetime
+import requests
+import json
+import csv
+import os
+import sys, getopt
+
+class Archive:
+    def __init__(self):
+        super().__init__()
+        self.__search_url = "https://archive.org/wayback/available?url="
+        self.__save_url = "https://pragma.archivelab.org"
+        self.__default_result_limit = 1
+        self.__headers = {'Content-Type': 'application/json'}
+
+    def get_archive(self, url, from_date):
+        print(url)
+        stamp = datetime.strptime(str(from_date).strip(), "%d/%m/%Y")
+        try:
+            resp = requests.get(self.__search_url+url+"&limit="+str(self.__default_result_limit), headers=self.__headers)
+        except requests.ConnectionError:
+            return None
+        if resp.status_code != 200:
+            return None
+        
+        return resp.json().get("archived_snapshots").get("closest")
+    def create_snapshot(self, url):
+        headers = {"Content-Type": "application/json"}
+        payload = {"url": url}
+        try:
+            resp = requests.post(self.__save_url,data=payload,headers=headers)
+        except requests.ConnectionError:
+            return None
+        if resp.status_code != 200:
+            return None
+        
+        return resp.json().get("archived_snapshots").get("closest").get("url")
+        
+        
+        
+class JSONFile:
+    def __init__(self):
+        self.__data = dict()
+    
+    def add_record(self, url, record):
+        self.__data[url] = record
+
+    def write_to_file(self, file):
+        json.dump(self.__data, file, indent = 4, sort_keys=True)
+
+class ReadCSV:
+    def __init__(self, file):
+        super().__init__()
+        self.__file = file
+        self.__data = dict()
+    
+        reader = csv.reader(self.__file, delimiter=",")
+        
+        next(reader)
+        for row in reader:
+            self.__data[row[1]] = dict(title = row[0], url = row[1], language = row[2], featured = row[3], publishing_date = row[4])
+
+    def get_data(self):
+        return self.__data
+
+
+if __name__ == "__main__":
+    try:
+        opts, args = getopt.getopt(sys.argv[1:],"hi:o:",["input","output"])    
+    except getopt.GetoptError:
+        print('press_archive_data.py -i <inputfile> -o <outputfile>')
+        sys.exit(2)
+    input, output = '', ''
+    
+    for opt, arg in opts:
+      if opt == '-h':
+            print('press_archive_data.py -i <inputfile> -o <outputfile>')
+            sys.exit()
+      elif opt in ("-i", "--input"):
+         input = arg.strip()
+      elif opt in ("-o", "--output"):
+         output = arg.strip()
+    try:
+        csv_path = os.path.abspath(input)
+        csv_file = open(csv_path)
+        json_path = os.path.abspath(output)
+        json_file = open(json_path, "w+")
+    except FileNotFoundError as e:
+        print("please check file path. error dumb:"+str(e))
+        exit(1)
+    except Exception as e:
+        exit(1)
+    c = ReadCSV(csv_file)
+    j = JSONFile()
+    a = Archive()
+    
+    for k,v in c.get_data().items():
+        archive_data = a.get_archive(k, v['publishing_date'])
+        if archive_data is not None:
+            v["archive_url"] = archive_data["url"]
+        else:
+            new_snap = a.create_snapshot(k)
+            if new_snap is None:
+                continue
+            v["archive_url"] = new_snap.strip()
+        j.add_record(k, v)
+    try:
+        j.write_to_file(json_file)
+    except Exception as e:
+        json_file.close()
+        csv_file.close()
+        
+        print("something went wrong"+str(e))
+        exit(1)
+
+    print("successfully completed")
