@@ -39,5 +39,8 @@ for font in "${fonts[@]}"; do
 done
 
 zip -qr fonts-smc.zip . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j
+
+python3 ./../../../tools/press_archive_data.py -i ./../../../tools/press_archive.csv -o media.json
+
 deactivate
 rm -rf .env
