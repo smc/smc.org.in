@@ -54,7 +54,7 @@ class JSONFile:
         self.__data.append(record)
 
     def write_to_file(self, file):
-        json.dump(self.__data, file, indent = 4, sort_keys=True)
+        json.dump(self.__data, file, indent = 4, sort_keys=True, ensure_ascii=False)
 
 class ReadCSV:
     def __init__(self, file):
