@@ -17,6 +17,14 @@ class Archive:
         self.__default_result_limit = 1
         self.__headers = {'Content-Type': 'application/json'}
 
+    def __url_from_resp(self, resp):
+        if resp.status_code != 200:
+            return None
+        try:
+            return resp.json().get("archived_snapshots").get("closest").get("url").strip()
+        except AttributeError:
+            return None
+
     def get_archive(self, url, from_date):
         print(url)
         stamp = datetime.strptime(str(from_date).strip(), "%d/%m/%Y")
@@ -24,10 +32,9 @@ class Archive:
             resp = requests.get(self.__search_url+url+"&limit="+str(self.__default_result_limit), headers=self.__headers)
         except requests.ConnectionError:
             return None
-        if resp.status_code != 200:
-            return None
         
-        return resp.json().get("archived_snapshots").get("closest")
+        return None if resp is None else self.__url_from_resp(resp)
+
     def create_snapshot(self, url):
         headers = {"Content-Type": "application/json"}
         payload = {"url": url}
@@ -35,19 +42,16 @@ class Archive:
             resp = requests.post(self.__save_url,data=payload,headers=headers)
         except requests.ConnectionError:
             return None
-        if resp.status_code != 200:
-            return None
         
-        return resp.json().get("archived_snapshots").get("closest").get("url")
-        
-        
+        return None if resp is None else self.__url_from_resp(resp)
+
         
 class JSONFile:
     def __init__(self):
-        self.__data = dict()
-    
+        self.__data = list()
+
     def add_record(self, url, record):
-        self.__data[url] = record
+        self.__data.append(record)
 
     def write_to_file(self, file):
         json.dump(self.__data, file, indent = 4, sort_keys=True)
@@ -91,30 +95,30 @@ if __name__ == "__main__":
         json_file = open(json_path, "w+")
     except FileNotFoundError as e:
         print("please check file path. error dumb:"+str(e))
-        exit(1)
+        sys.exit(1)
     except Exception as e:
-        exit(1)
+        sys.exit(1)
     c = ReadCSV(csv_file)
     j = JSONFile()
     a = Archive()
-    
+
     for k,v in c.get_data().items():
-        archive_data = a.get_archive(k, v['publishing_date'])
-        if archive_data is not None:
-            v["archive_url"] = archive_data["url"]
+        archive_url = a.get_archive(k, v['publishing_date'])
+        if archive_url is not None:
+            v["archive_url"] = archive_url
         else:
             new_snap = a.create_snapshot(k)
             if new_snap is None:
                 continue
-            v["archive_url"] = new_snap.strip()
+            v["archive_url"] = new_snap
         j.add_record(k, v)
     try:
         j.write_to_file(json_file)
     except Exception as e:
+        print("something went wrong: "+str(e))
+        sys.exit(1)
+    finally:
         json_file.close()
         csv_file.close()
-        
-        print("something went wrong"+str(e))
-        exit(1)
 
     print("successfully completed")

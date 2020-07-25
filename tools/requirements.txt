@@ -1,1 +1,3 @@
 git+https://github.com/googlefonts/fontreport
+requests
+python-dateutil
