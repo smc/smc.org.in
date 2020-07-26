@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 
-
 from dateutil import parser
 from datetime import datetime
-import requests
-import json
-import csv
-import os
-import sys, getopt
+import requests, json, csv, os, sys, getopt
 
 class Archive:
     def __init__(self):
@@ -108,9 +103,7 @@ if __name__ == "__main__":
             v["archive_url"] = archive_url
         else:
             new_snap = a.create_snapshot(k)
-            if new_snap is None:
-                continue
-            v["archive_url"] = new_snap
+            v["archive_url"] = new_snap if new_snap is  not None else ""
         j.add_record(k, v)
     try:
         j.write_to_file(json_file)

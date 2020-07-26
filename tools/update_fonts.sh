@@ -4,8 +4,7 @@ FONTS_URL=${FONTS_URL:-"smc/fonts"}
 # Convert slash to %2F
 FONTS_SLUG=${FONTS_URL/\//%2F}
 
-mkdir -p public/downloads/fonts
-cd public/downloads/fonts
+mkdir -p public/downloads/fonts && cd $_
 python3 -m venv .env
 source .env/bin/activate
 pip3 install -r ./../../../tools/requirements.txt
@@ -39,8 +38,5 @@ for font in "${fonts[@]}"; do
 done
 
 zip -qr fonts-smc.zip . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j
-
-python3 ./../../../tools/press_archive_data.py -i ./../../../tools/press_archive.csv -o media.json
-
 deactivate
 rm -rf .env
