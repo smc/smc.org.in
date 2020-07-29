@@ -4,7 +4,8 @@ FONTS_URL=${FONTS_URL:-"smc/fonts"}
 # Convert slash to %2F
 FONTS_SLUG=${FONTS_URL/\//%2F}
 
-mkdir -p public/downloads/fonts && cd $_
+mkdir -p public/downloads/fonts
+cd public/downloads/fonts
 python3 -m venv .env
 source .env/bin/activate
 pip3 install -r ./../../../tools/requirements.txt
