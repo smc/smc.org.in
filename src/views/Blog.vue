@@ -120,55 +120,55 @@ export default {
         text: "Title",
         align: "start",
         sortable: false,
-        value: "title"
+        value: "title",
       },
-      { text: "Date", value: "published_at" }
-    ]
+      { text: "Date", value: "published_at" },
+    ],
   }),
   created() {
     this.loading_all = true;
     return fetch(
       "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors&limit=50"
     )
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.loading_all = false;
         this.blogposts = data.posts;
       });
   },
   watch: {
-    slug: async function() {
+    slug: async function () {
       this.post = await this.getPost(this.slug);
     },
-    blogposts: async function() {
+    blogposts: async function () {
       this.post = await this.getPost(this.slug);
-    }
+    },
   },
   methods: {
     async getPost(slug) {
       if (!slug) return null;
-      let post = this.blogposts.find(post => post.slug === slug);
+      let post = this.blogposts.find((post) => post.slug === slug);
       if (!post) {
         this.loading_slug = true;
         return fetch(
           `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors`
         )
-          .then(response => response.json())
-          .then(data => {
+          .then((response) => response.json())
+          .then((data) => {
             this.loading_slug = false;
-            return data.posts.find(post => post.slug === slug);
+            return data.posts.find((post) => post.slug === slug);
           });
       }
       return post;
     },
     // Replace links under [] tag
-    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, "")
+    stripMd: (text) => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, ""),
   },
   beforeRouteEnter(to, from, next) {
     // called before the route that renders this component is confirmed.
     // does NOT have access to `this` component instance,
     // because it has not been created yet when this guard is called!
-    next(vm => {
+    next((vm) => {
       vm.slug = to.params.title;
     });
   },
@@ -179,7 +179,7 @@ export default {
     // navigate between `/foo/1` and `/foo/2`, the same `Foo` component instance
     // will be reused, and this hook will be called when that happens.
     // has access to `this` component instance.
-    next(vm => {
+    next((vm) => {
       vm.slug = to.params.title;
     });
   },
@@ -187,10 +187,10 @@ export default {
     // called when the route that renders this component is about to
     // be navigated away from.
     // has access to `this` component instance.
-    next(vm => {
+    next((vm) => {
       vm.slug = to.params.title;
     });
-  }
+  },
 };
 </script>
 <style lang="scss">

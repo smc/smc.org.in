@@ -159,21 +159,21 @@ export default {
     blogposts: [],
     mdiGit,
     mdiTelegram,
-    mdiBookOpenPageVariant
+    mdiBookOpenPageVariant,
   }),
   components: {},
   methods: {
-    stripMd: text => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, "")
+    stripMd: (text) => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, ""),
   },
   created() {
     return fetch(
       "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&limit=8"
     )
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.blogposts = data.posts;
       });
-  }
+  },
 };
 </script>
 <style lang="less" scoped>

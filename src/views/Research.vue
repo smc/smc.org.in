@@ -61,9 +61,9 @@ export default {
             links: [
               {
                 text: "Read the paper",
-                url: "https://www.aclweb.org/anthology/W19-6801/"
-              }
-            ]
+                url: "https://www.aclweb.org/anthology/W19-6801/",
+              },
+            ],
           },
           {
             title: `
@@ -82,9 +82,9 @@ export default {
               {
                 text: "Read the paper",
                 url:
-                  "https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf"
-              }
-            ]
+                  "https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf",
+              },
+            ],
           },
           {
             title: `
@@ -101,11 +101,11 @@ export default {
               {
                 text: "Read the paper",
                 url:
-                  "https://thottingal.in/documents/Spiral-Splines-Manjari.pdf"
-              }
-            ]
-          }
-        ]
+                  "https://thottingal.in/documents/Spiral-Splines-Manjari.pdf",
+              },
+            ],
+          },
+        ],
       },
       {
         id: "studies",
@@ -121,9 +121,9 @@ export default {
             links: [
               {
                 text: "Read the study",
-                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/"
-              }
-            ]
+                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/",
+              },
+            ],
           },
           {
             title: "Information, Entropy and Malayalam",
@@ -135,9 +135,9 @@ export default {
             links: [
               {
                 text: "Read",
-                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/"
-              }
-            ]
+                url: "https://kavyamanohar.com/post/malayalam-ipa-consonants/",
+              },
+            ],
           },
           {
             title:
@@ -151,17 +151,17 @@ export default {
               {
                 text: "Read",
                 url:
-                  "https://kavyamanohar.com/post/malayalam-phonetic-analyser/"
+                  "https://kavyamanohar.com/post/malayalam-phonetic-analyser/",
               },
               {
                 text: "Malayalam Phonetic Analyser",
-                url: "https://phon.smc.org.in"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  })
+                url: "https://phon.smc.org.in",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  }),
 };
 </script>
