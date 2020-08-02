@@ -66,7 +66,6 @@ class ReadCSV:
     def get_data(self):
         return self.__data
 
-
 if __name__ == "__main__":
     try:
         opts, args = getopt.getopt(sys.argv[1:],"hi:o:",["input","output"])    
@@ -98,6 +97,8 @@ if __name__ == "__main__":
     a = Archive()
 
     for k,v in c.get_data().items():
+        # Convert featured to boolean.
+        v["featured"] = True if v["featured"].strip() in ['true', 't', '1', 'y', 'yes', 'enabled', 'enable', 'on'] else False
         archive_url = a.get_archive(k, v['publishing_date'])
         if archive_url is not None:
             v["archive_url"] = archive_url
