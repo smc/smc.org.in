@@ -85,9 +85,9 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://indic.app"
-              }
-            ]
+                url: "https://indic.app",
+              },
+            ],
           },
           {
             title: "Swanalekha",
@@ -98,9 +98,9 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://swanalekha.smc.org.in/"
-              }
-            ]
+                url: "https://swanalekha.smc.org.in/",
+              },
+            ],
           },
           {
             title: "Varnam",
@@ -113,11 +113,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://www.varnamproject.com/"
-              }
-            ]
-          }
-        ]
+                url: "https://www.varnamproject.com/",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Fonts",
@@ -130,15 +130,15 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "/fonts"
+                url: "/fonts",
               },
               {
                 text: "Source",
-                url: "https://gitlab.com/smc/fonts"
-              }
-            ]
-          }
-        ]
+                url: "https://gitlab.com/smc/fonts",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Malayalam Linguistics",
@@ -151,13 +151,13 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://morph.smc.org.in"
+                url: "https://morph.smc.org.in",
               },
               {
                 text: "Source",
-                url: "https://gitlab.com/smc/mlmorph"
-              }
-            ]
+                url: "https://gitlab.com/smc/mlmorph",
+              },
+            ],
           },
           {
             title: "Malayalam phonetic analyser and generator",
@@ -167,13 +167,13 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://phon.smc.org.in"
+                url: "https://phon.smc.org.in",
               },
               {
                 text: "Source",
-                url: "https://gitlab.com/smc/mlphon"
-              }
-            ]
+                url: "https://gitlab.com/smc/mlphon",
+              },
+            ],
           },
           {
             title: "Malayalam text prediction system",
@@ -183,11 +183,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://predict.smc.org.in"
-              }
-            ]
-          }
-        ]
+                url: "https://predict.smc.org.in",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Corpus and data collections",
@@ -200,9 +200,9 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "http://gitlab.com/smc/corpus"
-              }
-            ]
+                url: "http://gitlab.com/smc/corpus",
+              },
+            ],
           },
           {
             title: "Speech corpus",
@@ -212,15 +212,15 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "http://msc.smc.org.in"
+                url: "http://msc.smc.org.in",
               },
               {
                 text: "Source",
-                url: "http://gitlab.com/smc/msc"
-              }
-            ]
-          }
-        ]
+                url: "http://gitlab.com/smc/msc",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Accessibility",
@@ -238,9 +238,9 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "http://dhvani.sourceforge.net/"
-              }
-            ]
+                url: "http://dhvani.sourceforge.net/",
+              },
+            ],
           },
           {
             title: "ibus-sharada-braille",
@@ -252,11 +252,11 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://github.com/Nalin-x-Linux/ibus-sharada-braille"
-              }
-            ]
-          }
-        ]
+                url: "https://github.com/Nalin-x-Linux/ibus-sharada-braille",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Web",
@@ -273,9 +273,9 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://libindic.org/"
-              }
-            ]
+                url: "https://libindic.org/",
+              },
+            ],
           },
           {
             title: "Grandham",
@@ -289,9 +289,9 @@ export default {
             links: [
               {
                 text: "Details",
-                url: "https://grandham.in/"
-              }
-            ]
+                url: "https://grandham.in/",
+              },
+            ],
           },
           {
             title: "ml2en",
@@ -301,15 +301,15 @@ export default {
             links: [
               {
                 text: "Tool",
-                url: "https://nadh.in/code/ml2en/"
+                url: "https://nadh.in/code/ml2en/",
               },
               {
                 text: "Source",
-                url: "https://github.com/knadh/ml2en/"
-              }
-            ]
-          }
-        ]
+                url: "https://github.com/knadh/ml2en/",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Web Extensions",
@@ -327,14 +327,14 @@ export default {
               {
                 text: "Firefox",
                 url:
-                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/"
+                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/",
               },
               {
                 text: "Chrome",
                 url:
-                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo"
-              }
-            ]
+                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo",
+              },
+            ],
           },
           {
             title: "Indic-En",
@@ -347,20 +347,20 @@ export default {
             links: [
               {
                 text: "Firefox",
-                url: "https://addons.mozilla.org/en-US/firefox/addon/indicen/"
+                url: "https://addons.mozilla.org/en-US/firefox/addon/indicen/",
               },
               {
                 text: "Chrome",
                 url:
-                  "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon"
+                  "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon",
               },
               {
                 text: "Details",
-                url: "https://subinsb.com/indicen/"
-              }
-            ]
-          }
-        ]
+                url: "https://subinsb.com/indicen/",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Mobile",
@@ -376,18 +376,18 @@ export default {
             links: [
               {
                 text: "Download",
-                url: "https://gitlab.com/smc/magisk-malayalam-fonts/-/releases"
+                url: "https://gitlab.com/smc/magisk-malayalam-fonts/-/releases",
               },
               {
                 text: "Source",
-                url: "https://gitlab.com/smc/magisk-malayalam-fonts"
+                url: "https://gitlab.com/smc/magisk-malayalam-fonts",
               },
               {
                 text: "How-To",
                 url:
-                  "https://blog.smc.org.in/installing-smc-fonts-on-android-devices/"
-              }
-            ]
+                  "https://blog.smc.org.in/installing-smc-fonts-on-android-devices/",
+              },
+            ],
           },
           {
             title: "Akshara Mazha",
@@ -401,13 +401,13 @@ export default {
               {
                 text: "Download",
                 url:
-                  "https://play.google.com/store/apps/details?id=in.androidtweak.rain"
+                  "https://play.google.com/store/apps/details?id=in.androidtweak.rain",
               },
               {
                 text: "Source",
-                url: "https://gitlab.com/jishnu7/Akshara-Mazha"
-              }
-            ]
+                url: "https://gitlab.com/jishnu7/Akshara-Mazha",
+              },
+            ],
           },
           {
             title: "Manglish",
@@ -421,19 +421,19 @@ export default {
               {
                 text: "Play Store",
                 url:
-                  "https://play.google.com/store/apps/details?id=subins2000.manglish"
+                  "https://play.google.com/store/apps/details?id=subins2000.manglish",
               },
               {
                 text: "F-Droid",
-                url: "https://f-droid.org/packages/subins2000.manglish/"
+                url: "https://f-droid.org/packages/subins2000.manglish/",
               },
               {
                 text: "Details",
-                url: "https://subinsb.com/manglish/"
-              }
-            ]
-          }
-        ]
+                url: "https://subinsb.com/manglish/",
+              },
+            ],
+          },
+        ],
       },
       {
         heading: "Programming Libraries",
@@ -449,17 +449,17 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/indic-trans"
+                url: "https://github.com/libindic/indic-trans",
               },
               {
                 text: "Documentation",
-                url: "https://indic-trans.readthedocs.io/en/latest/"
+                url: "https://indic-trans.readthedocs.io/en/latest/",
               },
               {
                 text: "Details",
-                url: "https://irshadbhat.github.io/gsoc/"
-              }
-            ]
+                url: "https://irshadbhat.github.io/gsoc/",
+              },
+            ],
           },
           {
             title: "Inexact Search",
@@ -474,13 +474,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/inexactsearch"
+                url: "https://github.com/libindic/inexactsearch",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/ApproxSearch"
-              }
-            ]
+                url: "https://libindic.org/ApproxSearch",
+              },
+            ],
           },
           {
             title: "Shingling",
@@ -492,13 +492,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/shingling"
+                url: "https://github.com/libindic/shingling",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Shingling"
-              }
-            ]
+                url: "https://libindic.org/Shingling",
+              },
+            ],
           },
           {
             title: "Text Similarity",
@@ -510,13 +510,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/text-similarity"
+                url: "https://github.com/libindic/text-similarity",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Similar%20Texts"
-              }
-            ]
+                url: "https://libindic.org/Similar%20Texts",
+              },
+            ],
           },
           {
             title: "Hyphenation",
@@ -528,13 +528,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/hyphenation"
+                url: "https://github.com/libindic/hyphenation",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Hyphenate"
-              }
-            ]
+                url: "https://libindic.org/Hyphenate",
+              },
+            ],
           },
           {
             title: "ucasort",
@@ -545,13 +545,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/ucasort"
+                url: "https://github.com/libindic/ucasort",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/UCA%20Sort"
-              }
-            ]
+                url: "https://libindic.org/UCA%20Sort",
+              },
+            ],
           },
           {
             title: "indicfortune",
@@ -562,13 +562,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/indicfortune"
+                url: "https://github.com/libindic/indicfortune",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Fortune"
-              }
-            ]
+                url: "https://libindic.org/Fortune",
+              },
+            ],
           },
           {
             title: "Spellchecker",
@@ -578,13 +578,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/spellchecker"
+                url: "https://github.com/libindic/spellchecker",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/SpellCheck"
-              }
-            ]
+                url: "https://libindic.org/SpellCheck",
+              },
+            ],
           },
           {
             title: "Syllabifier",
@@ -594,13 +594,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/syllabalizer"
+                url: "https://github.com/libindic/syllabalizer",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Syllabalizer"
-              }
-            ]
+                url: "https://libindic.org/Syllabalizer",
+              },
+            ],
           },
           {
             title: "indicstemmer",
@@ -611,13 +611,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/indicstemmer"
+                url: "https://github.com/libindic/indicstemmer",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Stemmer"
-              }
-            ]
+                url: "https://libindic.org/Stemmer",
+              },
+            ],
           },
           {
             title: "Payyans",
@@ -628,13 +628,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/payyans"
+                url: "https://github.com/libindic/payyans",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Payyans"
-              }
-            ]
+                url: "https://libindic.org/Payyans",
+              },
+            ],
           },
           {
             title: "chardetails",
@@ -644,13 +644,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/chardetails"
+                url: "https://github.com/libindic/chardetails",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Chardetails"
-              }
-            ]
+                url: "https://libindic.org/Chardetails",
+              },
+            ],
           },
           {
             title: "Katapayadi",
@@ -663,13 +663,13 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/katapayadi"
+                url: "https://github.com/libindic/katapayadi",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Katapayadi%20Numbers"
-              }
-            ]
+                url: "https://libindic.org/Katapayadi%20Numbers",
+              },
+            ],
           },
           {
             title: "Soundex",
@@ -681,17 +681,17 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/soundex"
+                url: "https://github.com/libindic/soundex",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/Soundex"
+                url: "https://libindic.org/Soundex",
               },
               {
                 text: "Details",
-                url: "https://thottingal.in/blog/2009/07/26/indicsoundex/"
-              }
-            ]
+                url: "https://thottingal.in/blog/2009/07/26/indicsoundex/",
+              },
+            ],
           },
           {
             title: "indicngram",
@@ -706,17 +706,17 @@ export default {
             links: [
               {
                 text: "Source",
-                url: "https://github.com/libindic/indicngram"
+                url: "https://github.com/libindic/indicngram",
               },
               {
                 text: "Web",
-                url: "https://libindic.org/N-gram"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  })
+                url: "https://libindic.org/N-gram",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  }),
 };
 </script>

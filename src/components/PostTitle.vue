@@ -25,13 +25,13 @@
 export default {
   name: "PostTitle",
   methods: {
-    getAuthorString: author => {
+    getAuthorString: (author) => {
       if (Array.isArray(author)) {
-        return author.map(a => a.name).join(", ");
+        return author.map((a) => a.name).join(", ");
       } else {
         return author;
       }
-    }
+    },
   },
   props: {
     image: String,
@@ -39,7 +39,7 @@ export default {
     authors: Array,
     author: String,
     date: String,
-    loading: Boolean
-  }
+    loading: Boolean,
+  },
 };
 </script>

@@ -50,7 +50,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll color="primary" dark>
-      <div class="d-flex align-center" style="cursor:pointer;">
+      <div class="d-flex align-center" style="cursor: pointer;">
         <v-img
           alt="SMC Logo"
           class="shrink pr-1"
@@ -137,22 +137,22 @@ export default {
       {
         title: "Blog",
         msg: "menu-blog",
-        path: "/blog"
+        path: "/blog",
       },
       {
         title: "Projects",
         path: "/projects",
-        msg: "menu-projects"
+        msg: "menu-projects",
       },
       {
         title: "Articles",
         path: "/articles",
-        msg: "menu-articles"
+        msg: "menu-articles",
       },
       {
         title: "Research",
         path: "/research",
-        msg: "menu-research"
+        msg: "menu-research",
       },
       {
         title: "Fonts",
@@ -162,64 +162,64 @@ export default {
           {
             title: "Anjali",
             path: "/fonts/anjali",
-            msg: "anjalioldlipi"
+            msg: "anjalioldlipi",
           },
           {
             title: "Chilanka",
             path: "/fonts/chilanka",
-            msg: "chilanka"
+            msg: "chilanka",
           },
           {
             title: "Dyuthi",
             path: "/fonts/dyuthi",
-            msg: "dyuthi"
+            msg: "dyuthi",
           },
           {
             title: "Gayathri",
             path: "/fonts/gayathri",
-            msg: "gayathri"
+            msg: "gayathri",
           },
           {
             title: "Karumbi",
             path: "/fonts/karumbi",
-            msg: "karumbi"
+            msg: "karumbi",
           },
           {
             title: "Keraleeyam",
             path: "/fonts/keraleeyam",
-            msg: "keraleeyam"
+            msg: "keraleeyam",
           },
           {
             title: "Manjari",
             path: "/fonts/manjari",
-            msg: "manjari"
+            msg: "manjari",
           },
           {
             title: "Meera",
             path: "/fonts/meera",
-            msg: "meera"
+            msg: "meera",
           },
           {
             title: "Rachana",
             path: "/fonts/rachana",
-            msg: "rachana"
+            msg: "rachana",
           },
           {
             title: "Uroob",
             path: "/fonts/uroob",
-            msg: "uroob"
+            msg: "uroob",
           },
           {
             title: "RaghuMalayalam",
             path: "/fonts/raghumalayalam",
-            msg: "raghumalayalamsans"
+            msg: "raghumalayalamsans",
           },
           {
             title: "Suruma",
             path: "/fonts/suruma",
-            msg: "suruma"
-          }
-        ]
+            msg: "suruma",
+          },
+        ],
       },
       {
         title: "Community",
@@ -229,22 +229,22 @@ export default {
           {
             title: "About",
             path: "/about",
-            msg: "menu-about"
+            msg: "menu-about",
           },
           {
             title: "Contact",
             path: "/contact",
-            msg: "menu-contact"
+            msg: "menu-contact",
           },
           {
             title: "History",
             path: "/history",
-            msg: "menu-history"
+            msg: "menu-history",
           },
           {
             title: "People",
             path: "/people",
-            msg: "menu-people"
+            msg: "menu-people",
           },
           {
             title: "Code of conduct",
@@ -261,11 +261,11 @@ export default {
     ]
   }),
   methods: {
-    onChangeLocale: function(locale) {
+    onChangeLocale: function (locale) {
       localStorage.setItem("smc.org.in.locale", locale);
       location.reload();
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -338,16 +338,16 @@ import FontPlayground from "../components/FontPlayground";
 export default {
   data: () => ({
     mdiDownload,
-    fontdata: {}
+    fontdata: {},
   }),
   components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/chilanka/Chilanka.json")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.fontdata = data;
       });
-  }
+  },
 };
 </script>
 <style lang="less">

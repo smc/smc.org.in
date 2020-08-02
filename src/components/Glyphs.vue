@@ -14,7 +14,7 @@
           >
           </v-btn>
         </template>
-        <v-sheet class=" pa-4">
+        <v-sheet class="pa-4">
           <v-row>
             <v-col class="text-center">
               <div
@@ -75,15 +75,15 @@ export default {
   data: () => ({
     canCopy: false,
     mdiContentCopy,
-    isIntersecting: false
+    isIntersecting: false,
   }),
   directives: {
-    Intersect
+    Intersect,
   },
   props: {
     font: String,
     glyphs: Array,
-    ligatures: Array
+    ligatures: Array,
   },
   created() {
     this.canCopy = !!navigator.clipboard;
@@ -100,7 +100,7 @@ export default {
       // More information about these options
       // is located here: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
       this.isIntersecting = entries[0].isIntersecting;
-    }
-  }
+    },
+  },
 };
 </script>

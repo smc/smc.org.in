@@ -77,7 +77,7 @@
                     തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br />
                     കാത്തു നില്‍ക്കുന്നൊരമ്പിളിത്തെല്ല്...!
                   </p>
-                  <p style="float:right">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
+                  <p style="float: right;">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
                 </article>
               </v-card>
             </v-carousel-item>
@@ -250,16 +250,16 @@ import FontPlayground from "../components/FontPlayground";
 export default {
   data: () => ({
     mdiDownload,
-    fontdata: {}
+    fontdata: {},
   }),
   components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/karumbi/Karumbi.json")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.fontdata = data;
       });
-  }
+  },
 };
 </script>
 <style lang="less">

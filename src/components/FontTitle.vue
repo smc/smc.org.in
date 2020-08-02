@@ -31,13 +31,13 @@ import { mdiDownload } from "@mdi/js";
 export default {
   name: "FontTitle",
   data: () => ({
-    mdiDownload
+    mdiDownload,
   }),
   props: {
     name: String,
     version: String,
     author: String,
-    link: String
-  }
+    link: String,
+  },
 };
 </script>

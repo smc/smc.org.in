@@ -42,7 +42,7 @@ import {
   mdiAsterisk,
   mdiChatAlert,
   mdiGithub,
-  mdiGitlab
+  mdiGitlab,
 } from "@mdi/js";
 
 export default {
@@ -52,63 +52,63 @@ export default {
         name: "gitlab",
         title: "GitLab",
         url: "https://gitlab.com/smc",
-        icon: mdiGitlab
+        icon: mdiGitlab,
       },
       {
         name: "github",
         title: "Github",
         url: "https://github.com/smc",
-        icon: mdiGithub
+        icon: mdiGithub,
       },
       {
         name: "telegram",
         title: "Telegram",
         url: "https://t.me/smc_project",
-        icon: mdiTelegram
+        icon: mdiTelegram,
       },
       {
         name: "facebook",
         title: "Facebook",
         url: "https://facebook.com/smcproject",
-        icon: mdiFacebook
+        icon: mdiFacebook,
       },
       {
         name: "instagram",
         title: "Instagram",
         url: "https://instagram.com/smcproject",
-        icon: mdiInstagram
+        icon: mdiInstagram,
       },
       {
         name: "twitter",
         title: "Twitter",
         url: "https://twitter.com/smcproject",
-        icon: mdiTwitter
+        icon: mdiTwitter,
       },
       {
         name: "diaspora",
         title: "Diaspora",
         url: "https://diasp.org/people/71abaf650562c0a9",
-        icon: mdiAsterisk
+        icon: mdiAsterisk,
       },
       {
         name: "mastodon",
         title: "Mastodon",
         url: "https://floss.social/@smc",
-        icon: mdiMastodon
+        icon: mdiMastodon,
       },
       {
         name: "matrix",
         title: "matrix",
         url: "https://matrix.to/#/#smc-project:matrix.org",
-        icon: mdiChatAlert
+        icon: mdiChatAlert,
       },
       {
         name: "irc",
         title: "IRC on freenode",
         url: "https://webchat.freenode.net/?randomnick=0&channels=smc-project",
-        icon: mdiChat
-      }
-    ]
-  })
+        icon: mdiChat,
+      },
+    ],
+  }),
 };
 </script>
