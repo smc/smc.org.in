@@ -12,6 +12,7 @@ const routerOptions = [
   { path: "/research", name: "research", view: "Research", params: true },
   { path: "/people", name: "people", view: "People", params: true },
   { path: "/code-of-conduct", name: "coc", view: "COC", params: true },
+  { path: "/media", name: "media", view: "Media", params: false },
   {
     path: "/fonts/manjari",
     name: "font-manjari",
