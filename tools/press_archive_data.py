@@ -84,9 +84,9 @@ if __name__ == "__main__":
          output = arg.strip()
     try:
         csv_path = os.path.abspath(input)
-        csv_file = open(csv_path)
+        csv_file = open(csv_path, encoding='utf-8')
         json_path = os.path.abspath(output)
-        json_file = open(json_path, "w+")
+        json_file = open(json_path, "w+", encoding='utf-8')
     except FileNotFoundError as e:
         print("please check file path. error dumb:"+str(e))
         sys.exit(1)
