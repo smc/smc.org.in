@@ -249,16 +249,16 @@ export default {
           {
             title: "Code of conduct",
             msg: "menu-code-of-conduct",
-            path: "/code-of-conduct"
+            path: "/code-of-conduct",
           },
           {
             title: "Media",
             msg: "menu-media",
-            path: "/media"
-          }
-        ]
-      }
-    ]
+            path: "/media",
+          },
+        ],
+      },
+    ],
   }),
   methods: {
     onChangeLocale: function (locale) {
