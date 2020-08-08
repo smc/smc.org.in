@@ -5,10 +5,10 @@ const fs = require("fs");
 const fm = require("front-matter");
 let manifest = [];
 
-const getAllFiles = function(dirPath, arrayOfFiles) {
+const getAllFiles = function (dirPath, arrayOfFiles) {
   const files = fs.readdirSync(dirPath);
   arrayOfFiles = arrayOfFiles || [];
-  files.forEach(function(file) {
+  files.forEach(function (file) {
     if (fs.statSync(dirPath + "/" + file).isDirectory()) {
       arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
     } else {
@@ -32,7 +32,7 @@ async function generateManifest(dir) {
       date: fmd.attributes.date,
       author: fmd.attributes.author,
       title: fmd.attributes.title,
-      description: fmd.attributes.description
+      description: fmd.attributes.description,
     });
   }
   writeFile(

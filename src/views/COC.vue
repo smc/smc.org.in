@@ -121,6 +121,6 @@
 <script>
 export default {
   name: "CodeOfCoduct",
-  components: {}
+  components: {},
 };
 </script>

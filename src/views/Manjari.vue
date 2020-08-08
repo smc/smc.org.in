@@ -547,17 +547,17 @@ export default {
       "sc",
       "sg",
       "sn",
-      "su"
-    ]
+      "su",
+    ],
   }),
   components: { Glyphs, FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/manjari/Manjari.json")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.fontdata = data;
       });
-  }
+  },
 };
 </script>
 <style lang="less">
