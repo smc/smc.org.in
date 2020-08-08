@@ -4,7 +4,7 @@
       <section class="pa-2">
         <h1 class="text-h2 my-10" v-i18n="'media'"></h1>
         <!--  -->
-        <v-flex md12 v-for="link in links" :key="link.link">
+        <v-flex md12 v-for="link in links.sort(date_sort)" :key="link.link">
           <v-card class="mb-6">
             <v-list-item three-line>
               <v-list-item-content>
@@ -65,6 +65,12 @@ export default {
   methods: {
     hasArchived: (link) => {
       return link.archive_url !== "" || link.archive_url.length !== 0;
+    },
+    date_sort: (a, b) => {
+      return (
+        new Date(a.publishing_date).getTime() -
+        new Date(b.publishing_date).getTime()
+      );
     },
   },
 };
