@@ -60,11 +60,14 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         this.links = data.sort((a, b) => {
-          return (
-            // ref: https://stackoverflow.com/a/3859297
-            new Date(a.publishing_date).getTime() -
-            new Date(b.publishing_date).getTime()
-          );
+          var aParts = a.publishing_date.split("/");
+          var bParts = b.publishing_date.split("/");
+
+          // month is 0-based, that's why we need parts[1] - 1
+          var bDate = new Date(+bParts[2], bParts[1] - 1, +bParts[0]);
+          var aDate = new Date(+aParts[2], aParts[1] - 1, +aParts[0]);
+
+          return bDate - aDate;
         });
       });
   },
