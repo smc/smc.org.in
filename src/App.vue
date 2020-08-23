@@ -51,23 +51,22 @@
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll color="primary" dark>
       <div class="d-flex align-center" style="cursor: pointer;">
-        <v-img
-          alt="SMC Logo"
-          class="shrink pr-1"
-          contain
-          src="@/assets/logo.svg"
-          transition="scale-transition"
-          @click.stop="$router.push('/')"
-          width="48"
-        />
+        <router-link to="/" class="text--primary text-decoration-none">
+          <v-img
+            alt="SMC Logo"
+            class="shrink pr-1"
+            contain
+            src="@/assets/logo.svg"
+            transition="scale-transition"
+            width="48"
+          />
+        </router-link>
       </div>
-      <v-toolbar-title
-        class="pa-2"
-        style="cursor: pointer;"
-        @click.stop="$router.push('/')"
-      >
-        <span class="hidden-xs-only">{{ $i18n("smc") }}</span>
-        <span class="hidden-sm-and-up">{{ $i18n("smc-short") }}</span>
+      <v-toolbar-title class="pa-2">
+        <router-link to="/" class="text--primary text-decoration-none">
+          <span class="hidden-xs-only">{{ $i18n("smc") }}</span>
+          <span class="hidden-sm-and-up">{{ $i18n("smc-short") }}</span>
+        </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
