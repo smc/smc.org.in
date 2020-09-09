@@ -58,7 +58,7 @@ export default {
             links: [
               {
                 text: "Read the paper",
-                url: "https://doi.org/10.1007/978-3-030-58323-1_7",
+                url: "https://kavyamanohar.com/documents/tsd_morph_complexity_ml.pdf",
               },
             ],
           },
