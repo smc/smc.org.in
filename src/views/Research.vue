@@ -49,6 +49,21 @@ export default {
         list: [
           {
             title: `
+              Quantitative Analysis of Morphological Complexity of Malayalam Language`,
+            author: "Kavya Manohar, A. R. Jayan, Rajeev Rajan",
+            description: `
+              Proceedings of the 23rd International Conference on Text, Speech and Dialogue
+              September 8-11, 2020, Brno, Czech Republic.
+            `,
+            links: [
+              {
+                text: "Read the paper",
+                url: "https://doi.org/10.1007/978-3-030-58323-1_7",
+              },
+            ],
+          },
+          {
+            title: `
               Finite State Transducer based Morphology analysis for Malayalam
               Language
             `,
