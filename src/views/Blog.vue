@@ -47,6 +47,8 @@
             :date="post.published_at"
           />
           <main class="post-body my-10" v-html="post.html" />
+          <h2 class="text-h4 my-10">Comments</h2>
+          <discourse-comments :enabled="true" :title="post.url" />
         </article>
       </v-col>
     </v-row>
@@ -98,11 +100,12 @@
     </div>
   </v-container>
 </template>
+
 <script>
 import PostTitle from "../components/PostTitle";
-
+import DiscourseComments from "../components/DiscourseComments";
 export default {
-  components: { PostTitle },
+  components: { PostTitle, DiscourseComments },
   data: () => ({
     loading_all: false,
     loading_slug: false,
