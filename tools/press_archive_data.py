@@ -61,7 +61,7 @@ class ReadCSV:
         
         next(reader)
         for row in reader:
-            self.__data[row[1]] = dict(title = row[0], url = row[1], language = row[2], featured = row[3], publishing_date = row[4])
+            self.__data[row[1].strip()] = dict(title = row[0].strip(), url = row[1].strip(), language = row[2].strip(), featured = row[3].strip(), publishing_date = row[4].strip())
 
     def get_data(self):
         return self.__data

@@ -59,7 +59,16 @@ export default {
     return fetch("/press/media.json")
       .then((response) => response.json())
       .then((data) => {
-        this.links = data;
+        this.links = data.sort((a, b) => {
+          var aParts = a.publishing_date.split("/");
+          var bParts = b.publishing_date.split("/");
+
+          // month is 0-based, that's why we need parts[1] - 1
+          var bDate = new Date(+bParts[2], bParts[1] - 1, +bParts[0]);
+          var aDate = new Date(+aParts[2], aParts[1] - 1, +aParts[0]);
+
+          return bDate - aDate;
+        });
       });
   },
   methods: {
