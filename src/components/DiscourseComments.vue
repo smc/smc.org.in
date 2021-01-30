@@ -12,13 +12,13 @@ export default {
   methods: {
     pullComments: (title) => {
       window.DiscourseEmbed = {
-        discourseUrl: "https://discourse.indicproject.org/",
+        discourseUrl: "https://community.smc.org.in/",
         discourseEmbedUrl: title,
       };
       let discourse = document.createElement("script");
       discourse.setAttribute(
         "src",
-        "https://discourse.indicproject.org/javascripts/embed.js"
+        "https://community.smc.org.in/javascripts/embed.js"
       );
       document.head.appendChild(discourse);
     },
