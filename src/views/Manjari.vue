@@ -270,11 +270,7 @@
             <li>
               Latin. The following languages are covered:
               <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
-                {{
-                  Intl.DisplayNames
-                    ? new Intl.DisplayNames("en").of(lang)
-                    : lang
-                }}
+                {{ lang }}
               </span>
             </li>
           </ul>
