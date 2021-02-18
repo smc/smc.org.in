@@ -87,6 +87,10 @@ export default {
                 text: "Details",
                 url: "https://indic.app",
               },
+              {
+                text: "Source",
+                url: "https://gitlab.com/indicproject/indic-keyboard",
+              },
             ],
           },
           {
@@ -99,6 +103,10 @@ export default {
               {
                 text: "Details",
                 url: "https://swanalekha.smc.org.in/",
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/swanalekha",
               },
             ],
           },
@@ -114,6 +122,10 @@ export default {
               {
                 text: "Details",
                 url: "https://www.varnamproject.com/",
+              },
+              {
+                text: "Source",
+                url: "https://github.com/varnamproject/",
               },
             ],
           },
