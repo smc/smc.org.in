@@ -39,6 +39,7 @@ import {
   mdiInstagram,
   mdiMastodon,
   mdiChat,
+  mdiForumOutline,
   mdiAsterisk,
   mdiChatAlert,
   mdiGithub,
@@ -83,6 +84,12 @@ export default {
         title: "Twitter",
         url: "https://twitter.com/smcproject",
         icon: mdiTwitter,
+      },
+      {
+        name: "discourse",
+        title: "Discussions",
+        url: "https://community.smc.org.in",
+        icon: mdiForumOutline,
       },
       {
         name: "diaspora",

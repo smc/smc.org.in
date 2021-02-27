@@ -17,19 +17,25 @@
         </v-col>
       </v-row>
       <v-row class="text-center">
-        <v-col cols="4">
+        <v-col cols="3">
           <v-btn class="ma-2" block large href="https://gitlab.com/smc">
             <v-icon dark>{{ mdiGit }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("source-code") }}</span>
           </v-btn>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="3">
           <v-btn class="ma-2" block large href="https://wiki.smc.org.in">
             <v-icon dark>{{ mdiBookOpenPageVariant }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("wiki") }}</span>
           </v-btn>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="3">
+          <v-btn class="ma-2" block large href="https://community.smc.org.in/">
+            <v-icon dark>{{ mdiForumOutline }}</v-icon>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("discussions") }}</span>
+          </v-btn>
+        </v-col>
+        <v-col cols="3">
           <v-btn class="ma-2" block large href="https://t.me/smc_project">
             <v-icon dark>{{ mdiTelegram }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
@@ -128,7 +134,7 @@
             class="mx-auto"
             max-width="400"
             height="400px"
-            style="overflow: hidden;"
+            style="overflow: hidden"
             :to="`/blog/${post.slug}`"
           >
             <v-img
@@ -151,7 +157,12 @@
 </template>
 
 <script>
-import { mdiGit, mdiTelegram, mdiBookOpenPageVariant } from "@mdi/js";
+import {
+  mdiGit,
+  mdiTelegram,
+  mdiBookOpenPageVariant,
+  mdiForumOutline,
+} from "@mdi/js";
 
 export default {
   name: "Home",
@@ -159,6 +170,7 @@ export default {
     blogposts: [],
     mdiGit,
     mdiTelegram,
+    mdiForumOutline,
     mdiBookOpenPageVariant,
   }),
   components: {},
