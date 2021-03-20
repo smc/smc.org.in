@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: MeeraInimai;
-	src: url(/downloads/fonts/meera-inimai/MeeraInimai-Regular.woff2?v=@VERSION@) format('woff2'), url(/downloads/fonts/meera-inimai/MeeraInimai-Regular.woff?v=@VERSION@) format('woff'), url(/downloads/fonts/meera-inimai/MeeraInimai-Regular.ttf) format('truetype');
+	src: url(/downloads/fonts/meera-inimai/MeeraInimai-Regular.woff2?v=@VERSION@) format('woff2');
 	font-weight: normal;
 	font-display: swap;
 	font-style: normal;
