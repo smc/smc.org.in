@@ -50,7 +50,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll color="primary" dark>
-      <div class="d-flex align-center" style="cursor: pointer;">
+      <div class="d-flex align-center" style="cursor: pointer">
         <router-link to="/" class="text--primary text-decoration-none">
           <v-img
             alt="SMC Logo"

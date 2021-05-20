@@ -146,7 +146,7 @@
             To use Meera in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code style="word-break: break-all;">
+          <code style="word-break: break-all">
             @import url('https://smc.org.in/fonts/meera.css'); html {
             font-family: 'Meera', sans-serif; }
           </code>

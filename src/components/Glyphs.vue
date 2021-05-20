@@ -62,9 +62,7 @@
         </v-sheet>
       </v-bottom-sheet>
     </template>
-    <template v-else>
-      Fetching glyphs...
-    </template>
+    <template v-else> Fetching glyphs... </template>
   </section>
 </template>
 <script>

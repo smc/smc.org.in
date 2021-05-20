@@ -219,7 +219,7 @@
             To use Manjari in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code style="word-break: break-all;">
+          <code style="word-break: break-all">
             @import url('https://smc.org.in/fonts/manjari.css'); html {
             font-family: 'Manjari', sans-serif; }
           </code>
@@ -292,22 +292,22 @@
               <v-row
                 ><v-col
                   class="title font-manjari"
-                  style="font-feature-settings: 'salt' 1;"
+                  style="font-feature-settings: 'salt' 1"
                   >ച്ച</v-col
                 ><v-col
                   class="title font-manjari"
-                  style="font-feature-settings: 'salt' 2;"
+                  style="font-feature-settings: 'salt' 2"
                   >ച്ച</v-col
                 ></v-row
               >
               <v-row
                 ><v-col
                   class="title font-manjari"
-                  style="font-feature-settings: 'salt' 1;"
+                  style="font-feature-settings: 'salt' 1"
                   >ള്ള</v-col
                 ><v-col
                   class="title font-manjari"
-                  style="font-feature-settings: 'salt' 2;"
+                  style="font-feature-settings: 'salt' 2"
                   >ള്ള</v-col
                 ></v-row
               >
@@ -346,7 +346,7 @@
                 >
                 <v-col
                   class="font-manjari"
-                  style="font-feature-settings: 'tnum';"
+                  style="font-feature-settings: 'tnum'"
                   ><ul>
                     <li>345678</li>
                     <li>111111</li>
@@ -370,7 +370,7 @@
                 ><v-col class="font-manjari">4500</v-col>
                 <v-col
                   class="font-manjari"
-                  style="font-feature-settings: 'zero';"
+                  style="font-feature-settings: 'zero'"
                   >4500</v-col
                 ></v-row
               >
@@ -414,9 +414,7 @@
             supported ligature collection, a significant parts of opentype
             rules.
           </p>
-          <p>
-            Acknowledgements(in alphabetical order)
-          </p>
+          <p>Acknowledgements(in alphabetical order)</p>
           <ul>
             <li>K H Hussain, Designer of Rachana font.</li>
             <li>Raph Levien, Author of Spiro library.</li>

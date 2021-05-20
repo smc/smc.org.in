@@ -75,18 +75,10 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="py-2 my-4">
-                  ഒരു വളപ്പൊട്ടുണ്ടെൻ കയ്യിൽ
-                </h1>
-                <h1 class="py-2 my-4">
-                  ഒരു മയിൽപ്പീലിയുണ്ടെന്നുള്ളിൽ
-                </h1>
-                <h1 class="py-2 my-4">
-                  വിരസ നിമിഷങ്ങൾ സരസമാക്കുവാ-
-                </h1>
-                <h1 class="py-2 my-4">
-                  നിവ ധാരാളമാണെനിക്കെന്നും.
-                </h1>
+                <h1 class="py-2 my-4">ഒരു വളപ്പൊട്ടുണ്ടെൻ കയ്യിൽ</h1>
+                <h1 class="py-2 my-4">ഒരു മയിൽപ്പീലിയുണ്ടെന്നുള്ളിൽ</h1>
+                <h1 class="py-2 my-4">വിരസ നിമിഷങ്ങൾ സരസമാക്കുവാ-</h1>
+                <h1 class="py-2 my-4">നിവ ധാരാളമാണെനിക്കെന്നും.</h1>
                 <p>കുഞ്ഞുണ്ണി മാഷ്</p>
               </v-card>
             </v-carousel-item>
@@ -167,7 +159,7 @@
             To use RaghuMalayalamSans in web pages, webfonts can be used. You
             may copy the following css and add to your website:
           </p>
-          <code style="sword-break: break-all;">
+          <code style="sword-break: break-all">
             @import url('https://smc.org.in/fonts/raghumalayalamsans.css'); html
             { font-family: 'RaghuMalayalamSans', sans-serif; }
           </code>
@@ -216,9 +208,7 @@
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
-            <li>
-              Latin.
-            </li>
+            <li>Latin.</li>
           </ul>
         </div>
       </section>

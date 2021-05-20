@@ -77,7 +77,7 @@
                     തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br />
                     കാത്തു നില്‍ക്കുന്നൊരമ്പിളിത്തെല്ല്...!
                   </p>
-                  <p style="float: right;">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
+                  <p style="float: right">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
                 </article>
               </v-card>
             </v-carousel-item>
@@ -165,7 +165,7 @@
             To use Karumbi in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code style="word-break: break-all;">
+          <code style="word-break: break-all">
             @import url('https://smc.org.in/fonts/karumbi.css'); html {
             font-family: 'Karumbi', sans-serif; }
           </code>

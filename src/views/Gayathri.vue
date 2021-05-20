@@ -242,7 +242,7 @@
             To use Gayathri in web pages, webfonts can be used. You may copy the
             following css and add to your website:
           </p>
-          <code style="word-break: break-all;">
+          <code style="word-break: break-all">
             @import url('https://smc.org.in/fonts/gayathri.css'); html {
             font-family: 'Gayathri', sans-serif; }
           </code>
@@ -321,24 +321,24 @@
               <v-row>
                 <v-col
                   class="font-gayathri"
-                  style="font-feature-settings: 'salt' 1;"
+                  style="font-feature-settings: 'salt' 1"
                   >ച്ച</v-col
                 >
                 <v-col
                   class="font-gayathri"
-                  style="font-feature-settings: 'salt' 2;"
+                  style="font-feature-settings: 'salt' 2"
                   >ച്ച</v-col
                 >
               </v-row>
               <v-row>
                 <v-col
                   class="font-gayathri"
-                  style="font-feature-settings: 'salt' 1;"
+                  style="font-feature-settings: 'salt' 1"
                   >ള്ള</v-col
                 >
                 <v-col
                   class="font-gayathri"
-                  style="font-feature-settings: 'salt' 2;"
+                  style="font-feature-settings: 'salt' 2"
                   >ള്ള</v-col
                 >
               </v-row>

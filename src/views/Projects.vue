@@ -316,8 +316,7 @@ export default {
         list: [
           {
             title: "Malayalam Fonts",
-            logo:
-              "https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png",
+            logo: "https://addons.cdn.mozilla.net/user-media/previews/full/202/202178.png",
             logo_style_cover: true,
             description: `
               This addon will help you to choose Unicode Malayalam fonts for the websites you visit,
@@ -326,20 +325,17 @@ export default {
             links: [
               {
                 text: "Firefox",
-                url:
-                  "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/",
+                url: "https://addons.mozilla.org/en-US/firefox/addon/malayalam-fonts/",
               },
               {
                 text: "Chrome",
-                url:
-                  "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo",
+                url: "https://chrome.google.com/webstore/detail/malayalam-font/jgdfkpocgoliiikomkacimfdkedjdgfo",
               },
             ],
           },
           {
             title: "Indic-En",
-            logo:
-              "https://raw.githubusercontent.com/subins2000/indicen/master/assets/favicon.png",
+            logo: "https://raw.githubusercontent.com/subins2000/indicen/master/assets/favicon.png",
             logo_style_cover: true,
             description: `
               This addon will convert Malayalam, Hindi & Kannada webpages to Manglish, Hinglish & Kanglish respectively. For people who understands the language, but can't read the script.
@@ -351,8 +347,7 @@ export default {
               },
               {
                 text: "Chrome",
-                url:
-                  "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon",
+                url: "https://chrome.google.com/webstore/detail/indic-en/fbbhbgpgjfjdncnealckbfdmieafpgon",
               },
               {
                 text: "Details",
@@ -367,8 +362,7 @@ export default {
         list: [
           {
             title: "Magisk Malayalam Fonts",
-            logo:
-              "https://blog.smc.org.in/content/images/2019/03/magisk-app1.jpg",
+            logo: "https://blog.smc.org.in/content/images/2019/03/magisk-app1.jpg",
             logo_style_cover: true,
             description: `
               Set the default Malayalam font for rooted Android devices.
@@ -384,15 +378,13 @@ export default {
               },
               {
                 text: "How-To",
-                url:
-                  "https://blog.smc.org.in/installing-smc-fonts-on-android-devices/",
+                url: "https://blog.smc.org.in/installing-smc-fonts-on-android-devices/",
               },
             ],
           },
           {
             title: "Akshara Mazha",
-            logo:
-              "https://lh3.googleusercontent.com/wakTTNJjIbcs8j-en4pEkvoiRas7eiF1nEgSgIrHtQuAuMjqjgT2wH3bqFP-aMwvlZ0=w1440-h620",
+            logo: "https://lh3.googleusercontent.com/wakTTNJjIbcs8j-en4pEkvoiRas7eiF1nEgSgIrHtQuAuMjqjgT2wH3bqFP-aMwvlZ0=w1440-h620",
             logo_style_cover: true,
             description: `
               Open source live wallpaper with Malayalam letters streaming down the screen like you have seen in the popular movie Matrix.
@@ -400,8 +392,7 @@ export default {
             links: [
               {
                 text: "Download",
-                url:
-                  "https://play.google.com/store/apps/details?id=in.androidtweak.rain",
+                url: "https://play.google.com/store/apps/details?id=in.androidtweak.rain",
               },
               {
                 text: "Source",
@@ -411,8 +402,7 @@ export default {
           },
           {
             title: "Manglish",
-            logo:
-              "https://raw.githubusercontent.com/subins2000/manglish/master/artwork/logo.svg",
+            logo: "https://raw.githubusercontent.com/subins2000/manglish/master/artwork/logo.svg",
             logo_style_cover: true,
             description: `
               A simple app to convert Malayalam text to Manglish. For people who understands Malayalam, but can't read the script.
@@ -420,8 +410,7 @@ export default {
             links: [
               {
                 text: "Play Store",
-                url:
-                  "https://play.google.com/store/apps/details?id=subins2000.manglish",
+                url: "https://play.google.com/store/apps/details?id=subins2000.manglish",
               },
               {
                 text: "F-Droid",

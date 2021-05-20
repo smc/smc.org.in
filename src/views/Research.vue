@@ -96,8 +96,7 @@ export default {
             links: [
               {
                 text: "Read the paper",
-                url:
-                  "https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf",
+                url: "https://thottingal.in/documents/Malayalam%20Orthographic%20Reforms_%20Impact%20on%20Language%20and%20Popular%20Culture.pdf",
               },
             ],
           },
@@ -115,8 +114,7 @@ export default {
             links: [
               {
                 text: "Read the paper",
-                url:
-                  "https://thottingal.in/documents/Spiral-Splines-Manjari.pdf",
+                url: "https://thottingal.in/documents/Spiral-Splines-Manjari.pdf",
               },
             ],
           },
@@ -165,8 +163,7 @@ export default {
             links: [
               {
                 text: "Read",
-                url:
-                  "https://kavyamanohar.com/post/malayalam-phonetic-analyser/",
+                url: "https://kavyamanohar.com/post/malayalam-phonetic-analyser/",
               },
               {
                 text: "Malayalam Phonetic Analyser",
