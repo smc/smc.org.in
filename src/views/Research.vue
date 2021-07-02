@@ -118,6 +118,28 @@ export default {
               },
             ],
           },
+          {
+            title:
+              "A quantitative analysis of the morphological complexity of Malayalam",
+            author: "Kavya Manohar",
+            description: `
+                By measuring the morphological complexity and comparing it against the same measurements for Dravidian languages and European languages, this paper show that Malayalam is morphologically more complex than them. Published at the 23rd International Conference on Text, Speech and Dialogu on September 8-10, 2020, Brno, Czech Republic.
+            `,
+            links: [
+              {
+                text: "Read blog post",
+                url: "https://kavyamanohar.com/post/malayalam-morphological-complexity/",
+              },
+              {
+                text: "Read paper",
+                url: "https://rdcu.be/b6RVa",
+              },
+              {
+                text: "Code",
+                url: "https://gitlab.com/kavyamanohar/malayalam-ttr",
+              },
+            ],
+          },
         ],
       },
       {
