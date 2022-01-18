@@ -60,6 +60,14 @@
         by Ek Type, commissioned by Google fonts.
       </li>
       <li>
+        <a
+          href="https://github.com/EkType/Anek"
+          target="_blank"
+          >Anek Malayalam</a
+        >
+        by Ek Type
+      </li>
+      <li>
         <a href="http://rachana.org.in/" target="_blank">Sundar and TNJoy</a> by
         Rachana Institute of Typography
       </li>
