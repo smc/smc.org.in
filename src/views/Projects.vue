@@ -120,7 +120,7 @@ export default {
         ],
       },
       {
-        heading: "Fonts",
+        heading: "Fonts & Script",
         list: [
           {
             title: "SMC Fonts",
@@ -135,6 +135,68 @@ export default {
               {
                 text: "Source",
                 url: "https://gitlab.com/smc/fonts",
+              },
+            ],
+          },
+          {
+            title: "Learn to write Malayalam",
+            description: `
+              A simple application to observe and learn how to write Malayalam letters.
+            `,
+            links: [
+              {
+                text: "Use",
+                url: "https://learn.smc.org.in",
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/mlmash",
+              },
+            ],
+          },
+          {
+            title: "Optical Character recognition",
+            description: `
+              Scan and OCR documents in Malayalam. OCR recognizes the text in the document and gives plain text version. This is a tesseract-ocr based tool
+            `,
+            links: [
+              {
+                text: "Use",
+                url: "https://ocr.smc.org.in",
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/tesseract-ocr-web",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        heading: "Machine translation & Spelling checker",
+        list: [
+          {
+            title: "Machine translation",
+            description: `
+             Machine translation between English and Malayalam. This machine translation system uses huggingface transformers with OpusMT language models for translation.
+            `,
+            links: [
+              {
+                text: "Use",
+                url: "https://translate.smc.org.in/",
+              },
+            ],
+          },
+          {
+            title: "Spellchecker",
+            description: `
+             Malayalam spelling checker using Malayalam morphology analyser.
+            `,
+            links: [
+              {
+                text: "Use",
+                url: "https://morph.smc.org.in/spellcheck.html",
               },
             ],
           },
