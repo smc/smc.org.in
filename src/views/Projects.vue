@@ -465,10 +465,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/inexactsearch",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/ApproxSearch",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/ApproxSearch",
+              // },
             ],
           },
           {
@@ -483,10 +483,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/shingling",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Shingling",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Shingling",
+              // },
             ],
           },
           {
@@ -501,10 +501,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/text-similarity",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Similar%20Texts",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Similar%20Texts",
+              // },
             ],
           },
           {
@@ -519,10 +519,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/hyphenation",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Hyphenate",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Hyphenate",
+              // },
             ],
           },
           {
@@ -536,10 +536,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/ucasort",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/UCA%20Sort",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/UCA%20Sort",
+              // },
             ],
           },
           {
@@ -553,10 +553,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/indicfortune",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Fortune",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Fortune",
+              // },
             ],
           },
           {
@@ -569,10 +569,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/spellchecker",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/SpellCheck",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/SpellCheck",
+              // },
             ],
           },
           {
@@ -585,10 +585,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/syllabalizer",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Syllabalizer",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Syllabalizer",
+              // },
             ],
           },
           {
@@ -602,10 +602,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/indicstemmer",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Stemmer",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Stemmer",
+              // },
             ],
           },
           {
@@ -619,10 +619,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/payyans",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Payyans",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Payyans",
+              // },
             ],
           },
           {
@@ -635,10 +635,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/chardetails",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Chardetails",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Chardetails",
+              // },
             ],
           },
           {
@@ -654,10 +654,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/katapayadi",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Katapayadi%20Numbers",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Katapayadi%20Numbers",
+              // },
             ],
           },
           {
@@ -672,10 +672,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/soundex",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/Soundex",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/Soundex",
+              // },
               {
                 text: "Details",
                 url: "https://thottingal.in/blog/2009/07/26/indicsoundex/",
@@ -697,10 +697,10 @@ export default {
                 text: "Source",
                 url: "https://github.com/libindic/indicngram",
               },
-              {
-                text: "Web",
-                url: "https://libindic.org/N-gram",
-              },
+              // {
+              //   text: "Web",
+              //   url: "https://libindic.org/N-gram",
+              // },
             ],
           },
         ],
