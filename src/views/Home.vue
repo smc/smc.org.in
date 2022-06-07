@@ -112,6 +112,19 @@
             <v-card-subtitle>Malayalam morphology analyser</v-card-subtitle>
           </v-card>
         </v-col>
+        <v-col md="6" lg="3" sm="12">
+          <v-card
+            outlined
+            hover
+            to="/projects"
+            class="mx-auto"
+            max-width="400"
+            height="100%"
+          >
+            <v-card-title>More projects...</v-card-title>
+            <v-card-subtitle>See all projects</v-card-subtitle>
+          </v-card>
+        </v-col>
       </v-row>
       <v-row>
         <v-col lg="8" sm="12">
