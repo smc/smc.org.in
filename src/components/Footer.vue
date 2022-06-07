@@ -35,7 +35,7 @@
 import {
   mdiTwitter,
   mdiFacebook,
-  mdiTelegram,
+  mdiSend,
   mdiInstagram,
   mdiMastodon,
   mdiChat,
@@ -65,7 +65,7 @@ export default {
         name: "telegram",
         title: "Telegram",
         url: "https://t.me/smc_project",
-        icon: mdiTelegram,
+        icon: mdiSend,
       },
       {
         name: "facebook",

@@ -37,7 +37,7 @@
         </v-col>
         <v-col cols="3">
           <v-btn class="ma-2" block large href="https://t.me/smc_project">
-            <v-icon dark>{{ mdiTelegram }}</v-icon>
+            <v-icon dark>{{ mdiSend }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
           </v-btn>
         </v-col>
@@ -159,7 +159,7 @@
 <script>
 import {
   mdiGit,
-  mdiTelegram,
+  mdiSend,
   mdiBookOpenPageVariant,
   mdiForumOutline,
 } from "@mdi/js";
@@ -169,7 +169,7 @@ export default {
   data: () => ({
     blogposts: [],
     mdiGit,
-    mdiTelegram,
+    mdiSend,
     mdiForumOutline,
     mdiBookOpenPageVariant,
   }),
