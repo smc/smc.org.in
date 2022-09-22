@@ -143,10 +143,14 @@ export default {
           {
             title:
               "Mlphon: A Multifunctional Grapheme-Phoneme Conversion Tool Using Finite State Transducers",
-            author: "Kavya Manohar",
+            author: "Kavya Manohar, A. R. Jayan, Rajeev Rajan",
             description: `
                 Mlphon computationally models linguistic rules using finite state transducers and performs multiple functions including grapheme to phoneme (g2p) and phoneme to grapheme (p2g) conversions, syllabification, phonetic feature analysis and script grammar check.`,
             links: [
+              {
+                text: "Mlphon",
+                url: "https://phon.smc.org.in",
+              },
               {
                 text: "Read the paper",
                 url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9877808",
