@@ -85,51 +85,51 @@ export default {
     fonts: [
       {
         title: "AnjaliOldLipi",
-        path: "/fonts/anjalioldlipi",
+        path: "fonts/anjalioldlipi",
       },
       {
         title: "Chilanka",
-        path: "/fonts/chilanka",
+        path: "fonts/chilanka",
       },
       {
         title: "Dyuthi",
-        path: "/fonts/dyuthi",
+        path: "fonts/dyuthi",
       },
       {
         title: "Gayathri",
-        path: "/fonts/gayathri",
+        path: "fonts/gayathri",
       },
       {
         title: "Karumbi",
-        path: "/fonts/karumbi",
+        path: "fonts/karumbi",
       },
       {
         title: "Keraleeyam",
-        path: "/fonts/keraleeyam",
+        path: "fonts/keraleeyam",
       },
       {
         title: "Manjari",
-        path: "/fonts/manjari",
+        path: "fonts/manjari",
       },
       {
         title: "Meera",
-        path: "/fonts/meera",
+        path: "fonts/meera",
       },
       {
         title: "Rachana",
-        path: "/fonts/rachana",
+        path: "fonts/rachana",
       },
       {
         title: "RaghuMalayalamSans",
-        path: "/fonts/raghumalayalamsans",
+        path: "fonts/raghumalayalamsans",
       },
       {
         title: "Suruma",
-        path: "/fonts/suruma",
+        path: "fonts/suruma",
       },
       {
         title: "Uroob",
-        path: "/fonts/uroob",
+        path: "fonts/uroob",
       },
     ],
   }),
