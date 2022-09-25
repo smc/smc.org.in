@@ -224,7 +224,6 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
@@ -233,14 +232,7 @@ export default {
     mdiDownload,
     fontdata: {},
   }),
-  components: { Glyphs, FontTitle, FontPlayground },
-  created() {
-    return fetch("/downloads/fonts/rachana/Rachana.json")
-      .then((response) => response.json())
-      .then((data) => {
-        this.fontdata = data;
-      });
-  },
+  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

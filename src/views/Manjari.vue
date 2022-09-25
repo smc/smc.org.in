@@ -252,6 +252,7 @@
           <a href="https://gitlab.com/smc/fonts/manjari">gitlab repository</a>
         </p>
       </section>
+      <!--
       <section id="glyphs" class="row">
         <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
         <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
@@ -259,6 +260,7 @@
         </h4>
         <glyphs font="Manjari" class="col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
+      -->
       <section id="languages" class="row">
         <h2
           v-text="$i18n('Supported languages')"
@@ -454,7 +456,6 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
@@ -544,14 +545,7 @@ export default {
       "su",
     ],
   }),
-  components: { Glyphs, FontTitle, FontPlayground },
-  created() {
-    return fetch("/downloads/fonts/manjari/Manjari.json")
-      .then((response) => response.json())
-      .then((data) => {
-        this.fontdata = data;
-      });
-  },
+  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

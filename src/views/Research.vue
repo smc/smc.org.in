@@ -11,12 +11,7 @@
       >
         <h2>{{ section.heading }}</h2>
         <section class="row my-2">
-          <v-col
-            cols="12"
-            lg="6"
-            v-for="entry in section.list"
-            :key="entry.title"
-          >
+          <v-col cols="12" v-for="entry in section.list" :key="entry.title">
             <v-card outlined>
               <v-card-title v-text="entry.title" />
               <v-card-subtitle v-text="entry.author" />
@@ -154,7 +149,7 @@ export default {
               {
                 text: "Read the paper",
                 url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9877808",
-              }
+              },
             ],
           },
         ],

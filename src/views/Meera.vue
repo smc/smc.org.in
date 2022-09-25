@@ -175,13 +175,6 @@
         </div>
       </section>
 
-      <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
-        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
-          {{ fontdata.summary.glyphs }} Glyphs
-        </h4>
-        <glyphs font="Meera" class="col-lg-12" :glyphs="fontdata.glyphs" />
-      </section>
       <section id="languages" class="row">
         <h2
           v-text="$i18n('Supported languages')"
@@ -229,7 +222,6 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
@@ -238,14 +230,7 @@ export default {
     mdiDownload,
     fontdata: {},
   }),
-  components: { Glyphs, FontTitle, FontPlayground },
-  created() {
-    return fetch("/downloads/fonts/meera/Meera.json")
-      .then((response) => response.json())
-      .then((data) => {
-        this.fontdata = data;
-      });
-  },
+  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

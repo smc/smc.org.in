@@ -187,13 +187,6 @@
           <a href="https://gitlab.com/smc/fonts/karumbi">gitlab repository</a>
         </p>
       </section>
-      <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
-        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
-          {{ fontdata.summary.glyphs }} Glyphs
-        </h4>
-        <glyphs font="Karumbi" class="col-lg-12" :glyphs="fontdata.glyphs" />
-      </section>
       <section id="playground" class="row">
         <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-12">
@@ -243,7 +236,6 @@
 
 <script>
 import { mdiDownload } from "@mdi/js";
-import Glyphs from "../components/Glyphs";
 import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
@@ -252,14 +244,7 @@ export default {
     mdiDownload,
     fontdata: {},
   }),
-  components: { Glyphs, FontTitle, FontPlayground },
-  created() {
-    return fetch("/downloads/fonts/karumbi/Karumbi.json")
-      .then((response) => response.json())
-      .then((data) => {
-        this.fontdata = data;
-      });
-  },
+  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">
