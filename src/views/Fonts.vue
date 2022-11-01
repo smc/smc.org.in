@@ -17,7 +17,7 @@
           ></v-card-title>
 
           <v-card-text>
-            <p :class="`font-${font.title.toLowerCase()} font-preview-text`">
+            <p :class="`font-${font.title.toLowerCase()} font-preview-text`" contenteditable="true">
               ഒരൊറ്റമതമുണ്ടുലകിന്നുയിരാം പ്രേമ,മതൊന്നല്ലോ പരക്കെ നമ്മെ
               പാലമൃതൂട്ടും പാർവണശശിബിംബം.
             </p>
