@@ -50,16 +50,12 @@
 </template>
 
 <style lang="scss">
-@import "~vuetify/src/styles/settings/_variables";
+@use 'vuetify/settings';
 
 .projects {
   .v-card {
     overflow: hidden;
     height: 100%;
-
-    @media #{map-get($display-breakpoints, 'md-and-up')} {
-      min-height: 400px;
-    }
   }
 
   .v-image {
@@ -77,7 +73,7 @@ export default {
         heading: "Input Tools",
         list: [
           {
-            logo: require("@/assets/images/indickeyboard.png"),
+            logo: "src/assets/images/indickeyboard.png",
             title: "Indic Keyboard",
             description: `
               Indic Keyboard is a MOSS Award winning, privacy aware versatile keyboard for Android users who wish to use Indic and Indian languages to type messages, compose emails and generally prefer to use them in addition to English on their phone. You can use this application to type anywhere in your phone that you would normally type in English. It currently supports 23 languages and 57 layouts.
@@ -95,7 +91,7 @@ export default {
           },
           {
             title: "Swanalekha",
-            logo: require("@/assets/images/ml-swanalekha.png"),
+            logo: "src/assets/images/ml-swanalekha.png",
             description: `
               Swanalekha is a famous transliteration based input tool available in all operating systems in desktops and mobile phones. It is very easy to learn using familiar Manglish based key mappings."
             `,
@@ -112,7 +108,7 @@ export default {
           },
           {
             title: "Varnam",
-            logo: require("@/assets/images/varnam.gif"),
+            logo: "src/assets/images/varnam.gif",
             description: `
               Varnam is a cross platform predictive transliterator for Indic
               languages. Varnam aims at providing consistent input experience

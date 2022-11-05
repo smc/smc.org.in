@@ -4,7 +4,7 @@
       <v-row class="text-center">
         <v-col cols="12">
           <v-img
-            :src="require('@/assets/logo.svg')"
+            src="src/assets/logo.svg"
             class="my-3"
             contain
             height="200"
@@ -66,7 +66,7 @@
             height="100%"
           >
             <v-img
-              src="@/assets/images/manjari-card.png"
+              src="src/assets/images/manjari-card.png"
               height="200px"
             ></v-img>
 
@@ -85,7 +85,7 @@
             height="100%"
           >
             <v-img
-              src="@/assets/images/gayathri-card.png"
+              src="src/assets/images/gayathri-card.png"
               height="200px"
             ></v-img>
 
@@ -104,7 +104,7 @@
             height="100%"
           >
             <v-img
-              :src="require('@/assets/images/mlmorph-logo.svg')"
+              src="src/assets/images/mlmorph-logo.svg"
               height="200px"
             ></v-img>
             <v-card-title>Mlmorph</v-card-title>
@@ -151,7 +151,7 @@
             :to="`/blog/${post.slug}`"
           >
             <v-img
-              :src="post.feature_image || require('@/assets/logo.svg')"
+              :src="post.feature_image || require('src/assets/logo.svg')"
               height="200px"
             ></v-img>
 

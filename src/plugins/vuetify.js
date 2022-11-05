@@ -1,23 +1,30 @@
-import Vue from "vue";
-import Vuetify from "vuetify/lib";
 
-Vue.use(Vuetify);
+// Styles
+import 'vuetify/styles'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
-export default new Vuetify({
+// Composables
+import { createVuetify } from 'vuetify'
+
+export default createVuetify({
   icons: {
-    iconfont: "mdiSvg",
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    }
   },
   theme: {
+    defaultTheme: 'smctheme',
     themes: {
-      light: {
-        primary: "#00A7D0",
-      },
-      dark: {
-        primary: "#00A7D0",
+      smctheme: {
+        dark:   window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches,
+        colors: {
+          primary: "#00A7D0",
+        }
       },
     },
-    dark:
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches,
   },
 });
+

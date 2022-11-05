@@ -75,7 +75,7 @@
 
 <script>
 import { mdiArrowRight, mdiDownloadOutline } from "@mdi/js";
-
+import { useI18n } from "vue-banana-i18n";
 export default {
   data: () => ({
     mdiArrowRight,

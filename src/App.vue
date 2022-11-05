@@ -1,5 +1,5 @@
 <template>
-  <v-app id="smcorgin" :lang="i18n.locale">
+  <v-app id="smcorgin" :lang="locale">
     <v-navigation-drawer v-model="sidebar" right fixed>
       <v-list>
         <template v-for="item in menuItems">
@@ -56,7 +56,7 @@
             alt="SMC Logo"
             class="shrink pr-1"
             contain
-            src="@/assets/logo.svg"
+            src="src/assets/logo.svg"
             transition="scale-transition"
             width="48"
           />
@@ -117,7 +117,7 @@
         </v-col>
       </v-row>
       <transition name="slide">
-        <router-view :locale="i18n.locale" />
+        <router-view :locale="locale" />
       </transition>
     </v-main>
     <smc-footer></smc-footer>
@@ -126,10 +126,17 @@
 
 <script>
 import smcFooter from "./components/Footer";
+import { useI18n } from "vue-banana-i18n";
 
 export default {
   name: "App",
   components: { smcFooter },
+  computed: {
+    locale(){
+      const bananaI18n = useI18n();
+      return bananaI18n.locale
+    }
+  },
   data: () => ({
     sidebar: false,
     menuItems: [

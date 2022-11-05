@@ -72,8 +72,8 @@
               <v-col cols="12" md="4" class="pa-0">
                 <v-img
                   cover
-                  :src="post.feature_image || require('@/assets/logo.svg')"
-                  :lazy-src="require('@/assets/logo.svg')"
+                  :src= post.feature_image
+                  lazy-src='src/assets/logo.svg'
                   height="250px"
                 ></v-img>
               </v-col>
@@ -197,7 +197,6 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "~vuetify/src/styles/settings/_variables";
 
 .post-body {
   font-family: "Inter", "Manjari", sans;
@@ -224,8 +223,5 @@ export default {
 
 .card-blogpost {
   overflow: hidden;
-  @media #{map-get($display-breakpoints, 'md-and-up')} {
-    height: 250px;
-  }
 }
 </style>
