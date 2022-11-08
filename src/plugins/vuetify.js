@@ -2,6 +2,7 @@
 // Styles
 import 'vuetify/styles'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 
 // Composables
 import { createVuetify } from 'vuetify'

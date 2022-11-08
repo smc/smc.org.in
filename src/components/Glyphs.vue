@@ -54,7 +54,7 @@
                 v-if="canCopy"
                 @click="copy(glyph.value)"
               >
-                <v-icon>{{ mdiContentCopy }}</v-icon
+                <v-icon icon="mdi-content-copy"></v-icon
                 >Copy</v-btn
               >
             </v-col>
@@ -66,13 +66,11 @@
   </section>
 </template>
 <script>
-import { mdiContentCopy } from "@mdi/js";
 import { Intersect } from "vuetify/lib/directives";
 export default {
   name: "Glyphs",
   data: () => ({
     canCopy: false,
-    mdiContentCopy,
     isIntersecting: false,
   }),
   directives: {
