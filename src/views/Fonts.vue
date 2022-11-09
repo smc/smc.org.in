@@ -17,23 +17,25 @@
           ></v-card-title>
 
           <v-card-text>
-            <p :class="`font-${font.title.toLowerCase()} font-preview-text`" contenteditable="true">
+            <p
+              :class="`font-${font.title.toLowerCase()} font-preview-text`"
+              contenteditable="true"
+            >
               ഒരൊറ്റമതമുണ്ടുലകിന്നുയിരാം പ്രേമ,മതൊന്നല്ലോ പരക്കെ നമ്മെ
               പാലമൃതൂട്ടും പാർവണശശിബിംബം.
             </p>
           </v-card-text>
           <v-card-actions>
-            <v-spacer />
             <v-btn
-              text
+              prepend-icon="mdi-download-outline"
               :href="`/downloads/${font.path}/${font.title.toLowerCase()}.zip`"
             >
               {{ $i18n("download") }}
-              <v-icon icon="mdi-download-outline"></v-icon>
             </v-btn>
-            <v-btn text :to="font.path">
+            <v-spacer />
+
+            <v-btn :to="font.path" prepend-icon="mdi-arrow-right">
               Details
-              <v-icon icon="mdi-arrow-right"></v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -45,31 +47,15 @@
       a few more free licensed fonts designed and released by other projects and
       people.
     </p>
-    <ul>
-      <li>
-        <a href="https://www.google.com/get/noto/" target="_blank"
-          >Noto Sans Malayalam</a
-        >, by Google
-      </li>
-      <li>
-        <a
-          href="https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam"
-          target="_blank"
-          >Baloo Chettan 2</a
-        >
-        by Ek Type, commissioned by Google fonts.
-      </li>
-      <li>
-        <a href="https://github.com/EkType/Anek" target="_blank"
-          >Anek Malayalam</a
-        >
-        by Ek Type
-      </li>
-      <li>
-        <a href="http://rachana.org.in/" target="_blank">Sundar and TNJoy</a> by
-        Rachana Institute of Typography
-      </li>
-    </ul>
+    <v-list lines="one">
+      <v-list-item
+        v-for="item in otherfonts"
+        :key="item.title"
+        :title="item.title"
+        :href="item.link"
+        prepend-icon="mdi-link"
+      ></v-list-item>
+    </v-list>
   </v-container>
 </template>
 
@@ -127,7 +113,26 @@ export default {
         path: "/fonts/uroob",
       },
     ],
+    otherfonts: [
+      {
+        "link": "https://www.google.com/get/noto/",
+        "title": "Noto Sans Malayalam by Google",
+      },
+      {
+        "link": "https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam",
+        "title":  "Baloo Chettan 2 by Ek Type, commissioned by Google fonts."
+      },
+      {
+        "link":"https://github.com/EkType/Anek",
+        "title": "Anek Malayalam by Ek Type"
+      },
+      {
+        "link": "http://rachana.org.in/",
+        "title":  "Sundar and TNJoy by Rachana Institute of Typography"
+      },
+    ]
   }),
+
 };
 </script>
 <style>
