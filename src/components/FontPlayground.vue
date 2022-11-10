@@ -46,7 +46,10 @@ export default {
   name: "FontPlayground",
   props: {
     name: String,
-    weights: [String],
+    weights: {
+      type:[String],
+      default: ()=>[]
+    },
     previewContent: {
       type: String,
       default: () => {
