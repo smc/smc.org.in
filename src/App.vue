@@ -1,52 +1,16 @@
 <template>
   <v-app id="smcorgin" :lang="locale">
-    <v-navigation-drawer v-model="sidebar" right fixed>
+    <v-navigation-drawer v-model="sidebar" location="right">
       <v-list>
-        <template v-for="item in menuItems">
-          <v-list-group
-            v-if="item.items && item.items.length"
-            :key="item.title"
-            v-model="item.active"
-            :prepend-icon="item.action"
-            no-action
-          >
-            <template v-slot:activator>
-              <v-list-item-content>
-                <v-list-item-title
-                  v-i18n="item.msg || item.title"
-                  :to="item.path"
-                  :href="item.href"
-                ></v-list-item-title>
-              </v-list-item-content>
-            </template>
-
-            <v-list-item
-              v-for="subItem in item.items"
-              :key="subItem.title"
-              :to="subItem.path"
-            >
-              <v-list-item-content>
-                <v-list-item-title
-                  v-i18n="subItem.msg || subItem.title"
-                  :to="item.path"
-                  :href="item.href"
-                ></v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list-group>
           <v-list-item
+          v-for="item in menuItems"
             :to="item.path"
             :href="item.href"
-            v-else
-            :key="item.title"
           >
-            <v-list-item-content>
               <v-list-item-title
                 v-i18n="item.msg || item.title"
               ></v-list-item-title>
-            </v-list-item-content>
           </v-list-item>
-        </template>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app elevate-on-scroll color="primary" dark>
@@ -62,14 +26,16 @@
           />
         </router-link>
       </div>
-      <v-toolbar-title class="pa-2">
-        <router-link to="/" class="text--primary text-decoration-none">
-          <span class="hidden-xs-only">{{ $i18n("smc") }}</span>
-          <span class="hidden-sm-and-up">{{ $i18n("smc-short") }}</span>
-        </router-link>
+      <v-toolbar-title
+        class="pa-2 d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex"
+      >
+        {{ $i18n("smc") }}
+      </v-toolbar-title>
+      <v-toolbar-title class="pa-2 d-flex d-sm-none">
+        {{ $i18n("smc-short") }}
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-xs-only">
+      <v-toolbar-items class="d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex">
         <v-menu
           :fixed="true"
           offset-y
@@ -77,13 +43,13 @@
           :key="item.title"
           open-on-hover
         >
-          <template v-slot:activator="{ on }">
+          <template v-slot:activator="{ props }">
             <v-btn
               class="hidden-sm-and-down"
               :to="item.path"
               :href="item.href"
               text
-              v-on="on"
+              v-bind="props"
               v-i18n="item.msg || item.title"
             ></v-btn>
           </template>
@@ -93,19 +59,17 @@
               :key="subItem.title"
               :to="subItem.path"
             >
-              <v-list-item-content>
                 <v-list-item-title
                   v-i18n="subItem.msg || subItem.title"
                   :to="item.path"
                 ></v-list-item-title>
-              </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-menu>
       </v-toolbar-items>
       <v-app-bar-nav-icon
         @click.stop="sidebar = !sidebar"
-        class="hidden-md-and-up"
+        class="d-flex d-md-none"
       ></v-app-bar-nav-icon>
     </v-app-bar>
 
@@ -127,19 +91,8 @@
 <script>
 import smcFooter from "./components/Footer";
 import { useI18n } from "vue-banana-i18n";
-
-export default {
-  name: "App",
-  components: { smcFooter },
-  computed: {
-    locale(){
-      const bananaI18n = useI18n();
-      return bananaI18n.locale
-    }
-  },
-  data: () => ({
-    sidebar: false,
-    menuItems: [
+import {ref, computed} from "vue";
+const menuItems = [
       {
         title: "Blog",
         msg: "menu-blog",
@@ -164,72 +117,10 @@ export default {
         title: "Fonts",
         path: "/fonts",
         msg: "menu-fonts",
-        items: [
-          {
-            title: "Anjali",
-            path: "/fonts/anjali",
-            msg: "anjalioldlipi",
-          },
-          {
-            title: "Chilanka",
-            path: "/fonts/chilanka",
-            msg: "chilanka",
-          },
-          {
-            title: "Dyuthi",
-            path: "/fonts/dyuthi",
-            msg: "dyuthi",
-          },
-          {
-            title: "Gayathri",
-            path: "/fonts/gayathri",
-            msg: "gayathri",
-          },
-          {
-            title: "Karumbi",
-            path: "/fonts/karumbi",
-            msg: "karumbi",
-          },
-          {
-            title: "Keraleeyam",
-            path: "/fonts/keraleeyam",
-            msg: "keraleeyam",
-          },
-          {
-            title: "Manjari",
-            path: "/fonts/manjari",
-            msg: "manjari",
-          },
-          {
-            title: "Meera",
-            path: "/fonts/meera",
-            msg: "meera",
-          },
-          {
-            title: "Rachana",
-            path: "/fonts/rachana",
-            msg: "rachana",
-          },
-          {
-            title: "Uroob",
-            path: "/fonts/uroob",
-            msg: "uroob",
-          },
-          {
-            title: "RaghuMalayalam",
-            path: "/fonts/raghumalayalam",
-            msg: "raghumalayalamsans",
-          },
-          {
-            title: "Suruma",
-            path: "/fonts/suruma",
-            msg: "suruma",
-          },
-        ],
       },
       {
         title: "Community",
-        path: "/",
+        path: "/about",
         msg: "menu-community",
         items: [
           {
@@ -264,14 +155,29 @@ export default {
           },
         ],
       },
-    ],
-  }),
-  methods: {
-    onChangeLocale: function (locale) {
+    ];
+
+export default {
+  name: "App",
+  components: { smcFooter },
+  setup(){
+    const sidebar=ref(false);
+    const locale = computed( () => {
+      const bananaI18n = useI18n();
+      return bananaI18n.locale;
+    } );
+    const onChangeLocale= (locale) =>{
       localStorage.setItem("smc.org.in.locale", locale);
       location.reload();
-    },
-  },
+    };
+    return {
+      sidebar,
+      menuItems,
+      locale,
+      onChangeLocale
+    }
+  }
+
 };
 </script>
 
