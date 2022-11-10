@@ -10,7 +10,7 @@
         sm="6"
         lg="4"
       >
-        <v-card hover :class="`mx-auto `" tile :key="font.title">
+        <v-card :key="font.title">
           <v-card-title
             :class="`font-${font.title.toLowerCase()}`"
             v-text="$i18n(font.msg || font.title.toLowerCase())"

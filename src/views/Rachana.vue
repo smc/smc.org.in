@@ -95,15 +95,13 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Regular.ttf"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Bold.ttf"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("bold") }}
               </v-btn>
@@ -113,15 +111,13 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Regular.woff2"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Bold.woff2"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("bold") }}
               </v-btn>
@@ -130,8 +126,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/rachana/rachana.zip"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("zip") }}
               </v-btn>

@@ -157,20 +157,17 @@
               OTF Format, recommended for all modern operating systems:
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Regular.otf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("regular") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.otf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("thin") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.otf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("bold") }}</v-btn
               >
             </li>
@@ -178,20 +175,17 @@
               TTF Format, for old versions of operating systems:
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Regular.ttf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("regular") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.ttf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("thin") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.ttf"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("bold") }}</v-btn
               >
             </li>
@@ -200,20 +194,17 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Regular.woff2"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("regular") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Thin.woff2"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("thin") }}</v-btn
               >
               <v-btn
                 href="/downloads/fonts/gayathri/Gayathri-Bold.woff2"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("bold") }}</v-btn
               >
             </li>
@@ -221,8 +212,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/gayathri/gayathri.zip"
-                color="primary"
-                text
+                variant="primary"
                 >{{ $i18n("zip") }}</v-btn
               >
             </li>
@@ -356,7 +346,7 @@
       </section>
       <section id="history" class="row">
         <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on Feb 21, 2019zzzzzzzzs.</p>
+        <p class="col-lg-8 col-md-12">Released on Feb 21, 2019.</p>
       </section>
       <section id="faq" class="row">
         <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>

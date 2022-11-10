@@ -122,8 +122,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans-Regular.ttf"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -133,8 +132,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans-Regular.woff2"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -143,8 +141,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/raghumalayalamsans.zip"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("zip") }}
               </v-btn>

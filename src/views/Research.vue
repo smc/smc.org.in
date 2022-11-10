@@ -19,7 +19,7 @@
               <v-card-actions class="justify-end">
                 <v-btn
                   text
-                  color="primary"
+                  variant="primary"
                   v-for="link in entry.links"
                   :href="link.url"
                   v-text="link.text"

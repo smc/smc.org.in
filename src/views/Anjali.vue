@@ -91,8 +91,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/anjalioldlipi/AnjaliOldLipi-Regular.ttf"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -102,8 +101,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/anjalioldlipi/AnjaliOldLipi-Regular.woff2"
-                color="primary"
-                text
+                variant="primary"
                 v-i18n="'regular'"
               >
               </v-btn>
@@ -112,8 +110,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/anjalioldlipi/anjalioldlipi.zip"
-                color="primary"
-                text
+                variant="primary"
                 v-i18n="'zip'"
               >
               </v-btn>

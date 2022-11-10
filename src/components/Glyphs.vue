@@ -8,7 +8,7 @@
             v-on="on"
             tile
             text
-            color="primary"
+            variant="primary"
             :style="`font-family:${font} !important;`"
             v-text="glyph.value"
           >

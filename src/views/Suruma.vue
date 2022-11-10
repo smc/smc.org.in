@@ -86,8 +86,8 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/suruma/Suruma.ttf"
-                color="primary"
-                text
+                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -97,8 +97,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/suruma/Suruma.woff2"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -107,8 +106,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/suruma/suruma.zip"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("zip") }}
               </v-btn>

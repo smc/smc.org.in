@@ -87,8 +87,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.ttf"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -98,8 +97,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.woff2"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -108,8 +106,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/keraleeyam/keraleeyam.zip"
-                color="primary"
-                text
+                variant="primary"
               >
                 {{ $i18n("zip") }}
               </v-btn>

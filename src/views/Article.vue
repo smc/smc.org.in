@@ -8,7 +8,7 @@
       <h1 class="text-h2 my-10" v-i18n="'menu-articles'"></h1>
       <v-text-field
         v-model="search"
-        :append-icon="mdiMagnify"
+        :prepend-icon="mdiMagnify"
         label="Search"
         class="my-10"
         solo
@@ -19,16 +19,11 @@
       <v-card flat>
         <v-list>
           <v-list-item-group color="primary">
-            <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url">
-              <v-list-item-icon>
-                <v-icon>{{ mdiFileDocument }}</v-icon>
-              </v-list-item-icon>
-              <v-list-item-content>
+            <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url"  :prepend-icon="mdiFileDocument">
                 <v-list-item-title v-text="item.title"></v-list-item-title>
                 <v-list-item-subtitle
                   v-text="item.author"
                 ></v-list-item-subtitle>
-              </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
         </v-list>
