@@ -10,7 +10,7 @@
               <v-list-item-content>
                 <div class="overline mb-4">
                   <v-btn value="featured" v-if="link.featured" text>
-                    <v-icon icon="mdi-crown-outline" ></v-icon>
+                    <v-icon>{{ mdiCrownOutline }}</v-icon>
                     <span>{{ $i18n("featured") }}</span>
                   </v-btn>
                 </div>
@@ -34,7 +34,7 @@
                 rel="noopener noreferrer"
                 value="archiveorg"
               >
-                <v-icon :title="link.title" icon="mdi-launch"></v-icon>
+                <v-icon :title="link.title">{{ mdiLaunch }}</v-icon>
                 <span>{{ $i18n("archive") }}</span>
               </v-btn>
             </v-card-actions>
@@ -46,10 +46,13 @@
 </template>
 
 <script>
+import { mdiCrownOutline, mdiLaunch } from "@mdi/js";
 
 export default {
   name: "Media",
   data: () => ({
+    mdiCrownOutline,
+    mdiLaunch,
     links: {},
   }),
   created() {

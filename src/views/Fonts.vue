@@ -31,11 +31,13 @@
               :href="`/downloads/${font.path}/${font.title.toLowerCase()}.zip`"
             >
               {{ $i18n("download") }}
+              <v-icon>{{ mdiDownloadOutline }}</v-icon>
             </v-btn>
             <v-spacer />
 
             <v-btn :to="font.path" prepend-icon="mdi-arrow-right">
               Details
+              <v-icon>{{ mdiArrowRight }}</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -53,16 +55,19 @@
         :key="item.title"
         :title="item.title"
         :href="item.link"
-        prepend-icon="mdi-link"
+        :prepend-icon="mdiArrowRight"
       ></v-list-item>
     </v-list>
   </v-container>
 </template>
 
 <script>
+import { mdiArrowRight, mdiDownloadOutline } from "@mdi/js";
 import { useI18n } from "vue-banana-i18n";
 export default {
   data: () => ({
+    mdiArrowRight,
+    mdiDownloadOutline,
     fonts: [
       {
         title: "AnjaliOldLipi",

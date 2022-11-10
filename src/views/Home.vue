@@ -4,7 +4,7 @@
       <v-row class="text-center">
         <v-col cols="12">
           <v-img
-            src="src/assets/logo.svg"
+            :src="logo"
             class="my-3"
             contain
             height="200"
@@ -19,25 +19,25 @@
       <v-row class="text-center">
         <v-col cols="3">
           <v-btn class="ma-2" block large href="https://gitlab.com/smc">
-            <v-icon dark icon="mdi-git"></v-icon>
+            <v-icon dark>{{ mdiGit }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("source-code") }}</span>
           </v-btn>
         </v-col>
         <v-col cols="3">
           <v-btn class="ma-2" block large href="https://wiki.smc.org.in">
-            <v-icon dark icon="mdi-book-open-page-variant"></v-icon>
+            <v-icon dark>{{ mdiBookOpenPageVariant }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("wiki") }}</span>
           </v-btn>
         </v-col>
         <v-col cols="3">
           <v-btn class="ma-2" block large href="https://community.smc.org.in/">
-            <v-icon dark icon="mdi-forum-outline"></v-icon>
+            <v-icon dark>{{ mdiForumOutline }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("discussions") }}</span>
           </v-btn>
         </v-col>
         <v-col cols="3">
           <v-btn class="ma-2" block large href="https://t.me/smc_project">
-            <v-icon dark icon="mdi-send"></v-icon>
+            <v-icon dark>{{ mdiSend }}</v-icon>
             <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
           </v-btn>
         </v-col>
@@ -66,7 +66,7 @@
             height="100%"
           >
             <v-img
-              src="src/assets/images/manjari-card.png"
+              :src="manjaricard"
               height="200px"
             ></v-img>
 
@@ -85,7 +85,7 @@
             height="100%"
           >
             <v-img
-              src="src/assets/images/gayathri-card.png"
+              :src="gayathricard"
               height="200px"
             ></v-img>
 
@@ -104,7 +104,7 @@
             height="100%"
           >
             <v-img
-              src="src/assets/images/mlmorph-logo.svg"
+              :src="mlmorphlogo"
               height="200px"
             ></v-img>
             <v-card-title>Mlmorph</v-card-title>
@@ -151,7 +151,7 @@
             :to="`/blog/${post.slug}`"
           >
             <v-img
-              :src="post.feature_image || require('src/assets/logo.svg')"
+              :src="post.feature_image || logo"
               height="200px"
             ></v-img>
 
@@ -170,11 +170,30 @@
 </template>
 
 <script>
+import logo from "@/assets/logo.svg"
+import mlmorphlogo from "@/assets/images/mlmorph-logo.svg"
+import manjaricard from "@/assets/images/manjari-card.png"
+import gayathricard from "@/assets/images/gayathri-card.png"
+
+import {
+  mdiGit,
+  mdiSend,
+  mdiBookOpenPageVariant,
+  mdiForumOutline,
+} from "@mdi/js";
 
 export default {
   name: "Home",
   data: () => ({
     blogposts: [],
+    mdiGit,
+    mdiSend,
+    mdiForumOutline,
+    logo,
+    mlmorphlogo,
+    manjaricard,
+    gayathricard,
+    mdiBookOpenPageVariant,
   }),
   components: {},
   methods: {

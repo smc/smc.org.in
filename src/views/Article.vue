@@ -8,7 +8,7 @@
       <h1 class="text-h2 my-10" v-i18n="'menu-articles'"></h1>
       <v-text-field
         v-model="search"
-        :append-icon="mdi-magnify"
+        :append-icon="mdiMagnify"
         label="Search"
         class="my-10"
         solo
@@ -21,7 +21,7 @@
           <v-list-item-group color="primary">
             <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url">
               <v-list-item-icon>
-                <v-icon icon="mdi-file-document"></v-icon>
+                <v-icon>{{ mdiFileDocument }}</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title v-text="item.title"></v-list-item-title>
@@ -43,6 +43,7 @@ import MarkDownItVideo from "markdown-it-video";
 import MarkDownItAnchor from "markdown-it-anchor";
 import axios from "axios";
 import fm from "front-matter";
+import { mdiMagnify, mdiFileDocument } from "@mdi/js";
 
 import PostTitle from "../components/PostTitle";
 import articles from "../manifest.json";
@@ -55,6 +56,8 @@ export default {
     title: null,
     path: null,
     search: "",
+    mdiMagnify,
+    mdiFileDocument,
     articles: [],
     headers: [
       {

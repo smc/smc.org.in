@@ -9,8 +9,9 @@
             :href="link.url"
             target="_blank"
             rel="noopener noreferrer"
-            :icon="link.icon"
+            icon
           >
+            <v-icon :title="link.title">{{ link.icon }}</v-icon>
           </v-btn>
         </v-row>
       </v-card-text>
@@ -31,81 +32,90 @@
   </v-footer>
 </template>
 <script>
+import {
+  mdiTwitter,
+  mdiFacebook,
+  mdiSend,
+  mdiInstagram,
+  mdiMastodon,
+  mdiChat,
+  mdiForumOutline,
+  mdiAsterisk,
+  mdiChatAlert,
+  mdiGithub,
+  mdiGitlab,
+} from "@mdi/js";
 
-
-const links = [
-  {
-    name: "gitlab",
-    title: "GitLab",
-    url: "https://gitlab.com/smc",
-    icon: 'mdi-gitlab',
-  },
-  {
-    name: "github",
-    title: "Github",
-    url: "https://github.com/smc",
-    icon: 'mdi-github',
-  },
-  {
-    name: "telegram",
-    title: "Telegram",
-    url: "https://t.me/smc_project",
-    icon: 'mdi-send',
-  },
-  {
-    name: "facebook",
-    title: "Facebook",
-    url: "https://facebook.com/smcproject",
-    icon: 'mdi-facebook',
-  },
-  {
-    name: "instagram",
-    title: "Instagram",
-    url: "https://instagram.com/smcproject",
-    icon: 'mdi-instagram',
-  },
-  {
-    name: "twitter",
-    title: "Twitter",
-    url: "https://twitter.com/smcproject",
-    icon: 'mdi-twitter',
-  },
-  {
-    name: "discourse",
-    title: "Discussions",
-    url: "https://community.smc.org.in",
-    icon: "mdi-forum-outline",
-  },
-  {
-    name: "diaspora",
-    title: "Diaspora",
-    url: "https://diasp.org/people/71abaf650562c0a9",
-    icon: "mdi-asterisk",
-  },
-  {
-    name: "mastodon",
-    title: "Mastodon",
-    url: "https://floss.social/@smc",
-    icon: "mdi-mastodon",
-  },
-  {
-    name: "matrix",
-    title: "matrix",
-    url: "https://matrix.to/#/#smc-project:matrix.org",
-    icon: "mdi-chat-alert",
-  },
-  {
-    name: "irc",
-    title: "IRC on freenode",
-    url: "https://webchat.freenode.net/?randomnick=0&channels=smc-project",
-    icon: "mdi-chat",
-  },
-];
 export default {
-  setup() {
-    return {
-      links,
-    };
-  },
+  data: () => ({
+    links: [
+      {
+        name: "gitlab",
+        title: "GitLab",
+        url: "https://gitlab.com/smc",
+        icon: mdiGitlab,
+      },
+      {
+        name: "github",
+        title: "Github",
+        url: "https://github.com/smc",
+        icon: mdiGithub,
+      },
+      {
+        name: "telegram",
+        title: "Telegram",
+        url: "https://t.me/smc_project",
+        icon: mdiSend,
+      },
+      {
+        name: "facebook",
+        title: "Facebook",
+        url: "https://facebook.com/smcproject",
+        icon: mdiFacebook,
+      },
+      {
+        name: "instagram",
+        title: "Instagram",
+        url: "https://instagram.com/smcproject",
+        icon: mdiInstagram,
+      },
+      {
+        name: "twitter",
+        title: "Twitter",
+        url: "https://twitter.com/smcproject",
+        icon: mdiTwitter,
+      },
+      {
+        name: "discourse",
+        title: "Discussions",
+        url: "https://community.smc.org.in",
+        icon: mdiForumOutline,
+      },
+      {
+        name: "diaspora",
+        title: "Diaspora",
+        url: "https://diasp.org/people/71abaf650562c0a9",
+        icon: mdiAsterisk,
+      },
+      {
+        name: "mastodon",
+        title: "Mastodon",
+        url: "https://floss.social/@smc",
+        icon: mdiMastodon,
+      },
+      {
+        name: "matrix",
+        title: "matrix",
+        url: "https://matrix.to/#/#smc-project:matrix.org",
+        icon: mdiChatAlert,
+      },
+      {
+        name: "irc",
+        title: "IRC on freenode",
+        url: "https://webchat.freenode.net/?randomnick=0&channels=smc-project",
+        icon: mdiChat,
+      },
+    ],
+  }),
 };
 </script>

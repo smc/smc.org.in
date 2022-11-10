@@ -330,13 +330,13 @@
 </template>
 
 <script>
-
+import { mdiDownload } from "@mdi/js";
 import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
   data: () => ({
-
+    mdiDownload,
     fontdata: {},
   }),
   components: { FontTitle, FontPlayground },

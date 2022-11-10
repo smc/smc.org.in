@@ -66,6 +66,10 @@
 </style>
 
 <script>
+import indickeyboard from "@/assets/images/indickeyboard.png";
+import swanalekhalogo from "@/assets/images/ml-swanalekha.png";
+import varnamlogo from "@/assets/images/varnam.gif";
+
 export default {
   data: () => ({
     projects: [
@@ -73,7 +77,7 @@ export default {
         heading: "Input Tools",
         list: [
           {
-            logo: "src/assets/images/indickeyboard.png",
+            logo: indickeyboard,
             title: "Indic Keyboard",
             description: `
               Indic Keyboard is a MOSS Award winning, privacy aware versatile keyboard for Android users who wish to use Indic and Indian languages to type messages, compose emails and generally prefer to use them in addition to English on their phone. You can use this application to type anywhere in your phone that you would normally type in English. It currently supports 23 languages and 57 layouts.
@@ -91,7 +95,7 @@ export default {
           },
           {
             title: "Swanalekha",
-            logo: "src/assets/images/ml-swanalekha.png",
+            logo: swanalekhalogo,
             description: `
               Swanalekha is a famous transliteration based input tool available in all operating systems in desktops and mobile phones. It is very easy to learn using familiar Manglish based key mappings."
             `,
@@ -108,7 +112,7 @@ export default {
           },
           {
             title: "Varnam",
-            logo: "src/assets/images/varnam.gif",
+            logo: varnamlogo,
             description: `
               Varnam is a cross platform predictive transliterator for Indic
               languages. Varnam aims at providing consistent input experience

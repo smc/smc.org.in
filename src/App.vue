@@ -20,7 +20,7 @@
             alt="SMC Logo"
             class="shrink pr-1"
             contain
-            src="src/assets/logo.svg"
+            :src="logo"
             transition="scale-transition"
             width="48"
           />
@@ -89,6 +89,7 @@
 </template>
 
 <script>
+import logo from "@/assets/logo.svg"
 import smcFooter from "./components/Footer";
 import { useI18n } from "vue-banana-i18n";
 import {ref, computed} from "vue";
@@ -174,6 +175,7 @@ export default {
       sidebar,
       menuItems,
       locale,
+      logo,
       onChangeLocale
     }
   }
