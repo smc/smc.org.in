@@ -7,9 +7,12 @@
         author="Designer: Suresh P"
         link="/downloads/fonts/suruma/suruma.zip"
       />
-      <v-banner-text>
-        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
-      </v-banner-text>
+      <v-banner lines="three" icon="$warning" color="warning" class="my-4">
+        <v-banner-text>
+          This font is no longer actively maintained by SMC Project. Here you
+          can find the last released version.
+        </v-banner-text>
+      </v-banner>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -86,30 +89,20 @@
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
-              <v-btn
-                href="/downloads/fonts/suruma/Suruma.ttf"
-
-
-              >
+              <v-btn href="/downloads/fonts/suruma/Suruma.ttf">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/suruma/Suruma.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/suruma/Suruma.woff2">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/suruma/suruma.zip"
-
-              >
+              <v-btn href="/downloads/fonts/suruma/suruma.zip">
                 {{ $i18n("zip") }}
               </v-btn>
             </li>

@@ -7,16 +7,12 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/rachana/rachana.zip"
       />
-      <v-banner
-      lines="three"
-      icon="$warning"
-      color="warning"
-      class="my-4"
-    >
-      <v-banner-text>
-        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
-      </v-banner-text>
-    </v-banner>
+      <v-banner lines="three" icon="$warning" color="warning" class="my-4">
+        <v-banner-text>
+          This font is no longer actively maintained by SMC Project. Here you
+          can find the last released version.
+        </v-banner-text>
+      </v-banner>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -102,41 +98,26 @@
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
-              <v-btn
-                href="/downloads/fonts/rachana/Rachana-Regular.ttf"
-
-              >
+              <v-btn href="/downloads/fonts/rachana/Rachana-Regular.ttf">
                 {{ $i18n("regular") }}
               </v-btn>
-              <v-btn
-                href="/downloads/fonts/rachana/Rachana-Bold.ttf"
-
-              >
+              <v-btn href="/downloads/fonts/rachana/Rachana-Bold.ttf">
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/rachana/Rachana-Regular.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/rachana/Rachana-Regular.woff2">
                 {{ $i18n("regular") }}
               </v-btn>
-              <v-btn
-                href="/downloads/fonts/rachana/Rachana-Bold.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/rachana/Rachana-Bold.woff2">
                 {{ $i18n("bold") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/rachana/rachana.zip"
-
-              >
+              <v-btn href="/downloads/fonts/rachana/rachana.zip">
                 {{ $i18n("zip") }}
               </v-btn>
             </li>
