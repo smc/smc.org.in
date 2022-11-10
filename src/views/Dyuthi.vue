@@ -71,7 +71,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/dyuthi/Dyuthi-Regular.ttf"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -81,7 +81,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/dyuthi/Dyuthi-Regular.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -90,7 +90,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/dyuthi/dyuthi.zip"
-                variant="primary"
+
               >
                 {{ $i18n("zip") }}
               </v-btn>

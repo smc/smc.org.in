@@ -32,7 +32,7 @@
 
               <v-card-actions>
                 <v-btn
-                  variant="primary"
+
                   text
                   v-for="link in project.links"
                   :key="link.text"

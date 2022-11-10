@@ -7,6 +7,9 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/keraleeyam/keraleeyam.zip"
       />
+      <v-banner-text>
+        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+      </v-banner-text>
 
       <section id="header" class="row">
         <v-sheet class="col-12">
@@ -87,7 +90,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.ttf"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -97,7 +100,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/keraleeyam/Keraleeyam-Regular.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -106,7 +109,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/keraleeyam/keraleeyam.zip"
-                variant="primary"
+
               >
                 {{ $i18n("zip") }}
               </v-btn>

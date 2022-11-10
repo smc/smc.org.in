@@ -7,7 +7,9 @@
         author="Designer: Suresh P"
         link="/downloads/fonts/suruma/suruma.zip"
       />
-
+      <v-banner-text>
+        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+      </v-banner-text>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -86,7 +88,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/suruma/Suruma.ttf"
-                variant="primary"
+
 
               >
                 {{ $i18n("regular") }}
@@ -97,7 +99,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/suruma/Suruma.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -106,7 +108,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/suruma/suruma.zip"
-                variant="primary"
+
               >
                 {{ $i18n("zip") }}
               </v-btn>

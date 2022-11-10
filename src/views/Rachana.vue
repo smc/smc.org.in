@@ -7,7 +7,16 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/rachana/rachana.zip"
       />
-
+      <v-banner
+      lines="three"
+      icon="$warning"
+      color="warning"
+      class="my-4"
+    >
+      <v-banner-text>
+        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+      </v-banner-text>
+    </v-banner>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -95,13 +104,13 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Regular.ttf"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Bold.ttf"
-                variant="primary"
+
               >
                 {{ $i18n("bold") }}
               </v-btn>
@@ -111,13 +120,13 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Regular.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
               <v-btn
                 href="/downloads/fonts/rachana/Rachana-Bold.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("bold") }}
               </v-btn>
@@ -126,7 +135,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/rachana/rachana.zip"
-                variant="primary"
+
               >
                 {{ $i18n("zip") }}
               </v-btn>
@@ -173,7 +182,7 @@
       <section id="playground" class="row">
         <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-12">
-          <font-playground name="Rachana" />
+          <font-playground name="Rachana" weights="['Regular','Bold']" />
         </div>
       </section>
       <section id="languages" class="row">

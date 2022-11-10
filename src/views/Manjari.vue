@@ -76,19 +76,18 @@
               OTF Format, recommended for all modern operating systems:
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Regular.otf"
-                variant="primary"
                 v-i18n="'regular'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.otf"
-                variant="primary"
+
                 v-i18n="'thin'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.otf"
-                variant="primary"
+
                 v-i18n="'bold'"
               >
               </v-btn>
@@ -97,19 +96,19 @@
               TTF Format, for old versions of operating systems:
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Regular.ttf"
-                variant="primary"
+
                 v-i18n="'regular'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.ttf"
-                variant="primary"
+
                 v-i18n="'thin'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.ttf"
-                variant="primary"
+
                 v-i18n="'bold'"
               >
               </v-btn>
@@ -119,19 +118,19 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Regular.woff2"
-                variant="primary"
+
                 v-i18n="'regular'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Thin.woff2"
-                variant="primary"
+
                 v-i18n="'thin'"
               >
               </v-btn>
               <v-btn
                 href="/downloads/fonts/manjari/Manjari-Bold.woff2"
-                variant="primary"
+
                 v-i18n="'bold'"
               >
               </v-btn>
@@ -140,7 +139,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/manjari/manjari.zip"
-                variant="primary"
+
                 v-i18n="'zip'"
               >
               </v-btn>
@@ -378,7 +377,7 @@
       <section id="playground" class="row">
         <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
         <div class="col-lg-12">
-          <font-playground name="Manjari" />
+          <font-playground name="Manjari" weights="['Thin','Regular','Bold']"/>
         </div>
       </section>
       <section id="credits" class="row">

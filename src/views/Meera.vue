@@ -7,7 +7,9 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/meera/meera.zip"
       />
-
+      <v-banner-text>
+        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+      </v-banner-text>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel
@@ -109,7 +111,7 @@
               TTF Format:
               <v-btn
                 href="/downloads/fonts/meera/Meera-Regular.ttf"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -119,7 +121,7 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/meera/Meera-Regular.woff2"
-                variant="primary"
+
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -128,7 +130,7 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/meera/meera.zip"
-                variant="primary"
+
               >
                 {{ $i18n("zip") }}
               </v-btn>

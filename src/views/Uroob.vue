@@ -7,7 +7,9 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/uroob/uroob.zip"
       />
-
+      <v-banner-text>
+        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+      </v-banner-text>
       <section id="header" class="row">
         <v-sheet class="col-12">
           <v-carousel

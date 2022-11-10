@@ -80,9 +80,11 @@
           <v-btn small text @click="onChangeLocale('ml')">മലയാളം</v-btn>
         </v-col>
       </v-row>
-      <transition name="slide">
-        <router-view :locale="locale" />
-      </transition>
+      <router-view v-slot="{ Component }">
+        <transition>
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </v-main>
     <smc-footer></smc-footer>
   </v-app>
