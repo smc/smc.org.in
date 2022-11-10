@@ -187,6 +187,9 @@ export default {
 
 <style lang="less">
 @import "./assets/fonts.less";
+html {
+  font-family: "Manjari", "Gayathri", sans-serif !important;
+}
 #smcorgin {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -199,9 +202,7 @@ export default {
   .text-h5,
   .text-subtitle-1,
   .title {
-    &[lang="ml"] {
       font-family: "Manjari", "Gayathri", sans-serif !important;
-    }
   }
 
   &.v-application .display-5 {
