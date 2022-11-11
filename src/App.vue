@@ -239,12 +239,18 @@ html {
 
   &.v-application .display-5 {
     font-size: clamp(1rem, 3vw, 2rem) !important;
+    line-height: 1.4 !important;;
+    letter-spacing: 0 !important;;
   }
   &.v-application .text-h1 {
     font-size: clamp(2rem, 4vw, 3rem) !important;
+    line-height: 1.4 !important;;
+    letter-spacing: 0 !important;;
   }
   &.v-application .text-h2 {
     font-size: clamp(3rem, 5vw, 4rem) !important;
+    line-height: 1.4 !important;;
+    letter-spacing: 0 !important;;
   }
 }
 </style>

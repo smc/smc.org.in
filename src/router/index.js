@@ -47,6 +47,19 @@ const routerOptions = [
     params: true,
   },
   {
+    path: "/fonts/nupuram",
+    name: "font-nupuram",
+    view: "Nupuram",
+    params: true,
+  },
+  {
+    path: "/fonts/nupuram-calligraphy",
+    name: "font-nupuram-calligraphy",
+    view: "NupuramCalligraphy",
+    params: true,
+  },
+
+  {
     path: "/fonts/keraleeyam",
     name: "font-keraleeyam",
     view: "Keraleeyam",

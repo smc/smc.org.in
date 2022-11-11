@@ -23,7 +23,7 @@
       rounded
       large
       color="success"
-      class="col-xs-12 col-lg-3 offset-lg-1"
+      class="col-xs-12 col-lg-3  "
     >
       <v-icon>{{ mdiDownload }}</v-icon>
       {{ $i18n("download") }}

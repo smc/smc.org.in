@@ -14,11 +14,9 @@
       >
         <v-sheet class="col-12">
           <v-carousel
-            cycle
-            height="50vh"
-            class="manjari-slides"
-            hide-delimiter-background
-            :show-arrows="false"
+            hide-delimiters
+            height="60vh"
+            :show-arrows="true"
           >
             <v-carousel-item>
               <v-card
