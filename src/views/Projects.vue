@@ -1,5 +1,5 @@
 <template>
-  <v-container class="col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <article class="projects">
       <h1
         v-i18n="'menu-projects'"
@@ -15,42 +15,42 @@
 
         <section class="row my-2">
           <v-col
-            v-for="project in section.list"
-            :key="project.title"
-            cols="12"
-            xl="3"
-            lg="4"
-            md="6"
+          v-for="project in section.list"
+          :key="project.title"
+          cols="12"
+          xl="3"
+          lg="4"
+          md="6"
           >
-            <v-card
-              outlined
-              class="d-flex flex-column"
-            >
-              <v-img
-                v-if="project.logo"
-                :contain="!project.logo_style_cover"
-                :cover="project.logo_style_cover"
-                :src="project.logo"
-              />
-              <v-card-title>{{ project.title }}</v-card-title>
-              <v-card-subtitle v-if="project.subtitle">
-                {{ project.subtitle }}
-              </v-card-subtitle>
-              <v-card-text class="text--primary flex-grow-1">
-                {{ project.description }}
-              </v-card-text>
+          <v-card
+            outlined
+            class="d-flex flex-column"
+          >
+            <v-img
+              v-if="project.logo"
+              :contain="!project.logo_style_cover"
+              :cover="project.logo_style_cover"
+              :src="project.logo"
+            />
+            <v-card-title>{{ project.title }}</v-card-title>
+            <v-card-subtitle v-if="project.subtitle">
+              {{ project.subtitle }}
+            </v-card-subtitle>
+            <v-card-text class="text--primary flex-grow-1">
+              {{ project.description }}
+            </v-card-text>
 
-              <v-card-actions>
-                <v-btn
-                  v-for="link in project.links"
-                  :key="link.text"
-                  text
-                  :href="link.url"
-                >
-                  {{ link.text }}
-                </v-btn>
-              </v-card-actions>
-            </v-card>
+            <v-card-actions>
+              <v-btn
+                v-for="link in project.links"
+                :key="link.text"
+                text
+                :href="link.url"
+              >
+                {{ link.text }}
+              </v-btn>
+            </v-card-actions>
+          </v-card>
           </v-col>
         </section>
       </section>

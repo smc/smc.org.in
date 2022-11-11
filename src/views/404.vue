@@ -1,5 +1,5 @@
 <template>
-  <v-container class="col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <h1>Page not found</h1>
     <v-img
       height="80vh"

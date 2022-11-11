@@ -6,7 +6,7 @@
       max="200"
       label="Fontsize(px)"
       thumb-label="always"
-      class="col-12"
+      class="v-col-12"
     />
     <v-slider
       v-if="weights.length"
@@ -16,16 +16,16 @@
       step="100"
       label="Font Weight"
       thumb-label="always"
-      class="col-12"
+      class="v-col-12"
     />
     <div class="row">
-      <p class="col-12">
+      <p class="v-col-12">
         You can edit the following text and try different font sizes.
       </p>
     </div>
     <div
       contenteditable="true"
-      class="editor col-12"
+      class="editor v-col-12"
       :style="style"
       v-html="previewContent"
     />

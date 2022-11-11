@@ -1,5 +1,7 @@
 <template>
-  <v-container class="nupuram col-xl-8 col-sm-10 col-lg-12">
+  <v-container
+    class="nupuram v-col-xl-8 v-col-sm-10 v-col-lg-12"
+  >
     <main id="nupuram">
       <font-title
         :name="$i18n('nupuram')"
@@ -10,98 +12,98 @@
 
       <section class="header">
         <h1 class="var-animate">
-          <span>നൂ</span>
-          <span>പു</span>
-          <span>രം</span>
+          നൂപുരം
         </h1>
         <h1 class="var-animate">
-          <span>N</span>
-          <span>u</span>
-          <span>p</span>
-          <span>u</span>
-          <span>r</span>
-          <span>a</span>
-          <span>m</span>
+          Nupuram
         </h1>
       </section>
-      <section
-        class="playground"
-        contenteditable
-        :style="playgroundVariations"
+      <v-sheet
+        class="my-2 playground d-flex flex-wrap"
       >
-        <p>Variable font with 4 design axes.</p>
-        <p>One file.</p>
-        <p>Thousands of variations.</p>
-        <p>Infinite possibilities.</p>
-      </section>
-      <section class="flex-md-row flex-lg-column justify-start tools">
-        <v-slider
-          v-model="size"
-          min="8"
-          max="216"
-          label="Size(px)"
-          thumb-label="always"
-        />
-        <v-slider
-          v-model="weight"
-          min="100"
-          max="900"
-          label="Weight"
-          thumb-label="always"
-        />
-        <v-slider
-          v-model="slant"
-          min="-15"
-          max="0"
-          label="Slant"
-          thumb-label="always"
-        />
-        <v-slider
-          v-model="width"
-          min="75"
-          max="125"
-          label="Width"
-          thumb-label="always"
-        />
-        <v-slider
-          v-model="softness"
-          min="0"
-          max="100"
-          label="Softness"
-          thumb-label="always"
-        />
-      </section>
+        <v-card
+          variant="outlined"
+          :style="playgroundVariations"
+          contenteditable
+          class="content pa-5 v-col-md-8 v-col-sm-12  v-col-xs-12"
+        >
+          <p>Variable font with 4 design axes.</p>
+          <p>One file.</p>
+          <p>Thousands of variations.</p>
+          <p>Infinite possibilities.</p>
+        </v-card>
+        <v-card class="py-10 v-col-md-4 v-col-sm-12  v-col-xs-12 tools">
+          <v-slider
+            v-model="size"
+            min="8"
+            max="216"
+            label="Size(px)"
+            thumb-label="always"
+          />
+          <v-slider
+            v-model="weight"
+            min="100"
+            max="900"
+            label="Weight"
+            thumb-label="always"
+          />
+          <v-slider
+            v-model="slant"
+            min="-15"
+            max="0"
+            label="Slant"
+            thumb-label="always"
+          />
+          <v-slider
+            v-model="width"
+            min="75"
+            max="125"
+            label="Width"
+            thumb-label="always"
+          />
+          <v-slider
+            v-model="softness"
+            min="0"
+            max="100"
+            label="Softness"
+            thumb-label="always"
+          />
+        </v-card>
+      </v-sheet>
 
-      <section
+
+      <v-sheet
         id="varinfo"
-        class="d-flex row"
+        class="d-flex flex-wrap row pa-5 py-10 "
       >
-        <h2 class="text-h2">
+        <h2 class="text-h2 v-col-lg-4">
           Find the right width, weight, & slant that fits you.
         </h2>
-        <p class="text-h5  ma-5">
+        <p class="text-h5  v-col-lg-8">
           <a
             href="https://web.dev/variable-fonts/"
           >Variable fonts</a> give you granular control of fonts are displayed by packaging a set of variable axes into one single font file.
           <br>
           Nupuram come with four variable axes each: weight (thin to black), width (condensed to expanded), soft(sharp to supersoft) and slant (regular to italics). By combining these axes freely, you have access to thousands of different looks, and endless of possibilities.
         </p>
-      </section>
-      <section
+      </v-sheet>
+      <v-sheet
         id="info"
-        class=" "
+        class="d-flex flex-wrap row pa-5 my-5"
       >
-        <p class="text-body-1">
+        <h2 class="text-h2 v-col-lg-4">
+          Free and Opensource
+        </h2>
+        <p class="text-body-1  v-col-lg-8">
           Nupuram is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
-        </p>
-        <p class="text-body-1">
+          <br>
           Nupuram typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/nupuram">gitlab repository</a>
         </p>
-      </section>
+      </v-sheet>
     </main>
   </v-container>
 </template>
@@ -150,21 +152,28 @@ export default {
 .playground {
   font-size: 5vw;
   text-align: center;
-  font-family: "Nupuram" !important;
+
   font-weight: 100;
-  background: rgb(var(--v-theme-primary));
+
   line-height: 1.2;
   padding: 10px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .content {
+    font-family: "Nupuram" !important;
+    min-height: 75vh;
+    max-height: 75vh;
+    overflow: auto;
+  }
+
 }
 
 .var-animate {
+  --dur: 10s;
+
   font-size: 12vw;
   font-family: "Nupuram" !important;
 
   background: linear-gradient(
-    90deg,
+    0deg,
     hsla(358, 85%, 68%, 1) 0%,
     hsla(41, 98%, 49%, 1) 100%
   );
@@ -174,9 +183,6 @@ export default {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.var-animate > span {
-  --dur: 10s;
 
   will-change: font-variation-settings;
   animation: vars var(--dur) infinite linear both;

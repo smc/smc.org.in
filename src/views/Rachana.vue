@@ -1,5 +1,5 @@
 <template>
-  <v-container class="rachana col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="rachana v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="rachana">
       <font-title
         :name="$i18n('rachana')"
@@ -22,7 +22,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             cycle
             height="400"
@@ -107,10 +107,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('download')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
@@ -145,10 +145,10 @@
         class="row"
       >
         <h2
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
           v-text="$i18n('webfonts')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use Rachana in web pages, webfonts can be used. You may copy the
             following css and add to your website:
@@ -164,10 +164,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('license')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Rachana is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -178,10 +178,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('sourcecode')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Rachana typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/rachana">gitlab repository</a>
@@ -192,18 +192,18 @@
         class="row"
       >
         <h2
-          class="col-lg-12"
+          class="v-col-lg-12"
           v-text="$i18n('Available glyphs')"
         />
         <h4
           v-if="fontdata && fontdata.summary"
-          class="col-lg-12"
+          class="v-col-lg-12"
         >
           {{ fontdata.summary.glyphs }} Glyphs
         </h4>
         <glyphs
           font="Rachana"
-          class="col-lg-12"
+          class="v-col-lg-12"
           :glyphs="fontdata.glyphs"
         />
       </section>
@@ -212,10 +212,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground
             name="Rachana"
             weights="['Regular','Bold']"
@@ -227,10 +227,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -249,7 +249,7 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
       </section>
@@ -258,10 +258,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving Rachana?
           </h4>

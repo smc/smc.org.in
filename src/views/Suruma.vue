@@ -1,5 +1,5 @@
 <template>
-  <v-container class="suruma col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="suruma v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="suruma">
       <font-title
         :name="$i18n('suruma')"
@@ -22,7 +22,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             cycle
             height="400"
@@ -98,10 +98,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('download')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
@@ -130,10 +130,10 @@
         class="row"
       >
         <h2
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
           v-text="$i18n('webfonts')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use Suruma in web pages, webfonts can be used. You may copy the
             following css and add to your website:
@@ -149,10 +149,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('license')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Suruma is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -163,10 +163,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('sourcecode')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Suruma typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/suruma">gitlab repository</a>
@@ -177,10 +177,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground name="Suruma" />
         </div>
       </section>
@@ -190,10 +190,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -212,7 +212,7 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
       </section>
@@ -221,10 +221,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('history')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Released on July 23, 2016.
         </p>
       </section>
@@ -233,10 +233,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving Suruma?
           </h4>

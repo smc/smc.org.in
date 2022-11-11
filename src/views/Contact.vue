@@ -1,5 +1,5 @@
 <template>
-  <v-container class="contact col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="contact v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <h1
       v-i18n="'menu-contact'"
       class="text-h2 my-10"

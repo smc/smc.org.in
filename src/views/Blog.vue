@@ -1,5 +1,5 @@
 <template>
-  <v-container class="col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <h1
       v-if="!post"
       v-i18n="'menu-blog'"
@@ -9,47 +9,47 @@
     <!-- Start Placeholders -->
     <v-row v-if="loading_slug">
       <v-col cols="12">
-        <article class="blogpost">
-          <post-title :loading="loading_slug" />
+      <article class="blogpost">
+        <post-title :loading="loading_slug" />
 
-          <main class="post-body my-10">
-            <v-skeleton-loader type="paragraph" />
-          </main>
-        </article>
+        <main class="post-body my-10">
+          <v-skeleton-loader type="paragraph" />
+        </main>
+      </article>
       </v-col>
     </v-row>
     <v-row v-else-if="loading_all">
       <v-col
-        v-for="n in 6"
-        :key="n"
-        cols="12"
-        lg="6"
-        class="my-6"
+      v-for="n in 6"
+      :key="n"
+      cols="12"
+      lg="6"
+      class="my-6"
       >
-        <v-sheet class="px-3 pt-3 pb-3">
-          <v-row justify="space-between">
-            <v-col
-              cols="12"
-              md="4"
-              class="pa-0"
-            >
-              <v-skeleton-loader type="image" />
-            </v-col>
+      <v-sheet class="px-3 pt-3 pb-3">
+        <v-row justify="space-between">
+          <v-col
+          cols="12"
+          md="4"
+          class="pa-0"
+          >
+          <v-skeleton-loader type="image" />
+          </v-col>
 
-            <v-col
-              cols="12"
-              md="8"
-            >
-              <v-card-subtitle>
-                <v-skeleton-loader type="text" />
-              </v-card-subtitle>
+          <v-col
+          cols="12"
+          md="8"
+          >
+          <v-card-subtitle>
+            <v-skeleton-loader type="text" />
+          </v-card-subtitle>
 
-              <v-card-text class="smc-blog-post-content-excerpt">
-                <v-skeleton-loader type="paragraph" />
-              </v-card-text>
-            </v-col>
-          </v-row>
-        </v-sheet>
+          <v-card-text class="smc-blog-post-content-excerpt">
+            <v-skeleton-loader type="paragraph" />
+          </v-card-text>
+          </v-col>
+        </v-row>
+      </v-sheet>
       </v-col>
     </v-row>
     <!-- End Placeholders -->
@@ -60,79 +60,79 @@
       justify="center"
     >
       <v-col cols="12">
-        <article class="blogpost">
-          <post-title
-            :image="post.feature_image"
-            :title="post.title"
-            :authors="post.authors"
-            :date="post.published_at"
-          />
-          <main
-            class="post-body my-10"
-            v-html="post.html"
-          />
-          <h2 class="text-h4 my-10">
-            Comments
-          </h2>
-          <discourse-comments
-            :enabled="true"
-            :title="post.url"
-          />
-        </article>
+      <article class="blogpost">
+        <post-title
+          :image="post.feature_image"
+          :title="post.title"
+          :authors="post.authors"
+          :date="post.published_at"
+        />
+        <main
+          class="post-body my-10"
+          v-html="post.html"
+        />
+        <h2 class="text-h4 my-10">
+          Comments
+        </h2>
+        <discourse-comments
+          :enabled="true"
+          :title="post.url"
+        />
+      </article>
       </v-col>
     </v-row>
 
     <div v-else>
       <v-row>
         <v-col
-          v-for="post in blogposts"
-          :key="post.id"
-          cols="12"
-          lg="6"
-          class="my-6"
+        v-for="post in blogposts"
+        :key="post.id"
+        cols="12"
+        lg="6"
+        class="my-6"
         >
-          <v-card
-            outlined
-            hover
-            class="card-blogpost"
-            :to="`/blog/${post.slug}`"
-          >
-            <v-row justify="space-between">
-              <v-col
-                cols="12"
-                md="4"
-                class="pa-0"
-              >
-                <v-img
-                  cover
-                  :src="post.feature_image"
-                  lazy-src="src/assets/logo.svg"
-                  height="250px"
-                />
-              </v-col>
+        <v-card
+          outlined
+          hover
+          class="card-blogpost"
+          :to="`/blog/${post.slug}`"
+        >
+          <v-row justify="space-between">
+            <v-col
+            cols="12"
+            md="4"
+            class="pa-0"
+            >
+            <v-img
+              cover
+              :src="post.feature_image"
+              lazy-src="src/assets/logo.svg"
+              height="250px"
+            />
+            </v-col>
 
-              <v-col
-                cols="12"
-                md="8"
-              >
-                <v-card-title
-                  class="smc-blog-post-content-title"
-                  lang="ml"
-                >
-                  {{ post.title }}
-                </v-card-title>
+            <v-col
+            cols="12"
+            md="8"
+            >
+            <v-card-title
+              class="smc-blog-post-content-title"
+              lang="ml"
+            >
+              {{ post.title }}
+            </v-card-title>
 
-                <v-card-subtitle
-                  class="smc-blog-post-content-date"
-                  v-text="new Date(post.published_at).toDateString()"
-                />
+            <v-card-subtitle
+              class="smc-blog-post-content-date"
+              v-text="new Date(post.published_at).toDateString()"
+            />
 
-                <v-card-text class="smc-blog-post-content-excerpt">
-                  {{ stripMd(post.excerpt) }}
-                </v-card-text>
-              </v-col>
-            </v-row>
-          </v-card>
+            <v-card-text class="smc-blog-post-content-excerpt">
+              {{ stripMd(post.excerpt) }}
+            </v-card-text>
+            </v-col>
+          </v-row>
+        </v-card>
         </v-col>
       </v-row>
     </div>

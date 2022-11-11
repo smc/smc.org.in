@@ -3,14 +3,14 @@
     id="intro"
     class="row"
   >
-    <div class="col-12">
+    <div class="v-col-12">
       <h1
         class="text-h2"
         v-text="name"
       />
     </div>
 
-    <div class="col-xs-12 col-lg-8">
+    <div class="v-col-xs-12 v-col-lg-8">
       <p class="title-2">
         {{ author }}
       </p>
@@ -23,7 +23,7 @@
       rounded
       large
       color="success"
-      class="col-xs-12 col-lg-3  "
+      class="v-col-xs-12 v-col-md-3"
     >
       <v-icon>{{ mdiDownload }}</v-icon>
       {{ $i18n("download") }}

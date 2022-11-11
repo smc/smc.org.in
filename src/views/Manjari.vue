@@ -1,5 +1,5 @@
 <template>
-  <v-container class="manjari col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="manjari v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="manjari">
       <font-title
         :name="$i18n('manjari')"
@@ -12,7 +12,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             hide-delimiters
             height="60vh"
@@ -83,9 +83,9 @@
       >
         <h2
           v-i18n="'download'"
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               OTF Format, recommended for all modern operating systems:
@@ -148,10 +148,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('design')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             Manjari means pearl. It is also the name of a poetic metre in
             Malayalam. This is the second font after Chilanka handwriting font
@@ -208,10 +208,10 @@
         class="row"
       >
         <h2
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
           v-text="$i18n('webfonts')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use Manjari in web pages, webfonts can be used. You may copy the
             following css and add to your website:
@@ -236,10 +236,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('license')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Manjari is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -250,10 +250,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('sourcecode')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Manjari typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/manjari">gitlab repository</a>
@@ -261,11 +261,11 @@
       </section>
       <!--
       <section id="glyphs" class="row">
-        <h2 v-text="$i18n('Available glyphs')" class="col-lg-12"></h2>
-        <h4 v-if="fontdata && fontdata.summary" class="col-lg-12">
+        <h2 v-text="$i18n('Available glyphs')" class="v-col-lg-12"></h2>
+        <h4 v-if="fontdata && fontdata.summary" class="v-col-lg-12">
           {{ fontdata.summary.glyphs }} Glyphs
         </h4>
-        <glyphs font="Manjari" class="col-lg-12" :glyphs="fontdata.glyphs" />
+        <glyphs font="Manjari" class="v-col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
       -->
       <section
@@ -273,10 +273,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -297,10 +297,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             Manjari comes with many OpenType features that can be used to tailor
             functionality and aesthetics to your specific needs. Some of these
@@ -417,10 +417,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground
             name="Manjari"
             weights="['Thin','Regular','Bold']"
@@ -432,10 +432,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('credits')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             Manjari belongs to the typefaces released by Swathanthra Malayalam
             Computing, a volunteer driven organization for developing and
@@ -475,10 +475,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving Manjari?
           </h4>

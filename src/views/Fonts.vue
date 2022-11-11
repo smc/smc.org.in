@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fonts col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="fonts v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <h1
       v-i18n="'menu-fonts'"
       class="text-h2 my-10"
@@ -47,6 +47,7 @@
             </v-btn>
           </v-card-actions>
         </v-card>
+      </v-col>
       </v-col>
     </v-row>
     <h2 class="text-h2 my-10">

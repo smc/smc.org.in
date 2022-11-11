@@ -1,5 +1,5 @@
 <template>
-  <v-container class="nupuramcalligraphy col-xl-8 col-sm-10 col-lg-12">
+  <v-container class="nupuramcalligraphy v-col-xl-8 v-col-sm-10 v-col-lg-12">
     <main id="nupuramcalligraphy">
       <font-title
         :name="$i18n('nupuramcalligraphy')"
@@ -10,75 +10,76 @@
 
       <section class="header">
         <h1 class="var-animate">
-          <span>നൂ</span>
-          <span>പു</span>
-          <span>രം</span>
+          നൂപുരം
         </h1>
         <h1 class="var-animate">
-          <span>N</span>
-          <span>u</span>
-          <span>p</span>
-          <span>u</span>
-          <span>r</span>
-          <span>a</span>
-          <span>m</span>
+          Nupuram
         </h1>
       </section>
-      <section
-        class="playground"
-        contenteditable
-        :style="playgroundVariations"
+      <v-sheet
+
+        class="my-2 playground d-flex flex-wrap"
       >
-        <p>Calligraphic style Variable font.</p>
-        <p>One file.</p>
-        <p>Variable Calligraphic pen nib width</p>
-        <p>Infinite possibilities.</p>
-      </section>
-      <section class="flex-md-row flex-lg-column justify-start tools">
-        <v-slider
-          v-model="size"
-          min="8"
-          max="216"
-          label="Size(px)"
-          thumb-label="always"
-        />
-        <v-slider
-          v-model="weight"
-          min="100"
-          max="900"
-          label="Weight"
-          thumb-label="always"
-        />
-      </section>
-      <section
+        <v-card
+          variant="outlined"
+          contenteditable
+          :style="playgroundVariations"
+          class="content pa-5  v-col-md-8 v-col-sm-12  v-col-xs-12"
+        >
+          <p>Calligraphic style Variable font.</p>
+          <p>One file.</p>
+          <p>Variable Calligraphic pen nib width</p>
+          <p>Infinite possibilities.</p>
+        </v-card>
+        <v-card class="v-col-md-4 v-col-sm-12  v-col-xs-12 tools">
+          <v-slider
+            v-model="size"
+            min="8"
+            max="216"
+            label="Size(px)"
+            thumb-label="always"
+          />
+          <v-slider
+            v-model="weight"
+            min="100"
+            max="900"
+            label="Weight"
+            thumb-label="always"
+          />
+        </v-card>
+      </v-sheet>
+      <v-sheet
         id="varinfo"
-        class="d-flex row"
+        class="d-flex flex-wrap row pa-5 py-10 "
       >
-        <h2 class="text-h2">
+        <h2 class="text-h2 v-col-lg-4">
           Find the right weight that fits you.
         </h2>
-        <p class="text-h5  ma-5">
+        <p class="text-h5  v-col-lg-8">
           <a
             href="https://web.dev/variable-fonts/"
           >Variable fonts</a> give you granular control of fonts are displayed by packaging a set of variable axes into one single font file.
           <br>
           Nupuram Calligraphy ome with single variable axis: weight (thin to black). By using this axis freely, you have access to different looks, and endless of possibilities.
         </p>
-      </section>
-      <section
+      </v-sheet>
+      <v-sheet
         id="info"
-        class="row"
+        class="d-flex flex-wrap row pa-5 my-5"
       >
-        <p>
-          Nupuram Calligraphy is licensed under the
+        <h2 class="text-h2 v-col-lg-4">
+          Free and Opensource
+        </h2>
+        <p class="text-body-1  v-col-lg-8">
+          Nupuram is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
-        </p><p>
-          Nupuram Calligraphy typefaces's source code, including svg drawings, build scripts
+          <br>
+          Nupuram typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/nupuram">gitlab repository</a>
         </p>
-      </section>
+      </v-sheet>
     </main>
   </v-container>
 </template>
@@ -124,25 +125,29 @@ export default {
   text-align: center;
 }
 
+
 .playground {
   font-size: 5vw;
   text-align: center;
-  font-family: "Nupuram Calligraphy" !important;
+
   font-weight: 100;
-  background: rgb(var(--v-theme-primary));
+
   line-height: 1.2;
   padding: 10px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .content {
+    font-family: "Nupuram Calligraphy" !important;
+    min-height: 75vh;
+    max-height: 75vh;
+    overflow: auto;
+  }
 
+}
 .var-animate {
   font-size: 12vw;
   font-family: "Nupuram Calligraphy" !important;
   line-height: 1.5;
   padding: 10px;
-}
-.var-animate > span {
+
   --dur: 10s;
 
   will-change: font-variation-settings;

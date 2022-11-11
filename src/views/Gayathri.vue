@@ -1,5 +1,5 @@
 <template>
-  <v-container class="gayathri col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="gayathri v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="gayathri">
       <font-title
         :name="$i18n('gayathri')"
@@ -12,7 +12,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             hide-delimiters
             height="60vh"
@@ -172,10 +172,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('download')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               OTF Format, recommended for all modern operating systems:
@@ -248,10 +248,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('design')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>Gayathri</p>
         </div>
       </section>
@@ -260,10 +260,10 @@
         class="row"
       >
         <h2
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
           v-text="$i18n('webfonts')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use Gayathri in web pages, webfonts can be used. You may copy the
             following css and add to your website:
@@ -288,10 +288,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('license')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Gayathri is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -302,10 +302,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('sourcecode')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Gayathri typefaces's source code, including svg drawings, build
           scripts are available at
           <a href="https://gitlab.com/smc/fonts/gayathri">gitlab repository</a>
@@ -317,10 +317,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -341,10 +341,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground
             name="Gayathri"
             weights="['Thin','Regular','Bold']"
@@ -356,10 +356,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             Gayathri comes with many OpenType features that can be used to
             tailor functionality and aesthetics to your specific needs. Some of
@@ -375,30 +375,30 @@
               </v-row>
               <v-row>
                 <v-col
-                  class="font-gayathri"
-                  style="font-feature-settings: 'salt' 1"
+                class="font-gayathri"
+                style="font-feature-settings: 'salt' 1"
                 >
-                  ച്ച
+                ച്ച
                 </v-col>
                 <v-col
-                  class="font-gayathri"
-                  style="font-feature-settings: 'salt' 2"
+                class="font-gayathri"
+                style="font-feature-settings: 'salt' 2"
                 >
-                  ച്ച
+                ച്ച
                 </v-col>
               </v-row>
               <v-row>
                 <v-col
-                  class="font-gayathri"
-                  style="font-feature-settings: 'salt' 1"
+                class="font-gayathri"
+                style="font-feature-settings: 'salt' 1"
                 >
-                  ള്ള
+                ള്ള
                 </v-col>
                 <v-col
-                  class="font-gayathri"
-                  style="font-feature-settings: 'salt' 2"
+                class="font-gayathri"
+                style="font-feature-settings: 'salt' 2"
                 >
-                  ള്ള
+                ള്ള
                 </v-col>
               </v-row>
               <p>
@@ -423,10 +423,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('history')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Released on Feb 21, 2019.
         </p>
       </section>
@@ -435,10 +435,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving Gayathri?
           </h4>

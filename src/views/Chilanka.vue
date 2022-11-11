@@ -1,5 +1,5 @@
 <template>
-  <v-container class="chilanka col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="chilanka v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="chilanka">
       <font-title
         :name="$i18n('chilanka')"
@@ -12,7 +12,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             cycle
             height="400"
@@ -145,10 +145,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('download')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
@@ -177,10 +177,10 @@
         class="row"
       >
         <h2
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
           v-text="$i18n('webfonts')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use Chilanka in web pages, webfonts can be used. You may copy the
             following css and add to your website:
@@ -205,10 +205,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('license')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Chilanka is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -219,10 +219,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('sourcecode')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Chilanka typefaces's source code, including svg drawings, build
           scripts are available at
           <a href="https://gitlab.com/smc/fonts/chilanka">gitlab repository</a>
@@ -233,18 +233,18 @@
         class="row"
       >
         <h2
-          class="col-lg-12"
+          class="v-col-lg-12"
           v-text="$i18n('Available glyphs')"
         />
         <h4
           v-if="fontdata && fontdata.summary"
-          class="col-lg-12"
+          class="v-col-lg-12"
         >
           {{ fontdata.summary.glyphs }} Glyphs
         </h4>
         <glyphs
           font="Chilanka"
-          class="col-lg-12"
+          class="v-col-lg-12"
           :glyphs="fontdata.glyphs"
         />
       </section>
@@ -253,10 +253,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -275,10 +275,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             Chilanka comes with many OpenType features that can be used to
             tailor functionality and aesthetics to your specific needs. Some of
@@ -294,30 +294,30 @@
               </v-row>
               <v-row>
                 <v-col
-                  class="font-chilanka"
-                  style="font-feature-settings: 'salt' 1"
+                class="font-chilanka"
+                style="font-feature-settings: 'salt' 1"
                 >
-                  ച്ച
+                ച്ച
                 </v-col>
                 <v-col
-                  class="font-chilanka"
-                  style="font-feature-settings: 'salt' 2"
+                class="font-chilanka"
+                style="font-feature-settings: 'salt' 2"
                 >
-                  ച്ച
+                ച്ച
                 </v-col>
               </v-row>
               <v-row>
                 <v-col
-                  class="font-chilanka"
-                  style="font-feature-settings: 'salt' 1"
+                class="font-chilanka"
+                style="font-feature-settings: 'salt' 1"
                 >
-                  ള്ള
+                ള്ള
                 </v-col>
                 <v-col
-                  class="font-chilanka"
-                  style="font-feature-settings: 'salt' 2"
+                class="font-chilanka"
+                style="font-feature-settings: 'salt' 2"
                 >
-                  ള്ള
+                ള്ള
                 </v-col>
               </v-row>
               <p>
@@ -342,10 +342,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground name="Chilanka" />
         </div>
       </section>
@@ -354,10 +354,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('history')"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           Released on October 27, 2014.
           <router-link
             to="/blog/new-handwriting-style-font-for-malayalam-chilanka"
@@ -371,10 +371,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving Chilanka?
           </h4>

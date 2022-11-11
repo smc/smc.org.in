@@ -1,5 +1,5 @@
 <template>
-  <v-container class="anjalioldlipi col-xl-8 col-sm-10 col-xs-12">
+  <v-container class="anjalioldlipi v-col-xl-8 v-col-sm-10 v-col-xs-12">
     <main id="anjali">
       <font-title
         :name="$i18n('anjalioldlipi')"
@@ -12,7 +12,7 @@
         id="header"
         class="row"
       >
-        <v-sheet class="col-12">
+        <v-sheet class="v-col-12">
           <v-carousel
             cycle
             height="400"
@@ -97,10 +97,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('download')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
@@ -134,9 +134,9 @@
       >
         <h2
           v-i18n="'webfonts'"
-          class="webfonts col-lg-4 col-md-12"
+          class="webfonts v-col-lg-4 v-col-md-12"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <p>
             To use AnjaliOldLipi in web pages, webfonts can be used. You may
             copy the following css and add to your website:
@@ -153,9 +153,9 @@
       >
         <h2
           v-i18n="'license'"
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           AnjaliOldLipi is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
@@ -167,9 +167,9 @@
       >
         <h2
           v-i18n="'sourcecode'"
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
         />
-        <p class="col-lg-8 col-md-12">
+        <p class="v-col-lg-8 v-col-md-12">
           AnjaliOldLipi typefaces's source code, including svg drawings, build
           scripts are available at
           <a href="https://gitlab.com/smc/fonts/anjalioldlipi">gitlab repository</a>
@@ -181,10 +181,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Supported languages')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
@@ -203,10 +203,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('try-font')"
         />
-        <div class="col-lg-12">
+        <div class="v-col-lg-12">
           <font-playground name="AnjaliOldLipi" />
         </div>
       </section>
@@ -215,7 +215,7 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('Style variants')"
         />
       </section>
@@ -224,10 +224,10 @@
         class="row"
       >
         <h2
-          class="col-lg-4 col-md-12"
+          class="v-col-lg-4 v-col-md-12"
           v-text="$i18n('faq')"
         />
-        <div class="col-lg-8 col-md-12">
+        <div class="v-col-lg-8 v-col-md-12">
           <h4 id="contribute">
             Can I help with improving AnjaliOldLipi?
           </h4>
