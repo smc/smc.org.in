@@ -5,7 +5,6 @@ url: /articles/input-methods
 author: Ashik Salahudeen
 ---
 
-
 > This article is a work in progress. It currently tells you how to enable Malayalam in Ubuntu and Fedora.
 
 - [Terminology](#terminology)

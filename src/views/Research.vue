@@ -1,29 +1,35 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <h1 class="text-h2 my-10" v-i18n="'menu-research'"></h1>
+    <h1
+      v-i18n="'menu-research'"
+      class="text-h2 my-10"
+    />
 
     <article>
       <section
-        :id="section.id"
-        class="mb-10"
         v-for="section in research"
+        :id="section.id"
         :key="section.id"
+        class="mb-10"
       >
         <h2>{{ section.heading }}</h2>
         <section class="row my-2">
-          <v-col cols="12" v-for="entry in section.list" :key="entry.title">
+          <v-col
+            v-for="entry in section.list"
+            :key="entry.title"
+            cols="12"
+          >
             <v-card outlined>
               <v-card-title v-text="entry.title" />
               <v-card-subtitle v-text="entry.author" />
               <v-card-text v-html="entry.description" />
               <v-card-actions class="justify-end">
                 <v-btn
-                  text
-
                   v-for="link in entry.links"
+                  :key="link.text"
+                  text
                   :href="link.url"
                   v-text="link.text"
-                  :key="link.text"
                 />
               </v-card-actions>
             </v-card>

@@ -8,7 +8,10 @@
         link="/downloads/fonts/gayathri/gayathri.zip"
       />
 
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -23,7 +26,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-4 font-weight-thin py-2 my-4">ഗായത്രി</h1>
+                <h1 class="display-4 font-weight-thin py-2 my-4">
+                  ഗായത്രി
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -36,9 +41,15 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-1 my-2">ഗായത്രി</h1>
-                <h1 class="text-h2 font-weight-regular py-1 my-2">ഗായത്രി</h1>
-                <h1 class="text-h2 font-weight-bold py-1 my-2">ഗായത്രി</h1>
+                <h1 class="text-h2 font-weight-thin py-1 my-2">
+                  ഗായത്രി
+                </h1>
+                <h1 class="text-h2 font-weight-regular py-1 my-2">
+                  ഗായത്രി
+                </h1>
+                <h1 class="text-h2 font-weight-bold py-1 my-2">
+                  ഗായത്രി
+                </h1>
                 <p>Available in bold, regular, thin style variants.</p>
               </v-card>
             </v-carousel-item>
@@ -64,9 +75,15 @@
                 color="tranparent"
               >
                 <article>
-                  <div class="bold">ഗായത്രി</div>
-                  <div class="regular">ഗായത്രി</div>
-                  <div class="thin">ഗായത്രി</div>
+                  <div class="bold">
+                    ഗായത്രി
+                  </div>
+                  <div class="regular">
+                    ഗായത്രി
+                  </div>
+                  <div class="thin">
+                    ഗായത്രി
+                  </div>
                 </article>
               </v-card>
             </v-carousel-item>
@@ -142,91 +159,111 @@
                     glad to throw his cloak right off and complete his journey
                     more lightly clad.
                   </p>
-                  <p class="lesson">Persuasion is better than force</p>
+                  <p class="lesson">
+                    Persuasion is better than force
+                  </p>
                 </article>
               </v-card>
             </v-carousel-item>
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('download')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               OTF Format, recommended for all modern operating systems:
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Regular.otf"
-
-                >{{ $i18n("regular") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Thin.otf"
-
-                >{{ $i18n("thin") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Bold.otf"
-
-                >{{ $i18n("bold") }}</v-btn
-              >
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Regular.otf">
+                {{
+                  $i18n("regular")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Thin.otf">
+                {{
+                  $i18n("thin")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Bold.otf">
+                {{
+                  $i18n("bold")
+                }}
+              </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               TTF Format, for old versions of operating systems:
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Regular.ttf"
-
-                >{{ $i18n("regular") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Thin.ttf"
-
-                >{{ $i18n("thin") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Bold.ttf"
-
-                >{{ $i18n("bold") }}</v-btn
-              >
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Regular.ttf">
+                {{
+                  $i18n("regular")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Thin.ttf">
+                {{
+                  $i18n("thin")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Bold.ttf">
+                {{
+                  $i18n("bold")
+                }}
+              </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Regular.woff2"
-
-                >{{ $i18n("regular") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Thin.woff2"
-
-                >{{ $i18n("thin") }}</v-btn
-              >
-              <v-btn
-                href="/downloads/fonts/gayathri/Gayathri-Bold.woff2"
-
-                >{{ $i18n("bold") }}</v-btn
-              >
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Regular.woff2">
+                {{
+                  $i18n("regular")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Thin.woff2">
+                {{
+                  $i18n("thin")
+                }}
+              </v-btn>
+              <v-btn href="/downloads/fonts/gayathri/Gayathri-Bold.woff2">
+                {{
+                  $i18n("bold")
+                }}
+              </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/gayathri/gayathri.zip"
-
-                >{{ $i18n("zip") }}</v-btn
-              >
+              <v-btn href="/downloads/fonts/gayathri/gayathri.zip">
+                {{
+                  $i18n("zip")
+                }}
+              </v-btn>
             </li>
           </ul>
         </div>
       </section>
-      <section id="design" class="row">
-        <h2 v-text="$i18n('design')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="design"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('design')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>Gayathri</p>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Gayathri in web pages, webfonts can be used. You may copy the
@@ -236,26 +273,39 @@
             @import url('https://smc.org.in/fonts/gayathri.css'); html {
             font-family: 'Gayathri', sans-serif; }
           </code>
-          <h3 class="webfonts" v-text="$i18n('google-fonts-webfonts')"></h3>
+          <h3
+            class="webfonts"
+            v-text="$i18n('google-fonts-webfonts')"
+          />
           <p>
             Gayathri is also available in Google fonts. Using Gayathri from
             Google webfonts may be faster than the above approach. Please refer
-            <a href="https://fonts.google.com/specimen/Gayathri"
-              >google fonts documentation for Gayathri</a
-            >:
+            <a href="https://fonts.google.com/specimen/Gayathri">google fonts documentation for Gayathri</a>:
           </p>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Gayathri is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Gayathri typefaces's source code, including svg drawings, build
           scripts are available at
@@ -263,31 +313,53 @@
         </p>
       </section>
 
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
               Latin. The following languages are covered:
-              <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
+              <span
+                v-for="lang in supportedLanguages"
+                :key="lang"
+                class="mr-2"
+              >
                 {{ lang }}
               </span>
             </li>
           </ul>
         </div>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
-          <font-playground name="Gayathri" weights="['Thin','Regular','Bold']"/>
+          <font-playground
+            name="Gayathri"
+            weights="['Thin','Regular','Bold']"
+          />
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             Gayathri comes with many OpenType features that can be used to
@@ -306,25 +378,29 @@
                 <v-col
                   class="font-gayathri"
                   style="font-feature-settings: 'salt' 1"
-                  >ച്ച</v-col
                 >
+                  ച്ച
+                </v-col>
                 <v-col
                   class="font-gayathri"
                   style="font-feature-settings: 'salt' 2"
-                  >ച്ച</v-col
                 >
+                  ച്ച
+                </v-col>
               </v-row>
               <v-row>
                 <v-col
                   class="font-gayathri"
                   style="font-feature-settings: 'salt' 1"
-                  >ള്ള</v-col
                 >
+                  ള്ള
+                </v-col>
                 <v-col
                   class="font-gayathri"
                   style="font-feature-settings: 'salt' 2"
-                  >ള്ള</v-col
                 >
+                  ള്ള
+                </v-col>
               </v-row>
               <p>
                 To enable this alternatives use 'salt 2` variant. In CSS this
@@ -335,8 +411,7 @@
                 variants is usually allowed. Please read
                 <a
                   href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-manjari-chilanka/"
-                  >this article</a
-                >
+                >this article</a>
                 to see how to use this with Inkscape, Browsers, Libreoffice and
                 TeX.
               </p>
@@ -344,14 +419,30 @@
           </v-card>
         </div>
       </section>
-      <section id="history" class="row">
-        <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on Feb 21, 2019.</p>
+      <section
+        id="history"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('history')"
+        />
+        <p class="col-lg-8 col-md-12">
+          Released on Feb 21, 2019.
+        </p>
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Gayathri?</h4>
+          <h4 id="contribute">
+            Can I help with improving Gayathri?
+          </h4>
           <p>
             Yes you can! Gayathri is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -374,6 +465,7 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
@@ -459,7 +551,6 @@ export default {
       "su",
     ],
   }),
-  components: { FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/gayathri/Gayathri.json")
       .then((response) => response.json())

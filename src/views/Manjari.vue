@@ -8,7 +8,10 @@
         link="/downloads/fonts/manjari/manjari.zip"
       />
 
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -24,7 +27,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="display-4 font-weight-thin py-2 my-4">മഞ്ജരി</h1>
+                <h1 class="display-4 font-weight-thin py-2 my-4">
+                  മഞ്ജരി
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -37,9 +42,15 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-1 my-2">മഞ്ജരി</h1>
-                <h1 class="text-h2 font-weight-regular py-1 my-2">മഞ്ജരി</h1>
-                <h1 class="text-h2 font-weight-bold py-1 my-2">മഞ്ജരി</h1>
+                <h1 class="text-h2 font-weight-thin py-1 my-2">
+                  മഞ്ജരി
+                </h1>
+                <h1 class="text-h2 font-weight-regular py-1 my-2">
+                  മഞ്ജരി
+                </h1>
+                <h1 class="text-h2 font-weight-bold py-1 my-2">
+                  മഞ്ജരി
+                </h1>
                 <p>Available in bold, regular, thin style variants.</p>
               </v-card>
             </v-carousel-item>
@@ -68,87 +79,80 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-i18n="'download'" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          v-i18n="'download'"
+          class="col-lg-4 col-md-12"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               OTF Format, recommended for all modern operating systems:
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Regular.otf"
                 v-i18n="'regular'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Regular.otf"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Thin.otf"
-
                 v-i18n="'thin'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Thin.otf"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Bold.otf"
-
                 v-i18n="'bold'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Bold.otf"
+              />
             </li>
             <li class="my-4 font-weight-bold">
               TTF Format, for old versions of operating systems:
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Regular.ttf"
-
                 v-i18n="'regular'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Regular.ttf"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Thin.ttf"
-
                 v-i18n="'thin'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Thin.ttf"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Bold.ttf"
-
                 v-i18n="'bold'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Bold.ttf"
+              />
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Regular.woff2"
-
                 v-i18n="'regular'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Regular.woff2"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Thin.woff2"
-
                 v-i18n="'thin'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Thin.woff2"
+              />
               <v-btn
-                href="/downloads/fonts/manjari/Manjari-Bold.woff2"
-
                 v-i18n="'bold'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/Manjari-Bold.woff2"
+              />
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
               <v-btn
-                href="/downloads/fonts/manjari/manjari.zip"
-
                 v-i18n="'zip'"
-              >
-              </v-btn>
+                href="/downloads/fonts/manjari/manjari.zip"
+              />
             </li>
           </ul>
         </div>
       </section>
-      <section id="design" class="row">
-        <h2 v-text="$i18n('design')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="design"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('design')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             Manjari means pearl. It is also the name of a poetic metre in
@@ -201,8 +205,14 @@
           </p>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Manjari in web pages, webfonts can be used. You may copy the
@@ -215,26 +225,36 @@
           <h3
             class="webfonts my-2"
             v-text="$i18n('google-fonts-webfonts')"
-          ></h3>
+          />
           <p>
             Manjari is also available in Google fonts. Using Manjari from Google
             webfonts may be faster than the above approach. Please refer
-            <a href="https://fonts.google.com/specimen/Manjari"
-              >google fonts documentation for Manjari</a
-            >:
+            <a href="https://fonts.google.com/specimen/Manjari">google fonts documentation for Manjari</a>:
           </p>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Manjari is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Manjari typefaces's source code, including svg drawings, build scripts
           are available at
@@ -250,25 +270,38 @@
         <glyphs font="Manjari" class="col-lg-12" :glyphs="fontdata.glyphs" />
       </section>
       -->
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
             <li>
               Latin. The following languages are covered:
-              <span class="mr-2" :key="lang" v-for="lang in supportedLanguages">
+              <span
+                v-for="lang in supportedLanguages"
+                :key="lang"
+                class="mr-2"
+              >
                 {{ lang }}
               </span>
             </li>
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             Manjari comes with many OpenType features that can be used to tailor
@@ -280,28 +313,32 @@
             <v-card-title>Glyph alternatives</v-card-title>
             <v-card-text>
               <v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
-              <v-row
-                ><v-col
+              <v-row>
+                <v-col
                   class="title font-manjari"
                   style="font-feature-settings: 'salt' 1"
-                  >ച്ച</v-col
-                ><v-col
+                >
+                  ച്ച
+                </v-col><v-col
                   class="title font-manjari"
                   style="font-feature-settings: 'salt' 2"
-                  >ച്ച</v-col
-                ></v-row
-              >
-              <v-row
-                ><v-col
+                >
+                  ച്ച
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col
                   class="title font-manjari"
                   style="font-feature-settings: 'salt' 1"
-                  >ള്ള</v-col
-                ><v-col
+                >
+                  ള്ള
+                </v-col><v-col
                   class="title font-manjari"
                   style="font-feature-settings: 'salt' 2"
-                  >ള്ള</v-col
-                ></v-row
-              >
+                >
+                  ള്ള
+                </v-col>
+              </v-row>
               <p>
                 To enable this alternatives use 'salt 2` variant. In CSS this
                 can be done by adding style
@@ -311,8 +348,7 @@
                 variants is usually allowed. Please read
                 <a
                   href="https://thottingal.in/blog/2018/01/06/stylistic-alternates-manjari-chilanka/"
-                  >this article</a
-                >
+                >this article</a>
                 to see how to use this with Inkscape, Browsers, Libreoffice and
                 TeX.
               </p>
@@ -326,26 +362,27 @@
                 columns across rows is desired.
               </p>
               <v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
-              <v-row
-                ><v-col class="font-manjari"
-                  ><ul>
+              <v-row>
+                <v-col class="font-manjari">
+                  <ul>
                     <li>345678</li>
                     <li>111111</li>
                     <li>1234567890</li>
                     <li>0040900</li>
-                  </ul></v-col
-                >
+                  </ul>
+                </v-col>
                 <v-col
                   class="font-manjari"
                   style="font-feature-settings: 'tnum'"
-                  ><ul>
+                >
+                  <ul>
                     <li>345678</li>
                     <li>111111</li>
                     <li>1234567890</li>
                     <li>0040900</li>
-                  </ul></v-col
-                ></v-row
-              >
+                  </ul>
+                </v-col>
+              </v-row>
               <p>
                 To enable this alternatives use 'tnum` variant. In CSS this can
                 be done by adding style
@@ -355,16 +392,19 @@
           </v-card>
           <v-card class="ma-2">
             <v-card-title>Slashed zero</v-card-title>
-            <v-card-text
-              ><v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
-              <v-row
-                ><v-col class="font-manjari">4500</v-col>
+            <v-card-text>
+              <v-row><v-col>Disabled</v-col><v-col>Enabled</v-col></v-row>
+              <v-row>
+                <v-col class="font-manjari">
+                  4500
+                </v-col>
                 <v-col
                   class="font-manjari"
                   style="font-feature-settings: 'zero'"
-                  >4500</v-col
-                ></v-row
-              >
+                >
+                  4500
+                </v-col>
+              </v-row>
               <p>
                 To enable this alternatives use 'zero` variant. In CSS this can
                 be done by adding style
@@ -374,14 +414,29 @@
           </v-card>
         </div>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
-          <font-playground name="Manjari" weights="['Thin','Regular','Bold']"/>
+          <font-playground
+            name="Manjari"
+            weights="['Thin','Regular','Bold']"
+          />
         </div>
       </section>
-      <section id="credits" class="row">
-        <h2 v-text="$i18n('credits')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="credits"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('credits')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             Manjari belongs to the typefaces released by Swathanthra Malayalam
@@ -417,10 +472,18 @@
           </ul>
         </div>
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Manjari?</h4>
+          <h4 id="contribute">
+            Can I help with improving Manjari?
+          </h4>
           <p>
             Yes you can! Manjari is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -430,12 +493,14 @@
             Please start by reading and exploring the source code and design
             files provided.
           </p>
-          <h4 id="gdoc">Can I use Manjari in google docs?</h4>
+          <h4 id="gdoc">
+            Can I use Manjari in google docs?
+          </h4>
           <p>
             Yes you can. Please see the detailed instructions at
-            <router-link to="/blog/manjari-gayathri-chilanka-in-google-fonts"
-              >SMC blog</router-link
-            >
+            <router-link to="/blog/manjari-gayathri-chilanka-in-google-fonts">
+              SMC blog
+            </router-link>
           </p>
         </div>
       </section>
@@ -449,6 +514,7 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
@@ -534,7 +600,6 @@ export default {
       "su",
     ],
   }),
-  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

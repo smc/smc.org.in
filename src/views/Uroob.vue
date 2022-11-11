@@ -7,13 +7,21 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/uroob/uroob.zip"
       />
-      <v-banner lines="three" icon="$warning" color="warning" class="my-4">
+      <v-banner
+        lines="three"
+        icon="$warning"
+        color="warning"
+        class="my-4"
+      >
         <v-banner-text>
           This font is no longer actively maintained by SMC Project. Here you
           can find the last released version.
         </v-banner-text>
       </v-banner>
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -28,7 +36,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-2 my-4">ഉറൂബ്</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">
+                  ഉറൂബ്
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -59,8 +69,14 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Uroob in web pages, webfonts can be used. You may copy the
@@ -70,44 +86,66 @@
             @import url('https://smc.org.in/fonts/uroob.css'); html {
             font-family: 'Uroob', sans-serif; }
           </code>
-          <h3 class="webfonts" v-text="$i18n('google-fonts-webfonts')"></h3>
+          <h3
+            class="webfonts"
+            v-text="$i18n('google-fonts-webfonts')"
+          />
           <p>
             Uroob is also available in Google fonts. Using Uroob from Google
             webfonts may be faster than the above approach. Please refer
-            <a href="https://fonts.google.com/specimen/Uroob"
-              >google fonts documentation for Uroob</a
-            >:
+            <a href="https://fonts.google.com/specimen/Uroob">google fonts documentation for Uroob</a>:
           </p>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Uroob is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Uroob typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/uroob">gitlab repository</a>
         </p>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
           <font-playground name="Uroob" />
         </div>
       </section>
 
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
@@ -122,17 +160,39 @@
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
       </section>
-      <section id="history" class="row">
-        <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on July 23, 2016.</p>
+      <section
+        id="history"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('history')"
+        />
+        <p class="col-lg-8 col-md-12">
+          Released on July 23, 2016.
+        </p>
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Uroob?</h4>
+          <h4 id="contribute">
+            Can I help with improving Uroob?
+          </h4>
           <p>
             Yes you can! Uroob is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -154,11 +214,11 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
   }),
-  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

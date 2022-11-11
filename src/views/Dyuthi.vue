@@ -8,7 +8,10 @@
         link="/downloads/fonts/dyuthi/dyuthi.zip"
       />
 
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -23,7 +26,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-2 my-4">ദ്യുതി</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">
+                  ദ്യുതി
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -63,43 +68,46 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('download')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
-              <v-btn
-                href="/downloads/fonts/dyuthi/Dyuthi-Regular.ttf"
-
-              >
+              <v-btn href="/downloads/fonts/dyuthi/Dyuthi-Regular.ttf">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/dyuthi/Dyuthi-Regular.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/dyuthi/Dyuthi-Regular.woff2">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/dyuthi/dyuthi.zip"
-
-              >
+              <v-btn href="/downloads/fonts/dyuthi/dyuthi.zip">
                 {{ $i18n("zip") }}
               </v-btn>
             </li>
           </ul>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Dyuthi in web pages, webfonts can be used. You may copy the
@@ -111,33 +119,54 @@
           </code>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Dyuthi is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Dyuthi typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/dyuthi">gitlab repository</a>
         </p>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
           <font-playground name="Dyuthi" />
         </div>
       </section>
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
@@ -152,13 +181,27 @@
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Dyuthi?</h4>
+          <h4 id="contribute">
+            Can I help with improving Dyuthi?
+          </h4>
           <p>
             Yes you can! Dyuthi is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -181,11 +224,11 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
   }),
-  components: { FontTitle, FontPlayground },
   created() {
     return fetch("/downloads/fonts/dyuthi/Dyuthi.json")
       .then((response) => response.json())

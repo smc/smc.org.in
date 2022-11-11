@@ -8,7 +8,10 @@
         link="/downloads/fonts/karumbi/karumbi.zip"
       />
 
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -23,7 +26,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-2 my-4">കറുമ്പി</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">
+                  കറുമ്പി
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -55,29 +60,31 @@
               >
                 <article class="">
                   <p>
-                    തോറ്റകുട്ടി പുറത്തേക്കിറങ്ങി <br />
-                    തോട്ടുവെള്ളത്തില്‍ പുസ്തകം വിട്ടു <br />
-                    കാറ്റിലേക്കു കുടയും കൊടുത്തു. <br />
-                    തുണ്ടുപെന്‍സിലെറിഞ്ഞു കളഞ്ഞു <br />
-                    കണ്ട കാട്ടു വഴിയില്‍ നടന്നു... <br />
-                    തൊട്ടു മെല്ലെ വിളിച്ചപോല്‍ തോന്നി <br />
-                    തൊട്ടടുത്തു പിറകില്‍ വന്നാരോ <br />
-                    തിത്തിരിപ്പക്ഷി മൂളിയതാകാം <br />
-                    കൊച്ചുതുമ്പയോ മൈനയോ ആവാം <br />
-                    കാട്ടുവള്ളിയില്‍ തൂങ്ങിക്കുതിച്ച് <br />
-                    കാട്ടിലേക്കവന്‍ ചെന്നുപോല്‍ പിന്നെ <br />
-                    പൂത്തമുല്ലതന്‍ സൗരഭം നീന്തും <br />
-                    കാറ്റവനൊരു പാട്ടുപോല്‍ തോന്നി <br />
-                    പൂക്കളൊക്കെയും വാക്കുകള്‍, പായും <br />
-                    കാട്ടരുവി കളകള ഗാനം <br />
-                    രാത്രി നക്ഷത്ര വിസ്തൃതാകാശം <br />
-                    നീര്‍ത്തിവച്ചൊരു പുസ്തകമായി <br />
-                    തോറ്റകുട്ടിയെ തോളത്തുവച്ചു. <br />
-                    പൂത്തുനിന്നു മരതകക്കുന്ന് <br />
-                    തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br />
+                    തോറ്റകുട്ടി പുറത്തേക്കിറങ്ങി <br>
+                    തോട്ടുവെള്ളത്തില്‍ പുസ്തകം വിട്ടു <br>
+                    കാറ്റിലേക്കു കുടയും കൊടുത്തു. <br>
+                    തുണ്ടുപെന്‍സിലെറിഞ്ഞു കളഞ്ഞു <br>
+                    കണ്ട കാട്ടു വഴിയില്‍ നടന്നു... <br>
+                    തൊട്ടു മെല്ലെ വിളിച്ചപോല്‍ തോന്നി <br>
+                    തൊട്ടടുത്തു പിറകില്‍ വന്നാരോ <br>
+                    തിത്തിരിപ്പക്ഷി മൂളിയതാകാം <br>
+                    കൊച്ചുതുമ്പയോ മൈനയോ ആവാം <br>
+                    കാട്ടുവള്ളിയില്‍ തൂങ്ങിക്കുതിച്ച് <br>
+                    കാട്ടിലേക്കവന്‍ ചെന്നുപോല്‍ പിന്നെ <br>
+                    പൂത്തമുല്ലതന്‍ സൗരഭം നീന്തും <br>
+                    കാറ്റവനൊരു പാട്ടുപോല്‍ തോന്നി <br>
+                    പൂക്കളൊക്കെയും വാക്കുകള്‍, പായും <br>
+                    കാട്ടരുവി കളകള ഗാനം <br>
+                    രാത്രി നക്ഷത്ര വിസ്തൃതാകാശം <br>
+                    നീര്‍ത്തിവച്ചൊരു പുസ്തകമായി <br>
+                    തോറ്റകുട്ടിയെ തോളത്തുവച്ചു. <br>
+                    പൂത്തുനിന്നു മരതകക്കുന്ന് <br>
+                    തോല്‍ക്കുകില്ല നീയെന്നേ പറഞ്ഞു <br>
                     കാത്തു നില്‍ക്കുന്നൊരമ്പിളിത്തെല്ല്...!
                   </p>
-                  <p style="float: right">തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)</p>
+                  <p style="float: right">
+                    തോറ്റകുട്ടി(റഫീക്ക് അഹമ്മദ്)
+                  </p>
                 </article>
               </v-card>
             </v-carousel-item>
@@ -103,7 +110,7 @@
                   </p>
                   <p>
                     ‘Your Beauty grows upon me and I feel
-                    <br />
+                    <br>
                     A greater love through all my essence steal.’
                   </p>
                   <p>
@@ -120,43 +127,46 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('download')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
-              <v-btn
-                href="/downloads/fonts/karumbi/Karumbi-Regular.ttf"
-
-              >
+              <v-btn href="/downloads/fonts/karumbi/Karumbi-Regular.ttf">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/karumbi/Karumbi-Regular.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/karumbi/Karumbi-Regular.woff2">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/karumbi/karumbi.zip"
-
-              >
+              <v-btn href="/downloads/fonts/karumbi/karumbi.zip">
                 {{ $i18n("zip") }}
               </v-btn>
             </li>
           </ul>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Karumbi in web pages, webfonts can be used. You may copy the
@@ -168,33 +178,54 @@
           </code>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Karumbi is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Karumbi typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/karumbi">gitlab repository</a>
         </p>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
           <font-playground name="Karumbi" />
         </div>
       </section>
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
@@ -209,13 +240,27 @@
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Karumbi?</h4>
+          <h4 id="contribute">
+            Can I help with improving Karumbi?
+          </h4>
           <p>
             Yes you can! Karumbi is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -237,11 +282,11 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
   }),
-  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

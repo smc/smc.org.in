@@ -1,7 +1,13 @@
 <template>
-  <section id="intro" class="row">
+  <section
+    id="intro"
+    class="row"
+  >
     <div class="col-12">
-      <h1 class="text-h2" v-text="name"></h1>
+      <h1
+        class="text-h2"
+        v-text="name"
+      />
     </div>
 
     <div class="col-xs-12 col-lg-8">
@@ -30,14 +36,14 @@ import { mdiDownload } from "@mdi/js";
 
 export default {
   name: "FontTitle",
-  data: () => ({
-    mdiDownload,
-  }),
   props: {
     name: String,
     version: String,
     author: String,
     link: String,
   },
+  data: () => ({
+    mdiDownload,
+  }),
 };
 </script>

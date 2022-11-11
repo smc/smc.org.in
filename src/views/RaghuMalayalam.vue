@@ -11,7 +11,10 @@
         link="/downloads/fonts/raghumalayalamsans/raghumalayalamsans.zip"
       />
 
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -26,7 +29,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-2 my-4">രഘു മലയാളം</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">
+                  രഘു മലയാളം
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -75,10 +80,18 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="py-2 my-4">ഒരു വളപ്പൊട്ടുണ്ടെൻ കയ്യിൽ</h1>
-                <h1 class="py-2 my-4">ഒരു മയിൽപ്പീലിയുണ്ടെന്നുള്ളിൽ</h1>
-                <h1 class="py-2 my-4">വിരസ നിമിഷങ്ങൾ സരസമാക്കുവാ-</h1>
-                <h1 class="py-2 my-4">നിവ ധാരാളമാണെനിക്കെന്നും.</h1>
+                <h1 class="py-2 my-4">
+                  ഒരു വളപ്പൊട്ടുണ്ടെൻ കയ്യിൽ
+                </h1>
+                <h1 class="py-2 my-4">
+                  ഒരു മയിൽപ്പീലിയുണ്ടെന്നുള്ളിൽ
+                </h1>
+                <h1 class="py-2 my-4">
+                  വിരസ നിമിഷങ്ങൾ സരസമാക്കുവാ-
+                </h1>
+                <h1 class="py-2 my-4">
+                  നിവ ധാരാളമാണെനിക്കെന്നും.
+                </h1>
                 <p>കുഞ്ഞുണ്ണി മാഷ്</p>
               </v-card>
             </v-carousel-item>
@@ -114,15 +127,20 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('download')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans-Regular.ttf"
-
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -132,7 +150,6 @@
               <a href="#webfonts">how to use in webpages</a>:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/RaghuMalayalamSans-Regular.woff2"
-
               >
                 {{ $i18n("regular") }}
               </v-btn>
@@ -141,7 +158,6 @@
               All files in compressed zip file:
               <v-btn
                 href="/downloads/fonts/raghumalayalamsans/raghumalayalamsans.zip"
-
               >
                 {{ $i18n("zip") }}
               </v-btn>
@@ -149,8 +165,14 @@
           </ul>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use RaghuMalayalamSans in web pages, webfonts can be used. You
@@ -162,36 +184,55 @@
           </code>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           RaghuMalayalamSans is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           RaghuMalayalamSans typefaces's source code, including svg drawings,
           build scripts are available at
-          <a href="https://gitlab.com/smc/fonts/raghumalayalamsans"
-            >gitlab repository</a
-          >
+          <a href="https://gitlab.com/smc/fonts/raghumalayalamsans">gitlab repository</a>
         </p>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
           <font-playground name="RaghuMalayalamSans" />
         </div>
       </section>
 
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
@@ -199,13 +240,27 @@
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving RaghuMalayalamSans?</h4>
+          <h4 id="contribute">
+            Can I help with improving RaghuMalayalamSans?
+          </h4>
           <p>
             Yes you can! RaghuMalayalamSans is an open-source project, meaning
             the source code—or "source design" if you will—that is used to build
@@ -227,11 +282,11 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
   }),
-  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

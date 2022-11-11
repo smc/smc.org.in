@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routerOptions = [
   { path: "/", name: "home", view: "Home", params: true },
@@ -98,7 +98,7 @@ const routerOptions = [
   { path: "/blog", view: "Blog" },
   { path: "/articles/:title", view: "Article" },
   { path: "/articles", view: "Article" },
-  { path: '/:pathMatch(.*)*', name: '404', view: "404" },
+  { path: "/:pathMatch(.*)*", name: "404", view: "404" },
 ];
 
 const routes = routerOptions.map((route) => {
@@ -108,7 +108,7 @@ const routes = routerOptions.map((route) => {
   };
 });
 
-export default  createRouter({
+export default createRouter({
   history: createWebHistory(),
   routes, // short for `routes: routes`
   base: process.env.BASE_URL,
@@ -118,5 +118,4 @@ export default  createRouter({
     }
     return { x: 0, y: 0 };
   },
-})
-
+});

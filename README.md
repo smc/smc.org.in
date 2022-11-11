@@ -2,7 +2,6 @@
 
 SMC website
 
-
 # How to use
 
 Instal dependencies
@@ -16,6 +15,7 @@ Start development server. You can edit files and same changes will be automatica
 ```
 npm run serve
 ```
+
 W
 Build the application for production:
 

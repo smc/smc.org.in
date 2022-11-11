@@ -1,16 +1,13 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true,
-  },
-  extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
-  parserOptions: {
-    parser: "babel-eslint",
-    ecmaVersion: 2017,
-    sourceType: "module",
-  },
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-essential', // This option doesn't impose formatting rules
+    'plugin:vue/vue3-strongly-recommended', // This option imposes formatting rules on your code to improve readability
+  ],
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-  },
-};
+    // override/add rules settings here, such as:
+    // 'vue/no-unused-vars': 'error'
+    'vue/multi-word-component-names': 'warn'
+  }
+}

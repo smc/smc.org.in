@@ -8,9 +8,13 @@
         link="/downloads/fonts/meera/meera.zip"
       />
       <v-banner-text>
-        This font is no longer actively maintained by SMC Project. Here you can find the last released version.
+        This font is no longer actively maintained by SMC Project. Here you can
+        find the last released version.
       </v-banner-text>
-      <section id="header" class="row">
+      <section
+        id="header"
+        class="row"
+      >
         <v-sheet class="col-12">
           <v-carousel
             cycle
@@ -25,7 +29,9 @@
                 align="center"
                 color="tranparent"
               >
-                <h1 class="text-h2 font-weight-thin py-2 my-4">മീര</h1>
+                <h1 class="text-h2 font-weight-thin py-2 my-4">
+                  മീര
+                </h1>
                 <h2 class="display-5 font-weight-thin py-2 my-4">
                   യുണിക്കോഡ് അക്ഷരരൂപം
                 </h2>
@@ -52,35 +58,39 @@
                 color="tranparent"
               >
                 <article>
-                  <h2 class="section-heading">കുഞ്ഞേടത്തി</h2>
-                  <h3 class="section-heading">ഒ.എന്‍.വി. കുറുപ്പ്</h3>
+                  <h2 class="section-heading">
+                    കുഞ്ഞേടത്തി
+                  </h2>
+                  <h3 class="section-heading">
+                    ഒ.എന്‍.വി. കുറുപ്പ്
+                  </h3>
                   <p>
                     കുഞ്ഞേടത്തിയെ തന്നെയല്ലോ
-                    <br />
-                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br />
-                    പൊന്നേ പോലത്തെ നെറ്റിയിലുണ്ടല്ലോ <br />
-                    മഞ്ഞൾ വരക്കുറി ചാന്ദുപൊട്ടും <br />
-                    ഈറൻമുടിയിലെള്ളണ്ണ മണം <br />
-                    ചിലനേരമാ തുമ്പത്തൊരു പൂവും <br />
-                    കയ്യിലൊരറ്റ കുപ്പിവള <br />
-                    മുഖം കണ്ടാൽ കാവിലെ ദേവി തന്നെ <br />
-                    മടിയിലുരുത്തീട്ട് മാറോട് ചേത്തിട്ടു <br />
-                    മണി മണി പോലെ കഥപറയും <br />
-                    ആനേടെ, മയിലിന്റെ, ഒട്ടകത്തിന്റെയും <br />
+                    <br>
+                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br>
+                    പൊന്നേ പോലത്തെ നെറ്റിയിലുണ്ടല്ലോ <br>
+                    മഞ്ഞൾ വരക്കുറി ചാന്ദുപൊട്ടും <br>
+                    ഈറൻമുടിയിലെള്ളണ്ണ മണം <br>
+                    ചിലനേരമാ തുമ്പത്തൊരു പൂവും <br>
+                    കയ്യിലൊരറ്റ കുപ്പിവള <br>
+                    മുഖം കണ്ടാൽ കാവിലെ ദേവി തന്നെ <br>
+                    മടിയിലുരുത്തീട്ട് മാറോട് ചേത്തിട്ടു <br>
+                    മണി മണി പോലെ കഥപറയും <br>
+                    ആനേടെ, മയിലിന്റെ, ഒട്ടകത്തിന്റെയും <br>
                     ആരും കേൾക്കാത്ത കഥപറയും
-                    <br />
+                    <br>
                   </p>
                   <p>
                     കുഞ്ഞേടത്തിയെ തന്നെയല്ലോ
-                    <br />
-                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br />
-                    ഉണ്ണിയ്ക്കെന്തിനുമേതിന്നും <br />
-                    കുഞ്ഞേടത്തിയെ കൂട്ടുള്ളൂ <br />
-                    കണ്ണിൽ കണ്ടതും കത്തിരിക്കായുമി- <br />
-                    തെന്താണെന്നുണ്ണീ ചോദിയ്ക്കും <br />
-                    കുഞ്ഞേടത്തി പറഞ്ഞു കൊടുക്കുമ്പോൾ <br />
+                    <br>
+                    ഉണ്ണിയ്ക്കെന്നെന്നുംമേറെയിഷ്ടം <br>
+                    ഉണ്ണിയ്ക്കെന്തിനുമേതിന്നും <br>
+                    കുഞ്ഞേടത്തിയെ കൂട്ടുള്ളൂ <br>
+                    കണ്ണിൽ കണ്ടതും കത്തിരിക്കായുമി- <br>
+                    തെന്താണെന്നുണ്ണീ ചോദിയ്ക്കും <br>
+                    കുഞ്ഞേടത്തി പറഞ്ഞു കൊടുക്കുമ്പോൾ <br>
                     ഉണ്ണിയ്ക്കത്ഭുതമാഹ്ലാദം..!
-                    <br />
+                    <br>
                   </p>
                 </article>
               </v-card>
@@ -93,9 +103,9 @@
                 color="tranparent"
               >
                 <p>
-                  ഇലഞ്ഞിപ്പൂമണമൊഴുകിവരുന്നു<br />
-                  ഇന്ദ്രിയങ്ങളിലതു പടരുന്നു<br />
-                  പകല്‍ക്കിനാവിന്‍ പനിനീര്‍മഴയില്‍<br />
+                  ഇലഞ്ഞിപ്പൂമണമൊഴുകിവരുന്നു<br>
+                  ഇന്ദ്രിയങ്ങളിലതു പടരുന്നു<br>
+                  പകല്‍ക്കിനാവിന്‍ പനിനീര്‍മഴയില്‍<br>
                   പണ്ടുനിന്മുഖം പകര്‍ന്നകന്നു
                 </p>
               </v-card>
@@ -103,43 +113,46 @@
           </v-carousel>
         </v-sheet>
       </section>
-      <section id="download" class="row">
-        <h2 v-text="$i18n('download')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="download"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('download')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li class="my-4 font-weight-bold">
               TTF Format:
-              <v-btn
-                href="/downloads/fonts/meera/Meera-Regular.ttf"
-
-              >
+              <v-btn href="/downloads/fonts/meera/Meera-Regular.ttf">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               Webfonts in woff2 format for embedding in webpages. Also see
               <a href="#webfonts">how to use in webpages</a>:
-              <v-btn
-                href="/downloads/fonts/meera/Meera-Regular.woff2"
-
-              >
+              <v-btn href="/downloads/fonts/meera/Meera-Regular.woff2">
                 {{ $i18n("regular") }}
               </v-btn>
             </li>
             <li class="my-4 font-weight-bold">
               All files in compressed zip file:
-              <v-btn
-                href="/downloads/fonts/meera/meera.zip"
-
-              >
+              <v-btn href="/downloads/fonts/meera/meera.zip">
                 {{ $i18n("zip") }}
               </v-btn>
             </li>
           </ul>
         </div>
       </section>
-      <section id="webfonts" class="row">
-        <h2 v-text="$i18n('webfonts')" class="webfonts col-lg-4 col-md-12"></h2>
+      <section
+        id="webfonts"
+        class="row"
+      >
+        <h2
+          class="webfonts col-lg-4 col-md-12"
+          v-text="$i18n('webfonts')"
+        />
         <div class="col-lg-8 col-md-12">
           <p>
             To use Meera in web pages, webfonts can be used. You may copy the
@@ -151,34 +164,55 @@
           </code>
         </div>
       </section>
-      <section id="license" class="row">
-        <h2 v-text="$i18n('license')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="license"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('license')"
+        />
         <p class="col-lg-8 col-md-12">
           Meera is licensed under the
           <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>,
           Version 1.1.
         </p>
       </section>
-      <section id="sourcecode" class="row">
-        <h2 v-text="$i18n('sourcecode')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="sourcecode"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('sourcecode')"
+        />
         <p class="col-lg-8 col-md-12">
           Meera typefaces's source code, including svg drawings, build scripts
           are available at
           <a href="https://gitlab.com/smc/fonts/meera">gitlab repository</a>
         </p>
       </section>
-      <section id="playground" class="row">
-        <h2 v-text="$i18n('try-font')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="playground"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('try-font')"
+        />
         <div class="col-lg-12">
           <font-playground name="Meera" />
         </div>
       </section>
 
-      <section id="languages" class="row">
+      <section
+        id="languages"
+        class="row"
+      >
         <h2
-          v-text="$i18n('Supported languages')"
           class="col-lg-4 col-md-12"
-        ></h2>
+          v-text="$i18n('Supported languages')"
+        />
         <div class="col-lg-8 col-md-12">
           <ul>
             <li>Malayalam</li>
@@ -193,17 +227,39 @@
           </ul>
         </div>
       </section>
-      <section id="style-variants" class="row">
-        <h2 v-text="$i18n('Style variants')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="style-variants"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('Style variants')"
+        />
       </section>
-      <section id="history" class="row">
-        <h2 v-text="$i18n('history')" class="col-lg-4 col-md-12"></h2>
-        <p class="col-lg-8 col-md-12">Released on September 21, 2007.</p>
+      <section
+        id="history"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('history')"
+        />
+        <p class="col-lg-8 col-md-12">
+          Released on September 21, 2007.
+        </p>
       </section>
-      <section id="faq" class="row">
-        <h2 v-text="$i18n('faq')" class="col-lg-4 col-md-12"></h2>
+      <section
+        id="faq"
+        class="row"
+      >
+        <h2
+          class="col-lg-4 col-md-12"
+          v-text="$i18n('faq')"
+        />
         <div class="col-lg-8 col-md-12">
-          <h4 id="contribute">Can I help with improving Meera?</h4>
+          <h4 id="contribute">
+            Can I help with improving Meera?
+          </h4>
           <p>
             Yes you can! Meera is an open-source project, meaning the source
             code—or "source design" if you will—that is used to build the font
@@ -225,11 +281,11 @@ import FontTitle from "../components/FontTitle";
 import FontPlayground from "../components/FontPlayground";
 
 export default {
+  components: { FontTitle, FontPlayground },
   data: () => ({
     mdiDownload,
     fontdata: {},
   }),
-  components: { FontTitle, FontPlayground },
 };
 </script>
 <style lang="less">

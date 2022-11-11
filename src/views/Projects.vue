@@ -1,21 +1,31 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
     <article class="projects">
-      <h1 class="text-h2 my-10" v-i18n="'menu-projects'"></h1>
+      <h1
+        v-i18n="'menu-projects'"
+        class="text-h2 my-10"
+      />
 
-      <section v-for="section in projects" :key="section.heading" class="mb-10">
+      <section
+        v-for="section in projects"
+        :key="section.heading"
+        class="mb-10"
+      >
         <h2>{{ section.heading }}</h2>
 
         <section class="row my-2">
           <v-col
+            v-for="project in section.list"
+            :key="project.title"
             cols="12"
             xl="3"
             lg="4"
             md="6"
-            v-for="project in section.list"
-            :key="project.title"
           >
-            <v-card outlined class="d-flex flex-column">
+            <v-card
+              outlined
+              class="d-flex flex-column"
+            >
               <v-img
                 v-if="project.logo"
                 :contain="!project.logo_style_cover"
@@ -32,10 +42,9 @@
 
               <v-card-actions>
                 <v-btn
-
-                  text
                   v-for="link in project.links"
                   :key="link.text"
+                  text
                   :href="link.url"
                 >
                   {{ link.text }}
@@ -48,22 +57,6 @@
     </article>
   </v-container>
 </template>
-
-<style lang="scss">
-@use 'vuetify/settings';
-
-.projects {
-  .v-card {
-    overflow: hidden;
-    height: 100%;
-  }
-
-  .v-image {
-    height: 200px;
-    max-height: 200px;
-  }
-}
-</style>
 
 <script>
 import indickeyboard from "@/assets/images/indickeyboard.png";
@@ -783,3 +776,19 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss">
+@use "vuetify/settings";
+
+.projects {
+  .v-card {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .v-image {
+    height: 200px;
+    max-height: 200px;
+  }
+}
+</style>

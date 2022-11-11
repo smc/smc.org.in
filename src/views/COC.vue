@@ -1,9 +1,24 @@
 <template>
-  <v-row class="mb-6" justify="center">
-    <v-col xl="8" sm="10" xs="10">
+  <v-row
+    class="mb-6"
+    justify="center"
+  >
+    <v-col
+      xl="8"
+      sm="10"
+      xs="10"
+    >
       <section class="pa-2">
-        <h1 class="text-h2 my-10" v-i18n="'code-of-conduct'"></h1>
-        <h2 class="title mb-2" id="our-pledge">Our Pledge</h2>
+        <h1
+          v-i18n="'code-of-conduct'"
+          class="text-h2 my-10"
+        />
+        <h2
+          id="our-pledge"
+          class="title mb-2"
+        >
+          Our Pledge
+        </h2>
 
         <p>
           In the interest of fostering an open and welcoming environment, we as
@@ -15,7 +30,12 @@
           race, religion, or sexual identity and orientation.
         </p>
 
-        <h2 class="title mb-2" id="our-standards">Our Standards</h2>
+        <h2
+          id="our-standards"
+          class="title mb-2"
+        >
+          Our Standards
+        </h2>
 
         <p>
           Examples of behavior that contributes to creating a positive
@@ -52,7 +72,10 @@
           </li>
         </ul>
 
-        <h2 class="title mb-2" id="our-responsibilities">
+        <h2
+          id="our-responsibilities"
+          class="title mb-2"
+        >
           Our Responsibilities
         </h2>
 
@@ -71,7 +94,12 @@
           they deem inappropriate, threatening, offensive, or harmful.
         </p>
 
-        <h2 class="title mb-2" id="scope">Scope</h2>
+        <h2
+          id="scope"
+          class="title mb-2"
+        >
+          Scope
+        </h2>
 
         <p>
           This Code of Conduct applies both within project spaces and in public
@@ -83,7 +111,12 @@
           defined and clarified by project maintainers.
         </p>
 
-        <h2 class="title mb-2" id="enforcement">Enforcement</h2>
+        <h2
+          id="enforcement"
+          class="title mb-2"
+        >
+          Enforcement
+        </h2>
 
         <p>
           Instances of abusive, harassing, or otherwise unacceptable behavior
@@ -102,16 +135,19 @@
           determined by other members of the project’s leadership.
         </p>
 
-        <h2 class="title mb-2" id="attribution">Attribution</h2>
+        <h2
+          id="attribution"
+          class="title mb-2"
+        >
+          Attribution
+        </h2>
 
         <p>
           This Code of Conduct is adapted from the
-          <a href="https://www.contributor-covenant.org">Contributor Covenant</a
-          >, version 1.4, available at
+          <a href="https://www.contributor-covenant.org">Contributor Covenant</a>, version 1.4, available at
           <a
             href="https://www.contributor-covenant.org/version/1/4/code-of-conduct"
-            >https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a
-          >
+          >https://www.contributor-covenant.org/version/1/4/code-of-conduct.html</a>
         </p>
       </section>
     </v-col>

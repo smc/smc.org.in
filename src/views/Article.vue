@@ -1,11 +1,23 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <article v-if="title" class="article">
-      <post-title :title="title" :author="author" />
-      <main class="my-10" v-html="content" />
+    <article
+      v-if="title"
+      class="article"
+    >
+      <post-title
+        :title="title"
+        :author="author"
+      />
+      <main
+        class="my-10"
+        v-html="content"
+      />
     </article>
     <div v-else>
-      <h1 class="text-h2 my-10" v-i18n="'menu-articles'"></h1>
+      <h1
+        v-i18n="'menu-articles'"
+        class="text-h2 my-10"
+      />
       <v-text-field
         v-model="search"
         :prepend-icon="mdiMagnify"
@@ -19,11 +31,14 @@
       <v-card flat>
         <v-list>
           <v-list-item-group color="primary">
-            <v-list-item v-for="(item, i) in toc" :key="i" :to="item.url"  :prepend-icon="mdiFileDocument">
-                <v-list-item-title v-text="item.title"></v-list-item-title>
-                <v-list-item-subtitle
-                  v-text="item.author"
-                ></v-list-item-subtitle>
+            <v-list-item
+              v-for="(item, i) in toc"
+              :key="i"
+              :to="item.url"
+              :prepend-icon="mdiFileDocument"
+            >
+              <v-list-item-title v-text="item.title" />
+              <v-list-item-subtitle v-text="item.author" />
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -45,6 +60,33 @@ import articles from "../manifest.json";
 
 export default {
   components: { PostTitle },
+  beforeRouteEnter(to, from, next) {
+    // called before the route that renders this component is confirmed.
+    // does NOT have access to `this` component instance,
+    // because it has not been created yet when this guard is called!
+    next((vm) => {
+      vm.path = to.path;
+    });
+  },
+  beforeRouteUpdate(to, from, next) {
+    // called when the route that renders this component has changed,
+    // but this component is reused in the new route.
+    // For example, for a route with dynamic params `/foo/:id`, when we
+    // navigate between `/foo/1` and `/foo/2`, the same `Foo` component instance
+    // will be reused, and this hook will be called when that happens.
+    // has access to `this` component instance.
+    next((vm) => {
+      vm.path = to.path;
+    });
+  },
+  beforeRouteLeave(to, from, next) {
+    // called when the route that renders this component is about to
+    // be navigated away from.
+    // has access to `this` component instance.
+    next((vm) => {
+      vm.path = to.path;
+    });
+  },
   data: () => ({
     content: null,
     author: null,
@@ -98,33 +140,6 @@ export default {
         this.title = null;
       }
     },
-  },
-  beforeRouteEnter(to, from, next) {
-    // called before the route that renders this component is confirmed.
-    // does NOT have access to `this` component instance,
-    // because it has not been created yet when this guard is called!
-    next((vm) => {
-      vm.path = to.path;
-    });
-  },
-  beforeRouteUpdate(to, from, next) {
-    // called when the route that renders this component has changed,
-    // but this component is reused in the new route.
-    // For example, for a route with dynamic params `/foo/:id`, when we
-    // navigate between `/foo/1` and `/foo/2`, the same `Foo` component instance
-    // will be reused, and this hook will be called when that happens.
-    // has access to `this` component instance.
-    next((vm) => {
-      vm.path = to.path;
-    });
-  },
-  beforeRouteLeave(to, from, next) {
-    // called when the route that renders this component is about to
-    // be navigated away from.
-    // has access to `this` component instance.
-    next((vm) => {
-      vm.path = to.path;
-    });
   },
 };
 </script>

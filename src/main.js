@@ -1,15 +1,15 @@
 // Components
-import App from './App.vue'
+import App from "./App.vue";
 
 // Composables
-import { createApp } from 'vue'
+import { createApp } from "vue";
 
 // Plugins
-import vuetify from './plugins/vuetify'
+import vuetify from "./plugins/vuetify";
 import router from "./router";
-import {createI18n} from "vue-banana-i18n";
-import mlmessages from "./assets/i18n/ml.json"
-import enmessages from "./assets/i18n/en.json"
+import { createI18n } from "vue-banana-i18n";
+import mlmessages from "./assets/i18n/ml.json";
+import enmessages from "./assets/i18n/en.json";
 
 const locale =
   localStorage.getItem("smc.org.in.locale") ||
@@ -19,7 +19,7 @@ const finalFallback = "en";
 const messages = {};
 
 try {
-  messages[locale] = locale=='ml'?mlmessages:enmessages;
+  messages[locale] = locale == "ml" ? mlmessages : enmessages;
 } catch {
   messages[finalFallback] = enmessages;
 }

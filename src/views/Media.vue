@@ -1,20 +1,42 @@
 <template>
-  <v-row class="mb-6" justify="center">
-    <v-col xl="8" sm="10" xs="10">
+  <v-row
+    class="mb-6"
+    justify="center"
+  >
+    <v-col
+      xl="8"
+      sm="10"
+      xs="10"
+    >
       <section class="pa-2">
-        <h1 class="text-h2 my-10" v-i18n="'media'"></h1>
+        <h1
+          v-i18n="'media'"
+          class="text-h2 my-10"
+        />
         <!--  -->
-        <v-flex md12 v-for="link in links" :key="link.link">
+        <v-flex
+          v-for="link in links"
+          :key="link.link"
+          md12
+        >
           <v-card class="mb-6">
             <v-list-item three-line>
               <v-list-item-content>
                 <div class="overline mb-4">
-                  <v-btn value="featured" v-if="link.featured" text>
+                  <v-btn
+                    v-if="link.featured"
+                    value="featured"
+                    text
+                  >
                     <v-icon>{{ mdiCrownOutline }}</v-icon>
                     <span>{{ $i18n("featured") }}</span>
                   </v-btn>
                 </div>
-                <a :href="link.url" target="_blank" rel="noopener noreferrer">
+                <a
+                  :href="link.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <v-list-item-title class="headline mb-1">
                     {{ link.title }}
                   </v-list-item-title>
@@ -34,7 +56,9 @@
                 rel="noopener noreferrer"
                 value="archiveorg"
               >
-                <v-icon :title="link.title">{{ mdiLaunch }}</v-icon>
+                <v-icon :title="link.title">
+                  {{ mdiLaunch }}
+                </v-icon>
                 <span>{{ $i18n("archive") }}</span>
               </v-btn>
             </v-card-actions>

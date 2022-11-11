@@ -1,6 +1,10 @@
 <template>
   <v-container class="col-xl-8 col-sm-10 col-xs-12">
-    <h1 class="text-h2 my-10" v-i18n="'menu-blog'" v-if="!post"></h1>
+    <h1
+      v-if="!post"
+      v-i18n="'menu-blog'"
+      class="text-h2 my-10"
+    />
 
     <!-- Start Placeholders -->
     <v-row v-if="loading_slug">
@@ -15,14 +19,27 @@
       </v-col>
     </v-row>
     <v-row v-else-if="loading_all">
-      <v-col cols="12" lg="6" class="my-6" :key="n" v-for="n in 6">
+      <v-col
+        v-for="n in 6"
+        :key="n"
+        cols="12"
+        lg="6"
+        class="my-6"
+      >
         <v-sheet class="px-3 pt-3 pb-3">
           <v-row justify="space-between">
-            <v-col cols="12" md="4" class="pa-0">
+            <v-col
+              cols="12"
+              md="4"
+              class="pa-0"
+            >
               <v-skeleton-loader type="image" />
             </v-col>
 
-            <v-col cols="12" md="8">
+            <v-col
+              cols="12"
+              md="8"
+            >
               <v-card-subtitle>
                 <v-skeleton-loader type="text" />
               </v-card-subtitle>
@@ -37,7 +54,11 @@
     </v-row>
     <!-- End Placeholders -->
 
-    <v-row v-else-if="post" align="center" justify="center">
+    <v-row
+      v-else-if="post"
+      align="center"
+      justify="center"
+    >
       <v-col cols="12">
         <article class="blogpost">
           <post-title
@@ -46,9 +67,17 @@
             :authors="post.authors"
             :date="post.published_at"
           />
-          <main class="post-body my-10" v-html="post.html" />
-          <h2 class="text-h4 my-10">Comments</h2>
-          <discourse-comments :enabled="true" :title="post.url" />
+          <main
+            class="post-body my-10"
+            v-html="post.html"
+          />
+          <h2 class="text-h4 my-10">
+            Comments
+          </h2>
+          <discourse-comments
+            :enabled="true"
+            :title="post.url"
+          />
         </article>
       </v-col>
     </v-row>
@@ -56,11 +85,11 @@
     <div v-else>
       <v-row>
         <v-col
+          v-for="post in blogposts"
+          :key="post.id"
           cols="12"
           lg="6"
           class="my-6"
-          :key="post.id"
-          v-for="post in blogposts"
         >
           <v-card
             outlined
@@ -69,25 +98,34 @@
             :to="`/blog/${post.slug}`"
           >
             <v-row justify="space-between">
-              <v-col cols="12" md="4" class="pa-0">
+              <v-col
+                cols="12"
+                md="4"
+                class="pa-0"
+              >
                 <v-img
                   cover
-                  :src= post.feature_image
-                  lazy-src='src/assets/logo.svg'
+                  :src="post.feature_image"
+                  lazy-src="src/assets/logo.svg"
                   height="250px"
-                ></v-img>
+                />
               </v-col>
 
-              <v-col cols="12" md="8">
-                <v-card-title class="smc-blog-post-content-title" lang="ml">
+              <v-col
+                cols="12"
+                md="8"
+              >
+                <v-card-title
+                  class="smc-blog-post-content-title"
+                  lang="ml"
+                >
                   {{ post.title }}
                 </v-card-title>
 
                 <v-card-subtitle
                   class="smc-blog-post-content-date"
                   v-text="new Date(post.published_at).toDateString()"
-                >
-                </v-card-subtitle>
+                />
 
                 <v-card-text class="smc-blog-post-content-excerpt">
                   {{ stripMd(post.excerpt) }}
@@ -106,67 +144,6 @@ import PostTitle from "../components/PostTitle";
 import DiscourseComments from "../components/DiscourseComments";
 export default {
   components: { PostTitle, DiscourseComments },
-  data: () => ({
-    loading_all: false,
-    loading_slug: false,
-    content: null,
-    author: null,
-    title: null,
-    slug: null,
-    post: null,
-    path: null,
-    search: "",
-    articles: [],
-    blogposts: [],
-    headers: [
-      {
-        text: "Title",
-        align: "start",
-        sortable: false,
-        value: "title",
-      },
-      { text: "Date", value: "published_at" },
-    ],
-  }),
-  created() {
-    this.loading_all = true;
-    return fetch(
-      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors&limit=50"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        this.loading_all = false;
-        this.blogposts = data.posts;
-      });
-  },
-  watch: {
-    slug: async function () {
-      this.post = await this.getPost(this.slug);
-    },
-    blogposts: async function () {
-      this.post = await this.getPost(this.slug);
-    },
-  },
-  methods: {
-    async getPost(slug) {
-      if (!slug) return null;
-      let post = this.blogposts.find((post) => post.slug === slug);
-      if (!post) {
-        this.loading_slug = true;
-        return fetch(
-          `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors`
-        )
-          .then((response) => response.json())
-          .then((data) => {
-            this.loading_slug = false;
-            return data.posts.find((post) => post.slug === slug);
-          });
-      }
-      return post;
-    },
-    // Replace links under [] tag
-    stripMd: (text) => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, ""),
-  },
   beforeRouteEnter(to, from, next) {
     // called before the route that renders this component is confirmed.
     // does NOT have access to `this` component instance,
@@ -194,10 +171,70 @@ export default {
       vm.slug = to.params.title;
     });
   },
+  data: () => ({
+    loading_all: false,
+    loading_slug: false,
+    content: null,
+    author: null,
+    title: null,
+    slug: null,
+    post: null,
+    path: null,
+    search: "",
+    articles: [],
+    blogposts: [],
+    headers: [
+      {
+        text: "Title",
+        align: "start",
+        sortable: false,
+        value: "title",
+      },
+      { text: "Date", value: "published_at" },
+    ],
+  }),
+  watch: {
+    slug: async function () {
+      this.post = await this.getPost(this.slug);
+    },
+    blogposts: async function () {
+      this.post = await this.getPost(this.slug);
+    },
+  },
+  created() {
+    this.loading_all = true;
+    return fetch(
+      "https://blog.smc.org.in/ghost/api/v3/content/posts/?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors&limit=50"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        this.loading_all = false;
+        this.blogposts = data.posts;
+      });
+  },
+  methods: {
+    async getPost(slug) {
+      if (!slug) return null;
+      let post = this.blogposts.find((post) => post.slug === slug);
+      if (!post) {
+        this.loading_slug = true;
+        return fetch(
+          `https://blog.smc.org.in/ghost/api/v3/content/posts/slug/${slug}?key=0b33c5e372d8ee78a8bd842ad0&include=tags,authors`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            this.loading_slug = false;
+            return data.posts.find((post) => post.slug === slug);
+          });
+      }
+      return post;
+    },
+    // Replace links under [] tag
+    stripMd: (text) => text.replace("\n", " ").replace(/\[\S+\s?\]?\s?/g, ""),
+  },
 };
 </script>
 <style lang="scss">
-
 .post-body {
   font-family: "Inter", "Manjari", sans;
   line-height: 1.6;

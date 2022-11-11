@@ -2,6 +2,7 @@
 node_modules
 /dist
 /public/downloads/fonts
+.cache
 
 # local env files
 .env.local

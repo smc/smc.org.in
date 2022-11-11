@@ -9,6 +9,10 @@
 <script>
 export default {
   name: "DiscourseComments",
+  props: {
+    enabled: Boolean,
+    title: String,
+  },
   methods: {
     pullComments: (title) => {
       window.DiscourseEmbed = {
@@ -23,10 +27,6 @@ export default {
       document.head.appendChild(discourse);
     },
     mounted() {},
-  },
-  props: {
-    enabled: Boolean,
-    title: String,
   },
 };
 </script>

@@ -1,6 +1,9 @@
 <template>
   <v-container class="fonts col-xl-8 col-sm-10 col-xs-12">
-    <h1 class="text-h2 my-10" v-i18n="'menu-fonts'"></h1>
+    <h1
+      v-i18n="'menu-fonts'"
+      class="text-h2 my-10"
+    />
     <v-row>
       <v-col
         v-for="font in fonts"
@@ -14,7 +17,7 @@
           <v-card-title
             :class="`font-${font.title.toLowerCase()}`"
             v-text="$i18n(font.msg || font.title.toLowerCase())"
-          ></v-card-title>
+          />
 
           <v-card-text>
             <p
@@ -35,7 +38,10 @@
             </v-btn>
             <v-spacer />
 
-            <v-btn :to="font.path" prepend-icon="mdi-arrow-right">
+            <v-btn
+              :to="font.path"
+              prepend-icon="mdi-arrow-right"
+            >
               Details
               <v-icon>{{ mdiArrowRight }}</v-icon>
             </v-btn>
@@ -43,7 +49,9 @@
         </v-card>
       </v-col>
     </v-row>
-    <h2 class="text-h2 my-10">Other Malayalam fonts</h2>
+    <h2 class="text-h2 my-10">
+      Other Malayalam fonts
+    </h2>
     <p>
       Other than the fonts listed above, which are maintained by SMC, there are
       a few more free licensed fonts designed and released by other projects and
@@ -56,7 +64,7 @@
         :title="item.title"
         :href="item.link"
         :prepend-icon="mdiArrowRight"
-      ></v-list-item>
+      />
     </v-list>
   </v-container>
 </template>
@@ -120,24 +128,23 @@ export default {
     ],
     otherfonts: [
       {
-        "link": "https://www.google.com/get/noto/",
-        "title": "Noto Sans Malayalam by Google",
+        link: "https://www.google.com/get/noto/",
+        title: "Noto Sans Malayalam by Google",
       },
       {
-        "link": "https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam",
-        "title":  "Baloo Chettan 2 by Ek Type, commissioned by Google fonts."
+        link: "https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam",
+        title: "Baloo Chettan 2 by Ek Type, commissioned by Google fonts.",
       },
       {
-        "link":"https://github.com/EkType/Anek",
-        "title": "Anek Malayalam by Ek Type"
+        link: "https://github.com/EkType/Anek",
+        title: "Anek Malayalam by Ek Type",
       },
       {
-        "link": "http://rachana.org.in/",
-        "title":  "Sundar and TNJoy by Rachana Institute of Typography"
+        link: "http://rachana.org.in/",
+        title: "Sundar and TNJoy by Rachana Institute of Typography",
       },
-    ]
+    ],
   }),
-
 };
 </script>
 <style>

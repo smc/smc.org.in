@@ -7,8 +7,9 @@
       label="Fontsize(px)"
       thumb-label="always"
       class="col-12"
-    ></v-slider>
+    />
     <v-slider
+      v-if="weights.length"
       v-model="weight"
       min="100"
       max="900"
@@ -16,19 +17,18 @@
       label="Font Weight"
       thumb-label="always"
       class="col-12"
-      v-if="weights.length"
-    ></v-slider>
+    />
     <div class="row">
-      <p class="col-12"
-        >You can edit the following text and try different font sizes.</p
-      >
+      <p class="col-12">
+        You can edit the following text and try different font sizes.
+      </p>
     </div>
     <div
       contenteditable="true"
       class="editor col-12"
       :style="style"
       v-html="previewContent"
-    ></div>
+    />
   </section>
 </template>
 
@@ -47,8 +47,8 @@ export default {
   props: {
     name: String,
     weights: {
-      type:[String],
-      default: ()=>[]
+      type: [String],
+      default: () => [],
     },
     previewContent: {
       type: String,
