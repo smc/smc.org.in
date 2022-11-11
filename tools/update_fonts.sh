@@ -30,4 +30,13 @@ for font in "${fonts[@]}"; do
         sed -i "s/@VERSION@/$version/g" ../../fonts/${font}.css
 done
 
+# Process Nupuram
+cd public/downloads/fonts
+shaForLastTag=$(curl -sSL "https://gitlab.com/api/v4/projects/smc%2Ffonts%2Fnupuram/repository/tags??order_by=updated" | jq '.[].commit.short_id' | head -1 | tr -d '"')
+echo "Nupuram : $shaForLastTag"
+wget -q "https://gitlab.com/smc/fonts/Nupuram/-/jobs/artifacts/${shaForLastTag}/download?job=build" -O artifacts.zip
+unzip -q artifacts.zip
+mv fonts nupuram
+rm -rf artifacts.zip
+
 zip -qr fonts-smc.zip . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j

@@ -5,7 +5,7 @@
         :name="$i18n('nupuramcalligraphy')"
         version="0.1"
         author="Santhosh Thottingal"
-        link="/downloads/fonts/Nupuram-Calligraphy/Nupuram-Calligraphy.zip"
+        link="/downloads/fonts/nupuram/upuram-Calligraphy/Nupuram-Calligraphy.zip"
       />
 
       <section class="header">
@@ -120,14 +120,14 @@ export default {
   max-width: 100vw !important;
 }
 .header {
-  font-family: "NupuramCalligraphy" !important;
+  font-family: "Nupuram Calligraphy" !important;
   text-align: center;
 }
 
 .playground {
   font-size: 5vw;
   text-align: center;
-  font-family: "NupuramCalligraphy" !important;
+  font-family: "Nupuram Calligraphy" !important;
   font-weight: 100;
   background: rgb(var(--v-theme-primary));
   line-height: 1.2;
@@ -138,7 +138,7 @@ export default {
 
 .var-animate {
   font-size: 12vw;
-  font-family: "NupuramCalligraphy" !important;
+  font-family: "Nupuram Calligraphy" !important;
   line-height: 1.5;
   padding: 10px;
 }

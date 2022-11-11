@@ -1,34 +1,34 @@
 @font-face {
     font-family: "Nupuram";
-    src: url(/downloads/fonts/Nupuram/webfonts/Nupuram-VF.woff2) format("woff2-variations");
+    src: url(/downloads/fonts/nupuram/Nupuram/webfonts/Nupuram-VF.woff2) format("woff2-variations");
     font-weight: 100 900;
     font-stretch: 75% 125%;
     font-style: oblique 0deg -15deg;
   }
   @font-face {
-    font-family: "NupuramCalligraphy";
-    src: url(/downloads/fonts/Nupuram-Calligraphy/webfonts/Nupuram-Calligraphy-VF.woff2) format("woff2-variations");
+    font-family: "Nupuram Calligraphy";
+    src: url(/downloads/fonts/nupuram/Nupuram-Calligraphy/webfonts/Nupuram-Calligraphy-VF.woff2) format("woff2-variations");
     font-weight: 100 900;
   }
 
   @font-face {
-    font-family: "NupuramColor";
-    src: url(/downloads/fonts/Nupuram-Color/webfonts/Nupuram-Color.colrv1.woff2) format("woff2-variations");
+    font-family: "Nupuram Color";
+    src: url(/downloads/fonts/nupuram/Nupuram-Color/webfonts/Nupuram-Color.colrv1.woff2) format("woff2-variations");
     font-weight: 100 900;
   }
 
   @font-face {
-    font-family: "NupuramArrowsColor";
-    src: url(/downloads/fonts/Nupuram-Arrows-Color/webfonts/Nupuram-Arrows-Color.colrv1.woff2) format("woff2");
+    font-family: "Nupuram Arrows Color";
+    src: url(/downloads/fonts/nupuram/Nupuram-Arrows-Color/webfonts/Nupuram-Arrows-Color.colrv1.woff2) format("woff2");
   }
 
   @font-face {
-    font-family: "NupuramDots";
-    src: url(/downloads/fonts/Nupuram-Dots/webfonts/Nupuram-Dots.woff2) format("woff2");
+    font-family: "Nupuram Dots";
+    src: url(/downloads/fonts/nupuram/Nupuram-Dots/webfonts/Nupuram-Dots.woff2) format("woff2");
 
   }
 
   @font-face {
     font-family: "NupuramDisplay";
-    src: url(/downloads/fonts/Nupuram-Display/webfonts/Nupuram-Display.woff2) format("woff2");
+    src: url(/downloads/fonts/nupuram/Nupuram-Display/webfonts/Nupuram-Display.woff2) format("woff2");
   }
