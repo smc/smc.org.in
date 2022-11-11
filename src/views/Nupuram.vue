@@ -5,7 +5,7 @@
         :name="$i18n('nupuram')"
         version="0.1"
         author="Santhosh Thottingal"
-        link="/downloads/fonts/nupuram/Nupuram/Nupuram.zip"
+        link="/downloads/fonts/nupuram/Nupuram.zip"
       />
 
       <section class="header">
