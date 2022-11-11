@@ -31,10 +31,9 @@ for font in "${fonts[@]}"; do
 done
 
 # Process Nupuram
-cd public/downloads/fonts
-shaForLastTag=$(curl -sSL "https://gitlab.com/api/v4/projects/smc%2Ffonts%2Fnupuram/repository/tags??order_by=updated" | jq '.[].commit.short_id' | head -1 | tr -d '"')
-echo "Nupuram : $shaForLastTag"
-wget -q "https://gitlab.com/smc/fonts/Nupuram/-/jobs/artifacts/${shaForLastTag}/download?job=build" -O artifacts.zip
+version=$(curl -sSL "https://gitlab.com/api/v4/projects/smc%2Ffonts%2Fnupuram/repository/tags??order_by=updated" | jq '.[].name' | head -1 | tr -d '"')
+echo "Nupuram : $version"
+wget -q "https://gitlab.com/smc/fonts/Nupuram/-/jobs/artifacts/${version}/download?job=build" -O artifacts.zip
 unzip -q artifacts.zip
 mv fonts nupuram
 rm -rf artifacts.zip
