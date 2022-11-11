@@ -48,7 +48,6 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      </v-col>
     </v-row>
     <h2 class="text-h2 my-10">
       Other Malayalam fonts
