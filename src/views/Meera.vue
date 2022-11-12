@@ -7,10 +7,17 @@
         author="Designer: Hussain K H"
         link="/downloads/fonts/meera/meera.zip"
       />
-      <v-banner-text>
-        This font is no longer actively maintained by SMC Project. Here you can
-        find the last released version.
-      </v-banner-text>
+      <v-banner
+        lines="three"
+        icon="$warning"
+        color="warning"
+        class="my-4"
+      >
+        <v-banner-text>
+          This font is no longer actively maintained by SMC Project. Here you
+          can find the last released version.
+        </v-banner-text>
+      </v-banner>
       <section
         id="header"
         class="row"
