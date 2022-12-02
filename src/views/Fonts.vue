@@ -16,9 +16,16 @@
         <v-card :key="font.title">
           <v-card-title
             :class="`font-${font.title.toLowerCase()}`"
-            v-text="$i18n(font.msg || font.title.toLowerCase())"
-          />
-
+          >
+            {{ $i18n(font.msg || font.title.toLowerCase()) }}
+            <v-chip
+              v-if="font.badge"
+              class="font-manjari"
+              color="green"
+            >
+              {{ font.badge }}
+            </v-chip>
+          </v-card-title>
           <v-card-text>
             <p
               :class="`font-${font.title.toLowerCase()} font-preview-text`"
@@ -96,6 +103,7 @@ const fonts = [
   {
     title: "Keraleeyam",
     path: "/fonts/keraleeyam",
+
   },
   {
     title: "Manjari",
@@ -104,47 +112,57 @@ const fonts = [
   {
     title: "Meera",
     path: "/fonts/meera",
+
   },
   {
     title: "Nupuram",
     path: "/fonts/nupuram",
-    download: "/downloads/fonts/nupuram/Nupuram.zip"
+    download: "/downloads/fonts/nupuram/Nupuram.zip",
+    badge: "Pre-release"
   },
   {
     title: "NupuramColor",
     path: "/fonts/nupuram-color",
-    download: "/downloads/fonts/nupuram/Nupuram-Color.zip"
+    download: "/downloads/fonts/nupuram/Nupuram-Color.zip",
+    badge: "Pre-release"
   },
   {
     title: "NupuramCalligraphy",
     path: "/fonts/nupuram-calligraphy",
-    download: "/downloads/fonts/nupuram/Nupuram-Calligraphy.zip"
+    download: "/downloads/fonts/nupuram/Nupuram-Calligraphy.zip",
+    badge: "Pre-release"
   },
   {
     title: "NupuramDots",
     path: "/fonts/nupuram-dots",
-    download: "/downloads/fonts/nupuram/NupuramDots.zip"
+    download: "/downloads/fonts/nupuram/NupuramDots.zip",
+    badge: "Pre-release"
   },
   {
     title: "NupuramArrowsColor",
     path: "/fonts/nupuram-arrows-color",
-    download: "/downloads/fonts/nupuram/Nupuram-Arrows-Color.zip"
+    download: "/downloads/fonts/nupuram/Nupuram-Arrows-Color.zip",
+    badge: "Pre-release"
   },
   {
     title: "Rachana",
     path: "/fonts/rachana",
+
   },
   {
     title: "RaghuMalayalamSans",
     path: "/fonts/raghumalayalamsans",
+
   },
   {
     title: "Suruma",
     path: "/fonts/suruma",
+
   },
   {
     title: "Uroob",
     path: "/fonts/uroob",
+
   },
 ];
 const otherfonts = [
