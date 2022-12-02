@@ -31,7 +31,7 @@
           <v-card-actions>
             <v-btn
               prepend-icon="mdi-download-outline"
-              :href="`/downloads/${font.path}/${font.title.toLowerCase()}.zip`"
+              :href="font.download || `/downloads/${font.path}/${font.title.toLowerCase()}.zip`"
             >
               {{ $i18n("download") }}
               <v-icon>{{ mdiDownloadOutline }}</v-icon>
@@ -108,22 +108,27 @@ const fonts = [
   {
     title: "Nupuram",
     path: "/fonts/nupuram",
+    download: "/downloads/fonts/nupuram/Nupuram.zip"
   },
   {
     title: "NupuramColor",
     path: "/fonts/nupuram-color",
+    download: "/downloads/fonts/nupuram/Nupuram-Color.zip"
   },
   {
     title: "NupuramCalligraphy",
     path: "/fonts/nupuram-calligraphy",
+    download: "/downloads/fonts/nupuram/Nupuram-Calligraphy.zip"
   },
   {
     title: "NupuramDots",
     path: "/fonts/nupuram-dots",
+    download: "/downloads/fonts/nupuram/NupuramDots.zip"
   },
   {
     title: "NupuramArrowsColor",
     path: "/fonts/nupuram-arrows-color",
+    download: "/downloads/fonts/nupuram/Nupuram-Arrows-Color.zip"
   },
   {
     title: "Rachana",
