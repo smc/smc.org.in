@@ -59,6 +59,18 @@ const routerOptions = [
     params: true,
   },
   {
+    path: "/fonts/nupuram-dots",
+    name: "font-nupuram-dots",
+    view: "NupuramDots",
+    params: true,
+  },
+  {
+    path: "/fonts/nupuram-arrows-color",
+    name: "font-nupuram-arrows-color",
+    view: "NupuramArrowsColor",
+    params: true,
+  },
+  {
     path: "/fonts/nupuram-color",
     name: "font-nupuram-color",
     view: "NupuramColor",

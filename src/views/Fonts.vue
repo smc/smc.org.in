@@ -69,83 +69,97 @@
   </v-container>
 </template>
 
-<script>
+<script setup>
 import { mdiArrowRight, mdiDownloadOutline } from "@mdi/js";
-import { useI18n } from "vue-banana-i18n";
-export default {
-  data: () => ({
-    mdiArrowRight,
-    mdiDownloadOutline,
-    fonts: [
-      {
-        title: "AnjaliOldLipi",
-        path: "/fonts/anjalioldlipi",
-      },
-      {
-        title: "Chilanka",
-        path: "/fonts/chilanka",
-      },
-      {
-        title: "Dyuthi",
-        path: "/fonts/dyuthi",
-      },
-      {
-        title: "Gayathri",
-        path: "/fonts/gayathri",
-      },
-      {
-        title: "Karumbi",
-        path: "/fonts/karumbi",
-      },
-      {
-        title: "Keraleeyam",
-        path: "/fonts/keraleeyam",
-      },
-      {
-        title: "Manjari",
-        path: "/fonts/manjari",
-      },
-      {
-        title: "Meera",
-        path: "/fonts/meera",
-      },
-      {
-        title: "Rachana",
-        path: "/fonts/rachana",
-      },
-      {
-        title: "RaghuMalayalamSans",
-        path: "/fonts/raghumalayalamsans",
-      },
-      {
-        title: "Suruma",
-        path: "/fonts/suruma",
-      },
-      {
-        title: "Uroob",
-        path: "/fonts/uroob",
-      },
-    ],
-    otherfonts: [
-      {
-        link: "https://www.google.com/get/noto/",
-        title: "Noto Sans Malayalam by Google",
-      },
-      {
-        link: "https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam",
-        title: "Baloo Chettan 2 by Ek Type, commissioned by Google fonts.",
-      },
-      {
-        link: "https://github.com/EkType/Anek",
-        title: "Anek Malayalam by Ek Type",
-      },
-      {
-        link: "http://rachana.org.in/",
-        title: "Sundar and TNJoy by Rachana Institute of Typography",
-      },
-    ],
-  }),
-};
+
+const fonts = [
+  {
+    title: "AnjaliOldLipi",
+    path: "/fonts/anjalioldlipi",
+  },
+  {
+    title: "Chilanka",
+    path: "/fonts/chilanka",
+  },
+  {
+    title: "Dyuthi",
+    path: "/fonts/dyuthi",
+  },
+  {
+    title: "Gayathri",
+    path: "/fonts/gayathri",
+  },
+  {
+    title: "Karumbi",
+    path: "/fonts/karumbi",
+  },
+  {
+    title: "Keraleeyam",
+    path: "/fonts/keraleeyam",
+  },
+  {
+    title: "Manjari",
+    path: "/fonts/manjari",
+  },
+  {
+    title: "Meera",
+    path: "/fonts/meera",
+  },
+  {
+    title: "Nupuram",
+    path: "/fonts/nupuram",
+  },
+  {
+    title: "NupuramColor",
+    path: "/fonts/nupuram-color",
+  },
+  {
+    title: "NupuramCalligraphy",
+    path: "/fonts/nupuram-calligraphy",
+  },
+  {
+    title: "NupuramDots",
+    path: "/fonts/nupuram-dots",
+  },
+  {
+    title: "NupuramArrowsColor",
+    path: "/fonts/nupuram-arrows-color",
+  },
+  {
+    title: "Rachana",
+    path: "/fonts/rachana",
+  },
+  {
+    title: "RaghuMalayalamSans",
+    path: "/fonts/raghumalayalamsans",
+  },
+  {
+    title: "Suruma",
+    path: "/fonts/suruma",
+  },
+  {
+    title: "Uroob",
+    path: "/fonts/uroob",
+  },
+];
+const otherfonts = [
+  {
+    link: "https://www.google.com/get/noto/",
+    title: "Noto Sans Malayalam by Google",
+  },
+  {
+    link: "https://fonts.google.com/specimen/Baloo+Chettan+2?subset=malayalam",
+    title: "Baloo Chettan 2 by Ek Type, commissioned by Google fonts.",
+  },
+  {
+    link: "https://github.com/EkType/Anek",
+    title: "Anek Malayalam by Ek Type",
+  },
+  {
+    link: "http://rachana.org.in/",
+    title: "Sundar and TNJoy by Rachana Institute of Typography",
+  },
+];
 </script>
 <style>
 .font-preview-text {
