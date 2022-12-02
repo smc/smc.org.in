@@ -162,7 +162,7 @@ const otherfonts = [
   },
   {
     link: "http://rachana.org.in/",
-    title: "Sundar and TNJoy by Rachana Institute of Typography",
+    title: "Sundar, TNJoy, Ezhuthu, Panmana, Karuna etc by Rachana Institute of Typography",
   },
 ];
 </script>
