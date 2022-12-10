@@ -6,5 +6,5 @@
   font-display: swap;
   font-weight: 400;
   src: url(/downloads/fonts/suruma/Suruma.woff2?v=Version3.2.4) format("woff2");
-  unicode-range: U+0D01-0D7F, U+200C- U+200D, U+25CC;
+  unicode-range: U+0D01-0D7F, U+200C, U+200D, U+25CC;
 }
