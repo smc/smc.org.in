@@ -135,7 +135,7 @@ const fonts = [
   {
     title: "NupuramDots",
     path: "/fonts/nupuram-dots",
-    download: "/downloads/fonts/nupuram/NupuramDots.zip",
+    download: "/downloads/fonts/nupuram/Nupuram-Dots.zip",
     badge: "Pre-release"
   },
   {
