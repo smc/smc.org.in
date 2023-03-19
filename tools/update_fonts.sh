@@ -38,4 +38,15 @@ unzip -q artifacts.zip
 mv fonts nupuram
 rm -rf artifacts.zip
 
+# Process Malini
+version=$(curl -sSL "https://gitlab.com/api/v4/projects/smc%2Ffonts%2Fmalini/repository/tags??order_by=updated" | jq '.[].name' | head -1 | tr -d '"')
+echo "Malini : $version"
+wget -q "https://gitlab.com/smc/fonts/Malini/-/jobs/artifacts/${version}/download?job=build" -O artifacts.zip
+unzip -q artifacts.zip
+mv fonts malini
+mv malini/Malini/{otf,ttf,otf-variable,ttf-variable,ufo,webfonts} malini
+rm -rf malini/Malini
+rm -rf artifacts.zip
+
+
 zip -qr fonts-smc.zip . -i "*.ttf" -i "*.otf" -i "*.woff" -i "*.woff2" -j
