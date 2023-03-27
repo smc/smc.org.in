@@ -346,9 +346,9 @@ export default {
           {
             title: "Grandham",
             description: `
-              Grandham.org is an effort to build crowdsourced bibliography
+              Grandham.in is an effort to build crowdsourced bibliography
               datapool. It suppports all indian languages and have interfaces
-              and apis fo library, publishers and general public. The
+              and APIs fo library, publishers and general public. The
               Malayalagrandham dataset the biggest bibliography data set in
               malayalam and may be the largest malayalam Open data archive.
             `,
