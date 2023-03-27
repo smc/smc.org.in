@@ -44,7 +44,6 @@
               <v-btn
                 v-for="link in project.links"
                 :key="link.text"
-                text
                 :href="link.url"
               >
                 {{ link.text }}
