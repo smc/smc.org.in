@@ -61,6 +61,7 @@
 import indickeyboard from "@/assets/images/indickeyboard.png";
 import swanalekhalogo from "@/assets/images/ml-swanalekha.png";
 import varnamlogo from "@/assets/images/varnam.gif";
+import poornalogo from "@/assets/images/poorna-logo.png";
 
 export default {
   data: () => ({
@@ -121,6 +122,28 @@ export default {
               },
             ],
           },
+          {
+            title: "Poorna",
+            logo: poornalogo,
+            description: `
+              Poorna is an extended Inscript/Remington keyboard layout available for Windows, Linux and Mac.
+	      It includes all Malayalam unicode characters which are not
+              found in other layouts. One important use case is typesetting an old
+              book (Malayalam bible for example) that requires characters not present
+              in the other layouts. This layout also makes it easy to type
+              punctuations and other special characters without switching layouts
+            `,
+            links: [
+              {
+                text: "Details",
+                url: "https://poorna.smc.org.in/",
+              },
+              {
+                text: "Source",
+                url: "https://gitlab.com/smc/poorna/",
+              },
+            ],
+          }
         ],
       },
       {
