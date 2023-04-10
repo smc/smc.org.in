@@ -13,7 +13,7 @@
       >
         <h2>{{ section.heading }}</h2>
 
-        <section class="row my-2">
+        <section class="row my-2 d-flex justify-space-between flex-wrap">
           <v-col
           v-for="project in section.list"
           :key="project.title"
