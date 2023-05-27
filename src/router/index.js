@@ -53,6 +53,12 @@ const routerOptions = [
     params: true,
   },
   {
+    path: "/fonts/malini",
+    name: "font-malini",
+    view: "Malini",
+    params: true,
+  },
+  {
     path: "/fonts/nupuram-calligraphy",
     name: "font-nupuram-calligraphy",
     view: "NupuramCalligraphy",
