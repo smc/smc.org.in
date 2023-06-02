@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="nupuram v-col-xl-8 v-col-sm-10 v-col-lg-12"
+    class="nupuram v-col-xl-8 v-col-sm-10 v-col-lg-10"
   >
     <main id="nupuram">
       <font-title
@@ -76,7 +76,7 @@
         id="varinfo"
         class="d-flex flex-wrap row pa-5 py-10 "
       >
-        <h2 class="text-h2 v-col-lg-4">
+        <h2 class="text-h4 v-col-lg-4">
           Find the right width, weight, & slant that fits you.
         </h2>
         <p class="text-h5  v-col-lg-8">
@@ -86,12 +86,52 @@
           <br>
           Nupuram come with four variable axes each: weight (thin to black), width (condensed to expanded), soft(sharp to supersoft) and slant (regular to italics). By combining these axes freely, you have access to thousands of different looks, and endless of possibilities.
         </p>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Fine-typographic control
+          </div>
+          <div class="">
+            Adjust font parameters in small increments for ultimate control without compromise.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Small font file sizes
+          </div>
+          <div class="">
+            Reduce webfont file sizes and increase the performance of your website by using a single variable webfont throughout.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Text animations
+          </div>
+          <div class="">
+            Stylistic variation of Nupuram are continuous, and can be animated for text transitions and special effects.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Optimal legibility
+          </div>
+          <div class="">
+            Nupuram contain size-specific variations which make the text superbly legible, optimised for any size.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Responsive type
+          </div>
+          <div class="">
+            Variable fonts assist in tuning type according to different formats, resolutions and display sizes.
+          </div>
+        </div>
       </v-sheet>
       <v-sheet
         id="info"
         class="d-flex flex-wrap row pa-5 my-5"
       >
-        <h2 class="text-h2 v-col-lg-4">
+        <h2 class="text-h4 v-col-lg-4">
           Free and Opensource
         </h2>
         <p class="text-body-1  v-col-lg-8">
@@ -142,7 +182,7 @@ export default {
 </script>
 <style lang="less">
 .v-container.nupuram {
-  max-width: 100vw !important;
+  // max-width: 100vw !important;
 }
 .header {
   font-family: "Nupuram" !important;

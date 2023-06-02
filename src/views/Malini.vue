@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="malini v-col-xl-8 v-col-sm-10 v-col-lg-12"
+    class="malini v-col-xl-8 v-col-sm-10 v-col-lg-10"
   >
     <main id="malini">
       <font-title
@@ -27,10 +27,7 @@
           contenteditable
           class="content pa-5 v-col-md-8 v-col-sm-12  v-col-xs-12"
         >
-          <p>Variable font with 4 design axes.</p>
-          <p>One file.</p>
-          <p>Thousands of variations.</p>
-          <p>Infinite possibilities.</p>
+          <p>കേരളത്തിൽ സാധാരണ കണ്ടുവരുന്ന ഒരു പക്ഷിയാണ് ആറ്റകുരുവി. കൂരിയാറ്റ, തൂക്കണാംകുരുവി എന്നീ പേരുകളിലും ഇത് അറിയപ്പെടുന്നു. ഇത് അങ്ങാടിക്കുരുവിയോട് വളരെയധികം സാദൃശ്യമുള്ള പക്ഷിയാണ്. അങ്ങാടിക്കുരുവിയുടെ വലിപ്പം ഉള്ള ഈ പക്ഷി പൊതുവേ വയലുകൾക്ക് സമീപമാണ് കാണപ്പെടുന്നത്. പ്രജനനകാലത്തൊഴിച്ച് കിളികളിൽ ആണും പെണ്ണും തമ്മിൽ നിറവ്യത്യാസങ്ങൾ ഇല്ല. വയലുകളോട് ചേർന്നുനിൽക്കുന്ന ഉയരമുള്ള മരങ്ങളിൽ നെല്ലോല കൊണ്ട് നെയ്തെടുക്കുന്ന നീളവും ഉറപ്പും ഏറിയ കൂടുകളാണ് ഈ പക്ഷിയുടെ പ്രത്യേകത. തൂക്കണാം കുരുവികൾ ശരിക്കും ഒന്നിലധികം ഇണകളെ സ്വീകരിക്കുന്ന പക്ഷിയാണ്‌. കുരുവിയുടെ ആ മനോഹരമായ കൂട് നിർമിക്കുന്നത് ആൺപക്ഷിയാണ്. ഇണയെ കണ്ടെത്തിയ ശേഷമാണ് കൂട് നിർമ്മാണം ആരംഭിക്കുക. പെൺപക്ഷിയുടെ ഇഷ്ടാനുസരണമാണ് സ്ഥലം കണ്ടുപിടിച്ച് നിർമാണം ആരംഭിക്കുക. 1500-2000 ത്തോളം നാരുകൾ ഇതിനായി ശേഖരിക്കും. പെൺപക്ഷി കൂടുനിർമാണത്തിന്റെ വിവിധ ഘട്ടങ്ങളിൽ പരിശോധയ്‌ക്കെത്തും. പരിശോധനയിൽ ഏതെങ്കിലും തരത്തിൽ ബലക്ഷയം കണ്ടെത്തുകയാണെങ്കിൽ ആ കൂട് ഉപേക്ഷിക്കുകയാണ് ചെയ്യുക. അതിനുശേഷം ആൺപക്ഷി അടുത്ത കൂടിന്റെ നിർമ്മാണം തുടങ്ങും. ഇതേ പെൺപക്ഷിക്കു വേണ്ടിത്തന്നെ. നാലാഴ്ചയെങ്കിലും എടുക്കും നിർമ്മാണം പൂർത്തിയാക്കാൻ. നാലോ അഞ്ചോ കൂടുകൾ ചിലപ്പോൾ പാതിവഴിയിൽ ഉപേക്ഷിക്കാറുണ്ട്. ആ കൂട് സ്വീകരിച്ചു കഴിഞ്ഞാൽ ആൺപക്ഷി പെൺപക്ഷിയെ ഉപേക്ഷിച്ചു പോയി വേറൊരു പെൺപക്ഷിയെ കണ്ടെത്തും. പിന്നെ അതിന് കൂടൊരുക്കി തുടങ്ങും. അങ്ങനെ പെൺപക്ഷിക്കു വേണ്ടി ഒന്നുമുതൽ അഞ്ചുവരെ കൂടുകൾ ഉണ്ടാക്കും. ആൺപക്ഷി ഒന്ന് മുതൽ നാലുവരെ ഇണകളെ കണ്ടെത്തുകയും ചെയ്യും. ആൺപക്ഷിക്ക് മഞ്ഞയും മണ്ണിന്റെ നിറവും കലർന്ന തൂവലും തലയിൽ മഞ്ഞ നിറത്തിലുള്ള കിരീടവും ഉണ്ടാകും. പെൺപക്ഷിക്ക് മണ്ണിൻറെ നിറമുള്ള തൂവലാണ് ഉണ്ടാവുക. പ്രജനന കാലത്ത് ആൺപക്ഷികളുടെ ശരീരം തിളങ്ങി ആകർഷകമായി തീരും. പ്രശസ്ത പക്ഷി നിരീക്ഷകൻ സലിം അലി ഏറ്റവും കൂടുതൽ ഗവേഷണം നടത്തിയത് ബോയ വീവർ പക്ഷിയുടെ മുകളിലാണ്. അദ്ദേഹത്തിന്റെ വിവിധ ലേഖനങ്ങൾ സീരീസായി പ്രസിദ്ധീകരിച്ചിട്ടുണ്ട്.</p>
         </v-card>
         <v-card class="py-10 v-col-md-4 v-col-sm-12  v-col-xs-12 tools">
           <v-slider
@@ -69,7 +66,7 @@
         id="varinfo"
         class="d-flex flex-wrap row pa-5 py-10 "
       >
-        <h2 class="text-h2 v-col-lg-4">
+        <h2 class="text-h4 v-col-lg-4">
           Find the right width, weight, & slant that fits you.
         </h2>
         <p class="text-h5  v-col-lg-8">
@@ -79,12 +76,53 @@
           <br>
           Malini come with four variable axes each: weight (thin to black), width (condensed to expanded), optical size(style adjustments optimized for font size) and slant (regular to italics). By combining these axes freely, you have access to thousands of different looks, and endless of possibilities.
         </p>
+
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Fine-typographic control
+          </div>
+          <div class="">
+            Adjust font parameters in small increments for ultimate control without compromise.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Small font file sizes
+          </div>
+          <div class="">
+            Reduce webfont file sizes and increase the performance of your website by using a single variable webfont throughout.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Text animations
+          </div>
+          <div class="">
+            Stylistic variation of Malini are continuous, and can be animated for text transitions and special effects.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Optimal legibility
+          </div>
+          <div class="">
+            Malini contain size-specific variations which make the text superbly legible, optimised for any size.
+          </div>
+        </div>
+        <div class="v-col-lg-4 v-col-md-2 v-col-sm-12">
+          <div class="text-h6">
+            Responsive type
+          </div>
+          <div class="">
+            Variable fonts assist in tuning type according to different formats, resolutions and display sizes.
+          </div>
+        </div>
       </v-sheet>
       <v-sheet
         id="info"
         class="d-flex flex-wrap row pa-5 my-5"
       >
-        <h2 class="text-h2 v-col-lg-4">
+        <h2 class="text-h4 v-col-lg-4">
           Free and Opensource
         </h2>
         <p class="text-body-1  v-col-lg-8">
@@ -109,7 +147,7 @@ import { ref, computed } from "vue";
 export default {
   components: { FontTitle },
   setup() {
-    const size = ref(32);
+    const size = ref(16);
     const weight = ref(400);
     const slant = ref(0);
     const width = ref(100);
@@ -134,24 +172,28 @@ export default {
 </script>
 <style lang="less">
 .v-container.malini {
-  max-width: 100vw !important;
+  // max-width: 80vw !important;
 }
+
 .header {
   font-family: "Malini" !important;
   text-align: center;
 }
 
 .playground {
-  font-size: 5vw;
-  text-align: center;
-
-  font-weight: 100;
-
-  line-height: 1.2;
+  font-size: 1em;
+  text-align: justify;
+  display: grid;
+  hyphens: auto;
+  -webkit-hyphenate-character: '';
+  direction: ltr;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.4;
   padding: 10px;
   .content {
     font-family: "Malini" !important;
-    min-height: 75vh;
+    min-height: 50vh;
     max-height: 75vh;
     overflow: auto;
   }
