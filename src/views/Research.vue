@@ -158,6 +158,18 @@ export default {
               },
             ],
           },
+          {
+            title:
+              "അക്ഷരങ്ങളുടെ ഡിജിറ്റൽ കാലം - അച്ചടിയിൽ നിന്ന് ഡിജിറ്റൽ ഫോണ്ടുകളിലെത്തിയ മലയാളത്തിന്റെ വർത്തമാനം",
+            author: "Santhosh Thottingal",
+            description: "അച്ചടിയുടെ ഇരുന്നൂറാം വാർഷികത്തിൽ ബെഞ്ചമിൻ ബെയിലി ഫൗണ്ടേഷൻ പ്രസിദ്ധീകരിച്ച പ്രബന്ധം",
+            links: [
+              {
+                text: "Read the paper",
+                url: "https://santhoshtr.gitlab.io/digitaltypography-article/digitaltypography.pdf",
+              },
+            ],
+          },
         ],
       },
       {
