@@ -3,76 +3,76 @@
     <v-container class="v-col-xl-8 v-col-sm-10 v-col-xs-12">
       <v-row class="text-center">
         <v-col cols="12">
-        <v-img
-          :src="logo"
-          class="my-3"
-          contain
-          height="200"
-        />
+          <v-img
+            :src="logo"
+            class="my-3"
+            contain
+            height="200"
+          />
         </v-col>
 
         <v-col class="mb-4">
-        <h1
-          v-i18n="'smc'"
-          class="text-h2 font-weight-regular mb-3"
-        />
-        <h2 class="title mb-3">
-          എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ
-        </h2>
+          <h1
+            v-i18n="'smc'"
+            class="text-h2 font-weight-regular mb-3"
+          />
+          <h2 class="title mb-3">
+            എന്റെ കമ്പ്യൂട്ടറിനു് എന്റെ ഭാഷ
+          </h2>
         </v-col>
       </v-row>
       <v-row class="text-center">
         <v-col>
-        <v-btn
-          class="ma-2"
-          block
-          large
-          href="https://gitlab.com/smc"
-        >
-          <v-icon dark>
-            {{ mdiGit }}
-          </v-icon>
-          <span class="ml-2 hidden-xs-only">{{ $i18n("source-code") }}</span>
-        </v-btn>
+          <v-btn
+            class="ma-2"
+            block
+            large
+            href="https://gitlab.com/smc"
+          >
+            <v-icon dark>
+              {{ mdiGit }}
+            </v-icon>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("source-code") }}</span>
+          </v-btn>
         </v-col>
         <v-col>
-        <v-btn
-          class="ma-2"
-          block
-          large
-          href="https://wiki.smc.org.in"
-        >
-          <v-icon dark>
-            {{ mdiBookOpenPageVariant }}
-          </v-icon>
-          <span class="ml-2 hidden-xs-only">{{ $i18n("wiki") }}</span>
-        </v-btn>
+          <v-btn
+            class="ma-2"
+            block
+            large
+            href="https://wiki.smc.org.in"
+          >
+            <v-icon dark>
+              {{ mdiBookOpenPageVariant }}
+            </v-icon>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("wiki") }}</span>
+          </v-btn>
         </v-col>
         <v-col>
-        <v-btn
-          class="ma-2"
-          block
-          large
-          href="https://community.smc.org.in/"
-        >
-          <v-icon dark>
-            {{ mdiForumOutline }}
-          </v-icon>
-          <span class="ml-2 hidden-xs-only">{{ $i18n("discussions") }}</span>
-        </v-btn>
+          <v-btn
+            class="ma-2"
+            block
+            large
+            href="https://community.smc.org.in/"
+          >
+            <v-icon dark>
+              {{ mdiForumOutline }}
+            </v-icon>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("discussions") }}</span>
+          </v-btn>
         </v-col>
         <v-col>
-        <v-btn
-          class="ma-2"
-          block
-          large
-          href="https://t.me/smc_project"
-        >
-          <v-icon dark>
-            {{ mdiSend }}
-          </v-icon>
-          <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
-        </v-btn>
+          <v-btn
+            class="ma-2"
+            block
+            large
+            href="https://t.me/smc_project"
+          >
+            <v-icon dark>
+              {{ mdiSend }}
+            </v-icon>
+            <span class="ml-2 hidden-xs-only">{{ $i18n("telegram") }}</span>
+          </v-btn>
         </v-col>
       </v-row>
       <v-row
@@ -80,152 +80,152 @@
         justify="center"
       >
         <v-col
-        lg="8"
-        sm="12"
+          lg="8"
+          sm="12"
         >
-        <p v-text="$i18n('smc-desc')" />
+          <p v-text="$i18n('smc-desc')" />
         </v-col>
       </v-row>
 
       <v-row>
         <v-col
-        lg="8"
-        sm="12"
+          lg="8"
+          sm="12"
         >
-        <h2 v-text="$i18n('menu-projects')" />
+          <h2 v-text="$i18n('menu-projects')" />
         </v-col>
       </v-row>
       <v-divider />
 
       <v-row>
         <v-col
-        md="6"
-        lg="3"
-        sm="12"
+          md="6"
+          lg="3"
+          sm="12"
         >
-        <v-card
-          outlined
-          hover
-          to="/fonts/manjari"
-          class="mx-auto"
-          max-width="400"
-          height="100%"
-        >
-          <v-img
-            :src="manjaricard"
-            height="200px"
-          />
+          <v-card
+            outlined
+            hover
+            to="/fonts/manjari"
+            class="mx-auto"
+            max-width="400"
+            height="100%"
+          >
+            <v-img
+              :src="manjaricard"
+              height="200px"
+            />
 
-          <v-card-title>Manjari font</v-card-title>
+            <v-card-title>Manjari font</v-card-title>
 
-          <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
-        </v-card>
+            <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
+          </v-card>
         </v-col>
         <v-col
-        md="6"
-        lg="3"
-        sm="12"
+          md="6"
+          lg="3"
+          sm="12"
         >
-        <v-card
-          outlined
-          hover
-          to="/fonts/gayathri"
-          class="mx-auto"
-          max-width="400"
-          height="100%"
-        >
-          <v-img
-            :src="gayathricard"
-            height="200px"
-          />
+          <v-card
+            outlined
+            hover
+            to="/fonts/gayathri"
+            class="mx-auto"
+            max-width="400"
+            height="100%"
+          >
+            <v-img
+              :src="gayathricard"
+              height="200px"
+            />
 
-          <v-card-title>Gayathri font</v-card-title>
+            <v-card-title>Gayathri font</v-card-title>
 
-          <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
-        </v-card>
+            <v-card-subtitle>Popular Malayalam typeface</v-card-subtitle>
+          </v-card>
         </v-col>
         <v-col
-        md="6"
-        lg="3"
-        sm="12"
+          md="6"
+          lg="3"
+          sm="12"
         >
-        <v-card
-          outlined
-          hover
-          href="https://morph.smc.org.in"
-          class="mx-auto"
-          max-width="400"
-          height="100%"
-        >
-          <v-img
-            :src="mlmorphlogo"
-            height="200px"
-          />
-          <v-card-title>Mlmorph</v-card-title>
+          <v-card
+            outlined
+            hover
+            href="https://morph.smc.org.in"
+            class="mx-auto"
+            max-width="400"
+            height="100%"
+          >
+            <v-img
+              :src="mlmorphlogo"
+              height="200px"
+            />
+            <v-card-title>Mlmorph</v-card-title>
 
-          <v-card-subtitle>Malayalam morphology analyser</v-card-subtitle>
-        </v-card>
+            <v-card-subtitle>Malayalam morphology analyser</v-card-subtitle>
+          </v-card>
         </v-col>
         <v-col
-        md="6"
-        lg="3"
-        sm="12"
+          md="6"
+          lg="3"
+          sm="12"
         >
-        <v-card
-          outlined
-          hover
-          to="/projects"
-          class="mx-auto"
-          max-width="400"
-          height="100%"
-        >
-          <v-card-title>More projects...</v-card-title>
-          <v-card-subtitle>See all projects</v-card-subtitle>
-        </v-card>
+          <v-card
+            outlined
+            hover
+            to="/projects"
+            class="mx-auto"
+            max-width="400"
+            height="100%"
+          >
+            <v-card-title>More projects...</v-card-title>
+            <v-card-subtitle>See all projects</v-card-subtitle>
+          </v-card>
         </v-col>
       </v-row>
       <v-row>
         <v-col
-        lg="8"
-        sm="12"
+          lg="8"
+          sm="12"
         >
-        <h2 v-text="$i18n('menu-blog')" />
+          <h2 v-text="$i18n('menu-blog')" />
         </v-col>
       </v-row>
       <v-divider />
       <v-row justify="center">
         <v-col
-        v-for="post in blogposts"
-        :key="post.id"
-        md="6"
-        lg="3"
-        sm="12"
-        class="my-6"
+          v-for="post in blogposts"
+          :key="post.id"
+          md="6"
+          lg="3"
+          sm="12"
+          class="my-6"
         >
-        <v-card
-          outlined
-          hover
-          class="mx-auto"
-          max-width="400"
-          height="400px"
-          style="overflow: hidden"
-          :to="`/blog/${post.slug}`"
-        >
-          <v-img
-            :src="post.feature_image || logo"
-            height="200px"
-          />
+          <v-card
+            outlined
+            hover
+            class="mx-auto"
+            max-width="400"
+            height="400px"
+            style="overflow: hidden"
+            :to="`/blog/${post.slug}`"
+          >
+            <v-img
+              :src="post.feature_image || logo"
+              height="200px"
+            />
 
-          <v-card-title class="smc-blog-post-content-title">
-            {{
-              post.title
-            }}
-          </v-card-title>
+            <v-card-title class="smc-blog-post-content-title">
+              {{
+                post.title
+              }}
+            </v-card-title>
 
-          <v-card-text class="smc-blog-post-content-excerpt">
-            {{ stripMd(post.excerpt) }}
-          </v-card-text>
-        </v-card>
+            <v-card-text class="smc-blog-post-content-excerpt">
+              {{ stripMd(post.excerpt) }}
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>

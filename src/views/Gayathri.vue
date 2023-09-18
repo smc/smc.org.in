@@ -375,30 +375,30 @@
               </v-row>
               <v-row>
                 <v-col
-                class="font-gayathri"
-                style="font-feature-settings: 'salt' 1"
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 1"
                 >
-                ച്ച
+                  ച്ച
                 </v-col>
                 <v-col
-                class="font-gayathri"
-                style="font-feature-settings: 'salt' 2"
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 2"
                 >
-                ച്ച
+                  ച്ച
                 </v-col>
               </v-row>
               <v-row>
                 <v-col
-                class="font-gayathri"
-                style="font-feature-settings: 'salt' 1"
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 1"
                 >
-                ള്ള
+                  ള്ള
                 </v-col>
                 <v-col
-                class="font-gayathri"
-                style="font-feature-settings: 'salt' 2"
+                  class="font-gayathri"
+                  style="font-feature-settings: 'salt' 2"
                 >
-                ള്ള
+                  ള്ള
                 </v-col>
               </v-row>
               <p>
